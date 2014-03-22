@@ -13,10 +13,10 @@
 html, body { height: 100%; }
 
 body {
-  background-color: #FFF;
+  background-color: #fff;
   font: 13.34px Helvetica, Arial, sans-serif;
   font-size: small;
-  text-align: center;
+  text-align: center;  
 }
 
 h1, h2, h3, h4, h5, h6 {
