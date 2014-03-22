@@ -7,18 +7,35 @@
         <title>{{ page.title }}</title>
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/syntax.css">
+        <link rel="icon" type="image/png" href="/images/favicon.png" />
     </head>
 
     <body>
-        <div class="site">
-            <div class="header">
-                <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+        <div class="site c-clearfix">
+            <div class="site-intro">
+                <div class="header">
+                    <h1><a href="/" title="home">{{ site.name }}</a></h1>
+                    <h2>记录有趣的人事物，分享可重用的技术</h2>
+                </div>
+
+                <div class="preamble site-box">
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, repellat eaque et expedita molestiae nostrum facere magnam voluptas esse qui obcaecati fuga harum quisquam quaerat laudantium iure debitis odit maxime.</div>
+                    <div>Tenetur, consequuntur animi numquam dolorem laborum doloribus dolorum ad iure voluptatibus minima blanditiis enim soluta quibusdam quis nesciunt. Fugiat repellat aperiam eos obcaecati eaque dolorem ipsa amet voluptate non vero.</div>
+                    <div>Reiciendis aspernatur earum iure laboriosam dolores. Nam, eaque, quaerat, mollitia, rem magnam similique labore id excepturi eius voluptatem iste voluptates itaque necessitatibus aut dolorem quibusdam maiores ab neque totam facere.</div>
+                    <div>Voluptatem, voluptatibus, nam perferendis nulla perspiciatis est nesciunt reiciendis reprehenderit praesentium sequi commodi fugiat recusandae porro unde eum. Nisi, recusandae beatae consectetur ducimus asperiores sunt eveniet ab ipsa reprehenderit neque.</div>
+                    <div>Accusantium, deleniti, repellendus, ullam accusamus molestiae explicabo quo consequuntur assumenda voluptatum dolor similique eum vero culpa maiores deserunt earum recusandae magnam non excepturi sunt doloribus eveniet soluta quas eaque nesciunt.</div>
+                    <div class="contacts">
+                        <a href="https://twitter.com/Moamaoa">twitter.com/Moamaoa</a>
+                    </div>
+                </div>
             </div>
 
-            {{ content }}
+            <div class="post-wrapper">
+                {{ content }}
+            </div>
 
             <div class="footer">
-                <a href="https://twitter.com/Moamaoa">twitter.com/Moamaoa</a>
+                
             </div>
         </div>
     </body>
