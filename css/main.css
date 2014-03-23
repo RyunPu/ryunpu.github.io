@@ -5,7 +5,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 audio, canvas, progress, video { display: inline-block; vertical-align: baseline; }
 audio:not([controls]) { display: none; height: 0; }
 [hidden], template { display: none }
-a { background: transparent }
+a { background: transparent; text-decoration: none; color: #000; }
 a:active, a:hover { outline: 0 }
 abbr[title] { border-bottom: 1px dotted }
 b, strong { font-weight: bold }
@@ -43,34 +43,52 @@ td, th { padding: 0 }
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td { margin: 0; padding: 0; }
 h1, h2, h3, h4, h5, h6 { font-size: 100% }
 th { text-align: inherit }
-li { list-style: none }
+li { list-style: none; }
 :focus { outline: 0 }
 
-body { font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif; color: #000; background-color: #fff; }
+html, body { min-height: 100%;}
+body { font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif; color: #000; background: #FFE -webkit-radial-gradient(left top, cover, #fff 0%, #fff 400px, #133c02 100%) no-repeat; }
 input, textarea, select, button { font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif; color: #000; }
-a { text-decoration: none; color: #000; }
+a { color: #15630F;}
 a:hover { text-decoration: underline }
 
 .c-clearfix { zoom: 1 }
 .c-clearfix:after { display: block; clear: both; height: 0; content: ''; }
 
-.site-box { padding: 1em; border: 1px solid #e3e3e3; background: #fdffe8; opacity: .8; box-shadow: inset 0 0 4px #e3e3e3, 0 4px #092107, 2px 1px 5px #e3e3e3;}
+.site-box { padding: 1em; border-radius: 5px; border: solid 1px #51894c; background: transparent; box-shadow: inset 0 0 4px #e3e3e3, 0 4px #092107, 0 2px 5px gray;}
 
-.site-intro { float: left; width: 300px;}
+.site-intro { position: relative; z-index: 9; float: left; width: 300px;}
 .site-intro h1 { width: 298px; height: 250px; margin-bottom: -110px; text-indent: -9999px; background: url(../images/leaf.gif) no-repeat; opacity: .8; -webkit-transition: opacity .2s ease-out;}
 .site-intro h1:hover { opacity: 1;}
 .site-intro h1 a { display: block; height: 100%;}
 .site-intro h2 { display: none;}
-.site-intro .preamble { position: relative; z-index: 9;}
+.site-intro .preamble { position: relative; border-width: 1px 1px 0 0; border-radius: 0 5px 5px 0;}
 
-.post-wrapper { position: relative; z-index: 8; float: left; width: 380px; height: 600px; margin: 5.83em 0 0 -3em; padding-left: 5em;}
+.posts-wrapper { width: 100%; max-width: 960px; padding: 0 1em 0 345px; box-sizing: border-box;}
+.posts-wrapper .site-box { padding: 2em 1.5em 4.5em; border-top: none; border-radius: 0 0 5px 5px; box-shadow: none; box-shadow: 0 1px 5px gray;}
 
-.footer { clear: both; padding: 1em 0; text-align: center;}
+.footer { height: 3em; overflow: hidden; margin-top: -3em; border: solid 1px #51894c; line-height: 3; text-align: center; border-radius: 0 0 5px 5px; box-sizing: border-box; background: url(../images/h3-bg.gif) 0 bottom no-repeat; background-size: 100%;}
+.footer a { text-decoration: underline;}
 
 /* posts */
-.post pre { border: 1px solid #ddd; background-color: #eef; padding: 0 .4em; }
+.post pre { padding: 1em; background-color: #363636; border-radius: 3px; margin: 1em 0; }
 .post ul, .post ol { margin-left: 1.35em }
-.post code { border: 1px solid #ddd; background-color: #eef; padding: 0 .2em; }
+.post code { padding: 0 .2em; border-radius: 2px; background-color: #C5DBC7; }
 .post pre code { border: 0 }
 .post pre.terminal { border: 1px solid #000; background-color: #333; color: #FFF; }
 .post pre.terminal code { background-color: #333 }
+.highlight { background: #ffffff; }
+
+.posts .post { margin-bottom: 2em; border-bottom: 1px dashed #CCDBAC;}
+.posts .post:last-child { border-bottom: none;}
+.post .title h4 { font-size: 18px;}
+.post .title .meta { margin: 0; color: #5F6860;}
+.post p { margin: .5em 0;}
+.post p.more { text-align: right;}
+.post p.more a { display: inline-block; font-size: 10px; -webkit-transform:scale(0.875);}
+
+/* lights out */
+.loghts-out .site-box { background: rgba(242,245,215,.8);}
+
+
+
