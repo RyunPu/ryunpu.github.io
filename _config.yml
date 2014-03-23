@@ -1,3 +1,5 @@
 name: 三千止境的个人博客
 markdown: redcarpet
 pygments: true
+permalink: /:title
+paginate: 5
