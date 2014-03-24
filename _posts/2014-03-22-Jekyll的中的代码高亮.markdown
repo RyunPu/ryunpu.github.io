@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "Jekyll的中的代码高亮"
+date:   2014-03-22
+categories: Jekyll
+---
+
+推荐的：
+
+{% raw %}
+    {% highlight ruby linenos %}
+    def foo
+      puts 'foo'
+    end
+    {% endhighlight %}
+{% endraw %}
+
+<!-- more -->
+
+简洁的：
+
+    ```ruby
+    def foo
+      puts 'foo'
+    end
+    ```
+
+最终效果：
+
+```ruby
+def foo
+  puts 'foo'
+end
+```

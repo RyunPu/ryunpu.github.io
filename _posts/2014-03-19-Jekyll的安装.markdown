@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Jekyll的安装"
+date:   2014-03-19
+categories: Jekyll
+---
+
+初次安装Jekyll，出现‘Failed to build gem native extension’的报错，花了不少时间寻找问题的答案，关键在于升级你的Ruby版本，建议使用RVM或者Rbenv，我使用的是RVM：
+
+    \curl -sSL https://get.rvm.io | bash -s stable
+
+完成这步剩下的直接OK，如果还有问题可以参考[Jekyll troubleshooting](http://jekyllrb.com/docs/troubleshooting/)

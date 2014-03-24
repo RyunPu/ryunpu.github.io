@@ -40,20 +40,21 @@ optgroup { font-weight: bold }
 table { border-collapse: collapse; border-spacing: 0; }
 td, th { padding: 0 }
 
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td { margin: 0; padding: 0; }
-h1, h2, h3, h4, h5, h6 { font-size: 100% }
-th { text-align: inherit }
-li { list-style: none; }
-:focus { outline: 0 }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td { margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 { font-size: 100%}
+th { text-align: inherit}
+li { list-style: none;}
+:focus { outline: 0}
 
-html, body { min-height: 100%;}
-body { font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif; color: #000; background: #FFE -webkit-radial-gradient(left top, cover, #fff 0%, #fff 400px, rgb(201,224,208) 100%) no-repeat; }
-input, textarea, select, button { font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif; color: #000; }
+html, body { min-height: 100%; word-break: break-all;}
+body { font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif; color: #000; background: #FFF -webkit-radial-gradient(left top, cover, #fff 0%, #fff 400px, rgb(201,224,208) 100%) no-repeat; background: #FFF -moz-radial-gradient(left top, cover, #fff 0%, #fff 400px, rgb(201,224,208) 100%) no-repeat;}
+input, textarea, select, button { font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif; color: #000;}
 a { color: #0A2B06;}
-a:hover { color: #185712; text-decoration: underline; }
+a:hover { color: #185712; text-decoration: underline;}
+a:visited { color: #909271;}
 
-.c-clearfix { zoom: 1 }
-.c-clearfix:after { display: block; clear: both; height: 0; content: ''; }
+.c-clearfix { zoom: 1}
+.c-clearfix:after { display: block; clear: both; height: 0; content: '';}
 
 .pagination-wrapper { text-align: center;}
 .pagination-wrapper .pagination { display: inline-block;}
@@ -70,7 +71,7 @@ a:hover { color: #185712; text-decoration: underline; }
 .site-intro h1:hover { opacity: 1;}
 .site-intro h1 a { display: block; height: 100%;}
 .site-intro h2 { display: none;}
-.site-intro .preamble { position: relative; border-width: 1px 1px 0 0; border-radius: 0 5px 5px 0;}
+.site-intro .preamble { position: relative; border-width: 1px 1px 0 0; border-radius: 0 5px 5px 0;;}
 
 .main-wrapper { width: 100%; max-width: 960px; padding: 0 1em 0 345px; box-sizing: border-box;}
 .main-wrapper .site-box { padding: 0; border-top: none; border-radius: 0 0 5px 5px; box-shadow: none; box-shadow: 0 1px 5px gray;}
@@ -80,10 +81,10 @@ a:hover { color: #185712; text-decoration: underline; }
 .footer a { text-decoration: underline;}
 
 /* posts */
-.post pre { padding: 1em; background-color: #363636; border-radius: 3px; margin: 1em 0; }
+.post pre { padding: 1em; background-color: #363636; border-radius: 3px; margin: 1em 0; white-space: pre-wrap; }
 .post ul, .post ol { margin-left: 1.35em }
 .post code { padding: 0 .2em; border-radius: 2px; background-color: #C5DBC7; }
-.post pre code { border: 0 }
+.post pre code { border: 0; background: none; color: #B3C9B3; }
 .post pre.terminal { border: 1px solid #000; background-color: #333; color: #FFF; }
 .post pre.terminal code { background-color: #333 }
 .highlight { background: #ffffff; }
