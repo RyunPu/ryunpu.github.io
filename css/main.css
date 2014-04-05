@@ -59,7 +59,7 @@ a:visited { color: #909271;}
 .pagination-wrapper { text-align: center;}
 .pagination-wrapper .pagination { display: inline-block;}
 .pagination-wrapper .pagination a, .pagination-wrapper .pagination span, .pagination-wrapper .pagination em { display: inline-block; width: 24px; height: 24px; overflow: hidden; line-height: 24px; border-radius: 100%; background: #0A2B06;}
-.pagination-wrapper .pagination em, .pagination-wrapper .pagination span { color: #DDDDDD; cursor: default;}
+.pagination-wrapper .pagination em, .pagination-wrapper .pagination span { color: #555555; cursor: default;}
 .pagination-wrapper .pagination em { font-style: normal;}
 .pagination-wrapper .pagination a { text-decoration: none; color: #AAA;}
 .pagination-wrapper .pagination a:hover { color: #DDD; background: #041D04;}
