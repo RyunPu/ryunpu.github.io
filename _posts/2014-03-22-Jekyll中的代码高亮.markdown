@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Jekyll的中的代码高亮"
+title:  "Jekyll中的代码高亮"
 date:   2014-03-22
 categories: Jekyll
 ---
@@ -10,7 +10,7 @@ categories: Jekyll
 {% raw %}
     {% highlight ruby linenos %}
     def foo
-      puts 'foo'
+        puts 'foo'
     end
     {% endhighlight %}
 {% endraw %}
@@ -21,7 +21,7 @@ categories: Jekyll
 
     ```ruby
     def foo
-      puts 'foo'
+        puts 'foo'
     end
     ```
 
@@ -29,6 +29,6 @@ categories: Jekyll
 
 ```ruby
 def foo
-  puts 'foo'
+    puts 'foo'
 end
 ```

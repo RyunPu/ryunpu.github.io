@@ -50,3 +50,9 @@ title: 三千止境 | 记录、分享和创造
     </div>
 </div>
 {% endif %}
+
+<ul class="archive">
+{% for cat in site.categories %}
+    <li><a href="#{{ cat[0] }}">{{ cat[0] }}</a> ({{ cat[1].size }})</li>
+{% endfor %}
+</ul>

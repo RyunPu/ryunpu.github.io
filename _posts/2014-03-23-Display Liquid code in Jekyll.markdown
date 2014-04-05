@@ -7,6 +7,6 @@ categories: Jekyll
 
 simply using raw tag:
 <pre><code>&#123;% raw %&#125;
-    your code
+    Liquid code
 &#123;% endraw %&#125;
 </code></pre>
