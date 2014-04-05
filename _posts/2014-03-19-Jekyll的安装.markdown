@@ -9,4 +9,4 @@ categories: Jekyll
 
     \curl -sSL https://get.rvm.io | bash -s stable
 
-完成这步剩下的直接OK，如果还有问题可以参考[Jekyll troubleshooting](http://jekyllrb.com/docs/troubleshooting/)
+完成这步剩下的直接OK，如果还有问题可以参考<a href="http://jekyllrb.com/docs/troubleshooting/" target="_blank">Jekyll troubleshooting</a>

@@ -19,10 +19,10 @@ categories: Git
 
     ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 
-then
+then:
 
     brew install git
 
-then
+then:
 
     brew upgrade git

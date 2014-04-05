@@ -89,11 +89,12 @@ a:visited { color: #909271;}
 .post pre.terminal code { background-color: #333 }
 .highlight { background: #ffffff; }
 
-.posts .post { margin-bottom: 2em; border-bottom: 1px dashed #CCDBAC;}
+.posts .post { margin-bottom: 2em; padding-bottom: 1em; border-bottom: 1px dashed #CCDBAC;}
 .posts .post:last-child { margin-bottom: 0; border-bottom: none;}
-.post .title h4 { font-size: 18px;}
+.post .title { margin-bottom: 1em;}
+.post .title h4 { font-size: 18px; word-spacing: .1em;}
 .post .title .meta { margin: 0; color: #5F6860;}
-.post p { margin: .5em 0;}
+.post p { margin: .5em 0; word-spacing: 0.1em;}
 .post p a { text-decoration: underline;}
 .post p.more { text-align: right;}
 .post p.more a { display: inline-block; font-size: 10px; -webkit-transform:scale(0.875); text-decoration: none;}
