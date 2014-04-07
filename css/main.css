@@ -47,7 +47,7 @@ li { list-style: none;}
 :focus { outline: 0}
 
 html, body { min-height: 100%;}
-body { font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif; word-break: break-all; color: #333; background: #FFF -webkit-linear-gradient(#A0BEAF 0%, #fff 40%);}
+body { font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif; word-break: break-all; color: #333; background: #FFF -webkit-linear-gradient(#A0B8BE 0%, #fff 40%);}
 input, textarea, select, button { font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif; color: #000;}
 a { color: #333;}
 a:hover { color: #333; text-decoration: underline;}
