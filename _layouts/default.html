@@ -8,11 +8,13 @@
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/syntax.css">
         <link rel="icon" type="image/png" href="/images/favicon.png" />
+        <script src="/js/jquery-1.7.2.min.js"></script>
         <script src="/js/common.js"></script>
+        <script src="/js/jquery.stickyfooter.min.js"></script>
     </head>
 
     <body>
-        <div class="site c-clearfix">
+        <div class="wrapper clearfix">
             <div class="site-intro">
                 <div class="header">
                     <h1><a href="/" title="home">{{ site.name }}</a></h1>
@@ -27,12 +29,12 @@
             <div class="main-wrapper">
                 <div class="site-box">
                     {{ content }}
-
-                    <div class="footer">
-                        Hosted by <a href="https://github.com/moamaoa/moamaoa.github.com" target="_blank">GitHub</a> and powered by <a href="http://github.com/mojombo/jekyll" target="_blank">Jekyll</a>
-                    </div>
                 </div>
             </div>
+        </div>
+
+        <div class="footer s-stickyfooter">
+            <p>Hosted by <a href="https://github.com/moamaoa/moamaoa.github.com" target="_blank">GitHub</a> and powered by <a href="http://github.com/mojombo/jekyll" target="_blank">Jekyll</a></p>
         </div>
     </body>
 </html>
