@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "CSS优化"
+date:   2014-03-28
+categories: CSS
+---
+
+* 根据浏览器从右到左的读取原则，应使用简化语义明确的选择器，避免使用子选择器、通用选择器等
+
+* 不要在任何情况下都使用简写形式的属性声明
+
+* 使用小写简写形式的十六进制值
+
+* 避免使用IE滤镜和CSS表达式
+
+* 不宜使用过小的图片进行平铺
+
+see more: <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS" target="_blank">mozilla docs</a>, <a href="http://codeguide.bootcss.com/" target="_blank">bootcss codeguide</a>
+
+

@@ -27,15 +27,15 @@ title: 三千止境 | 记录、分享和创造
 <div class="pagination-wrapper">
     <div class="pagination">
         {% if paginator.previous_page %}
-            <a class="prev" title="prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
+            <a class="prev" title="prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;prev</a>
         {% else %}
-            <span class="prev" title="prev">&laquo;</span>
+            <span class="prev" title="prev">&laquo;prev</span>
         {% endif %}
 
         {% if paginator.next_page %}
-            <a class="next" title="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
+            <a class="next" title="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">next&raquo;</a>
         {% else %}
-            <span class="next" title="next">&raquo;</span>
+            <span class="next" title="next">next&raquo;</span>
         {% endif %}
     </div>
 </div>

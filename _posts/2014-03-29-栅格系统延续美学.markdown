@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "栅格系统延续美学"
+date:   2014-03-29
+categories: Design
+---
+
+栅格系统应用于设计领域已经至少50年了。栅格化让眼睛浏览信息更加愉悦。从报纸、杂志，到手机界面，栅格系统全面渗透到各种信息传达的界面当中。
+
+see more: <a href="http://ucdchina.com/snap/11067" target="_blank">ucdchina</a>
+
+
