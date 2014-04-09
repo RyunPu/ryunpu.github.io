@@ -114,5 +114,5 @@ h2.title { display: none;}
 /* archive */
 .archive { padding: 2em 1.5em 3em;}
 .archive .year h3 { font-size: larger; line-height: 2;}
+.archive p { margin: .5em 0; word-spacing: .1em;}
 .archive time { margin-right: 1em; color: #666;}
-
