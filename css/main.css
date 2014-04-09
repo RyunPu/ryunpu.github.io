@@ -69,16 +69,17 @@ h2.title { display: none;}
 
 .header { padding: 3em 0 0 1.5em;}
 .site-intro { position: relative;}
-.site-intro:before, .site-intro:after { content: ""; position: absolute; left: 90%; top: 50%; width: 40px; height: 24px; background: url(../images/cloud.png) no-repeat; background-size: 200%; opacity: .1;}
+.site-intro:before, .site-intro:after { content: ""; position: absolute; left: 90%; top: 50%; width: 40px; height: 24px; background: url(../images/cloud.png) no-repeat; background-size: 200%; opacity: .5;}
 .site-intro:after { left: 85%; top: 35%; background-position: 0 bottom;}
-.site-intro:hover:before { background-position: right 0; opacity: .2;}
-.site-intro:hover:after { background-position: right bottom;  opacity: .2;}
+.site-intro:hover:before { background-position: right 0; opacity: .6;}
+.site-intro:hover:after { background-position: right bottom;  opacity: .6;}
 .site-intro h1 { width: 132px; height: 36px; text-indent: -9999px; background: url(../images/logo.png) no-repeat; background-size: 100%; opacity: .8; -webkit-transition: opacity .2s ease-out;}
 .site-intro h1:hover { opacity: 1;}
 .site-intro h1 a { display: block; height: 100%;}
 .site-intro h2 { display: none;}
 .site-intro .preamble { max-width: 360px;}
 
+.main-wrapper { margin: 0 1.5em; border-radius: 8px; background: rgba(255,255,255,.5);}
 .main-wrapper .site-box { padding: 0;}
 .main-wrapper .site-box .posts, .main-wrapper .site-box div.post { padding: 2em 1.5em 1.5em;}
 .main-wrapper .site-box .posts { padding-bottom: 3em;}
