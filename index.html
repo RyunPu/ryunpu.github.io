@@ -3,12 +3,14 @@ layout: default
 title: 三千止境 | 记录、分享和创造
 ---
 
+<h2 class="title">博客列表</h2>
+
 <ul class="posts">
     {% for post in paginator.posts %}
         <li class="post">
             <div class="title">
                 <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-                <p class="meta">{{ post.date | date_to_string }}</p>
+                <p class="meta">{{ post.date | date:"%b %d, %Y" }}</p>
             </div>
 
             <div class="excerpt">
@@ -27,16 +29,21 @@ title: 三千止境 | 记录、分享和创造
 <div class="pagination-wrapper">
     <div class="pagination">
         {% if paginator.previous_page %}
-            <a class="prev" title="prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;prev</a>
+            <a class="prev" title="Prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;prev</a>
         {% else %}
-            <span class="prev" title="prev">&laquo;prev</span>
+            <span class="prev" title="Prev">&laquo;prev</span>
         {% endif %}
 
         {% if paginator.next_page %}
-            <a class="next" title="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">next&raquo;</a>
+            <a class="next" title="Next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">next&raquo;</a>
         {% else %}
-            <span class="next" title="next">next&raquo;</span>
+            <span class="next" title="Next">next&raquo;</span>
         {% endif %}
     </div>
 </div>
 {% endif %}
+
+<div class="nav">
+    <h2 class="title">博客导航</h2>
+    <p><a href="/archive" title="Archived articles">Archive</a></p>
+</div>

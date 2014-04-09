@@ -1,0 +1,22 @@
+---
+layout: default
+title: 三千止境 | 记录、分享和创造
+---
+
+<h2 class="title">归档列表</h2>
+
+<ul class="archive">
+    {% for post in site.posts %}
+        {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
+        {% if year != y %}
+            {% assign year = y %}
+            <li class="year"><h3>{{ y }}</h3></li>
+        {% endif %}
+        <li>
+            <p>
+                <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+            </p>
+        </li>
+    {% endfor %}
+</ul>
