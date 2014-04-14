@@ -28,4 +28,4 @@ function detectMobile(mobileType){
 
 see also: <a href="https://github.com/hgoebl/mobile-detect.js" target="_blank">mobile-detect</a>
 
-<script>console.log(detectMobile(), detectMobile('phone'), detectMobile('tablet'))</script>
+<script>document.write(detectMobile(), detectMobile('phone'), detectMobile('tablet'))</script>
