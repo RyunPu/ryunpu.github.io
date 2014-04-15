@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "关于viewport元标签的使用"
+date:   2014-04-06
+categories: HTML
+---
+
+当你针对移动端做如下的优化时，不要忘记initial-scale的使用，个人不建议禁用缩放：
+
+```html
+<meta name="viewport" content="width=device-width,initial-scale=1">
+```
+
+see more: <a href="https://developer.mozilla.org/zh-CN/docs/Mobile/Viewport_meta_tag" target="_blank">mozilla docs</a>

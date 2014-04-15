@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Git的安装</title>
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/syntax.css">
+        <link rel="icon" type="image/png" href="/images/favicon.png" />
+        <script src="/js/jquery-1.7.2.min.js"></script>
+        <script src="/js/common.js"></script>
+        <script src="/js/jquery.stickyfooter.min.js"></script>
+    </head>
+
+    <body>
+        <div class="wrapper clearfix">
+            <div class="site-intro">
+                <div class="header clearfix">
+                    <h1><a href="/" title="Home">三千止境的个人博客</a></h1>
+                    <h2>记录有趣的人事物，分享可重用的技术</h2>
+                </div>
+
+                <div class="preamble site-box">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+            </div>
+
+            <div class="main-wrapper">
+                <div class="site-box">
+                    <h2 class="title">文章正文</h2>
+
+<div class="post">
+    <div class="title">
+        <h4>Git的安装</h4>
+        <p class="meta">Mar 20, 2014</p>
+    </div>
+
+    <p>当你想升级系统自带的Git的时候，可以使用下面的命令查看其所在的目录：</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">which git
+</code></pre></div>
+<p>当你看到类似’/user/bin‘的地址时，你可能需要更改用户目录下的隐藏文件.bash_profile，添加：</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">export PATH=/usr/local/bin:$PATH
+</code></pre></div>
+<p>然后，你就可以安装和更新Git了，我使用的是Homebrew：</p>
+
+<!-- more -->
+<div class="highlight"><pre><code class="text language-text" data-lang="text">ruby -e &quot;$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)&quot;
+</code></pre></div>
+<p>then:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">brew install git
+</code></pre></div>
+<p>then:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">brew upgrade git
+</code></pre></div>
+</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer s-stickyfooter">
+            <div>
+                <p>Hosted by <a href="https://github.com/moamaoa/moamaoa.github.com" target="_blank">GitHub</a> and powered by <a href="http://github.com/mojombo/jekyll" target="_blank">Jekyll</a></p>
+                <p>moamaoa@gmail.com</p>
+            </div>
+        </div>
+    </body>
+</html>

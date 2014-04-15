@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Detect mobile devices</title>
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/syntax.css">
+        <link rel="icon" type="image/png" href="/images/favicon.png" />
+        <script src="/js/jquery-1.7.2.min.js"></script>
+        <script src="/js/common.js"></script>
+        <script src="/js/jquery.stickyfooter.min.js"></script>
+    </head>
+
+    <body>
+        <div class="wrapper clearfix">
+            <div class="site-intro">
+                <div class="header clearfix">
+                    <h1><a href="/" title="Home">三千止境的个人博客</a></h1>
+                    <h2>记录有趣的人事物，分享可重用的技术</h2>
+                </div>
+
+                <div class="preamble site-box">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+            </div>
+
+            <div class="main-wrapper">
+                <div class="site-box">
+                    <h2 class="title">文章正文</h2>
+
+<div class="post">
+    <div class="title">
+        <h4>Detect mobile devices</h4>
+        <p class="meta">Mar 31, 2014</p>
+    </div>
+
+    <p>simply using the function below(not suggested):</p>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="kd">function</span> <span class="nx">detectMobile</span><span class="p">(</span><span class="nx">deviceType</span><span class="p">){</span>
+    <span class="kd">var</span> <span class="nx">ua</span> <span class="o">=</span> <span class="nx">navigator</span><span class="p">.</span><span class="nx">userAgent</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">();</span>
+    <span class="kd">var</span> <span class="nx">isPhone</span> <span class="o">=</span> <span class="sr">/iphone|ipod|android|phone|opera mobi|opera mini|ucbrowser|ucweb|iemobile|nokia|symbian|symbianos|blackBerry|palm|smartphone/i</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">ua</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">isTablet</span> <span class="o">=</span> <span class="sr">/ipad|android 3|tablet|playbook|xoom|kindle/i</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">ua</span><span class="p">);</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="nx">deviceType</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">switch</span> <span class="p">(</span><span class="nx">deviceType</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">case</span> <span class="s1">&#39;phone&#39;</span><span class="o">:</span>
+                <span class="k">return</span> <span class="nx">isPhone</span><span class="p">;</span>
+            <span class="k">case</span> <span class="s1">&#39;tablet&#39;</span><span class="o">:</span>
+                <span class="k">return</span> <span class="nx">isTablet</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="p">(</span><span class="nx">isPhone</span> <span class="o">||</span> <span class="nx">isTablet</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>see also: <a href="https://github.com/hgoebl/mobile-detect.js" target="_blank">mobile-detect</a></p>
+
+</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer s-stickyfooter">
+            <div>
+                <p>Hosted by <a href="https://github.com/moamaoa/moamaoa.github.com" target="_blank">GitHub</a> and powered by <a href="http://github.com/mojombo/jekyll" target="_blank">Jekyll</a></p>
+                <p>moamaoa@gmail.com</p>
+            </div>
+        </div>
+    </body>
+</html>

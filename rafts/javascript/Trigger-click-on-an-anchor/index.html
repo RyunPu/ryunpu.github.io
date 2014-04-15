@@ -2,9 +2,9 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
+        <title>Trigger click on an anchor</title>
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/syntax.css">
         <link rel="icon" type="image/png" href="/images/favicon.png" />
@@ -17,7 +17,7 @@
         <div class="wrapper clearfix">
             <div class="site-intro">
                 <div class="header clearfix">
-                    <h1><a href="/" title="Home">{{ site.name }}</a></h1>
+                    <h1><a href="/" title="Home">三千止境的个人博客</a></h1>
                     <h2>记录有趣的人事物，分享可重用的技术</h2>
                 </div>
 
@@ -26,7 +26,20 @@
 
             <div class="main-wrapper">
                 <div class="site-box">
-                    {{ content }}
+                    <h2 class="title">文章正文</h2>
+
+<div class="post">
+    <div class="title">
+        <h4>Trigger click on an anchor</h4>
+        <p class="meta">Apr 02, 2014</p>
+    </div>
+
+    <div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="nx">click</span><span class="p">();</span>
+</code></pre></div>
+<p>with <a href="http://jquery.com/" target="_blank">jQuery</a>, you can use:</p>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="nx">click</span><span class="p">();</span>
+</code></pre></div>
+</div>
                 </div>
             </div>
         </div>

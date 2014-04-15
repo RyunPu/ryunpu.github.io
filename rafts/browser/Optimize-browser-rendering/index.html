@@ -2,9 +2,9 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
+        <title>Optimize browser rendering</title>
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/syntax.css">
         <link rel="icon" type="image/png" href="/images/favicon.png" />
@@ -17,7 +17,7 @@
         <div class="wrapper clearfix">
             <div class="site-intro">
                 <div class="header clearfix">
-                    <h1><a href="/" title="Home">{{ site.name }}</a></h1>
+                    <h1><a href="/" title="Home">三千止境的个人博客</a></h1>
                     <h2>记录有趣的人事物，分享可重用的技术</h2>
                 </div>
 
@@ -26,7 +26,25 @@
 
             <div class="main-wrapper">
                 <div class="site-box">
-                    {{ content }}
+                    <h2 class="title">文章正文</h2>
+
+<div class="post">
+    <div class="title">
+        <h4>Optimize browser rendering</h4>
+        <p class="meta">Mar 27, 2014</p>
+    </div>
+
+    <ul>
+<li><p>Use efficient CSS selectors</p></li>
+<li><p>Avoid CSS expressions</p></li>
+<li><p>Put CSS in the document head</p></li>
+<li><p>Specify image dimensions</p></li>
+<li><p>Specify a character set</p></li>
+</ul>
+
+<p>see more: <a href="https://developers.google.com/speed/docs/best-practices/rendering?csw=1" target="_blank">google docs</a></p>
+
+</div>
                 </div>
             </div>
         </div>

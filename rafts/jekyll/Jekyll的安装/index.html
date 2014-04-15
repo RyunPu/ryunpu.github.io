@@ -2,9 +2,9 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
+        <title>Jekyll的安装</title>
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/syntax.css">
         <link rel="icon" type="image/png" href="/images/favicon.png" />
@@ -17,7 +17,7 @@
         <div class="wrapper clearfix">
             <div class="site-intro">
                 <div class="header clearfix">
-                    <h1><a href="/" title="Home">{{ site.name }}</a></h1>
+                    <h1><a href="/" title="Home">三千止境的个人博客</a></h1>
                     <h2>记录有趣的人事物，分享可重用的技术</h2>
                 </div>
 
@@ -26,7 +26,20 @@
 
             <div class="main-wrapper">
                 <div class="site-box">
-                    {{ content }}
+                    <h2 class="title">文章正文</h2>
+
+<div class="post">
+    <div class="title">
+        <h4>Jekyll的安装</h4>
+        <p class="meta">Mar 19, 2014</p>
+    </div>
+
+    <p>初次安装Jekyll，出现‘Failed to build gem native extension’的报错，花了不少时间寻找问题的答案，关键在于升级你的Ruby版本，建议使用RVM或者Rbenv，我使用的是RVM：</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">\curl -sSL https://get.rvm.io | bash -s stable
+</code></pre></div>
+<p>完成这步剩下的直接OK，如果还有问题可以参考<a href="http://jekyllrb.com/docs/troubleshooting/" target="_blank">Jekyll troubleshooting</a></p>
+
+</div>
                 </div>
             </div>
         </div>

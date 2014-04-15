@@ -2,9 +2,9 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
+        <title>Sublime osx command line setup</title>
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/syntax.css">
         <link rel="icon" type="image/png" href="/images/favicon.png" />
@@ -17,7 +17,7 @@
         <div class="wrapper clearfix">
             <div class="site-intro">
                 <div class="header clearfix">
-                    <h1><a href="/" title="Home">{{ site.name }}</a></h1>
+                    <h1><a href="/" title="Home">三千止境的个人博客</a></h1>
                     <h2>记录有趣的人事物，分享可重用的技术</h2>
                 </div>
 
@@ -26,7 +26,23 @@
 
             <div class="main-wrapper">
                 <div class="site-box">
-                    {{ content }}
+                    <h2 class="title">文章正文</h2>
+
+<div class="post">
+    <div class="title">
+        <h4>Sublime osx command line setup</h4>
+        <p class="meta">Mar 25, 2014</p>
+    </div>
+
+    <p>with Sublime Text2, you can run:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">ln -s &quot;/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl&quot; ~/bin/subl
+</code></pre></div>
+<p>with Sublime Text3, you can run:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">ln -s &quot;/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl&quot; ~/bin/subl
+</code></pre></div>
+<p>see more: <a href="http://www.sublimetext.com/docs/3/osx_command_line.html" target="_blank">sublimetext docs</a></p>
+
+</div>
                 </div>
             </div>
         </div>
