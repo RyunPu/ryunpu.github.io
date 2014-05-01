@@ -11,4 +11,6 @@ categories: HTML
 <meta name="viewport" content="width=device-width,initial-scale=1">
 ```
 
+note: you may need to set 'content="width=1000">' in iPad
+
 see more: <a href="https://developer.mozilla.org/zh-CN/docs/Mobile/Viewport_meta_tag" target="_blank">mozilla docs</a>
