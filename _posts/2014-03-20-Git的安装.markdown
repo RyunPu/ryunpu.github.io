@@ -7,7 +7,7 @@ categories: Git
 
 当你想升级系统自带的Git的时候，可以使用下面的命令查看其所在的目录：
 
-    which git
+    $ which git
 
 当你看到类似’/user/bin‘的地址时，你可能需要更改用户目录下的隐藏文件.bash_profile，添加：
 
@@ -17,12 +17,14 @@ categories: Git
 
 <!-- more -->
 
-    ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+```
+$ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+```
 
-then:
+```
+$ brew install git
+```
 
-    brew install git
-
-then:
-
-    brew upgrade git
+```
+$ brew upgrade git
+```
