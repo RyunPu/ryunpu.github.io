@@ -47,7 +47,7 @@ li { list-style: none;}
 :focus { outline: 0}
 
 html, body { min-height: 100%;}
-body { font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif; color: #333; background: #FFF -webkit-linear-gradient(#A0B8BE 0%, #fff 40%);}
+body { font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif; color: #333; background: #FFF -webkit-linear-gradient(#A0B8BE 0%, #fff 80%);}
 input, textarea, select, button { font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif; color: #000;}
 a { color: #333;}
 a:hover { color: #333; text-decoration: underline;}
@@ -103,11 +103,11 @@ h2.title { display: none;}
 
 .posts .post { margin-bottom: 2em; padding-bottom: 1em;}
 .posts .post:last-child { margin-bottom: 0;}
-.post .title { margin-bottom: 1em;}
+.post .title { position: relative; margin-bottom: 1em;}
 .post .title h4 { padding-right: 35px; font-size: 18px; word-spacing: .1em;}
 .post .title .meta { margin: 0; color: #5F6860;}
-.post .title .comment { margin: -18px 0 0 0; text-align: right;}
-.post .title .comment a { position: relative; top: -24px; display: inline-block; width: 30px; height: 20px; line-height: 20px; text-align: center; text-decoration: none; color: #ccc; background: url(../images/comment.png) no-repeat; background-size: 100%; font-family: cursive;}
+.post .title .comment { margin: 0;}
+.post .title .comment a { position: absolute; top: .5em; right: -.5em; display: inline-block; width: 30px; height: 20px; line-height: 20px; text-align: center; text-decoration: none; color: #ccc; background: url(../images/comment.png) no-repeat; background-size: 100%; font-family: cursive;}
 .post p { margin: .5em 0; word-spacing: .1em;}
 .post p a { text-decoration: underline;}
 .post p.more { text-align: right;}
@@ -126,3 +126,9 @@ div.highlight .nc { color: #D17F7F;}
 
 /* comments */
 #disqus_thread { margin-top: 5em;}
+
+/* only show title */
+.main-wrapper .site-box ul.posts { padding-left: 0; padding-right: 0;}
+.main-wrapper .site-box ul.posts .post { margin-bottom: 0; padding-left: 1.5em; padding-right: 1.5em; padding-top: 10px; padding-bottom: 10px; background: #f5f5f5;}
+.main-wrapper .site-box ul.posts .post:nth-of-type(2n) { background: rgb(234,234,234);}
+.main-wrapper .site-box ul.posts .post .title { margin-bottom: 0;}

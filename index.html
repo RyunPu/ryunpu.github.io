@@ -13,15 +13,6 @@ title: 三千止境 | 记录、分享和创造
                 <p class="meta">{{ post.date | date:"%b %d, %Y" }} </p>
                 <p class="comment"><a title="Comments" href="{{ post.url }}#disqus_thread">0</a></p>
             </div>
-
-            <div class="excerpt">
-                {% if post.content contains '<!-- more -->' %}
-                    {{ post.content | split:'<!-- more -->' | first }}
-                    <p class="more"><a href="{{ post.url }}">Read More &raquo;</a></p>
-                {% else %}
-                    {{ post.content }}
-                {% endif %}
-            </div>
         </li>
     {% endfor %}
 </ul>
