@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "移动端页面布局注意事项"
+date:   2014-04-16
+categories: CSS
+---
+
+* 完全自适应的布局可以设置viewport为：
+
+```html
+<meta name="viewport" content="width=device-width">
+```
+
+* 指定具体宽度时如考虑较小分辨的设备，可按设计宽度的一半设置viewport如：
+
+```html
+<meta name="viewport" content="width=320">
+```
+
+* 指定具体宽度时不考虑较小分辨的设备，直接按设计宽度设置viewport如：
+
+```html
+<meta name="viewport" content="width=640">
+```
+
+* 字体单位建议使用rem
