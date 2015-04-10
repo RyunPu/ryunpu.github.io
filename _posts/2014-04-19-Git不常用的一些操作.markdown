@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Git不常用的一些操作"
+date:   2014-04-19
+categories: Git
+---
+
+Git忽略已跟踪文件的改动：
+
+```
+$ git update-index --assume-unchanged /path/to/file
+```

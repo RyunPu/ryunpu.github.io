@@ -2,7 +2,7 @@
 layout: post
 title:  "移动端页面布局注意事项"
 date:   2014-04-16
-categories: CSS
+categories: Web
 ---
 
 * 完全自适应的布局可以设置viewport为：
@@ -24,3 +24,11 @@ categories: CSS
 ```
 
 * 字体单位建议使用rem
+
+* 注意overflow:hidden对布局的影响（特别是在body上使用时）
+
+* 建议用js触发链接的跳转
+
+* 适时的使用懒加载与加载提示
+
+* 适配另一种情况或做出简单的引导提示（比如竖屏转横屏）
