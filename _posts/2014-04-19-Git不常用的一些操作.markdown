@@ -5,8 +5,14 @@ date:   2014-04-19
 categories: Git
 ---
 
-Git忽略已跟踪文件的改动：
+忽略已跟踪文件的改动：
 
 ```
 $ git update-index --assume-unchanged /path/to/file
+```
+
+用代码库中的文件完全覆盖本地：
+
+```
+$ git reset --hard
 ```
