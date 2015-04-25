@@ -27,6 +27,6 @@ categories: Web
 
 * Measure how long something takes using ```console.time('xxx')```, to end the measurement call ```console.timeEnd('xxx')```
 
-
+*
 
 see more: <a href="https://developer.chrome.com/devtools" target="_blank">Chrome DevTools</a>, <a href="https://developer.chrome.com/devtools/docs/shortcuts" target="_blank">learning the shortcuts</a>
