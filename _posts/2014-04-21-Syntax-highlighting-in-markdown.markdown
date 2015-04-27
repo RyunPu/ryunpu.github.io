@@ -5,6 +5,8 @@ date:   2014-04-21
 categories: Markdown
 ---
 
+Here's a full list of supported languages:
+
 * Cucumber ('*.feature')
 
 * abap ('*.abap')
