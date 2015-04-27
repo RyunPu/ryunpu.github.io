@@ -11,7 +11,7 @@ categories: Web
 
 * Search across all script, stylesheet and snippet files using ```Ctrl/Cmd+O```
 
-* Search across all of the files loaded for a page for a particular string using ```Ctrl+Shift+F``` (or ```Cmd+Opt+C``` on Mac)
+* Search across all of the files loaded for a page for a particular string using ```Ctrl/Cmd+Opt+F``` on Mac)
 
 * Navigate to (or search for) specific JavaScript functions or CSS rules within a file using ```Ctrl/Cmd+Shift+O```
 
@@ -27,6 +27,14 @@ categories: Web
 
 * Measure how long something takes using ```console.time('xxx')```, to end the measurement call ```console.timeEnd('xxx')```
 
-*
+* Use the ```$_``` helper will allow you to access the last console result
 
-see more: <a href="https://developer.chrome.com/devtools" target="_blank">Chrome DevTools</a>, <a href="https://developer.chrome.com/devtools/docs/shortcuts" target="_blank">learning the shortcuts</a>
+* You can choose one of :active, :hover, :focus or :visited to force the element into one of these states
+
+* You can replay any XHR (POST or GET) by right-clicking on the request to display the context-menu then selecting “Replay XHR”
+
+* Right-click/Ctrl-click anywhere in Network panel and select Clear Browser Cache/Network Cache from context menu
+
+* You can enable ‘Disable cache’ to invalidate the disk cache. This is great for developing, but the DevTools must be visible/open for this to work
+
+see more: <a href="https://developer.chrome.com/devtools" target="_blank">Chrome DevTools</a>
