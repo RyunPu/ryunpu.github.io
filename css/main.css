@@ -96,7 +96,7 @@ body.night .footer:before { opacity: .8;}
 .footer a { text-decoration: underline; color: #AAA;}
 
 /* posts */
-.post pre { padding: 1em; background-color: #363636; border-radius: 3px; margin: 1em 0; white-space: pre-wrap; }
+.post pre { padding: 1em; background-color: rgba(192, 224, 247, .1); border-radius: 3px; margin: 1em 0; white-space: pre-wrap; }
 .post ul li, .post ol li { list-style-type: disc; list-style-position: inside; }
 .post ul li li, .post ol li li { padding-left: 1em; font-size: smaller; color: #444; list-style-type: circle;}
 .post code { padding: 0 .2em; border-radius: 2px; background-color: #C5DBC7; }
@@ -127,6 +127,8 @@ body.night .footer:before { opacity: .8;}
 /* highlight */
 div.highlight .nt { color: #A7A576;}
 div.highlight .nc { color: #D17F7F;}
+div.highlight code.bash { position: relative; padding-left: 1.2em;}
+div.highlight code.bash::before { content: '$'; position: absolute; left: 0; right: 0; color: #008080;}
 
 /* comments */
 #disqus_thread { margin-top: 5em;}

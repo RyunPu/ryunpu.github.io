@@ -7,20 +7,20 @@ categories: Mac
 
 just follow the steps:
 
-```
-$ hdiutil convert -format UDRW -o destination_file.img source_file.iso
-```
-
-```
-$ diskutil list
+```bash
+hdiutil convert -format UDRW -o destination_file.img source_file.iso
 ```
 
-```
-$ diskutil partitionDisk /dev/disk2 1 "Free Space" "unused" "100%"
+```bash
+diskutil list
 ```
 
+```bash
+diskutil partitionDisk /dev/disk2 1 "Free Space" "unused" "100%"
 ```
-$ dd if=destination_file.img.dmg of=/dev/disk2 bs=1m
+
+```bash
+dd if=destination_file.img.dmg of=/dev/disk2 bs=1m
 ```
 
 note: 'disk2' is your USB, you may need to use 'sudo dd'
