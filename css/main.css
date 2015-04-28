@@ -96,7 +96,7 @@ body.night .footer:before { opacity: .8;}
 .footer a { text-decoration: underline; color: #AAA;}
 
 /* posts */
-.post pre { padding: 1em; background-color: rgba(247, 219, 192, .1); border-radius: 3px; margin: 1em 0; white-space: pre-wrap; }
+.post pre { padding: 1em; background-color: rgba(7, 23, 29, 0.8); border-radius: 3px; margin: 1em 0; white-space: pre-wrap; }
 .post ul li, .post ol li { list-style-type: disc; list-style-position: inside; }
 .post ul li li, .post ol li li { padding-left: 1em; font-size: smaller; color: #444; list-style-type: circle;}
 .post code { padding: 0 .2em; border-radius: 2px; background-color: #FFFFFF; }
@@ -112,7 +112,7 @@ body.night .footer:before { opacity: .8;}
 .post .title .meta { margin: 0; color: #5F6860;}
 .post .title .comment { margin: 0;}
 .post .title .comment a { position: absolute; top: .5em; right: -.5em; display: inline-block; width: 30px; height: 20px; line-height: 20px; text-align: center; text-decoration: none; color: #ccc; background: url(../images/comment.png) no-repeat; background-size: 100%; font-family: cursive;}
-.post p { margin: .5em 0; word-spacing: .1em;}
+.post p { margin: .8em 0; word-spacing: .1em;}
 .post p a { text-decoration: underline;}
 .post p.more { text-align: right;}
 .post p.more a { display: inline-block; font-size: 10px; -webkit-transform:scale(.875); text-decoration: none;}
@@ -121,7 +121,7 @@ body.night .footer:before { opacity: .8;}
 /* archive */
 .archive { padding: 2em 1.5em 3em;}
 .archive .year h3 { font-size: larger; line-height: 2;}
-.archive p { margin: .5em 0; word-spacing: .1em;}
+.archive p { margin: .8em 0; word-spacing: .1em;}
 .archive time { margin-right: 1em; color: #666;}
 
 /* highlight */
@@ -138,3 +138,5 @@ div.highlight code.language-bash::before { content: '$'; position: absolute; lef
 .main-wrapper .site-box ul.posts .post { margin-bottom: 0; padding-left: 1.5em; padding-right: 1.5em; padding-top: 10px; padding-bottom: 10px; background: #f5f5f5;}
 .main-wrapper .site-box ul.posts .post:nth-of-type(2n) { background: rgb(234,234,234);}
 .main-wrapper .site-box ul.posts .post .title { margin-bottom: 0;}
+
+.post p + h3 { margin-top: 1.5em;}
