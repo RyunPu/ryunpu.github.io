@@ -153,4 +153,10 @@ change ownership:
 chown
 ```
 
+create a zip file:
+
+```bash
+zip -r filename *
+```
+
 see more: <a href="http://cli.learncodethehardway.org/book/" target="_blank">The Command Line Crash Course</a>, <a href="http://cli.learncodethehardway.org/bash_cheat_sheet.pdf" target="_blank">Linux Bash Shell Cheat Sheet</a>, <a href="http://ss64.com/bash/chmod.html">chmod</a>
