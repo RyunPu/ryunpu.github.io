@@ -82,7 +82,7 @@ h2.title { display: none;}
 .site-intro h2 { display: none;}
 .site-intro .preamble { max-width: 360px;}
 
-.main-wrapper { margin: 0 1.5em; padding-bottom: 1em; border-radius: 8px; background: rgba(255,255,255,.8);}
+.main-wrapper { margin: 0 1.5em; padding-bottom: 1em; border-radius: 8px; background: rgba(255,255,255,0.8);}
 .main-wrapper .site-box { padding: 0;}
 .main-wrapper .site-box .posts, .main-wrapper .site-box div.post { padding: 2em 1.5em 1.5em;}
 .main-wrapper .site-box .posts { padding-bottom: 1em;}
@@ -96,11 +96,11 @@ body.night .footer:before { opacity: .8;}
 .footer a { text-decoration: underline; color: #AAA;}
 
 /* posts */
-.post pre { padding: 1em; background-color: rgba(7, 23, 29, 0.8); border-radius: 3px; margin: 1em 0; white-space: pre-wrap; }
+.post pre { padding: 1em; background-color: rgba(255,255,255,1); border-radius: 3px; margin: 1em 0; white-space: pre-wrap; }
 .post ul li, .post ol li { list-style-type: disc; list-style-position: inside; }
 .post ul li li, .post ol li li { padding-left: 1em; font-size: smaller; color: #444; list-style-type: circle;}
 .post code { padding: 0 .2em; border-radius: 2px; background-color: #FFFFFF; }
-.post pre code { border: 0; word-break: break-all; background: none; color: #B3C9B3; }
+.post pre code { border: 0; word-break: break-all; background: none; color: #408141; }
 .post pre.terminal { border: 1px solid #000; background-color: #333; color: #FFF; }
 .post pre.terminal code { background-color: #333 }
 .highlight { background: #ffffff; }
@@ -134,7 +134,7 @@ div.highlight code.language-bash::before { content: '$'; position: absolute; lef
 #disqus_thread { margin-top: 5em;}
 
 /* only show title */
-.main-wrapper .site-box ul.posts { padding-left: 0; padding-right: 0;}
+.main-wrapper .site-box ul.posts { padding-left: 0; padding-right: 0; background: linear-gradient(rgba(60, 128, 115, 0.8) 2em, rgba(255,255,255,.8) 4em, rgba(255,255,255,0) 100%); border-radius: 8px 8px 0 0;}
 .main-wrapper .site-box ul.posts .post { margin-bottom: 0; padding-left: 1.5em; padding-right: 1.5em; padding-top: 10px; padding-bottom: 10px; background: #f5f5f5;}
 .main-wrapper .site-box ul.posts .post:nth-of-type(2n) { background: rgb(234,234,234);}
 .main-wrapper .site-box ul.posts .post .title { margin-bottom: 0;}
