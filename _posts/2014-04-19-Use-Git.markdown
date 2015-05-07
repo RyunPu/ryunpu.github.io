@@ -1,0 +1,205 @@
+---
+layout: post
+title:  "Use Git"
+date:   2014-04-19
+categories: Git
+---
+
+Getting Help:
+
+```bash
+git help <verb>
+```
+
+Your Configure:
+
+```bash
+git config --list
+```
+```bash
+git config --global user.name "[name]"
+```
+```bash
+git config --global user.email "[email address]"
+```
+```bash
+git config --global user.name "[another name]"
+```
+
+Getting a Git Repository:
+
+```bash
+git init [project-name]
+```
+```bash
+git clone [url] [project-name]
+```
+
+Ignoring Files:
+
+```
+# no .a files
+*.a
+# but do track lib.a, even though you're ignoring .a files above
+!lib.a
+# only ignore the root TODO file, not subdir/TODO
+/TODO
+# ignore all files in the build/ directory
+build/
+# ignore doc/notes.txt, but not doc/server/arch.txt
+doc/*.txt
+# ignore all .txt files in the doc/ directory
+doc/**/*.txt
+```
+
+Checking the Status of Your Files:
+
+```bash
+git status
+```
+
+Tracking New Files:
+
+```bash
+git add [file]
+```
+```bash
+git add .
+```
+
+Viewing Your Staged and Unstaged Changes:
+
+```bash
+git diff
+```
+```bash
+git diff --staged
+```
+
+Committing Your Changes:
+
+```bash
+git commit -m "[descriptive message]"
+```
+```bash
+git commit -a -m "[descriptive message]"
+```
+
+Removing Files:
+
+```bash
+git rm [file]
+```
+```bash
+git rm --cached [file]
+```
+```bash
+git mv [file-original] [file-renamed]
+```
+
+Viewing the Commit History:
+
+```bash
+git log
+```
+```bash
+ git log --follow [file]
+```
+```bash
+git log -p -2
+```
+```bash
+git log --pretty=format:"%h - %an, %ar : %s"
+```
+```bash
+git log --pretty="%h - %s" --author=gitster --since="2008-10-01" --before="2008-11-01" --no-merges -- directory/
+```
+```bash
+git show [commit]
+```
+```bash
+git diff [first-branch]...[second-branch]
+```
+
+Undoing Things:
+
+```bash
+git commit --amend
+```
+```bash
+git unstage <file>
+```
+```bash
+git reset --hard HEAD~1
+```
+```bash
+git checkout -- <file>
+```
+
+Working with Remotes:
+
+```bash
+git remote -v
+```
+```bash
+git remote add [bookmark] [url]
+```
+```bash
+git fetch [bookmark]
+```
+```bash
+git merge [bookmark]/[branch]
+```
+```bash
+git push [alias] [branch]
+```
+```bash
+git pull
+```
+
+Basic Branching and Merging:
+
+```bash
+git branch
+```
+```bash
+git branch [branch-name]
+```
+```bash
+git checkout [branch-name]
+```
+```bash
+git checkout -b [branch-name]
+```
+```bash
+git merge [branch-name]
+```
+```bash
+git branch --no-merged
+```
+```bash
+git branch -d [branch-name]
+```
+```bash
+git checkout -b [branch-name] origin/[branch-name]
+```
+```bash
+git push origin :[branch-name]
+```
+
+Stashing and Cleaning:
+
+```bash
+ git stash
+```
+```bash
+git stash pop
+```
+```bash
+git stash list
+```
+```bash
+git stash drop
+```
+
+see more: <a href="http://git-scm.com/book" target="_blank">Pro Git book</a>, <a href="https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf" target="_blank">GIT CHEAT SHEET</a>
