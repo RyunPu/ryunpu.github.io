@@ -127,6 +127,12 @@ Undoing Things:
 git commit --amend
 ```
 ```bash
+git reset --soft HEAD^
+```
+```bash
+git commit -a -c ORIG_HEAD
+```
+```bash
 git unstage <file>
 ```
 ```bash
