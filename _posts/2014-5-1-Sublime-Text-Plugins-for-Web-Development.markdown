@@ -60,3 +60,5 @@ categories: Sublime
 * <a href="https://github.com/skuroda/FindKeyConflicts" target="_blank">FindKeyConflicts</a>
 
 * <a href="https://github.com/colinta/SublimeFileDiffs" target="_blank">FileDiffs</a>
+
+* <a href="https://github.com/reactjs/sublime-react" target="_blank">reactjs</a>
