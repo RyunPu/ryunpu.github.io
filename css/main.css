@@ -85,11 +85,16 @@ h2.title { display: none;}
 .main-wrapper { margin: 0 1.5em; padding-bottom: 1em; border-radius: 8px; background: rgba(255,255,255,0.8);}
 .main-wrapper .site-box { padding: 0;}
 .main-wrapper .site-box .posts, .main-wrapper .site-box div.post { padding: 2em 1.5em 1.5em;}
+.main-wrapper .site-box div.post { padding-bottom: 0;}
 .main-wrapper .site-box .posts { padding-bottom: 1em;}
 
 .nav { text-align: center;}
+.nav h2 + p { font-family: "Annie Use Your Telescope", cursive;}
+.post .nav h2 + p { margin: 0;}
+.post .nav h2 + p a { text-decoration: none;}
+.post .nav h2 + p a:hover { text-decoration: underline;}
 
-.footer { position: relative; width: 100%; height: 100px; padding-top: 50px; text-align: center; color: #999; background: url(../images/footer-bgr.png) 0 bottom repeat-x; background-size: auto 100px;}
+.footer { position: relative; width: 100%; height: 100px; padding-top: 50px; font-family: "Annie Use Your Telescope", cursive; text-align: center; color: #999; background: url(../images/footer-bgr.png) 0 bottom repeat-x; background-size: auto 100px;}
 .footer:before { content: ""; position: absolute; left: 0; top: 12px; width: 100%; height: 138px; background: url(../images/footer-bg.png) no-repeat; background-size: auto 100%;}
 body.night .footer:before { opacity: .8;}
 .footer div { position: relative; z-index: 9; padding-top: 48px;}
@@ -118,11 +123,11 @@ body.night .footer:before { opacity: .8;}
 .post p.more a { display: inline-block; font-size: 10px; -webkit-transform:scale(.875); text-decoration: none;}
 .post p.more a:hover { text-decoration: underline;}
 
-/* archive */
-.archive { padding: 2em 1.5em 3em;}
-.archive .year h3 { font-size: larger; line-height: 2;}
-.archive p { margin: .8em 0; word-spacing: .1em;}
-.archive time { margin-right: 1em; color: #666;}
+/* archive, category */
+.archive, .category { padding: 2em 1.5em 3em;}
+.archive .year h3, .category h3 { font-size: larger; line-height: 2;}
+.archive p, .category p { margin: .8em 0; word-spacing: .1em;}
+.archive time, .category time { margin-right: 1em; color: #666;}
 
 /* highlight */
 div.highlight .nt { color: #A7A576;}
@@ -131,7 +136,7 @@ div.highlight code.language-bash { position: relative; padding-left: 1.2em;}
 div.highlight code.language-bash::before { content: '$'; position: absolute; left: 0; right: 0; color: #008080;}
 
 /* comments */
-#disqus_thread { margin-top: 5em;}
+#disqus_thread { margin-top: 3em;}
 
 /* only show title */
 .main-wrapper .site-box ul.posts { padding-left: 0; padding-right: 0; background: linear-gradient(rgba(60, 128, 115, 0.8) 2em, rgba(255,255,255,.8) 4em, rgba(255,255,255,0) 100%); border-radius: 8px 8px 0 0;}
@@ -145,3 +150,8 @@ tr:nth-child(2n-1) td { background: #fff;}
 .post td code { background: none;}
 
 .post p + h3 { margin-top: 1.5em;}
+.categories { width: 80%; max-width: 960px; margin: 50px auto 0; font-family: "Annie Use Your Telescope", cursive; text-align: center;}
+.categories a { margin-left: 5px; margin-right: 5px;}
+body.night .categories a { color: #aaa;}
+.categories a span { color: #999; font-size: smaller;}
+

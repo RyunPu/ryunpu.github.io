@@ -13,4 +13,25 @@ layout: default
     {{ content }}
 
     {% include disqus.html  %}
+
+    <div class="pagination-wrapper page">
+        <div class="pagination">
+            {% if page.previous %}
+                <a class="prev" title="Prev" href="{{ page.previous.url }}">&laquo;prev</a>
+            {% else %}
+                <span class="prev" title="Prev">&laquo;prev</span>
+            {% endif %}
+
+            {% if page.next %}
+                <a class="next" title="Next" href="{{ page.next.url }}">&laquo;next</a>
+            {% else %}
+                <span class="next" title="Next">&laquo;next</span>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="nav">
+        <h2 class="title">博客导航</h2>
+        <p><a href="/archive" title="Archived articles">Archive</a></p>
+    </div>
 </div>

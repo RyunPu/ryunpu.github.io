@@ -47,7 +47,7 @@ categories: Sublime
 
 * <a href="https://packagecontrol.io/packages/Modific" target="_blank">Modific</a>
 
-* <a href="https://github.com/Benvie/JavaScriptNext.tmLanguage" target="_blank">JavaScriptNext</a>
+* <a href="https://github.com/babel/babel-sublime" target="_blank">babel</a>
 
 * <a href="https://github.com/spadgos/sublime-jsdocs" target="_blank">DocBlockr</a>: Pressing `enter` or `tab` after /** (or ###* for Coffee-Script)
 

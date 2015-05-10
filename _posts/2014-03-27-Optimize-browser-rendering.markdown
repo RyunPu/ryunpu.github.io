@@ -2,7 +2,7 @@
 layout: post
 title:  "Optimize browser rendering"
 date:   2014-03-27
-categories: Browser
+categories: Web
 ---
 
 * Use efficient CSS selectors

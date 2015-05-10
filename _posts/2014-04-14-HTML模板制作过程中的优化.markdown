@@ -2,7 +2,7 @@
 layout: post
 title:  "HTML模板制作过程中的优化"
 date:   2014-04-14
-categories: optimization
+categories: Html
 ---
 
 * 前期的优化

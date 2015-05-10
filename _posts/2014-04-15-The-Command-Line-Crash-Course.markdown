@@ -2,7 +2,7 @@
 layout: post
 title:  "The Command Line Crash Course"
 date:   2014-04-15
-categories: Linux
+categories: Mac
 ---
 
 print working directory:

@@ -1,0 +1,33 @@
+---
+layout: default
+title: 三千止境 | 记录、分享和创造
+---
+
+<h2 class="title">分类列表</h2>
+
+<div class="category"></div>
+    
+<script>
+    (function() {
+        var dataStr = '{ {% for cat in site.categories %}{% if cat[0] != site.categories.first[0] %},{% endif %}"{{ cat[0] }}":[{% for post in cat[1] %}{% if post != cat[1].first %},{% endif %}{"url":"{{post.url}}", "title":"{{post.title}}", "date":"{{post.date | date:"%Y-%m-%d"}}"}{% endfor %}]{% endfor %} }',
+            data = $.parseJSON(dataStr),
+            curTag = location.search.split('cat=')[1].split('&')[0],
+            archieves = data[curTag];
+
+        if (curTag && archieves) {
+            var tpl = '';
+
+            tpl += '<h3>' + curTag + '</h3>';
+            tpl += '<ul>';
+
+            $.each(archieves, function(index, item) {
+                tpl += '<li><p><time>' + item.date + '</time><a href="' + item.url + '" title="' + item.title + '">' + item.title + '</a></p></li>';
+            });
+
+            tpl += '</ul>';
+            $('.category').append(tpl);
+        } else {
+            $('.category').append('Category not found');
+        }
+    })();
+</script>

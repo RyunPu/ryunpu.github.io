@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/syntax.css">
         <link rel="icon" type="image/png" href="/images/favicon.png" />
+        <link href='http://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope' rel='stylesheet' type='text/css'>
         <script src="/js/jquery-1.7.2.min.js"></script>
         <script src="/js/common.js"></script>
         <script src="/js/jquery.stickyfooter.min.js"></script>
@@ -29,6 +30,12 @@
                     {{ content }}
                 </div>
             </div>
+        </div>
+
+        <div class="categories">
+            {% for category in site.categories %}
+                <a href="/category/?cat={{ category | first }}" title="{{ category | first }}">{{ category | first }} <span class="count">({{ category | last | size }})</span></a>
+            {% endfor %}
         </div>
 
         <div class="footer s-stickyfooter">
