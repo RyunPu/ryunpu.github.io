@@ -152,6 +152,6 @@ tr:nth-child(2n-1) td { background: #fff;}
 .post p + h3 { margin-top: 1.5em;}
 .categories { width: 80%; max-width: 960px; margin: 50px auto 0; font-family: "Annie Use Your Telescope", cursive; text-align: center;}
 .categories a { margin-left: 5px; margin-right: 5px;}
-body.night .categories a { color: #aaa;}
+body.night .categories a, body.night .categories a span { color: #aaa;}
 .categories a span { color: #555; font-size: smaller;}
 
