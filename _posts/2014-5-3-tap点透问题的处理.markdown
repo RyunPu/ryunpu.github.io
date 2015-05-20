@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "tap点透问题的处理"
+date:   2014-5-3
+categories: Mobile
+---
+
+* 延迟事件处理(>300ms)：
+
+```js
+$('#mask').on('tap', function() {
+    setTimeout(function() { $('#mask').hide(); }, 400);
+});
+```
+
+* 使用touchstart或touchend：
+
+```js
+$('#mask').on('touchend', function(e) {
+    setTimeout(function() { $('#mask').hide(); }, 300);
+    e.preventDefault();
+});
+```
+
+* 使用<a href="https://github.com/ftlabs/fastclick" target="_blank">fastclick</a>：
+
+```js
+$(function() {
+    FastClick.attach(document.body);
+});
+```
