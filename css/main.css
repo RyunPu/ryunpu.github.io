@@ -118,7 +118,7 @@ body.night .footer:before { opacity: .8;}
 .post .title .comment { margin: 0;}
 .post .title .comment a { position: absolute; top: .5em; right: -.5em; display: inline-block; width: 30px; height: 20px; line-height: 20px; text-align: center; text-decoration: none; color: #ccc; background: url(../images/comment.png) no-repeat; background-size: 100%; font-family: cursive;}
 .post p { margin: .8em 0; word-spacing: .1em;}
-.post p a { text-decoration: underline;}
+.post p a, .post li > a { text-decoration: underline;}
 .post p.more { text-align: right;}
 .post p.more a { display: inline-block; font-size: 10px; -webkit-transform:scale(.875); text-decoration: none;}
 .post p.more a:hover { text-decoration: underline;}
