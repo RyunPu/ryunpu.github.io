@@ -2,7 +2,7 @@
 layout: post
 title:  "移动端页面布局注意事项"
 date:   2014-04-16
-categories: Web
+categories: Mobile
 ---
 
 * 完全自适应的布局可以设置viewport为：
