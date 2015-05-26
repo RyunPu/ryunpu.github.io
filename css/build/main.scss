@@ -1,0 +1,123 @@
+@import "normalize";
+@import "syntax";
+
+$white: white;
+$black: black;
+$baseColor: #333;
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td { margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 { font-size: 100%}
+th { text-align: inherit}
+li { list-style: none;}
+a:focus, input:focus, button:focus, textarea:focus { outline: 0}
+
+html, body { min-height: 100%;}
+body { font: 13px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif; color: $baseColor; background: linear-gradient(135deg, #bccacc 0%, #c7d8d6 26%, #d9ebe0 54%, #ebf9e3 78%, #f4f8d0 100%);}
+body.dawn { background: linear-gradient(135deg, #a7d3cb 0%, #bcc1c4 32%, #e5cab3 59%, #fee6c5 89%, #fdecd0 100%);}
+body.sunset { background: linear-gradient(135deg, #c5d4d7 6%, #d6b98d 34%, #c99262 57%, #8c5962 80%, #43577e 100%);}
+body.night { background: linear-gradient(135deg, #373E44 0%, #17414D 38%, #413E3C 66%, #3F3515 78%, #522C01 100%);}
+input, textarea, select, button { font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif; color: #000;}
+a { color: #333;}
+a:hover { color: #333; text-decoration: underline;}
+a:visited { color: #444;}
+
+.clearfix { zoom: 1;}
+.clearfix:after { display: block; clear: both; height: 0; content: '';}
+
+.wrapper { width: 100%; max-width: 1000px; margin: 0 auto; overflow: hidden;}
+.site-box { padding: 1.5em;}
+h2.title { display: none;}
+
+.pagination-wrapper { font-size: 0; text-align: center;}
+.pagination-wrapper .pagination { display: inline-block;}
+.pagination-wrapper .pagination a, .pagination-wrapper .pagination span { display: inline-block; width: 37px; height: 42px; text-indent: -9999px; background: url(../images/pagination.png) no-repeat; background-size: 200%;}
+.pagination-wrapper .pagination a { text-decoration: none;}
+.pagination-wrapper .pagination .next { background-position: right 0;}
+.pagination-wrapper .pagination span { opacity: .8;}
+
+.header { padding: 3em 0 0 1.5em;}
+.site-intro { position: relative;}
+.site-intro:before, .site-intro:after { content: ""; position: absolute; left: 90%; top: 50%; width: 40px; height: 24px; background: url(../images/cloud.png) no-repeat; background-size: 200%; opacity: .5;}
+.site-intro:after { left: 85%; top: 35%; background-position: 0 bottom;}
+/*.site-intro:hover:before { background-position: right 0; opacity: .6;}
+.site-intro:hover:after { background-position: right bottom;  opacity: .6;}*/
+.site-intro h1 { width: 132px; height: 36px; text-indent: -9999px; background: url(../images/logo.png) no-repeat; background-size: 100%; opacity: .8; -webkit-transition: opacity .2s ease-out;}
+.site-intro h1:hover { opacity: 1;}
+.site-intro h1 a { display: block; height: 100%;}
+.site-intro h2 { display: none;}
+.site-intro .preamble { max-width: 360px;}
+
+.main-wrapper { margin: 0 1.5em; padding-bottom: 1em; border-radius: 8px; background: rgba(255,255,255,0.8);}
+.main-wrapper .site-box { padding: 0;}
+.main-wrapper .site-box .posts, .main-wrapper .site-box div.post { padding: 2em 1.5em 1.5em;}
+.main-wrapper .site-box div.post { padding-bottom: 0;}
+.main-wrapper .site-box .posts { padding-bottom: 1em;}
+
+.nav { text-align: center;}
+.nav h2 + p { font-family: "Annie Use Your Telescope", cursive;}
+.post .nav h2 + p { margin: 0;}
+.post .nav h2 + p a { text-decoration: none;}
+.post .nav h2 + p a:hover { text-decoration: underline;}
+
+.footer { position: relative; width: 100%; height: 100px; padding-top: 50px; font-family: "Annie Use Your Telescope", cursive; text-align: center; color: #999; background: url(../images/footer-bgr.png) 0 bottom repeat-x; background-size: auto 100px;}
+.footer:before { content: ""; position: absolute; left: 0; top: 12px; width: 100%; height: 138px; background: url(../images/footer-bg.png) no-repeat; background-size: auto 100%;}
+body.night .footer:before { opacity: .8;}
+.footer div { position: relative; z-index: 9; padding-top: 48px;}
+.footer a { text-decoration: underline; color: #AAA;}
+
+/* posts */
+.post pre { padding: 1em; background-color: rgba(255,255,255,1); border-radius: 3px; margin: 1em 0; white-space: pre-wrap; }
+.post ul li, .post ol li { list-style-type: disc; list-style-position: inside; }
+.post ul li li, .post ol li li { padding-left: 1em; font-size: smaller; color: #444; list-style-type: circle;}
+.post code { padding: 0 .2em; border-radius: 2px; background-color: #FFFFFF; }
+.post pre code { border: 0; word-break: break-all; background: none; color: #408141; }
+.post pre.terminal { border: 1px solid #000; background-color: #333; color: #FFF; }
+.post pre.terminal code { background-color: #333 }
+.highlight { background: #ffffff; }
+
+.posts .post { margin-bottom: 2em; padding-bottom: 1em;}
+.posts .post:last-child { margin-bottom: 0;}
+.post .title { position: relative; margin-bottom: 1em;}
+.post .title h4 { padding-right: 35px; font-size: 18px; word-spacing: .1em;}
+.post .title .meta { margin: 0; color: #5F6860;}
+.post .title .comment { margin: 0;}
+.post .title .comment a { position: absolute; top: .5em; right: -.5em; display: inline-block; width: 30px; height: 20px; line-height: 20px; text-align: center; text-decoration: none; color: #ccc; background: url(../images/comment.png) no-repeat; background-size: 100%; font-family: cursive;}
+.post p { margin: .8em 0; word-spacing: .1em;}
+.post p a, .post li > a { text-decoration: underline;}
+.post p.more { text-align: right;}
+.post p.more a { display: inline-block; font-size: 10px; -webkit-transform:scale(.875); text-decoration: none;}
+.post p.more a:hover { text-decoration: underline;}
+
+/* archive, category */
+.archive, .category { padding: 2em 1.5em 3em;}
+.archive .year h3, .category h3 { font-size: larger; line-height: 2;}
+.archive p, .category p { margin: .8em 0; word-spacing: .1em;}
+.archive time, .category time { margin-right: 1em; color: #666;}
+
+
+/* highlight */
+div.highlight .nt { color: #A7A576;}
+div.highlight .nc { color: #D17F7F;}
+div.highlight code.language-bash { position: relative; padding-left: 1.2em;}
+div.highlight code.language-bash::before { content: '$'; position: absolute; left: 0; right: 0; color: #008080;}
+
+/* comments */
+#disqus_thread { margin-top: 3em;}
+
+/* only show title */
+.main-wrapper .site-box ul.posts { padding-left: 0; padding-right: 0; background: linear-gradient(rgba(60, 128, 115, 0.8) 2em, rgba(255,255,255,.8) 4em, rgba(255,255,255,0) 100%); border-radius: 8px 8px 0 0;}
+.main-wrapper .site-box ul.posts .post { margin-bottom: 0; padding-left: 1.5em; padding-right: 1.5em; padding-top: 10px; padding-bottom: 10px; background: #f5f5f5;}
+.main-wrapper .site-box ul.posts .post:nth-of-type(2n) { background: rgb(234,234,234);}
+.main-wrapper .site-box ul.posts .post .title { margin-bottom: 0;}
+
+/* table */
+td { padding: 8px 16px; border: 1px solid #e1e4e5; background-color: #f3f6f6;}
+tr:nth-child(2n-1) td { background: #fff;}
+.post td code { background: none;}
+
+.post p + h3 { margin-top: 1.5em;}
+.categories { width: 80%; max-width: 960px; margin: 50px auto 0; font-family: "Annie Use Your Telescope", cursive; text-align: center;}
+.categories a { margin-left: 5px; margin-right: 5px;}
+body.night .categories a, body.sunset .categories a { color: #D8D8D8;}
+body.night .categories a span, body.sunset .categories a span { color: #C8C8C8;}
+.categories a span { color: #555; font-size: smaller;}
