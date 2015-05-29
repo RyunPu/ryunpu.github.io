@@ -1,11 +1,9 @@
 ---
 layout: post
-title:  "Use Sass"
+title:  "Sass Output Style"
 date:   2014-5-4
 categories: CSS
 ---
-
-Output Style:
 
 ```bash
 sass --watch main.scss:main.css --style expanded
