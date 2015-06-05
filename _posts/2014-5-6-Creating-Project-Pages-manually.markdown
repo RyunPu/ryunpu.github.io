@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Creating Project Pages manually"
-date:   2014-5-5
+date:   2014-5-6
 categories: Git
 ---
 
