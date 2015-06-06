@@ -16,3 +16,5 @@ git pull upstream master(git fetch upstream, git merge upstream/master)
 ```bash
 git push origin master
 ```
+
+see more: <a href="https://help.github.com/categories/collaborating/" target="_blank">collaborating</a>
