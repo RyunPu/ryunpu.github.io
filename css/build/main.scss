@@ -111,6 +111,7 @@ div.highlight code.language-bash::before { content: '$'; position: absolute; lef
 .main-wrapper .site-box ul.posts .post .title { margin-bottom: 0;}
 
 /* table */
+table { table-layout: fixed; width: 100%; word-wrap: break-word;}
 td { padding: 8px 16px; border: 1px solid #e1e4e5; background-color: #f3f6f6;}
 tr:nth-child(2n-1) td { background: #fff;}
 .post td code { background: none;}

@@ -943,6 +943,12 @@ div.highlight code.language-bash::before {
 }
 
 /* table */
+table {
+  table-layout: fixed;
+  width: 100%;
+  word-wrap: break-word;
+}
+
 td {
   padding: 8px 16px;
   border: 1px solid #e1e4e5;
