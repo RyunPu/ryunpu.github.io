@@ -7,6 +7,6 @@ categories: Design
 
 栅格系统应用于设计领域已经至少50年了。栅格化让眼睛浏览信息更加愉悦。从报纸、杂志，到手机界面，栅格系统全面渗透到各种信息传达的界面当中。
 
+![image](https://cloud.githubusercontent.com/assets/6168498/8029849/2e4588ca-0df4-11e5-8d85-2ffca565f844.png)
+
 see more: <a href="http://ucdchina.com/snap/11067" target="_blank">ucdchina</a>
-
-

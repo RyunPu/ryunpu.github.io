@@ -87,6 +87,7 @@ body.night .footer:before { opacity: .8;}
 .post p.more { text-align: right;}
 .post p.more a { display: inline-block; font-size: 10px; -webkit-transform:scale(.875); text-decoration: none;}
 .post p.more a:hover { text-decoration: underline;}
+.post img { max-width: 100%;}
 
 /* archive, category */
 .archive, .category { padding: 2em 1.5em 3em;}

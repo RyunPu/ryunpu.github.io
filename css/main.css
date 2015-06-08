@@ -870,6 +870,10 @@ body.night .footer:before {
   text-decoration: underline;
 }
 
+.post img {
+  max-width: 100%;
+}
+
 /* archive, category */
 .archive, .category {
   padding: 2em 1.5em 3em;
