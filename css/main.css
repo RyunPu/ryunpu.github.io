@@ -680,6 +680,7 @@ h2.title {
 }
 
 .main-wrapper .site-box {
+  position: relative;
   padding: 0;
 }
 
@@ -718,7 +719,6 @@ h2.title {
 .footer {
   position: relative;
   width: 100%;
-  height: 100px;
   padding-top: 50px;
   font-family: "Annie Use Your Telescope", cursive;
   text-align: center;

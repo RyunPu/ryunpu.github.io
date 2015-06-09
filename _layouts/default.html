@@ -18,14 +18,31 @@
             var currentHours = new Date().getHours(),
                 $body = $('body');
 
-            if (currentHours >= 17 && currentHours <= 19) {
-                $body.attr('class', 'sunset');
-            } else if ((currentHours > 19 && currentHours <= 24) || currentHours < 5) {
-                $body.attr('class', 'night');
-            } else if (currentHours >= 5 && currentHours <= 7) {
-                $body.attr('class', 'dawn');
+            if (localStorage && localStorage.time) {
+                switch (localStorage.time) {
+                    case 'dawn':
+                        $body.attr('class', 'dawn');
+                        break;
+                    case 'daylight':
+                        $body.attr('class', 'daylight');
+                        break;
+                    case 'sunset':
+                        $body.attr('class', 'sunset');
+                        break;
+                    case 'night':
+                        $body.attr('class', 'night');
+                        break;
+                }
             } else {
-                $body.attr('class', 'daylight');
+                if (currentHours >= 17 && currentHours <= 19) {
+                    $body.attr('class', 'sunset');
+                } else if ((currentHours > 19 && currentHours <= 24) || currentHours < 5) {
+                    $body.attr('class', 'night');
+                } else if (currentHours >= 5 && currentHours <= 7) {
+                    $body.attr('class', 'dawn');
+                } else {
+                    $body.attr('class', 'daylight');
+                }
             }
         </script>
         
@@ -54,6 +71,7 @@
 
         <div class="footer s-stickyfooter">
             <div>
+                <p class="choose">choose your favorite time of the day: <a href="javascript:;" class="dawn">dawn</a>, <a href="javascript:;" class="daylight">daylight</a>, <a href="javascript:;" class="sunset">sunset</a>, <a href="javascript:;" class="night">night</a> or <a href="javascript:;" class="all">all</a></p>
                 <p>Hosted by <a href="https://github.com/moamaoa/moamaoa.github.com" target="_blank">GitHub</a> and powered by <a href="http://github.com/mojombo/jekyll" target="_blank">Jekyll</a></p>
                 <p>moamaoa@gmail.com</p>
             </div>

@@ -48,7 +48,7 @@ h2.title { display: none;}
 .site-intro .preamble { max-width: 360px;}
 
 .main-wrapper { margin: 0 1.5em; padding-bottom: 1em; border-radius: 8px; background: rgba(255,255,255,0.8);}
-.main-wrapper .site-box { padding: 0;}
+.main-wrapper .site-box { position: relative; padding: 0;}
 .main-wrapper .site-box .posts, .main-wrapper .site-box div.post { padding: 2em 1.5em 1.5em;}
 .main-wrapper .site-box div.post { padding-bottom: 0;}
 .main-wrapper .site-box .posts { padding-bottom: 1em;}
@@ -59,7 +59,7 @@ h2.title { display: none;}
 .post .nav h2 + p a { text-decoration: none;}
 .post .nav h2 + p a:hover { text-decoration: underline;}
 
-.footer { position: relative; width: 100%; height: 100px; padding-top: 50px; font-family: "Annie Use Your Telescope", cursive; text-align: center; color: #999; background: url(../images/footer-bgr.png) 0 bottom repeat-x; background-size: auto 100px;}
+.footer { position: relative; width: 100%; padding-top: 50px; font-family: "Annie Use Your Telescope", cursive; text-align: center; color: #999; background: url(../images/footer-bgr.png) 0 bottom repeat-x; background-size: auto 100px;}
 .footer:before { content: ""; position: absolute; left: 0; top: 12px; width: 100%; height: 138px; background: url(../images/footer-bg.png) no-repeat; background-size: auto 100%;}
 body.night .footer:before { opacity: .8;}
 .footer div { position: relative; z-index: 9; padding-top: 48px;}
