@@ -727,6 +727,10 @@ h2.title {
   background-size: auto 100px;
 }
 
+body.night .footer {
+  opacity: .8;
+}
+
 .footer:before {
   content: "";
   position: absolute;
