@@ -23,6 +23,7 @@ Hiding Safari User Interface Components:
 
 ```html
 <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes"> <!-- android -->
 ```
 
 Changing the Status Bar Appearance:
