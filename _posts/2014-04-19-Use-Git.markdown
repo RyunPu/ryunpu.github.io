@@ -212,4 +212,4 @@ git stash list
 git stash drop
 ```
 
-see more: <a href="http://git-scm.com/book" target="_blank">Pro Git book</a>, <a href="https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf" target="_blank">GIT CHEAT SHEET</a>
+see more: <a href="http://git-scm.com/book" target="_blank">Pro Git book</a>, <a href="https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf" target="_blank">GIT CHEAT SHEET</a>, <a href="http://coolestguidesontheplanet.com/install-update-latest-version-git-mac-osx-10-9-mavericks/" target="_blank">coolestguidesontheplanet</a>
