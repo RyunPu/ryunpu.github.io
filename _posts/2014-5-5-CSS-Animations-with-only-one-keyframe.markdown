@@ -22,3 +22,4 @@ more simple:
     50% { opacity: 0;}
 }
 ```
+see also: <a href="http://easings.net/zh-cn" target="_blank">transition-timing-function</a>

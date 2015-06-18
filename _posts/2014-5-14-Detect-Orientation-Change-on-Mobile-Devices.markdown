@@ -16,7 +16,7 @@ categories: Mobile
 }
 ```
 
-resize Event:
+* resize Event:
 
 ```js
 window.addEventListener('resize', function() {
@@ -28,7 +28,7 @@ window.addEventListener('resize', function() {
 }, false);
 ```
 
-orientationchange Event:
+* orientationchange Event:
 
 ```js
 window.addEventListener('orientationchange', function() {
