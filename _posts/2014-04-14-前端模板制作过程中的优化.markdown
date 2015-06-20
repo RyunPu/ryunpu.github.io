@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "HTML模板制作过程中的优化"
+title:  "前端模板制作过程中的优化"
 date:   2014-04-14
-categories: Html
+categories: Web
 ---
 
 * 前期的优化
@@ -23,4 +23,4 @@ categories: Html
 
     * 不要忘记initial-scale的使用，个人不建议禁用缩放
 
-    * 在实现点击后延迟跳转时要区分PC点击事件和移动端touch事件，好像ipad有个1000ms的延迟上限
+    * 在实现点击后延迟跳转时要区分PC点击事件和移动端touch事件

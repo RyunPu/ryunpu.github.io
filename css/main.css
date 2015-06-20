@@ -561,6 +561,10 @@ a:visited {
   color: #444;
 }
 
+b, strong {
+  color: #000;
+}
+
 .clearfix {
   zoom: 1;
 }
