@@ -975,8 +975,8 @@ tr:nth-child(2n-1) td {
   background: none;
 }
 
-.post p + h3 {
-  margin-top: 1.5em;
+.post h3 {
+  margin-top: 2em;
 }
 
 .categories {
