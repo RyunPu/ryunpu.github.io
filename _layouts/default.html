@@ -16,7 +16,8 @@
     <body>
         <script>
             var currentHours = new Date().getHours(),
-                $body = $('body');
+                $body = $('body'),
+                current = '';
 
             if (localStorage && localStorage.time) {
                 switch (localStorage.time) {
@@ -32,16 +33,25 @@
                     case 'night':
                         $body.attr('class', 'night');
                         break;
+                    case 'night2':
+                        $body.attr('class', 'night2');
+                        break;
                 }
+
+                current = localStorage.time;
             } else {
                 if (currentHours >= 17 && currentHours <= 19) {
                     $body.attr('class', 'sunset');
+                    current = 'sunset';
                 } else if ((currentHours > 19 && currentHours <= 24) || currentHours < 5) {
                     $body.attr('class', 'night');
+                    current = 'night';
                 } else if (currentHours >= 5 && currentHours <= 7) {
                     $body.attr('class', 'dawn');
+                    current = 'dawn';
                 } else {
                     $body.attr('class', 'daylight');
+                    current = 'daylight';
                 }
             }
         </script>
@@ -71,7 +81,7 @@
 
         <div class="footer s-stickyfooter">
             <div>
-                <p class="choose">choose your favorite time of the day: <a href="javascript:;" class="dawn">dawn</a>, <a href="javascript:;" class="daylight">daylight</a>, <a href="javascript:;" class="sunset">sunset</a>, <a href="javascript:;" class="night">night</a> or <a href="javascript:;" class="all">all</a></p>
+                <p class="choose">your favorite time of the day: <a class="dawn" href="javascript:;">dawn</a>, <a class="daylight" href="javascript:;">daylight</a>, <a class="sunset" href="javascript:;">sunset</a>, <a class="night" href="javascript:;">night</a>, <a class="night2" href="javascript:;">night2</a> or <a class="all" href="javascript:;">all</a></p>
                 <p>Hosted by <a href="https://github.com/moamaoa/moamaoa.github.com" target="_blank">GitHub</a> and powered by <a href="http://github.com/mojombo/jekyll" target="_blank">Jekyll</a></p>
                 <p>moamaoa@gmail.com</p>
             </div>

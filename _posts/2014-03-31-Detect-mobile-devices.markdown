@@ -2,10 +2,8 @@
 layout: post
 title:  "Detect mobile devices"
 date:   2014-03-31
-categories: Javascript
+categories: Mobile
 ---
-
-simply using the function below(not suggested):
 
 ```js
 function detectMobile(deviceType){

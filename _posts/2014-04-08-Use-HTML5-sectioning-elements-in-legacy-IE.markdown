@@ -5,8 +5,6 @@ date:   2014-04-08
 categories: Javascript
 ---
 
-simply using the function below(not suggested):
-
 ```js
 (function() {
     if (!-[1,]) {

@@ -12,7 +12,7 @@ $.ajax({
     dataType: 'jsonp',
     jsonpCallback: 'callback',
     url: url,
-    success: function() {
+    success: function(data) {
 
     }
 });
@@ -43,7 +43,7 @@ $.ajax({
     dataType: 'json',
     data: {},
     url: url,
-    success: function() {
+    success: function(data) {
 
     }
 });

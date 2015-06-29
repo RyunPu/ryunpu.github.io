@@ -543,6 +543,10 @@ body.night {
   background: linear-gradient(135deg, #373e44 0%, #17414d 38%, #413e3c 66%, #3f3515 78%, #522c01 100%);
 }
 
+body.night2 {
+  background: #444;
+}
+
 input, textarea, select, button {
   font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
   color: #000;
@@ -731,10 +735,6 @@ h2.title {
   background-size: auto 100px;
 }
 
-body.night .footer {
-  opacity: .8;
-}
-
 .footer:before {
   content: "";
   position: absolute;
@@ -746,10 +746,6 @@ body.night .footer {
   background-size: auto 100%;
 }
 
-body.night .footer:before {
-  opacity: .8;
-}
-
 .footer div {
   position: relative;
   z-index: 9;
@@ -759,6 +755,10 @@ body.night .footer:before {
 .footer a {
   text-decoration: underline;
   color: #AAA;
+}
+
+.footer a.active {
+  color: #eee;
 }
 
 /* posts */
@@ -993,11 +993,11 @@ tr:nth-child(2n-1) td {
   white-space: nowrap;
 }
 
-body.night .categories a, body.sunset .categories a {
+body.night .categories a, body.night2 .categories a, body.sunset .categories a {
   color: #D8D8D8;
 }
 
-body.night .categories a span, body.sunset .categories a span {
+body.night .categories a span, body.night2 .categories a span, body.sunset .categories a span {
   color: #C8C8C8;
 }
 

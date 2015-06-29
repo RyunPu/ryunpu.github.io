@@ -2,6 +2,7 @@ $(function() {
     var Page = {
         init: function() {
             this.bind();
+            $('.footer').find('.' + current).addClass('active');
         },
         bind: function() {
             $('.footer .choose a').on('click', function() {
@@ -24,11 +25,18 @@ $(function() {
                         $body.attr('class', 'night');
                         localStorage.time = 'night';
                         break;
+                    case 'night2':
+                        $body.attr('class', 'night2');
+                        localStorage.time = 'night2';
+                        break;
                     case 'all':
                         localStorage.time = '';
                         location.reload();
                         break;
                 }
+
+                $('.footer .choose a').removeClass('active');
+                $(this).addClass('active');
             });
         }
     };
