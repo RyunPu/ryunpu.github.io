@@ -179,6 +179,9 @@ git branch [branch-name]
 git checkout [branch-name]
 ```
 ```bash
+git checkout -- -[branch-name]
+```
+```bash
 git checkout -b [branch-name]
 ```
 ```bash
