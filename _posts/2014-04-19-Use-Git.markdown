@@ -215,4 +215,22 @@ git stash list
 git stash drop
 ```
 
+Tagging:
+
+```bash
+git tag
+```
+```bash
+git tag v1.4
+```
+```bash
+git show v1.4
+```
+```bash
+git push origin v1.4
+```
+```bash
+git push origin --tags
+```
+
 see more: <a href="http://git-scm.com/book" target="_blank">Pro Git book</a>, <a href="https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf" target="_blank">GIT CHEAT SHEET</a>, <a href="http://coolestguidesontheplanet.com/install-update-latest-version-git-mac-osx-10-9-mavericks/" target="_blank">coolestguidesontheplanet</a>
