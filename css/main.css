@@ -1005,3 +1005,5 @@ body.night .categories a span, body.night2 .categories a span, body.sunset .cate
   color: #555;
   font-size: smaller;
 }
+
+.footer .choose { white-space: nowrap;}

@@ -62,3 +62,5 @@ categories: Sublime
 * <a href="https://github.com/colinta/SublimeFileDiffs" target="_blank">FileDiffs</a>
 
 * <a href="https://github.com/reactjs/sublime-react" target="_blank">reactjs</a>
+
+* <a href="https://github.com/farcaller/DashDoc#readme" target="_blank">DashDoc</a>
