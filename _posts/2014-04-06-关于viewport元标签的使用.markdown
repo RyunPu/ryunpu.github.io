@@ -5,12 +5,22 @@ date:   2014-04-06
 categories: Mobile
 ---
 
-当你针对移动端做如下的优化时，不要忘记initial-scale的使用，个人不建议禁用缩放：
+* 完全自适应的布局可以设置viewport为：
 
 ```html
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width">
 ```
 
-note: you may need to set content="width=1000" for iPad
+* 指定具体宽度时如考虑较小分辨的设备，可按设计宽度的一半设置viewport如：
+
+```html
+<meta name="viewport" content="width=320">
+```
+
+* 指定具体宽度时不考虑较小分辨的设备，直接按设计宽度设置viewport如：
+
+```html
+<meta name="viewport" content="width=640,user-scalable=0,target-densitydpi=device-dpi">
+```
 
 see more: <a href="https://developer.mozilla.org/zh-CN/docs/Mobile/Viewport_meta_tag" target="_blank">mozilla docs</a>
