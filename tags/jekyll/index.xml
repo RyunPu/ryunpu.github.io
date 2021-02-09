@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jekyll on Ryun&#39;s blog</title>
+    <link>/tags/jekyll/</link>
+    <description>Recent content in jekyll on Ryun&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Sun, 23 Mar 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/jekyll/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Display Liquid code in Jekyll</title>
+      <link>/display-liquid-code-in-jekyll/</link>
+      <pubDate>Sun, 23 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/display-liquid-code-in-jekyll/</guid>
+      <description>simply using raw tag:
+{% raw %} Liquid code {% endraw %} </description>
+    </item>
+    
+    <item>
+      <title>Highlight code in Jekyll</title>
+      <link>/highlight-code-in-jekyll/</link>
+      <pubDate>Sat, 22 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/highlight-code-in-jekyll/</guid>
+      <description>推荐的：
+{% highlight ruby linenos %} def foo puts &#39;foo&#39; end {% endhighlight %} 简洁的：
+ ```ruby def foo puts &#39;foo&#39; end ``` 最终效果：
+def foo puts &amp;#39;foo&amp;#39; end </description>
+    </item>
+    
+    <item>
+      <title>Add Readmore in Jekyll</title>
+      <link>/add-readmore-in-jekyll/</link>
+      <pubDate>Fri, 21 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/add-readmore-in-jekyll/</guid>
+      <description>当然，你可以使用 Jekyll 自带的 post.excerpt 并在 _config.yml 中配置 excerpt_separator，但这样做时并不能灵活的添加 ’Readmore‘，因此可以使用下面的方法：
+{% if post.content contains &amp;#39;&amp;lt;!--more --&amp;gt;&amp;#39; %} {{ post.content | split:&amp;#39;&amp;lt;!--more --&amp;gt;&amp;#39; | first }} &amp;lt;p class=&amp;#34;more&amp;#34;&amp;gt;&amp;lt;a href=&amp;#34;{{ post.url }}&amp;#34;&amp;gt;Read More &amp;amp;raquo;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt; {% else %} {{ post.content }} {% endif %} 然后在文章换行处添加 &amp;lt;!-- more --&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>Jekyll build trouble</title>
+      <link>/jekyll-build-trouble/</link>
+      <pubDate>Wed, 19 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/jekyll-build-trouble/</guid>
+      <description>初次安装 Jekyll，出现 ’Failed to build gem native extension‘ 的报错，花了不少时间寻找问题的答案，关键在于升级你的Ruby版本，建议使用 RVM 或者 Rbenv，我使用的是 RVM：
+$ \curl -sSL https://get.rvm.io | bash -s stable 完成这步剩下的直接 OK，如果还有问题可以参考 Jekyll troubleshooting</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+CSS demonstrations
+</title>
+
+    
+
+
+  
+  <meta name="author" content="Ryun" />
+  <meta name="description" content="1 2 3 4 5 6   &amp;lt;div class=&amp;#34;css-demo-carousel-container&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;css-demo-carousel&amp;#34;&amp;gt; &amp;lt;div&amp;gt;1&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;2&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;3&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;4&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;5&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;6&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; .css-demo-carousel-container { perspective: 1000px; transform: translateX(100px);} .css-demo-carousel { position: relative; transform-style: preserve-3d; width: 100px; height: 60px; animation: play 10s infinite linear;} .css-demo-carousel div { position: absolute; width: 100%; height: 100%; text-align: center; line-height: 60px; color: white;} .css-demo-carousel div:nth-child(1) { background: rgba(255,0,0,.5); transform: rotateY(0deg) translateZ(110px);} .css-demo-carousel div:nth-child(2) { background: rgba(128,128,0,.5); transform: rotateY(60deg) translateZ(110px);} ." />
+
+
+
+<meta name="generator" content="Hugo 0.60.1" />
+
+<link rel="canonical" href="/css-demonstrations/" />
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/github-markdown.css" />
+<link rel="stylesheet" href="/css/semantic.min.css" />
+<link rel="stylesheet" href="/css/site.css" />
+
+
+<style>
+  a {
+    color: seagreen !important;
+  }
+</style>
+
+
+
+<style>
+  .inverted a {
+     color: darkseagreen !important;
+  }
+</style>
+
+
+  </head>
+
+  
+  <body style="background-image: url(/img/bg-white.jpg);">
+  
+    <div id="container" class="container relative item">
+      
+<nav class="ui secondary menu dream-menu top-nav transform">
+
+  <div class="item">
+    <i class="large link home icon transition" title="首页" onclick="window.location.href = '\/'"></i>
+  </div>
+  <a class="item" href="/posts">
+    <i class="larger link th icon transition" title="文章"></i>
+  </a>
+  <div class="theme-switch-item item">
+    <i id="theme-switch" class="large link icon" onclick="themeSwitch()"></i>
+  </div>
+  <div class="item">
+    <i class="large search icon search-icon"></i>
+  </div>
+</nav>
+
+      
+<div class="ui centered relaxed grid dream-grid">
+  <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single">
+
+    <section class="ui top attached segment">
+      
+      <header>
+        <h2 class="ui header">
+          CSS demonstrations
+          <div class="sub header">Mar 2, 2016 · 3 分钟阅读</div>
+        </h2>
+      </header>
+      <article style="margin-top: 2rem;"><div class="css-demo-carousel-container">
+  <div class="css-demo-carousel">
+    <div>1</div>
+  	<div>2</div>
+  	<div>3</div>
+  	<div>4</div>
+    <div>5</div>
+  	<div>6</div>
+  </div>
+</div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;css-demo-carousel-container&#34;</span>&gt;
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;css-demo-carousel&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span>&gt;1&lt;/<span style="color:#f92672">div</span>&gt;
+  	&lt;<span style="color:#f92672">div</span>&gt;2&lt;/<span style="color:#f92672">div</span>&gt;
+  	&lt;<span style="color:#f92672">div</span>&gt;3&lt;/<span style="color:#f92672">div</span>&gt;
+  	&lt;<span style="color:#f92672">div</span>&gt;4&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span>&gt;5&lt;/<span style="color:#f92672">div</span>&gt;
+  	&lt;<span style="color:#f92672">div</span>&gt;6&lt;/<span style="color:#f92672">div</span>&gt;
+  &lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">css-demo-carousel-container</span> { <span style="color:#66d9ef">perspective</span>: <span style="color:#ae81ff">1000</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">transform</span>: translateX(<span style="color:#ae81ff">100</span><span style="color:#66d9ef">px</span>);}
+.<span style="color:#a6e22e">css-demo-carousel</span> { <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>; <span style="color:#66d9ef">transform-style</span>: <span style="color:#66d9ef">preserve-3d</span>; <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">60</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">animation</span>: play <span style="color:#ae81ff">10</span><span style="color:#66d9ef">s</span> <span style="color:#66d9ef">infinite</span> <span style="color:#66d9ef">linear</span>;}
+.<span style="color:#a6e22e">css-demo-carousel</span> <span style="color:#f92672">div</span> { <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>; <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>; <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>; <span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>; <span style="color:#66d9ef">line-height</span>: <span style="color:#ae81ff">60</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">white</span>;}
+.<span style="color:#a6e22e">css-demo-carousel</span> <span style="color:#f92672">div</span>:<span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">1</span><span style="color:#f92672">)</span> { <span style="color:#66d9ef">background</span>: rgba(<span style="color:#ae81ff">255</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">.5</span>); <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">0</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">110</span><span style="color:#66d9ef">px</span>);}
+.<span style="color:#a6e22e">css-demo-carousel</span> <span style="color:#f92672">div</span>:<span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">2</span><span style="color:#f92672">)</span> { <span style="color:#66d9ef">background</span>: rgba(<span style="color:#ae81ff">128</span>,<span style="color:#ae81ff">128</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">.5</span>); <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">60</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">110</span><span style="color:#66d9ef">px</span>);}
+.<span style="color:#a6e22e">css-demo-carousel</span> <span style="color:#f92672">div</span>:<span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">3</span><span style="color:#f92672">)</span> { <span style="color:#66d9ef">background</span>: rgba(<span style="color:#ae81ff">255</span>,<span style="color:#ae81ff">165</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">.5</span>); <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">120</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">110</span><span style="color:#66d9ef">px</span>);}
+.<span style="color:#a6e22e">css-demo-carousel</span> <span style="color:#f92672">div</span>:<span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">4</span><span style="color:#f92672">)</span> { <span style="color:#66d9ef">background</span>: rgba(<span style="color:#ae81ff">255</span>,<span style="color:#ae81ff">255</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">.5</span>); <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">180</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">110</span><span style="color:#66d9ef">px</span>);}
+.<span style="color:#a6e22e">css-demo-carousel</span> <span style="color:#f92672">div</span>:<span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">5</span><span style="color:#f92672">)</span> { <span style="color:#66d9ef">background</span>: rgba(<span style="color:#ae81ff">255</span>,<span style="color:#ae81ff">128</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">.5</span>); <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">240</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">110</span><span style="color:#66d9ef">px</span>);}
+.<span style="color:#a6e22e">css-demo-carousel</span> <span style="color:#f92672">div</span>:<span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">6</span><span style="color:#f92672">)</span> { <span style="color:#66d9ef">background</span>: rgba(<span style="color:#ae81ff">128</span>,<span style="color:#ae81ff">255</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">.5</span>); <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">300</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">110</span><span style="color:#66d9ef">px</span>);}
+@<span style="color:#66d9ef">keyframes</span> <span style="color:#f92672">play</span> {
+  <span style="color:#f92672">from</span> { <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">360</span><span style="color:#66d9ef">deg</span>);}
+  <span style="color:#f92672">to</span> { <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">0</span>);}
+}
+</code></pre></div><div class="css-demo-cube-container">
+  <div class="css-demo-cube">
+    <div>1</div>
+  	<div>2</div>
+  	<div>3</div>
+  	<div>4</div>
+  </div>
+</div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;css-demo-cube-container&#34;</span>&gt;
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;css-demo-cube&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span>&gt;1&lt;/<span style="color:#f92672">div</span>&gt;
+  	&lt;<span style="color:#f92672">div</span>&gt;2&lt;/<span style="color:#f92672">div</span>&gt;
+  	&lt;<span style="color:#f92672">div</span>&gt;3&lt;/<span style="color:#f92672">div</span>&gt;
+  	&lt;<span style="color:#f92672">div</span>&gt;4&lt;/<span style="color:#f92672">div</span>&gt;
+  &lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">css-demo-cube-container</span> { <span style="color:#66d9ef">perspective</span>: <span style="color:#ae81ff">1000</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">transform</span>: translateX(<span style="color:#ae81ff">15</span><span style="color:#66d9ef">px</span>);}
+.<span style="color:#a6e22e">css-demo-cube</span> { <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>; <span style="color:#66d9ef">transform-style</span>: <span style="color:#66d9ef">preserve-3d</span>; <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">60</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">60</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">animation</span>: play <span style="color:#ae81ff">4</span><span style="color:#66d9ef">s</span> <span style="color:#66d9ef">infinite</span> <span style="color:#66d9ef">linear</span>;}
+.<span style="color:#a6e22e">css-demo-cube</span> <span style="color:#f92672">div</span> { <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>; <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>; <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>; <span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>; <span style="color:#66d9ef">line-height</span>: <span style="color:#ae81ff">60</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">white</span>; <span style="color:#66d9ef">backface-visibility</span>: <span style="color:#66d9ef">hidden</span>;}
+.<span style="color:#a6e22e">css-demo-cube</span> <span style="color:#f92672">div</span>:<span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">1</span><span style="color:#f92672">)</span> { <span style="color:#66d9ef">background</span>: rgba(<span style="color:#ae81ff">255</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>); <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">0</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">30</span><span style="color:#66d9ef">px</span>);}
+.<span style="color:#a6e22e">css-demo-cube</span> <span style="color:#f92672">div</span>:<span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">2</span><span style="color:#f92672">)</span> { <span style="color:#66d9ef">background</span>: rgba(<span style="color:#ae81ff">128</span>,<span style="color:#ae81ff">128</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>); <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">90</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">30</span><span style="color:#66d9ef">px</span>); }
+.<span style="color:#a6e22e">css-demo-cube</span> <span style="color:#f92672">div</span>:<span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">3</span><span style="color:#f92672">)</span> { <span style="color:#66d9ef">background</span>: rgba(<span style="color:#ae81ff">255</span>,<span style="color:#ae81ff">165</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>); <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">180</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">30</span><span style="color:#66d9ef">px</span>);}
+.<span style="color:#a6e22e">css-demo-cube</span> <span style="color:#f92672">div</span>:<span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">4</span><span style="color:#f92672">)</span> { <span style="color:#66d9ef">background</span>: rgba(<span style="color:#ae81ff">255</span>,<span style="color:#ae81ff">255</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>); <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">-90</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">30</span><span style="color:#66d9ef">px</span>);}
+@<span style="color:#66d9ef">keyframes</span> <span style="color:#f92672">play</span> {
+  <span style="color:#f92672">from</span> { <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">360</span><span style="color:#66d9ef">deg</span>);}
+  <span style="color:#f92672">to</span> { <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">0</span>);}
+}
+</code></pre></div><div class="css-demo-loading"></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;css-demo-loading&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">css-demo-loading</span> { <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>; <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">40</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">40</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>; <span style="color:#66d9ef">border</span>: <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">transparent</span>; <span style="color:#66d9ef">border-top-color</span>: <span style="color:#66d9ef">red</span>; <span style="color:#66d9ef">animation</span>: rotate <span style="color:#ae81ff">1</span><span style="color:#66d9ef">s</span> <span style="color:#66d9ef">linear</span> <span style="color:#66d9ef">infinite</span>;}
+.<span style="color:#a6e22e">css-demo-loading</span>::<span style="color:#a6e22e">before</span> { <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#39;&#39;</span>; <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>; <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">right</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">bottom</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>; <span style="color:#66d9ef">border</span>: <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">transparent</span>; <span style="color:#66d9ef">border-top-color</span>: <span style="color:#66d9ef">blue</span>; <span style="color:#66d9ef">animation</span>: rotate <span style="color:#ae81ff">1.5</span><span style="color:#66d9ef">s</span> <span style="color:#66d9ef">linear</span> <span style="color:#66d9ef">infinite</span>;}
+.<span style="color:#a6e22e">css-demo-loading</span>::<span style="color:#a6e22e">after</span> { <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#39;&#39;</span>; <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>; <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">8</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">right</span>: <span style="color:#ae81ff">8</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">8</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">bottom</span>: <span style="color:#ae81ff">8</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>; <span style="color:#66d9ef">border</span>: <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">transparent</span>; <span style="color:#66d9ef">border-top-color</span>: <span style="color:#66d9ef">green</span>; <span style="color:#66d9ef">animation</span>: rotate <span style="color:#ae81ff">2</span><span style="color:#66d9ef">s</span> <span style="color:#66d9ef">linear</span> <span style="color:#66d9ef">infinite</span>;}
+@<span style="color:#66d9ef">keyframes</span> <span style="color:#f92672">rotate</span> {
+  <span style="color:#f92672">from</span> {
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">0</span>);
+  }
+  <span style="color:#f92672">to</span> {
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">360</span><span style="color:#66d9ef">deg</span>);
+  }
+}
+</code></pre></div><div class="css-demo-5"></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;css-demo-5&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">css-demo-5</span> { <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">60</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">40</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#3f2f44</span>; <span style="color:#66d9ef">animation</span>: <span style="color:#ae81ff">1.5</span><span style="color:#66d9ef">s</span> polygon <span style="color:#66d9ef">infinite</span>; <span style="color:#66d9ef">clip-path</span>: polygon(<span style="color:#ae81ff">45</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">45</span><span style="color:#66d9ef">%</span>, <span style="color:#ae81ff">55</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">45</span><span style="color:#66d9ef">%</span>, <span style="color:#ae81ff">55</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">55</span><span style="color:#66d9ef">%</span>, <span style="color:#ae81ff">45</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">55</span><span style="color:#66d9ef">%</span>);}
+@<span style="color:#66d9ef">keyframes</span> <span style="color:#f92672">polygon</span> {
+  <span style="color:#f92672">12</span><span style="color:#f92672">%</span> { <span style="color:#66d9ef">clip-path</span>: polygon(<span style="color:#ae81ff">25</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">25</span><span style="color:#66d9ef">%</span>, <span style="color:#ae81ff">55</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">45</span><span style="color:#66d9ef">%</span>, <span style="color:#ae81ff">55</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">55</span><span style="color:#66d9ef">%</span>, <span style="color:#ae81ff">45</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">55</span><span style="color:#66d9ef">%</span>);}
+  <span style="color:#f92672">24</span><span style="color:#f92672">%</span> { <span style="color:#66d9ef">clip-path</span>: polygon(<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">55</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">45</span><span style="color:#66d9ef">%</span>, <span style="color:#ae81ff">55</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">55</span><span style="color:#66d9ef">%</span>, <span style="color:#ae81ff">45</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">55</span><span style="color:#66d9ef">%</span>);}
+  <span style="color:#f92672">36</span><span style="color:#f92672">%</span> { <span style="color:#66d9ef">clip-path</span>: polygon(<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">75</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">25</span><span style="color:#66d9ef">%</span>, <span style="color:#ae81ff">55</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">55</span><span style="color:#66d9ef">%</span>, <span style="color:#ae81ff">45</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">55</span><span style="color:#66d9ef">%</span>);}
+  <span style="color:#f92672">48</span><span style="color:#f92672">%</span> { <span style="color:#66d9ef">clip-path</span>: polygon(<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">55</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">55</span><span style="color:#66d9ef">%</span>, <span style="color:#ae81ff">45</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">55</span><span style="color:#66d9ef">%</span>);}
+  <span style="color:#f92672">60</span><span style="color:#f92672">%</span> { <span style="color:#66d9ef">clip-path</span>: polygon(<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">75</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">75</span><span style="color:#66d9ef">%</span>, <span style="color:#ae81ff">45</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">55</span><span style="color:#66d9ef">%</span>);}
+  <span style="color:#f92672">72</span><span style="color:#f92672">%</span> { <span style="color:#66d9ef">clip-path</span>: polygon(<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>, <span style="color:#ae81ff">45</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">55</span><span style="color:#66d9ef">%</span>);}
+  <span style="color:#f92672">84</span><span style="color:#f92672">%</span> { <span style="color:#66d9ef">clip-path</span>: polygon(<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>, <span style="color:#ae81ff">25</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">55</span><span style="color:#66d9ef">%</span>);}
+  <span style="color:#f92672">100</span><span style="color:#f92672">%</span> { <span style="color:#66d9ef">clip-path</span>: polygon(<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>, <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>);}
+}
+</code></pre></div><div class="css-demo-4"><i class="icon home"></i></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;css-demo-4&#34;</span>&gt;&lt;<span style="color:#f92672">i</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;icon home&#34;</span>&gt;&lt;/<span style="color:#f92672">i</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">css-demo-4</span> { <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>; <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">40</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">40</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">box-shadow</span>: <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">#666</span>; <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>; <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">1.5</span><span style="color:#66d9ef">em</span>; <span style="color:#66d9ef">line-height</span>: <span style="color:#ae81ff">40</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>; <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#666</span>; <span style="color:#66d9ef">transition</span>: <span style="color:#ae81ff">.5</span><span style="color:#66d9ef">s</span> cubic-bezier(<span style="color:#ae81ff">.3</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1.3</span>);}
+.<span style="color:#a6e22e">css-demo-4</span>:<span style="color:#a6e22e">before</span> { <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#39;&#39;</span>; <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>; <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">0</span>; <span style="color:#66d9ef">right</span>: <span style="color:#ae81ff">0</span>; <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">0</span>; <span style="color:#66d9ef">bottom</span>: <span style="color:#ae81ff">0</span>; <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>; <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#39c492</span>; <span style="color:#66d9ef">opacity</span>: <span style="color:#ae81ff">0</span>; <span style="color:#66d9ef">transform</span>: scale(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>); <span style="color:#66d9ef">transition</span>: <span style="color:#ae81ff">.5</span><span style="color:#66d9ef">s</span> cubic-bezier(<span style="color:#ae81ff">.3</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1.3</span>);}
+.<span style="color:#a6e22e">css-demo-4</span>:<span style="color:#a6e22e">hover</span> { <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#fff</span>; <span style="color:#66d9ef">box-shadow</span>: <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">#39c492</span>;}
+.<span style="color:#a6e22e">css-demo-4</span>:<span style="color:#a6e22e">hover</span>:<span style="color:#a6e22e">before</span> { <span style="color:#66d9ef">opacity</span>: <span style="color:#ae81ff">1</span>; <span style="color:#66d9ef">transform</span>: scale(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>);}
+.<span style="color:#a6e22e">css-demo-4</span> <span style="color:#f92672">i</span> { <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>; }
+</code></pre></div><div class="css-demo-3"></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;css-demo-3&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">css-demo-3</span> { <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">32</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">32</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#444</span>; <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>; <span style="color:#66d9ef">animation</span>: pulsecircle <span style="color:#ae81ff">.7</span><span style="color:#66d9ef">s</span> <span style="color:#66d9ef">linear</span> <span style="color:#66d9ef">infinite</span>;}
+@<span style="color:#66d9ef">keyframes</span> <span style="color:#f92672">pulsecircle</span> {
+  <span style="color:#f92672">0</span><span style="color:#f92672">%</span> {
+    <span style="color:#66d9ef">transform</span>: scale(<span style="color:#ae81ff">.1</span>);
+    <span style="color:#66d9ef">opacity</span>: <span style="color:#ae81ff">0</span>;
+  }
+  <span style="color:#f92672">50</span><span style="color:#f92672">%</span> {
+    <span style="color:#66d9ef">opacity</span>: <span style="color:#ae81ff">1</span>;
+  }
+  <span style="color:#f92672">100</span><span style="color:#f92672">%</span> {
+    <span style="color:#66d9ef">transform</span>: scale(<span style="color:#ae81ff">1.2</span>);
+    <span style="color:#66d9ef">opacity</span>: <span style="color:#ae81ff">0</span>;
+  }
+}
+</code></pre></div><div class="css-demo-2">Hover me</div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;css-demo-2&#34;</span>&gt;Hover me&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">css-demo-2</span> { <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>; <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">inline</span><span style="color:#f92672">-</span><span style="color:#66d9ef">block</span>; <span style="color:#66d9ef">cursor</span>: <span style="color:#66d9ef">pointer</span>;}
+.<span style="color:#a6e22e">css-demo-2</span>:<span style="color:#a6e22e">before</span> { <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#39;&#39;</span>; <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>; <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">0</span>; <span style="color:#66d9ef">bottom</span>: <span style="color:#ae81ff">0</span>; <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>; <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#444</span>; <span style="color:#66d9ef">transition</span>: <span style="color:#66d9ef">transform</span> <span style="color:#ae81ff">.2</span><span style="color:#66d9ef">s</span>; <span style="color:#66d9ef">backface-visibility</span>: <span style="color:#66d9ef">hidden</span>; <span style="color:#66d9ef">transform</span>: scaleX(<span style="color:#ae81ff">0</span>);}
+.<span style="color:#a6e22e">css-demo-2</span>:<span style="color:#a6e22e">hover</span>:<span style="color:#a6e22e">before</span> { <span style="color:#66d9ef">transform</span>: scaleX(<span style="color:#ae81ff">1</span>);}
+</code></pre></div><div class="css-demo-1"><span></span><span></span><span></span></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;css-demo-1&#34;</span>&gt;&lt;<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;&lt;<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;&lt;<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">css-demo-1</span> { <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>; <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">25</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">35</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">cursor</span>: <span style="color:#66d9ef">pointer</span>;}
+.<span style="color:#a6e22e">css-demo-1</span> <span style="color:#f92672">span</span> { <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>; <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">0</span>; <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">7</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>; <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#444</span>; <span style="color:#66d9ef">transition</span>: <span style="color:#66d9ef">all</span> <span style="color:#ae81ff">.2</span><span style="color:#66d9ef">s</span>; <span style="color:#66d9ef">transform-origin</span>: <span style="color:#66d9ef">right</span> <span style="color:#66d9ef">center</span>;}
+.<span style="color:#a6e22e">css-demo-1</span> <span style="color:#f92672">span</span>:<span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">2</span><span style="color:#f92672">)</span> { <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">16</span><span style="color:#66d9ef">px</span>;}
+.<span style="color:#a6e22e">css-demo-1</span> <span style="color:#f92672">span</span>:<span style="color:#a6e22e">last-child</span> { <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">25</span><span style="color:#66d9ef">px</span>;}
+.<span style="color:#a6e22e">css-demo-1</span>:<span style="color:#a6e22e">hover</span> <span style="color:#f92672">span</span>:<span style="color:#a6e22e">first-child</span> { <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">-45</span><span style="color:#66d9ef">deg</span>);}
+.<span style="color:#a6e22e">css-demo-1</span>:<span style="color:#a6e22e">hover</span> <span style="color:#f92672">span</span>:<span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">2</span><span style="color:#f92672">)</span> { <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">0</span>;}
+.<span style="color:#a6e22e">css-demo-1</span>:<span style="color:#a6e22e">hover</span> <span style="color:#f92672">span</span>:<span style="color:#a6e22e">last-child</span> { <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">45</span><span style="color:#66d9ef">deg</span>);}
+</code></pre></div></article>
+    </section>
+
+    <section class="ui attached segment prev-next">
+      
+        <a href="/choose-a-proper-web-font/" title="Choose a proper web font">&larr; Previous Post</a>
+      
+      
+        <a href="/use-autojump-in-zsh/" title="Use autojump in zsh">Next Post &rarr;</a>
+      
+    </section>
+
+    
+      <footer class="ui attached segment dream-tags">
+        
+          <a class="ui label" href="/tags/css" title="css">css</a>
+        
+      </footer>
+    
+
+    
+
+    
+      <footer class="ui bottom attached stacked segment post-disqus-area" data-html2canvas-ignore="true">
+        <div id="disqus_thread"></div>
+        <script>
+          
+
+
+          var disqus_config = function () {
+            this.page.url = '\/css-demonstrations\/';  
+            this.page.identifier = '\/css-demonstrations\/'; 
+          };
+
+          (function() { 
+            var d = document, s = d.createElement('script');
+            s.src = 'https://' + 'ryunpu' + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </footer>
+    
+
+  </div>
+  <div class="sixteen wide mobile sixteen wide tablet four wide computer column flip-container">
+    <div class="flipper">
+  <article class="dream-header front">
+    <i class="large link hand point right outline icon dream-flip-toggle" title="翻转！"></i>
+    <div class="flipper-block">
+      <section class="ui top attached center aligned segment">
+        <div class="ui small circular image">
+          
+            <img src="/img/avatar.jpeg">
+          
+        </div>
+
+        <h3 class="ui header">Ryun的博客<div class="sub header" style="margin-top: 0.5rem;">与其感慨路难行，不如马上出发。</div>
+        </h3>
+
+        <div class="ui horizontal list">
+          <a class="item" href="/archives">
+            <i class="archive icon" title="归档"></i>
+          </a>
+          <a class="item" href="/tags">
+            <i class="tags icon" title="所有标签"></i>
+          </a>
+          <a class="item" href="/categories">
+            <i class="th list icon" title="所有分类"></i>
+          </a>
+        </div>
+      </section>
+
+      
+      <section class="ui attached center aligned segment dream-tags">
+        
+          <a class="ui label" href="/tags/atom" title="atom">atom</a>
+        
+          <a class="ui label" href="/tags/css" title="css">css</a>
+        
+          <a class="ui label" href="/tags/design" title="design">design</a>
+        
+          <a class="ui label" href="/tags/git" title="git">git</a>
+        
+          <a class="ui label" href="/tags/html" title="html">html</a>
+        
+          <a class="ui label" href="/tags/javascript" title="javascript">javascript</a>
+        
+          <a class="ui label" href="/tags/jekyll" title="jekyll">jekyll</a>
+        
+          <a class="ui label" href="/tags/laravel" title="laravel">laravel</a>
+        
+          <a class="ui label" href="/tags/life" title="life">life</a>
+        
+          <a class="ui label" href="/tags/mac" title="mac">mac</a>
+        
+          <a class="ui label" href="/tags/mobile" title="mobile">mobile</a>
+        
+          <a class="ui label" href="/tags/optimization" title="optimization">optimization</a>
+        
+          <a class="ui label" href="/tags/sublime" title="sublime">sublime</a>
+        
+          <a class="ui label" href="/tags/tool" title="tool">tool</a>
+        
+          <a class="ui label" href="/tags/vscode" title="vscode">vscode</a>
+        
+          <a class="ui label" href="/tags/vue" title="vue">vue</a>
+        
+      </section>
+      
+
+      
+      <section class="ui attached segment dream-categories">
+        <div class="ui accordion">
+          
+            <div class="title">
+              <i class="dropdown icon"></i>
+              <a href="/categories/web-development" class="item">web-development</a>
+            </div>
+            <div class="content">
+              <div class="ui list">
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/git-cheatsheet/" class="item">Git Cheatsheet</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-webpack-4-bootstrap-4-fontawesome-5-3/" class="item">Use webpack 4 &#43; bootstrap 4 &#43; fontawesome 5 (3)</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-webpack-4-bootstrap-4-fontawesome-5-2/" class="item">Use webpack 4 &#43; bootstrap 4 &#43; fontawesome 5 (2)</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-webpack-4-bootstrap-4-fontawesome-5-1/" class="item">Use webpack 4 &#43; bootstrap 4 &#43; fontawesome 5 (1)</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/eslint-config-for-javascript/" class="item">ESLint Config for JavaScript</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/npx-is-cool/" class="item">npx is cool</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/browserslist-config/" class="item">Browserslist config</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/javascript-%E6%A8%A1%E5%9D%97%E5%8C%96/" class="item">JavaScript 模块化</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/prototype-chains-in-es6/" class="item">Prototype chains in es6</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/generate-a-new-ssh-key-and-add-it-to-the-ssh-agent/" class="item">Generate a new SSH key and add it to the ssh-agent</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/make-an-alias-with-parameter/" class="item">Make an alias with parameter</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/resolve-eacces-permissions-errors/" class="item">Resolve EACCES permissions errors</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/open-new-iterm2-tab-with-same-profile/" class="item">Open new iTerm2 tab with same profile</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/exit-the-vim-editor/" class="item">Exit the Vim editor</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/iterm2-oh-my-zsh/" class="item">iTerm2 &#43; Oh My Zsh</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/simple-event-dispatcher/" class="item">Simple event dispatcher</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/broadcast-generated-by-coffeescript/" class="item">Broadcast generated by CoffeeScript</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/git-snippets/" class="item">Git snippets</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/a-simple-infinite-scroll-jquery-plugin/" class="item">A simple infinite scroll jQuery plugin</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/a-simple-date-countdown-function/" class="item">A simple date countdown function</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/a-simple-html5-file-upload-jquery-plugin/" class="item">A simple HTML5 file upload jQuery plugin</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/%E4%BD%BF%E7%94%A8-echarts-%E5%9B%BE%E8%A1%A8%E5%BA%93/" class="item">使用 ECharts 图表库</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/%E6%96%B0%E6%B5%AA%E8%82%A1%E7%A5%A8%E6%9F%A5%E8%AF%A2%E6%8E%A5%E5%8F%A3/" class="item">新浪股票查询接口</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/%E4%BD%BF%E7%94%A8%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9B%BE-api-%E8%BF%9B%E8%A1%8C%E5%9C%B0%E7%90%86%E5%AE%9A%E4%BD%8D/" class="item">使用百度地图 API 进行地理定位</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/upload-image-with-jquery-file-upload/" class="item">Upload image with jQuery-File-Upload</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-tinymce/" class="item">Use TinyMCE</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-jquery-validation-plugin/" class="item">Use jQuery validation plugin</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/preview-image-before-uploaded/" class="item">Preview image before uploaded</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/chrome-extension-snippets/" class="item">Chrome extension snippets</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/live-reloading-chrome-extension-with-websocket/" class="item">Live reloading Chrome extension with WebSocket</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/tool-functions-that-return-iterables/" class="item">Tool functions that return iterables</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/prevent-page-scrolling-when-a-modal-is-open/" class="item">Prevent page scrolling when a modal is open</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/enable-directory-listing-in-nginx/" class="item">Enable directory listing in Nginx</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/access-homestead-site-on-the-same-network/" class="item">Access Homestead site on the same network</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/upgrade-node.js/" class="item">Upgrade Node.js</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-laravel-elixir-in-laravel/" class="item">Use laravel-elixir in Laravel</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/a-quick-view-of-laravel/" class="item">A quick view of Laravel</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/a-todo-demo-using-vue-in-laravel/" class="item">A todo demo using Vue in Laravel</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/create-simple-test-data-in-laravel/" class="item">Create simple test data in Laravel</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/commonly-used-laravel-commands/" class="item">Commonly used Laravel commands</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/make-a-sticky-content/" class="item">Make a sticky content</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/make-a-sticky-footer/" class="item">Make a sticky footer</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-animate.css/" class="item">Use Animate.css</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/javascript-demonstrations/" class="item">JavaScript demonstrations</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/bootstrap-snippets-and-tips/" class="item">Bootstrap snippets and tips</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-autojump-in-zsh/" class="item">Use autojump in zsh</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/css-demonstrations/" class="item">CSS demonstrations</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/choose-a-proper-web-font/" class="item">Choose a proper web font</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/commonly-used-regex-validation/" class="item">Commonly used RegEx validation</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/some-commonly-used-ua-detection/" class="item">Some commonly used UA detection</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/using-formdata-objects/" class="item">Using formdata objects</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/%E5%9F%BA%E4%BA%8E%E4%B8%83%E7%89%9B-api-%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/" class="item">基于七牛 API 的文件上传</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/center-anything-with-css/" class="item">Center Anything with CSS</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/git-diff-with-beyond-compare/" class="item">Git Diff with Beyond Compare</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/simple-browser-detection/" class="item">Simple browser detection</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/detect-a-touch-screen/" class="item">Detect a Touch Screen</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/detect-orientation-change-on-mobile-devices/" class="item">Detect Orientation Change on Mobile Devices</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-charles-map-local-tool/" class="item">Use Charles Map Local tool</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/comparison-of-npm-and-yarn-commands/" class="item">Comparison of NPM and yarn commands</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/commands-for-packager-managers/" class="item">Commands for Packager managers</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/modifying-an-inactive-pull-request-locally/" class="item">Modifying an inactive pull request locally</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/syncing-a-fork/" class="item">Syncing a fork</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/creating-project-pages-manually/" class="item">Creating Project Pages manually</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/css-animations-with-only-one-keyframe/" class="item">CSS Animations with only one keyframe</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-sass-from-the-command-line/" class="item">Use Sass from the command line</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/prevent-touch-event-click-underneath-layer/" class="item">Prevent touch event click underneath layer</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/helpful-aliases-for-common-git-tasks/" class="item">Helpful aliases for common git tasks</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/avoid-console-errors-in-browsers-that-lack-a-console/" class="item">Avoid `console` errors in browsers that lack a console</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/a-micro-clearfix-hack/" class="item">A micro clearfix hack</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/modernizr-methods/" class="item">Modernizr Methods</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/flash-of-unstyled-content/" class="item">Flash of Unstyled Content</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/html5-cross-browser-polyfills/" class="item">HTML5 Cross Browser Polyfills</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/syntax-highlighting-in-markdown/" class="item">Syntax highlighting in markdown</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-chrome-devtools/" class="item">Use Chrome DevTools</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-git/" class="item">Use Git</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/enable-html5-placeholder-in-ie/" class="item">Enable HTML5 placeholder in IE</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/markdown-cheatsheet/" class="item">Markdown cheatsheet</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/code-conventions-and-best-practices-for-javascript/" class="item">Code conventions and best practices for javascript</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-html5-sectioning-elements-in-legacy-ie/" class="item">Use HTML5 sectioning elements in legacy IE</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-the-viewport-meta-tag/" class="item">Use the viewport meta tag</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/javascript-snippets/" class="item">JavaScript snippets</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-rgba-in-ie/" class="item">Use rgba in IE</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/detect-mobile-devices/" class="item">Detect mobile devices</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/css-tools/" class="item">CSS tools</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/bootcss-codeguide/" class="item">Bootcss codeguide</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/make-the-web-faster/" class="item">Make the Web Faster</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/display-liquid-code-in-jekyll/" class="item">Display Liquid code in Jekyll</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/highlight-code-in-jekyll/" class="item">Highlight code in Jekyll</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/add-readmore-in-jekyll/" class="item">Add Readmore in Jekyll</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/install-git/" class="item">Install Git</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/jekyll-build-trouble/" class="item">Jekyll build trouble</a>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          
+            <div class="title">
+              <i class="dropdown icon"></i>
+              <a href="/categories/tool" class="item">tool</a>
+            </div>
+            <div class="content">
+              <div class="ui list">
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/vs-code-shortcuts-for-macos/" class="item">VS Code shortcuts for macOS</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/vs-code-extensions-for-frontend-developers/" class="item">VS code extensions for frontend developers</a>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          
+            <div class="title">
+              <i class="dropdown icon"></i>
+              <a href="/categories/mac" class="item">mac</a>
+            </div>
+            <div class="content">
+              <div class="ui list">
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/show-hidden-files-on-mac/" class="item">Show hidden files on mac</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/show-the-current-path-in-the-finder/" class="item">Show the current path in the finder</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/insert-the-mac-command-symbol/" class="item">Insert the Mac command symbol</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/mac-%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/" class="item">Mac 键盘快捷键</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/%E5%9C%A8-mac-%E4%B8%8A%E5%88%9B%E5%BB%BA%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/" class="item">在 Mac 上创建键盘快捷键</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/fix-kernel_task-high-cpu-problem/" class="item">Fix kernel_task high cpu problem</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/basic-bash-keyboard-shortcuts/" class="item">Basic bash keyboard shortcuts</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/expose-a-local-web-server-to-the-internet-with-ngrok/" class="item">Expose a local web server to the internet with ngrok</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/the-command-line-crash-course/" class="item">The Command Line Crash Course</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/access-localhost-from-virtualbox/" class="item">Access localhost from VirtualBox</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/create-a-bootable-usb-in-mac-os-x/" class="item">Create a bootable USB in Mac OS X</a>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          
+            <div class="title">
+              <i class="dropdown icon"></i>
+              <a href="/categories/life" class="item">life</a>
+            </div>
+            <div class="content">
+              <div class="ui list">
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/words-of-wisdom-from-modern-family/" class="item">Words of Wisdom from Modern Family</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/rescue-time-with-rescuetime/" class="item">Rescue time with RescueTime</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/stop-working-from-a-prison-cell/" class="item">Stop Working from a Prison Cell</a>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          
+            <div class="title">
+              <i class="dropdown icon"></i>
+              <a href="/categories/editor" class="item">editor</a>
+            </div>
+            <div class="content">
+              <div class="ui list">
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/create-multi-line-snippet-in-atom/" class="item">Create multi-line snippet in atom</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/useful-atom-keyboard-shortcuts/" class="item">Useful Atom keyboard shortcuts</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/atom-javascript-snippets-package/" class="item">Atom javascript snippets package</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/my-atom-snippets/" class="item">My atom snippets</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/my-atom-packages/" class="item">My atom packages</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/open-atom-from-the-terminal/" class="item">Open atom from the terminal</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/sublime-react-snippets/" class="item">Sublime react snippets</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/sublime-text-plugins-for-web-development/" class="item">Sublime Text Plugins for Web Development</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/sublime-text-shortcuts/" class="item">Sublime Text shortcuts</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/sublime-osx-command-line-setup/" class="item">Sublime osx command line setup</a>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          
+            <div class="title">
+              <i class="dropdown icon"></i>
+              <a href="/categories/design" class="item">design</a>
+            </div>
+            <div class="content">
+              <div class="ui list">
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/looking-back-to-look-forward/" class="item">Looking back to look forward</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/my-sketch-plugins/" class="item">My Sketch plugins</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/%E6%A0%85%E6%A0%BC%E7%B3%BB%E7%BB%9F%E5%BB%B6%E7%BB%AD%E7%BE%8E%E5%AD%A6/" class="item">栅格系统延续美学</a>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          
+        </div>
+      </section>
+      
+
+      <section class="ui bottom attached center aligned segment">
+        <div class="copyright">
+  
+  <p>© 2014 - 2021 Ryun&#39;s blog</p>
+  
+  <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
+</div>
+
+      </section>
+    </div>
+  </article>
+
+  <article class="dream-back back">
+  <i class="large link hand point left outline icon dream-flip-toggle" title="翻转！"></i>
+  <div class="flipper-block">
+    
+      <div class="ui top attached segment">
+        <h3 class="ui header">About</h3>
+      </div>
+      <div class="ui attached segment markdown-body">
+        <p><span id="hello">你好</span>，❤朋友</p>
+<p>这里是 Ryun 的博客 📝</p>
+<p>📝记录了我学习 🔎的过程</p>
+<p>作为一名前端攻城狮 🦁</p>
+<p>希望能和大家一起 🔎</p>
+<p>共同进步 🏃</p>
+<p>🦁的特长：</p>
+<ul>
+<li>HTML5</li>
+<li>CSS3</li>
+<li>JavaScript</li>
+<li>Vue.js</li>
+<li>微信小程序</li>
+<li>熟练配合 Node.js、PHP 和 Laravel</li>
+<li>熟练使用各种开发和设计工具</li>
+</ul>
+<p>🦁喜欢 🆒🆒的东西</p>
+<p>对提升效率和美感的事物有兴趣 😋</p>
+<p>欢迎 👏交流</p>
+<br>
+<p>see this <a href="https://github.com/RyunPu/hugo-theme-dream-ink" target="_blank">hugo-theme-dream-ink</a></p>
+
+      </div>
+    
+
+    <div class="ui attached segment address">
+      <nav class="ui secondary menu dream-menu">
+  
+    <div class="item">
+      <a href="mailto:ryunpu@foxmail.com">
+        <i class="large mail icon" title="email"></i>
+      </a>
+    </div>
+  
+
+  
+    <div class="item">
+      <a href="https://github.com/ryunpu" target="_blank">
+        <i class="large github icon" title="github"></i>
+      </a>
+    </div>
+  
+
+  
+
+  
+
+  
+</nav>
+
+    </div>
+  </div>
+</article>
+
+<section class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+  
+</section>
+
+</div>
+
+  </div>
+</div>
+
+      <i class="icon big long arrow alternate up pointer theme-item backToTop"></i>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+  
+  <div class="pswp__bg"></div>
+
+  
+  <div class="pswp__scroll-wrap">
+
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+
+    
+    <div class="pswp__ui pswp__ui--hidden">
+
+      <div class="pswp__top-bar">
+
+        
+
+        <div class="pswp__counter"></div>
+
+        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+        <button class="pswp__button pswp__button--share" title="Share"></button>
+
+        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+        
+        
+        <div class="pswp__preloader">
+          <div class="pswp__preloader__icn">
+            <div class="pswp__preloader__cut">
+              <div class="pswp__preloader__donut"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+        <div class="pswp__share-tooltip"></div>
+      </div>
+
+      <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+      </button>
+
+      <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+      </button>
+
+      <div class="pswp__caption">
+        <div class="pswp__caption__center"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="/js/vendor.js"></script>
+<script src="/js/main.js"></script>
+
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-75787172-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+    </div>
+
+    <div class="search-mask transition item">
+  <div class="search-wrapper transition">
+    <div class="search-form">
+      <i class="icon close large"></i>
+      <div class="search-area">
+        <div id="search-box"></div>
+        <h4 id="search-status"></h4>
+        <div id="search-results">
+          <ul id="hits" class="search-results post-list"></ul>
+          <div id="pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>

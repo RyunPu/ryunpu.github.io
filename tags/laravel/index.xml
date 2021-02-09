@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>laravel on Ryun&#39;s blog</title>
+    <link>/tags/laravel/</link>
+    <description>Recent content in laravel on Ryun&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Wed, 23 Mar 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/laravel/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Use laravel-elixir in Laravel</title>
+      <link>/use-laravel-elixir-in-laravel/</link>
+      <pubDate>Wed, 23 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/use-laravel-elixir-in-laravel/</guid>
+      <description>var elixir = require(&amp;#39;laravel-elixir&amp;#39;); require(&amp;#39;laravel-elixir-livereload&amp;#39;); require(&amp;#39;laravel-elixir-vueify&amp;#39;); require(&amp;#39;laravel-elixir-compress&amp;#39;); var production = elixir.config.production; var vue = &amp;#39;../../node_modules/vue/dist/vue.js&amp;#39;; if (production) vue = &amp;#39;../../node_modules/vue/dist/vue.min.js&amp;#39;; elixir(function(mix) { mix .sass([ &amp;#39;base.scss&amp;#39;, &amp;#39;main.scss&amp;#39;, ], &amp;#39;public/css/main.css&amp;#39;) .browserify(&amp;#39;main.js&amp;#39;, &amp;#39;public/js/app.js&amp;#39;) .browserify(&amp;#39;pages/index.js&amp;#39;, &amp;#39;public/js/pages&amp;#39;) .scripts([ vue, &amp;#39;../../node_modules/vue-resource/dist/vue-resource.min.js&amp;#39;, &amp;#39;../../node_modules/vue-router/dist/vue-router.min.js&amp;#39;, &amp;#39;app.js&amp;#39;, ], &amp;#39;public/js/main.js&amp;#39;, &amp;#39;public/js&amp;#39;) .version([ &amp;#39;css/main.css&amp;#39;, &amp;#39;js/main.js&amp;#39;, ]) .livereload(); if (production) { mix.compress(); } }); </description>
+    </item>
+    
+    <item>
+      <title>A quick view of Laravel</title>
+      <link>/a-quick-view-of-laravel/</link>
+      <pubDate>Tue, 22 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/a-quick-view-of-laravel/</guid>
+      <description>Route Route::get(&amp;#39;components&amp;#39;, function() { return view(&amp;#39;home/components&amp;#39;); }); Displaying Data Route::get(&amp;#39;/&amp;#39;, function () { return view(&amp;#39;welcome&amp;#39;, [ &amp;#39;user&amp;#39; =&amp;gt; &amp;#39;Peter&amp;#39;, &amp;#39;info&amp;#39; =&amp;gt; json_encode(array( &amp;#39;firstname&amp;#39; =&amp;gt; &amp;#34;Peter&amp;#34;, &amp;#39;lastname&amp;#39; =&amp;gt; &amp;#39;Griffin&amp;#39;, &amp;#39;age&amp;#39; =&amp;gt; &amp;#39;30&amp;#39; )) ]); }); extends, yield and section @extends(&amp;#39;home.layouts.app&amp;#39;) @yield(&amp;#39;scripts&amp;#39;) @section(&amp;#39;scripts&amp;#39;) @parent &amp;lt;script&amp;gt;&amp;lt;/script&amp;gt; @endsection forelse @forelse ($users as $user) &amp;lt;li&amp;gt;{{ $user-&amp;gt;name }}&amp;lt;/li&amp;gt; @empty &amp;lt;p&amp;gt;没有用户&amp;lt;/p&amp;gt; @endforelse X-CSRF-TOKEN $.ajaxSetup({ headers: { &amp;#39;X-CSRF-TOKEN&amp;#39;: $(&amp;#39;meta[name=&amp;#34;csrf_token&amp;#34;]&amp;#39;).attr(&amp;#39;content&amp;#39;) } }); Vue.http.headers.common[&amp;#39;X-CSRF-TOKEN&amp;#39;] = document.querySelector(&amp;#39;meta[name=&amp;#34;csrf_token&amp;#34;]&amp;#39;).getAttribute(&amp;#39;content&amp;#39;); tinker $ php artisan tinker &amp;gt; factory(App\Todo::class, 20)-&amp;gt;create() </description>
+    </item>
+    
+    <item>
+      <title>A todo demo using Vue in Laravel</title>
+      <link>/a-todo-demo-using-vue-in-laravel/</link>
+      <pubDate>Mon, 21 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/a-todo-demo-using-vue-in-laravel/</guid>
+      <description>html &amp;lt;div id=&amp;#34;app&amp;#34;&amp;gt; &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a v-link=&amp;#34;&amp;#39;tasks&amp;#39;&amp;#34;&amp;gt;tasks&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a v-link=&amp;#34;&amp;#39;about&amp;#39;&amp;#34;&amp;gt;about&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;router-view&amp;gt;&amp;lt;/router-view&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script src=&amp;#34;js/main.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; main.js import tasks from &amp;#39;./components/tasks.vue&amp;#39;; const Vue = require(&amp;#39;vue&amp;#39;); const VueRouter = require(&amp;#39;vue-router&amp;#39;); Vue.use(VueRouter); Vue.use(require(&amp;#39;vue-resource&amp;#39;)); Vue.http.headers.common[&amp;#39;X-CSRF-TOKEN&amp;#39;] = document.getElementById(&amp;#39;csrf_token&amp;#39;).getAttribute(&amp;#39;content&amp;#39;); const router = new VueRouter(); router.map({ &amp;#39;/tasks&amp;#39;: { component: tasks }, &amp;#39;/about&amp;#39;: { component: { template: `&amp;lt;div&amp;gt; &amp;lt;h3&amp;gt;About Page&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;This is the about page&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; ` } } }); router.start({}, &amp;#39;#app&amp;#39;); tasks.vue &amp;lt;template&amp;gt; &amp;lt;h3&amp;gt;My Tasks &amp;lt;span v-show=&amp;#34;list.length&amp;#34;&amp;gt;({{ list.length }})&amp;lt;/span&amp;gt;&amp;lt;/h3&amp;gt; &amp;lt;div class=&amp;#34;form-group&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;&amp;#34;&amp;gt;Add Task&amp;lt;/label&amp;gt; &amp;lt;input v-model=&amp;#34;task&amp;#34; @keyup.</description>
+    </item>
+    
+    <item>
+      <title>Create simple test data in Laravel</title>
+      <link>/create-simple-test-data-in-laravel/</link>
+      <pubDate>Sun, 20 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/create-simple-test-data-in-laravel/</guid>
+      <description>创建一个新的模型类 Todo $ php artisan make:model Todo -m
+在 xxx_create_todos_table.php 里创建表结构 $table-&amp;gt;increments(&amp;#39;id&amp;#39;); $table-&amp;gt;text(&amp;#39;item&amp;#39;); $table-&amp;gt;boolean(&amp;#39;completed&amp;#39;)-&amp;gt;default(0); $table-&amp;gt;timestamps(); 数据库迁移 $ php artisan migrate
+在 ModelFactory.php 里定义 Todo $factory-&amp;gt;define(App\Todo::class, function (Faker\Generator $faker) { return [ &amp;#39;item&amp;#39; =&amp;gt; $faker-&amp;gt;paragraph ]; }); 插入数据 $ php artisan tinker
+$ factory(App\Todo::class, 20)-&amp;gt;create()
+在 routes.php 里注册路由 Route::get(&amp;#39;/api/todos&amp;#39;, function () { return App\Todo::paginate(10); }); Route::delete(&amp;#39;/api/todos/{id}&amp;#39;, function ($id) { App\Todo::findOrFail($id)-&amp;gt;delete(); }); Route::post(&amp;#39;/api/todos&amp;#39;, function () { $todo = new App\Todo; $todo-&amp;gt;item = request()-&amp;gt;item; $todo-&amp;gt;save(); }); Route::put(&amp;#39;/api/todos/{id}&amp;#39;, function ($id) { $todo = App\Todo::find($id); $todo-&amp;gt;item = request()-&amp;gt;item; $todo-&amp;gt;save(); }); see also: Available Column Types, Faker</description>
+    </item>
+    
+    <item>
+      <title>Commonly used Laravel commands</title>
+      <link>/commonly-used-laravel-commands/</link>
+      <pubDate>Sat, 19 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/commonly-used-laravel-commands/</guid>
+      <description>$ composer install 如果我们需要使用第三方 package，如集成用户权限组，则要运行此命令更新 package 包
+$ php artisan migrate 如果我们新增了数据表或数据字段，则需要运行此命令
+$ php artisan db:seed 如果我们新增了数据表，但是没有生成对应的测试数据，可以运行此命令
+$ php artisan migrate:refresh --seed 初始化数据库
+$ php artisan view:clear 有时候更新代码，会出现模板缓存没更新的情况，运行此命令即可更新模板缓存
+$ php artisan cache:clear 有时候更新代码，会出现数据缓存 (memcache/redis) 没更新的情况，运行此命令即可更新数据缓存
+$ php artisan key:generate 生成应用的 key（会覆盖）
+My alias alias ci=&#39;composer install&#39; alias pam=&#39;php artisan migrate&#39; alias pads=&#39;php artisan db:seed&#39; alias pams=&#39;php artisan migrate:refresh --seed&#39; alias pavc=&#39;php artisan view:clear&#39; alias pacc=&#39;php artisan cache:clear&#39; alias pakg=&#39;php artisan key:generate&#39; </description>
+    </item>
+    
+  </channel>
+</rss>

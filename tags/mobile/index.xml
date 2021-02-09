@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mobile on Ryun&#39;s blog</title>
+    <link>/tags/mobile/</link>
+    <description>Recent content in mobile on Ryun&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Wed, 25 Mar 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/mobile/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Detect a Touch Screen</title>
+      <link>/detect-a-touch-screen/</link>
+      <pubDate>Wed, 25 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/detect-a-touch-screen/</guid>
+      <description> reliable way  var hasTouch; window.addEventListener(&amp;#39;touchstart&amp;#39;, function setHasTouch () { hasTouch = true; // Remove event listener once fired, otherwise it&amp;#39;ll kill scrolling  // performance  window.removeEventListener(&amp;#39;touchstart&amp;#39;, setHasTouch); }, false);  another way  var hasTouch = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);  not so reliable  var hasTouch = &amp;#39;ontouchstart&amp;#39; in window; </description>
+    </item>
+    
+    <item>
+      <title>Detect Orientation Change on Mobile Devices</title>
+      <link>/detect-orientation-change-on-mobile-devices/</link>
+      <pubDate>Tue, 24 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/detect-orientation-change-on-mobile-devices/</guid>
+      <description> Media Queries:  @media screen and (orientation: landscape) { /* landscape */ } @media screen and (orientation: portrait) { /* portrait */ }  resize Event:  window.addEventListener(&amp;#39;resize&amp;#39;, function() { if (window.innerWidth &amp;gt; window.innerHeight) { // landscape  } else { // portrait  } }, false);  orientationchange Event:  window.addEventListener(&amp;#39;orientationchange&amp;#39;, function() { switch (window.orientation) { case -90: case 90: // landscape  break; default: // portrait  break; } }, false); </description>
+    </item>
+    
+    <item>
+      <title>Configuring Web Applications</title>
+      <link>/configuring-web-applications/</link>
+      <pubDate>Sat, 21 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/configuring-web-applications/</guid>
+      <description>Specifying a Webpage Icon for Web Clip:
+&amp;lt;link rel=&amp;#34;apple-touch-icon&amp;#34; href=&amp;#34;touch-icon-iphone.png&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;apple-touch-icon&amp;#34; sizes=&amp;#34;152x152&amp;#34; href=&amp;#34;touch-icon-ipad-retina.png&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;icon&amp;#34; sizes=&amp;#34;152x152&amp;#34; href=&amp;#34;touch-icon-android.png&amp;#34;&amp;gt; Specifying a Startup Image:
+&amp;lt;link rel=&amp;#34;apple-touch-startup-image&amp;#34; href=&amp;#34;/startup.png&amp;#34;&amp;gt; Hiding Safari User Interface Components:
+&amp;lt;meta name=&amp;#34;apple-mobile-web-app-capable&amp;#34; content=&amp;#34;yes&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;mobile-web-app-capable&amp;#34; content=&amp;#34;yes&amp;#34;&amp;gt; &amp;lt;!--android --&amp;gt; Changing the Status Bar Appearance:
+&amp;lt;meta name=&amp;#34;apple-mobile-web-app-status-bar-style&amp;#34; content=&amp;#34;black&amp;#34;&amp;gt; Setting the Launcher Title：
+&amp;lt;meta name=&amp;#34;apple-mobile-web-app-title&amp;#34; content=&amp;#34;Kojitsu&amp;#34;&amp;gt; format-detection:
+&amp;lt;meta name=&amp;#34;format-detection&amp;#34; content=&amp;#34;telephone=no&amp;#34;&amp;gt; Linking to Other Native Apps:
+&amp;lt;a href=&amp;#34;tel:1-408-555-5555&amp;#34;&amp;gt;Call me&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;#34;facetime:01234567890&amp;#34;&amp;gt;Call using FaceTime&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;#34;facetime:hello@example.</description>
+    </item>
+    
+    <item>
+      <title>Prevent touch event click underneath layer</title>
+      <link>/prevent-touch-event-click-underneath-layer/</link>
+      <pubDate>Fri, 13 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/prevent-touch-event-click-underneath-layer/</guid>
+      <description> 延迟事件处理(&amp;gt;300ms)：  $(&amp;#39;#mask&amp;#39;).on(&amp;#39;tap&amp;#39;, function() { setTimeout(function() { $(&amp;#39;#mask&amp;#39;).hide(); }, 400); });  使用 touchstart 或 touchend：  $(&amp;#39;#mask&amp;#39;).on(&amp;#39;touchend&amp;#39;, function(e) { setTimeout(function() { $(&amp;#39;#mask&amp;#39;).hide(); }, 300); e.preventDefault(); });  使用 fastclick  $(function() { FastClick.attach(document.body); }); </description>
+    </item>
+    
+    <item>
+      <title>Detect mobile devices</title>
+      <link>/detect-mobile-devices/</link>
+      <pubDate>Mon, 31 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/detect-mobile-devices/</guid>
+      <description>function isMobileDevice() { return (typeof window.orientation !== &amp;#39;undefined&amp;#39;) || (navigator.userAgent.indexOf(&amp;#39;IEMobile&amp;#39;) !== -1); } or
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { alert(&amp;#39;Mobile Detected&amp;#39;); } see also: mobile-detect</description>
+    </item>
+    
+  </channel>
+</rss>

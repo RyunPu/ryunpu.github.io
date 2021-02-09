@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sublime on Ryun&#39;s blog</title>
+    <link>/tags/sublime/</link>
+    <description>Recent content in sublime on Ryun&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Thu, 12 Mar 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/sublime/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sublime react snippets</title>
+      <link>/sublime-react-snippets/</link>
+      <pubDate>Thu, 12 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/sublime-react-snippets/</guid>
+      <description>Documentation of available snippets (JSX):
+  cdm→ componentDidMount: fn() { &amp;hellip; }
+  cdup→ componentDidUpdate: fn(pp, ps) { &amp;hellip; }
+  cs→ var cx = React.addons.classSet;
+  cwm→ componentWillMount: fn() { &amp;hellip; }
+  cwr→ componentWillReceiveProps: fn(np) { &amp;hellip; }
+  cwu→ componentWillUpdate: fn(np, ns) { &amp;hellip; }
+  cwun→ componentWillUnmount: fn() { &amp;hellip; }
+  cx→ cx({ &amp;hellip; })
+  fdn→ React.</description>
+    </item>
+    
+    <item>
+      <title>Sublime Text Plugins for Web Development</title>
+      <link>/sublime-text-plugins-for-web-development/</link>
+      <pubDate>Wed, 11 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/sublime-text-plugins-for-web-development/</guid>
+      <description>BracketHighlighter
+  LiveReload: Once installed, you will still need to enable the plugin in the command palette:
+ open the Sublime Text command palette width Cmd + Shift + P Type &amp;lsquo;LiveReload: Enable/disable plugins&amp;rsquo; and hit Enter Scroll down to &amp;lsquo;Enable - SimpleReload&amp;rsquo; and hit Enter    SideBarEnhancements
+  ColorHighlighter
+  caniuse
+  ColorPicker
+  Emmet:
+  cheat-sheet
+  Autoprefixer</description>
+    </item>
+    
+    <item>
+      <title>Sublime Text shortcuts</title>
+      <link>/sublime-text-shortcuts/</link>
+      <pubDate>Wed, 30 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/sublime-text-shortcuts/</guid>
+      <description>Select some text and press Cmd + D to add more instances. If you want to skip the current instance, press Cmd + K, Cmd + D. If you go too far, press Cmd + U to deselect the current instance.
+  Cmd + L expands the selections to the end of the line. Cmd + Shift + L splits the selections into lines.
+  To select some block, use Shift + click, or press Alt + Shift + Up/Down or Cmd + Shift + Up/Down.</description>
+    </item>
+    
+    <item>
+      <title>Sublime osx command line setup</title>
+      <link>/sublime-osx-command-line-setup/</link>
+      <pubDate>Tue, 25 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/sublime-osx-command-line-setup/</guid>
+      <description>with Sublime Text2, you can run:
+$ ln -s &amp;#34;/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl&amp;#34; ~/bin/subl with Sublime Text3, you can run:
+$ ln -s &amp;#34;/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl&amp;#34; ~/bin/subl see more: sublimetext docs</description>
+    </item>
+    
+  </channel>
+</rss>

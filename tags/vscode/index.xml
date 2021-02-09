@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vscode on Ryun&#39;s blog</title>
+    <link>/tags/vscode/</link>
+    <description>Recent content in vscode on Ryun&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Sat, 23 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VS Code shortcuts for macOS</title>
+      <link>/vs-code-shortcuts-for-macos/</link>
+      <pubDate>Sat, 23 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/vs-code-shortcuts-for-macos/</guid>
+      <description>General          ⇧⌘P, F1 Show Command Palette   ⌘P Quick Open, Go to File…   ⇧⌘N New window/instance   ⌘W Close window/instance   ⌘, User Settings   ⌘K ⌘S Keyboard Shortcuts    Basic editing          ⌘X Cut line (empty selection)   ⌘C Copy line (empty selection)   ⌥↓ / ⌥↑ Move line down/up   ⇧⌥↓ / ⇧⌥↑ Copy line down/up   ⇧⌘K Delete line   ⌘Enter / ⇧⌘Enter Insert line below/above   ⇧⌘\ Jump to matching bracket   ⌘] / ⌘[ Indent/outdent line   Home / End Go to beginning/end of line   ⌘↑ / ⌘↓ Go to beginning/end of file   ⌃PgUp / ⌃PgDn Scroll line up/down   ⌘PgUp /⌘PgDn Scroll page up/down   ⌥⌘[ / ⌥⌘] Fold/unfold region   ⌘K ⌘[ / ⌘K ⌘] Fold/unfold all subregions   ⌘K ⌘0 / ⌘K ⌘J Fold/unfold all regions   ⌘K ⌘C Add line comment   ⌘K ⌘U Remove line comment   ⌘/ Toggle line comment   ⇧⌥A Toggle block comment   ⌥Z Toggle word wrap    Multi-cursor and selection          ⌥ + click Insert cursor   ⌥⌘↑ Insert cursor above   ⌥⌘↓ Insert cursor below   ⌘U Undo last cursor operation   ⇧⌥I Insert cursor at end of each line selected   ⌘L Select current line   ⇧⌘L Select all occurrences of current selection   ⌘F2 Select all occurrences of current word   ⌃⇧⌘→ / ← Expand / shrink selection   ⇧⌥ + drag mouse Column (box) selection   ⇧⌥⌘↑ / ↓ Column (box) selection up/down   ⇧⌥⌘← / → Column (box) selection left/right   ⇧⌥⌘PgUp Column (box) selection page up   ⇧⌥⌘PgDn Column (box) selection page down    Search and replace          ⌘F Find   ⌥⌘F Replace   ⌘G / ⇧⌘G Find next/previous   ⌥Enter Select all occurrences of Find match   ⌘D Add selection to next Find match   ⌘K ⌘D Move last selection to next Find match    Rich languages editing          ⌃Space Trigger suggestion   ⇧⌘Space Trigger parameter hints   ⇧⌥F Format document   ⌘K ⌘F Format selection   F12 Go to Definition   ⌥F12 Peek Definition   ⌘K F12 Open Definition to the side   ⌘.</description>
+    </item>
+    
+    <item>
+      <title>VS code extensions for frontend developers</title>
+      <link>/vs-code-extensions-for-frontend-developers/</link>
+      <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/vs-code-extensions-for-frontend-developers/</guid>
+      <description>Add jsdoc comments Adds simple jsdoc comments for the parameters of a selected function signature
+Bookmarks Mark lines and jump to them
+change-case Quickly change the case (camelCase, CONSTANT_CASE, snake_case, etc) of the current selection or current word
+CSS Peek Allow peeking to css ID and class strings as definitions from html files to respective CSS. Allows peek and goto definition
+EditorConfig for VS Code EditorConfig Support for Visual Studio Code</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>life on Ryun&#39;s blog</title>
+    <link>/tags/life/</link>
+    <description>Recent content in life on Ryun&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 23 Mar 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/life/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Words of Wisdom from Modern Family</title>
+      <link>/words-of-wisdom-from-modern-family/</link>
+      <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/words-of-wisdom-from-modern-family/</guid>
+      <description>“Always look people in the eye. Even if they’re blind. Just say ‘I’m looking you in the eye’”
+  “If you get pulled over for speeding. Tell them your spouse has diarrhoea.”
+  “The most amazing things that can happen to a human being will happen to you, if you just lower your expectations.”
+  “You only get one chance at a first impression. I suggest Julia Child because it’s easy to do.</description>
+    </item>
+    
+    <item>
+      <title>Rescue time with RescueTime</title>
+      <link>/rescue-time-with-rescuetime/</link>
+      <pubDate>Wed, 26 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/rescue-time-with-rescuetime/</guid>
+      <description>RescueTime helps you understand where your time goes each day. Optimize your energy. And take back control of your day.</description>
+    </item>
+    
+    <item>
+      <title>Stop Working from a Prison Cell</title>
+      <link>/stop-working-from-a-prison-cell/</link>
+      <pubDate>Mon, 24 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/stop-working-from-a-prison-cell/</guid>
+      <description>Stop Working from a Prison Cell</description>
+    </item>
+    
+  </channel>
+</rss>

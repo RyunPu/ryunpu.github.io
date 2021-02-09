@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on Ryun&#39;s blog</title>
+    <link>/tags/git/</link>
+    <description>Recent content in git on Ryun&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 25 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Git Cheatsheet</title>
+      <link>/git-cheatsheet/</link>
+      <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/git-cheatsheet/</guid>
+      <description>初始化:
+❯ git init gra 添加远程仓库:
+❯ git remote add origin git@github.com:RyunPu/learn-git.git  根据需要添加远程仓库，git@github.com:RyunPu/learn-git.git 应该是你自己的仓库地址
+ glog 查看提交历史:
+❯ git log --oneline --decorate --graph gst 查看当前状态:
+❯ git status 添加一个新文件，使用 ga 将文件添加到暂存区:
+❯ git add README.md  使用 git add . 来添加所有文件
+ gcmsg 提交文件:
+❯ git commit -m &#39;touch README.md&#39; 文件在暂存区时，修改文件后，使用 gcam 提交文件:
+❯ git commit -a -m &#39;modify README.md&#39; gp 第一次关联并上传到远程仓库:
+❯ git push --set-upstream origin master  以后的上传可以直接使用 git push</description>
+    </item>
+    
+    <item>
+      <title>Generate a new SSH key and add it to the ssh-agent</title>
+      <link>/generate-a-new-ssh-key-and-add-it-to-the-ssh-agent/</link>
+      <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/generate-a-new-ssh-key-and-add-it-to-the-ssh-agent/</guid>
+      <description>Generate a new SSH key   Open Terminal.
+  Paste the text below, substituting in your GitHub email address.
+  $ ssh-keygen -t rsa -b 4096 -C &amp;#34;your_email@example.com&amp;#34; This creates a new ssh key, using the provided email as a label.
+&amp;gt; Generating public/private rsa key pair. When you&#39;re prompted to &amp;ldquo;Enter a file in which to save the key,&amp;rdquo; press Enter. This accepts the default file location.</description>
+    </item>
+    
+    <item>
+      <title>Git snippets</title>
+      <link>/git-snippets/</link>
+      <pubDate>Fri, 03 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/git-snippets/</guid>
+      <description>Working with forks Clone your fork to your local machine
+$ git clone git@github.com:USERNAME/FORKED-PROJECT.git Add &amp;lsquo;upstream&amp;rsquo; repo to list of remotes
+$ git remote add upstream https://github.com/UPSTREAM-USER/ORIGINAL-PROJECT.git Fetch from upstream remote
+$ git fetch upstream Check out your fork&#39;s local master branch
+$ git checkout master Merge the changes from upstream/master into your local master branch
+$ git merge upstream/master Working with branches Pushing to a remote
+$ git push &amp;lt;REMOTENAME&amp;gt; &amp;lt;BRANCHNAME&amp;gt; $ git push &amp;lt;REMOTENAME&amp;gt; HEAD:&amp;lt;BRANCHNAME&amp;gt; Renaming branches</description>
+    </item>
+    
+    <item>
+      <title>Modifying an inactive pull request locally</title>
+      <link>/modifying-an-inactive-pull-request-locally/</link>
+      <pubDate>Wed, 18 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/modifying-an-inactive-pull-request-locally/</guid>
+      <description>$ git fetch origin pull/ID/head:BRANCHNAME $ git checkout BRANCHNAME When you&#39;re ready, you can push the new branch up:
+$ git push origin BRANCHNAME see more: Checking out pull requests locally</description>
+    </item>
+    
+    <item>
+      <title>Syncing a fork</title>
+      <link>/syncing-a-fork/</link>
+      <pubDate>Tue, 17 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/syncing-a-fork/</guid>
+      <description>$ git remote add upstream https://github.com/username/projectname.git $ git pull upstream master(git fetch upstream, git merge upstream/master) $ git push origin master see more: Syncing a fork</description>
+    </item>
+    
+    <item>
+      <title>Creating Project Pages manually</title>
+      <link>/creating-project-pages-manually/</link>
+      <pubDate>Mon, 16 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/creating-project-pages-manually/</guid>
+      <description>$ cd repository $ git checkout --orphan gh-pages add and commit some pages and then:
+$ git push origin gh-pages your Project Pages site will be available at https://username.github.io/projectname
+see also: Getting Started with GitHub Pages</description>
+    </item>
+    
+    <item>
+      <title>Helpful aliases for common git tasks</title>
+      <link>/helpful-aliases-for-common-git-tasks/</link>
+      <pubDate>Mon, 28 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/helpful-aliases-for-common-git-tasks/</guid>
+      <description>Alias Command     g git   ga git add   gaa git add &amp;ndash;all   gapa git add &amp;ndash;patch   gau git add &amp;ndash;update   gav git add &amp;ndash;verbose   gap git apply   gb git branch   gba git branch -a   gbd git branch -d   gbda git branch &amp;ndash;no-color &amp;ndash;merged | command grep -vE &amp;ldquo;^(+   gbD git branch -D   gbl git blame -b -w   gbnm git branch &amp;ndash;no-merged   gbr git branch &amp;ndash;remote   gbs git bisect   gbsb git bisect bad   gbsg git bisect good   gbsr git bisect reset   gbss git bisect start   gc git commit -v   gc!</description>
+    </item>
+    
+    <item>
+      <title>Use Git</title>
+      <link>/use-git/</link>
+      <pubDate>Sat, 19 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/use-git/</guid>
+      <description>Getting Help:
+$ git help &amp;lt;verb&amp;gt; Your Configure:
+$ git config --list $ git config --global user.name &amp;#34;[name]&amp;#34; $ git config --global user.email &amp;#34;[email address]&amp;#34; $ git config --global user.name &amp;#34;[another name]&amp;#34; Getting a Git Repository:
+$ git init [project-name] $ git clone [url] [project-name] Ignoring Files:
+# no .a files *.a # but do track lib.a, even though you&#39;re ignoring .a files above !lib.a # only ignore the root TODO file, not subdir/TODO /TODO # ignore all files in the build/ directory build/ # ignore doc/notes.</description>
+    </item>
+    
+    <item>
+      <title>Install Git</title>
+      <link>/install-git/</link>
+      <pubDate>Thu, 20 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/install-git/</guid>
+      <description>当你想升级系统自带的 Git 的时候，可以使用下面的命令查看其所在的目录：
+$ which git 当你看到类似 ’/user/bin‘ 的地址时，你可能需要更改用户目录下的隐藏文件 .bash_profile，添加：
+export PATH=/usr/local/bin:$PATH  然后，你就可以安装和更新 Git了，我使用的是 Homebrew：
+$ ruby -e &amp;#34;$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)&amp;#34; $ brew install git $ brew upgrade git 如果需要改变 Git 的指向:
+$ brew link git --overwrite </description>
+    </item>
+    
+  </channel>
+</rss>

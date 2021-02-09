@@ -1,0 +1,1760 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+Use webpack 4 &#43; bootstrap 4 &#43; fontawesome 5 (1)
+</title>
+
+    
+
+
+  
+  <meta name="author" content="Ryun" />
+  <meta name="description" content="从零开始使用 webpack 4 创建一个 bootstrap 4 &#43; fontawesome 5 的项目，有兴趣的同学可以跟着做下。
+准备工作 创建目录 ❯ mkdir webpack-demo &amp;amp;&amp;amp; cd webpack-demo 添加 package.json ❯ yarn init -y  要安装 yran，可以访问 https://yarnpkg.com/lang/en/docs/install
+ package.json:
+{ &amp;quot;name&amp;quot;: &amp;quot;webpack-demo&amp;quot;, &amp;quot;version&amp;quot;: &amp;quot;1.0.0&amp;quot;, &amp;quot;main&amp;quot;: &amp;quot;index.js&amp;quot;, &amp;quot;license&amp;quot;: &amp;quot;MIT&amp;quot; } 去掉入口和设置私有:
+{ &amp;quot;name&amp;quot;: &amp;quot;webpack-demo&amp;quot;, &amp;quot;version&amp;quot;: &amp;quot;1.0.0&amp;quot;, &amp;quot;private&amp;quot;: true } 添加 .editorconfig ❯ ec init  要安装 editorconfig-cli，可以使用 yarn global add editorconfig-cli
+ root = true [*] charset = utf-8 indent_style = space indent_size = 2 end_of_line = lf trim_trailing_whitespace = true insert_final_newline = true 添加 ." />
+
+
+
+<meta name="generator" content="Hugo 0.60.1" />
+
+<link rel="canonical" href="/use-webpack-4-bootstrap-4-fontawesome-5-1/" />
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/github-markdown.css" />
+<link rel="stylesheet" href="/css/semantic.min.css" />
+<link rel="stylesheet" href="/css/site.css" />
+
+
+<style>
+  a {
+    color: seagreen !important;
+  }
+</style>
+
+
+
+<style>
+  .inverted a {
+     color: darkseagreen !important;
+  }
+</style>
+
+
+  </head>
+
+  
+  <body style="background-image: url(/img/bg-white.jpg);">
+  
+    <div id="container" class="container relative item">
+      
+<nav class="ui secondary menu dream-menu top-nav transform">
+
+  <div class="item">
+    <i class="large link home icon transition" title="首页" onclick="window.location.href = '\/'"></i>
+  </div>
+  <a class="item" href="/posts">
+    <i class="larger link th icon transition" title="文章"></i>
+  </a>
+  <div class="theme-switch-item item">
+    <i id="theme-switch" class="large link icon" onclick="themeSwitch()"></i>
+  </div>
+  <div class="item">
+    <i class="large search icon search-icon"></i>
+  </div>
+</nav>
+
+      
+<div class="ui centered relaxed grid dream-grid">
+  <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single">
+
+    <section class="ui top attached segment">
+      
+      <header>
+        <h2 class="ui header">
+          Use webpack 4 &#43; bootstrap 4 &#43; fontawesome 5 (1)
+          <div class="sub header">Mar 19, 2019 · 6 分钟阅读</div>
+        </h2>
+      </header>
+      <article style="margin-top: 2rem;"><p>从零开始使用 webpack 4 创建一个 bootstrap 4 + fontawesome 5 的项目，有兴趣的同学可以跟着做下。</p>
+<h3 id="heading">准备工作</h3>
+<h4 id="heading1">创建目录</h4>
+<pre><code>❯ mkdir webpack-demo &amp;&amp; cd webpack-demo
+</code></pre><h4 id="-packagejson">添加 package.json</h4>
+<pre><code>❯ yarn init -y
+</code></pre><blockquote>
+<p>要安装 yran，可以访问 <a href="https://yarnpkg.com/lang/en/docs/install">https://yarnpkg.com/lang/en/docs/install</a></p>
+</blockquote>
+<p>package.json:</p>
+<pre><code>{
+  &quot;name&quot;: &quot;webpack-demo&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;main&quot;: &quot;index.js&quot;,
+  &quot;license&quot;: &quot;MIT&quot;
+}
+</code></pre><p>去掉入口和设置私有:</p>
+<pre><code>{
+  &quot;name&quot;: &quot;webpack-demo&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;private&quot;: true
+}
+</code></pre><h4 id="-editorconfig">添加 .editorconfig</h4>
+<pre><code>❯ ec init
+</code></pre><blockquote>
+<p>要安装 editorconfig-cli，可以使用 yarn global add editorconfig-cli</p>
+</blockquote>
+<pre><code>root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf
+trim_trailing_whitespace = true
+insert_final_newline = true
+</code></pre><h4 id="-eslintrcjs">添加 .eslintrc.js</h4>
+<pre><code>❯ yarn add -D eslint
+❯ npx eslint --init
+</code></pre><blockquote>
+<p>关于 npx，可以访问 <a href="https://github.com/npm/npx">https://github.com/npm/npx</a></p>
+</blockquote>
+<p>.eslintrc.js:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">env</span><span style="color:#f92672">:</span> {
+    <span style="color:#a6e22e">browser</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+    <span style="color:#a6e22e">es6</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>
+  },
+  <span style="color:#66d9ef">extends</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;eslint:recommended&#34;</span>,
+  <span style="color:#a6e22e">globals</span><span style="color:#f92672">:</span> {
+    <span style="color:#a6e22e">Atomics</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;readonly&#34;</span>,
+    <span style="color:#a6e22e">SharedArrayBuffer</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;readonly&#34;</span>
+  },
+  <span style="color:#a6e22e">parserOptions</span><span style="color:#f92672">:</span> {
+    <span style="color:#a6e22e">ecmaVersion</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2018</span>,
+    <span style="color:#a6e22e">sourceType</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;module&#34;</span>
+  },
+  <span style="color:#a6e22e">rules</span><span style="color:#f92672">:</span> {}
+}
+</code></pre></div><p>通常情况下我还会选择使用 <code>babel-eslint</code>，当然你也可以选择 <code>eslint-loader</code> 等:</p>
+<pre><code>❯ yarn add -D babel-eslint
+</code></pre><p>.eslintrc.js:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">parser</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;babel-eslint&#34;</span>,
+  <span style="color:#a6e22e">rules</span><span style="color:#f92672">:</span> {
+    <span style="color:#e6db74">&#34;semi&#34;</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;error&#34;</span>, <span style="color:#e6db74">&#34;never&#34;</span>],
+    <span style="color:#e6db74">&#34;comma-dangle&#34;</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;error&#34;</span>, <span style="color:#e6db74">&#34;only-multiline&#34;</span>],
+    <span style="color:#e6db74">&#34;indent&#34;</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;error&#34;</span>, <span style="color:#ae81ff">2</span>],
+    <span style="color:#e6db74">&#34;quotes&#34;</span><span style="color:#f92672">:</span> [<span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;single&#34;</span>, <span style="color:#e6db74">&#34;avoid-escape&#34;</span>],
+    <span style="color:#e6db74">&#34;no-unused-vars&#34;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>
+  }
+}
+</code></pre></div><p>基本的准备工作就完成了，大家可以根据自己的需要选择是否忽略某些步骤。</p>
+<h3 id="heading2">创建文件</h3>
+<h4 id="-indexhtmlsrcjsindexjs--srcstylesmainscss">添加 index.html、src/js/index.js 和 src/styles/main.scss</h4>
+<pre><code>❯ touch index.html
+❯ mkdir -p src/js &amp;&amp; touch src/js/index.js
+❯ mkdir -p src/styles &amp;&amp; touch src/styles/main.scss
+</code></pre><p>在 index.html 中加一些 bootstrap 和 fontawesome 的代码:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span> <span style="color:#a6e22e">dir</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ltr&#34;</span>&gt;
+
+&lt;<span style="color:#f92672">head</span>&gt;
+  &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span> /&gt;
+  &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1, shrink-to-fit=no&#34;</span> /&gt;
+  &lt;<span style="color:#f92672">title</span>&gt;webpack-demo&lt;/<span style="color:#f92672">title</span>&gt;
+&lt;/<span style="color:#f92672">head</span>&gt;
+
+&lt;<span style="color:#f92672">body</span>&gt;
+  <span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> Button trigger modal </span><span style="color:#75715e">--&gt;</span>
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;d-flex justify-content-center&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;height: 100vh;&#34;</span>&gt;
+    &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn btn-primary align-self-center&#34;</span> <span style="color:#a6e22e">data-toggle</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;modal&#34;</span> <span style="color:#a6e22e">data-target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#exampleModal&#34;</span>&gt;
+      Launch webpack-demo modal &lt;<span style="color:#f92672">i</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fas fa-eye&#34;</span>&gt;&lt;/<span style="color:#f92672">i</span>&gt;
+    &lt;/<span style="color:#f92672">button</span>&gt;
+  &lt;/<span style="color:#f92672">div</span>&gt;
+
+  <span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> Modal </span><span style="color:#75715e">--&gt;</span>
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;modal fade&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;exampleModal&#34;</span> <span style="color:#a6e22e">tabindex</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;-1&#34;</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;dialog&#34;</span> <span style="color:#a6e22e">aria-labelledby</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;exampleModalLabel&#34;</span> <span style="color:#a6e22e">aria-hidden</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;modal-dialog&#34;</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;document&#34;</span>&gt;
+      &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;modal-content&#34;</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;modal-header&#34;</span>&gt;
+          &lt;<span style="color:#f92672">h5</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;modal-title&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;exampleModalLabel&#34;</span>&gt;Modal title&lt;/<span style="color:#f92672">h5</span>&gt;
+          &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;close&#34;</span> <span style="color:#a6e22e">data-dismiss</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;modal&#34;</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Close&#34;</span>&gt;
+            &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">aria-hidden</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>&gt;&amp;times;&lt;/<span style="color:#f92672">span</span>&gt;
+          &lt;/<span style="color:#f92672">button</span>&gt;
+        &lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;modal-body&#34;</span>&gt;
+          Hello There
+        &lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;modal-footer&#34;</span>&gt;
+          &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn btn-secondary&#34;</span> <span style="color:#a6e22e">data-dismiss</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;modal&#34;</span>&gt;
+            Close
+          &lt;/<span style="color:#f92672">button</span>&gt;
+          &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn btn-primary&#34;</span>&gt;Save changes&lt;/<span style="color:#f92672">button</span>&gt;
+        &lt;/<span style="color:#f92672">div</span>&gt;
+      &lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;
+  &lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">body</span>&gt;
+
+&lt;/<span style="color:#f92672">html</span>&gt;
+</code></pre></div><h3 id="-webpack">配置 webpack</h3>
+<h4 id="-webpack-webpackcli-webpackdevserver">添加 webpack webpack-cli webpack-dev-server</h4>
+<pre><code>❯ yarn add -D webpack webpack-cli webpack-dev-server
+</code></pre><blockquote>
+<p>你也可以使用 <a href="https://www.npmjs.com/package/@webpack-cli/init"><code>@webpack-cli/init</code></a> 自动创建一个新 webpack 配置</p>
+</blockquote>
+<h4 id="-webpackconfigjs">添加 webpack.config.js</h4>
+<pre><code>❯ touch webpack.config.js
+</code></pre><p>webpack.config.js:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">path</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;path&#39;</span>)
+
+<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">env</span>, <span style="color:#a6e22e">argv</span>) =&gt; {
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">publicPath</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">isProd</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">argv</span>.<span style="color:#a6e22e">mode</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;production&#39;</span>
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">resolve</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">dir</span>) =&gt; <span style="color:#a6e22e">path</span>.<span style="color:#a6e22e">resolve</span>(<span style="color:#a6e22e">__dirname</span>, <span style="color:#a6e22e">dir</span>)
+
+  <span style="color:#66d9ef">return</span> {
+    <span style="color:#a6e22e">entry</span><span style="color:#f92672">:</span> {
+      <span style="color:#a6e22e">main</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;./src/js/index.js&#39;</span>,
+    },
+
+    <span style="color:#a6e22e">output</span><span style="color:#f92672">:</span> {
+      <span style="color:#a6e22e">path</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">resolve</span>(<span style="color:#e6db74">&#39;dist&#39;</span>),
+      <span style="color:#a6e22e">filename</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;static/js/[name]_[hash:5].js&#39;</span>,
+      <span style="color:#a6e22e">publicPath</span>
+    },
+  }
+}
+</code></pre></div><p>现在可以让我们的项目跑起来了：</p>
+<pre><code>❯ npx webpack-dev-server --mode development
+</code></pre><p>为了使用方便，我们在 package.json 添加相应的 scripts：</p>
+<pre><code>{
+  &quot;name&quot;: &quot;webpack-demo&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;private&quot;: true,
+  &quot;scripts&quot;: {
+    &quot;build&quot;: &quot;webpack --mode production&quot;,
+    &quot;dev&quot;: &quot;webpack-dev-server --mode development&quot;
+  },
+  ...
+}
+</code></pre><p>现在我们可以使用：</p>
+<pre><code>❯ yarn run dev
+</code></pre><p>现在的页面:</p>
+<p><img src="https://user-images.githubusercontent.com/6168498/72239068-b6137700-361a-11ea-87fa-d5fc149491ca.png" alt="image"></p>
+<h4 id="-htmlwebpackplugin">添加 html-webpack-plugin</h4>
+<pre><code>❯ yarn add -D html-webpack-plugin
+</code></pre><blockquote>
+<p><code>html-webpack-plugin</code> 简化了 HTML 文件的创建，以便为 webpack 包提供服务</p>
+</blockquote>
+<p>在 webpack.config.js 中引入并使用 HtmlWebpackPlugin</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">...
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">HtmlWebpackPlugin</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;html-webpack-plugin&#39;</span>)
+
+<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">env</span>, <span style="color:#a6e22e">argv</span>) =&gt; {
+  ...
+
+  <span style="color:#66d9ef">return</span> {
+    ...
+
+    <span style="color:#a6e22e">plugins</span><span style="color:#f92672">:</span> [
+      <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">HtmlWebpackPlugin</span>({
+        <span style="color:#a6e22e">template</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;./index.html&#39;</span>,
+        <span style="color:#a6e22e">minify</span><span style="color:#f92672">:</span> {
+          <span style="color:#a6e22e">removeComments</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+          <span style="color:#a6e22e">collapseWhitespace</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+          <span style="color:#a6e22e">removeAttributeQuotes</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>
+        }
+      }),
+    ],
+  }
+}
+</code></pre></div><p>重新运行 <code>yarn run dev</code> 后，你可以发现页面已经自动注入了 script，更改页面后还能自动刷新。</p>
+<p>在开使用 bootstrap 前，我们先添加好相应的 loader。</p>
+<h4 id="-css--loader">添加 css 相应的 loader</h4>
+<pre><code>❯ yarn add -D style-loader css-loader postcss-loader autoprefixer node-sass sass-loader
+</code></pre><p>在 webpack.config.js 中添加相应的 rules:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">...
+
+<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">env</span>, <span style="color:#a6e22e">argv</span>) =&gt; {
+  ...
+
+  <span style="color:#66d9ef">return</span> {
+    ...
+
+    <span style="color:#a6e22e">module</span><span style="color:#f92672">:</span> {
+      <span style="color:#a6e22e">rules</span><span style="color:#f92672">:</span> [
+        {
+          <span style="color:#a6e22e">test</span><span style="color:#f92672">:</span> <span style="color:#e6db74">/\.scss$/</span>,
+          <span style="color:#a6e22e">use</span><span style="color:#f92672">:</span> [
+            {
+              <span style="color:#a6e22e">loader</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;style-loader&#39;</span>,
+              <span style="color:#a6e22e">options</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">injectType</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;singletonStyleTag&#39;</span> }
+            },
+            <span style="color:#e6db74">&#39;css-loader&#39;</span>,
+            {
+              <span style="color:#a6e22e">loader</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;postcss-loader&#39;</span>,
+              <span style="color:#a6e22e">options</span><span style="color:#f92672">:</span> {
+                <span style="color:#a6e22e">ident</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;postcss&#39;</span>,
+                <span style="color:#a6e22e">plugins</span><span style="color:#f92672">:</span> [
+                  <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;autoprefixer&#39;</span>)()
+                ]
+              }
+            },
+            <span style="color:#e6db74">&#39;sass-loader&#39;</span>
+          ]
+        },
+      ]
+    },
+  }
+}
+</code></pre></div><p>在 package.json 中添加 browserslist 来配置 <code>autoprefixer</code> 的作用范围:</p>
+<pre><code>{
+  ...
+  &quot;browserslist&quot;: [
+    &quot;&gt; 2%&quot;,
+    &quot;last 1 versions&quot;
+  ]
+}
+</code></pre><blockquote>
+<p>关于 browserslist，可以访问 <a href="https://github.com/browserslist/browserslist">https://github.com/browserslist/browserslist</a></p>
+</blockquote>
+<h4 id="-js--loader">添加 js 相应的 loader</h4>
+<pre><code>❯ yarn add -D @babel/core @babel/preset-env babel-loader
+❯ yarn add @babel/runtime
+</code></pre><blockquote>
+<p>你或许会需要 <code>@babel/runtime</code> 来支持部分编译</p>
+</blockquote>
+<p>在 webpack.config.js 中添加相应的 rules:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">...
+
+<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">env</span>, <span style="color:#a6e22e">argv</span>) =&gt; {
+  ...
+
+  <span style="color:#66d9ef">return</span> {
+    ...
+
+    <span style="color:#a6e22e">module</span><span style="color:#f92672">:</span> {
+      <span style="color:#a6e22e">rules</span><span style="color:#f92672">:</span> [
+        ...
+
+        {
+          <span style="color:#a6e22e">test</span><span style="color:#f92672">:</span> <span style="color:#e6db74">/\.m?js$/</span>,
+          <span style="color:#a6e22e">exclude</span><span style="color:#f92672">:</span> <span style="color:#e6db74">/node_modules/</span>,
+          <span style="color:#a6e22e">use</span><span style="color:#f92672">:</span> [
+            {
+              <span style="color:#a6e22e">loader</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;babel-loader&#39;</span>,
+              <span style="color:#a6e22e">options</span><span style="color:#f92672">:</span> {
+                <span style="color:#a6e22e">presets</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;@babel/preset-env&#39;</span>]
+              }
+            }
+          ]
+        },
+      ]
+    }
+  }
+}
+</code></pre></div><p>基本的配置工作就完成了，大家可以根据自己的需要选择是否使用某些 loader。</p>
+<h3 id="-bootstrap">使用 bootstrap</h3>
+<h4 id="-jquery-popperjs-bootstrap">添加 jquery popper.js bootstrap</h4>
+<pre><code>❯ yarn add jquery popper.js bootstrap
+</code></pre><h4 id="-srcstylesmainscss--bootstrap">在 src/styles/main.scss 中引入 bootstrap</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss"><span style="color:#66d9ef">@import</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">~bootstrap/scss/bootstrap</span><span style="color:#e6db74">&#39;</span>;
+</code></pre></div><p>或者按需引入:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss"><span style="color:#66d9ef">@import</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">~bootstrap/scss/bootstrap-reboot</span><span style="color:#e6db74">&#39;</span>;
+<span style="color:#66d9ef">@import</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">~bootstrap/scss/_modal</span><span style="color:#e6db74">&#39;</span>;
+<span style="color:#a6e22e">.</span><span style="color:#a6e22e">.</span><span style="color:#a6e22e">.</span>
+</code></pre></div><h4 id="-srcjsindexjs-">在 src/js/index.js 中添加:</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;../styles/main.scss&#39;</span>
+<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;bootstrap/js/dist/modal&#39;</span>
+</code></pre></div><p>现在的页面:</p>
+<p><img src="https://user-images.githubusercontent.com/6168498/72238250-3389b800-3618-11ea-99ae-22f224217e5a.png" alt="image"></p>
+<p>bootstrap 的使用就告一段落了，下面我们看下 fontawesome 的使用。</p>
+<h3 id="-fontawesome">使用 fontawesome</h3>
+<h4 id="heading3">添加相应的依赖包</h4>
+<pre><code>❯ yarn add @fortawesome/fontawesome-svg-core @fortawesome/free-regular-svg-icons @fortawesome/free-solid-svg-icons
+</code></pre><blockquote>
+<p>使用 svg 的形式，我们可以按需引入自己所需的图标</p>
+</blockquote>
+<h4 id="-srcjsindexjs-1">修改 src/js/index.js 为:</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;../styles/main.scss&#39;</span>
+<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;bootstrap/js/dist/modal&#39;</span>
+<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">library</span>, <span style="color:#a6e22e">dom</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;@fortawesome/fontawesome-svg-core&#39;</span>
+<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">faEye</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;@fortawesome/free-solid-svg-icons/faEye&#39;</span>
+
+<span style="color:#a6e22e">library</span>.<span style="color:#a6e22e">add</span>(<span style="color:#a6e22e">faEye</span>)
+<span style="color:#a6e22e">dom</span>.<span style="color:#a6e22e">i2svg</span>()
+</code></pre></div><p>现在的页面:</p>
+<p><img src="https://user-images.githubusercontent.com/6168498/72238397-90856e00-3618-11ea-8734-5c19e1c316cb.png" alt="image"></p>
+<p>fontawesome 的使用到此就结束了，下面我们处理下图片。</p>
+<h3 id="heading4">处理图片</h3>
+<h4 id="-htmlloader-fileloader-urlloader">添加 html-loader file-loader url-loader</h4>
+<pre><code>❯ yarn add -D html-loader file-loader url-loader
+</code></pre><blockquote>
+<p><code>html-loader</code> 用来将 HTML 导出为字符串，我们通常使用它来解析生成 img 的 src</p>
+</blockquote>
+<p>在 webpack.config.js 中添加相应的 rules:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">...
+
+<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">env</span>, <span style="color:#a6e22e">argv</span>) =&gt; {
+  ...
+
+  <span style="color:#66d9ef">return</span> {
+    ...
+
+    <span style="color:#a6e22e">module</span><span style="color:#f92672">:</span> {
+      <span style="color:#a6e22e">rules</span><span style="color:#f92672">:</span> [
+        ...
+
+        {
+          <span style="color:#a6e22e">test</span><span style="color:#f92672">:</span> <span style="color:#e6db74">/\.html$/</span>,
+          <span style="color:#a6e22e">use</span><span style="color:#f92672">:</span> [
+            {
+              <span style="color:#a6e22e">loader</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;html-loader&#39;</span>,
+              <span style="color:#a6e22e">options</span><span style="color:#f92672">:</span> {
+                <span style="color:#a6e22e">attrs</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;img:src&#39;</span>]
+              }
+            }
+          ]
+        },
+
+        {
+          <span style="color:#a6e22e">test</span><span style="color:#f92672">:</span> <span style="color:#e6db74">/\.(png|jpe?g|gif)$/i</span>,
+          <span style="color:#a6e22e">use</span><span style="color:#f92672">:</span> [
+            {
+              <span style="color:#a6e22e">loader</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;url-loader&#39;</span>,
+              <span style="color:#a6e22e">options</span><span style="color:#f92672">:</span> {
+                <span style="color:#a6e22e">limit</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">8192</span>,
+                <span style="color:#a6e22e">outputPath</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;static/images&#39;</span>,
+                <span style="color:#a6e22e">publicPath</span><span style="color:#f92672">:</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">publicPath</span><span style="color:#e6db74">}</span><span style="color:#e6db74">/static/images</span><span style="color:#e6db74">`</span>,
+                <span style="color:#a6e22e">esModule</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>
+              }
+            },
+          ]
+        },
+      ]
+    }
+  }
+}
+</code></pre></div><h3 id="heading5">生产环境</h3>
+<h4 id="-minicssextractplugin--css">使用 mini-css-extract-plugin 分离 css</h4>
+<pre><code>❯ yarn add -D mini-css-extract-plugin
+</code></pre><p>在 webpack.config.js 中引入并使用 MiniCssExtractPlugin，根据 <code>isProd</code> 判断使用 <code>MiniCssExtractPlugin.loader</code> 或者 <code>style-loader</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">...
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">MiniCssExtractPlugin</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;mini-css-extract-plugin&#39;</span>)
+
+<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">env</span>, <span style="color:#a6e22e">argv</span>) =&gt; {
+  ...
+
+  <span style="color:#66d9ef">return</span> {
+    ...
+
+    <span style="color:#a6e22e">plugins</span><span style="color:#f92672">:</span> [
+      ...
+      <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">MiniCssExtractPlugin</span>({
+        <span style="color:#a6e22e">filename</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;static/css/[name].css&#39;</span>,
+        <span style="color:#a6e22e">chunkFilename</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;static/css/[id].css&#39;</span>
+      }),
+    ],
+
+    <span style="color:#a6e22e">module</span><span style="color:#f92672">:</span> {
+      <span style="color:#a6e22e">rules</span><span style="color:#f92672">:</span> [
+        {
+          <span style="color:#a6e22e">test</span><span style="color:#f92672">:</span> <span style="color:#e6db74">/\.scss$/</span>,
+          <span style="color:#a6e22e">use</span><span style="color:#f92672">:</span> [
+            <span style="color:#a6e22e">isProd</span>
+              <span style="color:#f92672">?</span> <span style="color:#a6e22e">MiniCssExtractPlugin</span>.<span style="color:#a6e22e">loader</span>
+              <span style="color:#f92672">:</span> {
+                <span style="color:#a6e22e">loader</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;style-loader&#39;</span>,
+                <span style="color:#a6e22e">options</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">injectType</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;singletonStyleTag&#39;</span> }
+              },
+            <span style="color:#e6db74">&#39;css-loader&#39;</span>,
+            {
+              <span style="color:#a6e22e">loader</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;postcss-loader&#39;</span>,
+              <span style="color:#a6e22e">options</span><span style="color:#f92672">:</span> {
+                <span style="color:#a6e22e">ident</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;postcss&#39;</span>,
+                <span style="color:#a6e22e">plugins</span><span style="color:#f92672">:</span> [
+                  <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;autoprefixer&#39;</span>)()
+                ]
+              }
+            },
+            <span style="color:#e6db74">&#39;sass-loader&#39;</span>
+          ]
+        },
+        ...
+      ]
+    }
+  }
+}
+</code></pre></div><h4 id="-cleanwebpackplugin--dist-">使用 clean-webpack-plugin 清理 dist 文件夹</h4>
+<pre><code>❯ yarn add -D clean-webpack-plugin
+</code></pre><p>在 webpack.config.js 中引入并使用 CleanWebpackPlugin:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">...
+<span style="color:#66d9ef">const</span> { <span style="color:#a6e22e">CleanWebpackPlugin</span> } <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;clean-webpack-plugin&#39;</span>)
+
+<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">env</span>, <span style="color:#a6e22e">argv</span>) =&gt; {
+  ...
+
+  <span style="color:#66d9ef">return</span> {
+    ...
+
+    <span style="color:#a6e22e">plugins</span><span style="color:#f92672">:</span> [
+      ...
+      <span style="color:#a6e22e">isProd</span> <span style="color:#f92672">?</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">CleanWebpackPlugin</span>() <span style="color:#f92672">:</span> <span style="color:#66d9ef">new</span> Function
+    ],
+
+    ...
+  }
+}
+</code></pre></div><blockquote>
+<p>这里我们第二次根据 <code>isProd</code> 进行了判断，稍后我将使用 <code>webpack-merge</code> 进行优化</p>
+</blockquote>
+<h3 id="-packagejson1">最终的 package.json</h3>
+<pre><code>{
+  &quot;name&quot;: &quot;webpack-demo&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;private&quot;: true,
+  &quot;scripts&quot;: {
+    &quot;build&quot;: &quot;webpack --mode production&quot;,
+    &quot;dev&quot;: &quot;webpack-dev-server --mode development&quot;
+  },
+  &quot;devDependencies&quot;: {
+    &quot;@babel/core&quot;: &quot;^7.8.3&quot;,
+    &quot;@babel/preset-env&quot;: &quot;^7.8.3&quot;,
+    &quot;autoprefixer&quot;: &quot;^9.7.3&quot;,
+    &quot;babel-eslint&quot;: &quot;^10.0.3&quot;,
+    &quot;babel-loader&quot;: &quot;^8.0.6&quot;,
+    &quot;clean-webpack-plugin&quot;: &quot;^3.0.0&quot;,
+    &quot;css-loader&quot;: &quot;^3.4.2&quot;,
+    &quot;eslint&quot;: &quot;^6.8.0&quot;,
+    &quot;file-loader&quot;: &quot;^5.0.2&quot;,
+    &quot;html-loader&quot;: &quot;^0.5.5&quot;,
+    &quot;html-webpack-plugin&quot;: &quot;^3.2.0&quot;,
+    &quot;mini-css-extract-plugin&quot;: &quot;^0.9.0&quot;,
+    &quot;node-sass&quot;: &quot;^4.13.0&quot;,
+    &quot;postcss-loader&quot;: &quot;^3.0.0&quot;,
+    &quot;sass-loader&quot;: &quot;^8.0.2&quot;,
+    &quot;style-loader&quot;: &quot;^1.1.2&quot;,
+    &quot;url-loader&quot;: &quot;^3.0.0&quot;,
+    &quot;webpack&quot;: &quot;^4.41.5&quot;,
+    &quot;webpack-cli&quot;: &quot;^3.3.10&quot;,
+    &quot;webpack-dev-server&quot;: &quot;^3.10.1&quot;
+  },
+  &quot;browserslist&quot;: [
+    &quot;&gt; 2%&quot;,
+    &quot;last 1 versions&quot;
+  ],
+  &quot;dependencies&quot;: {
+    &quot;@babel/runtime&quot;: &quot;^7.8.3&quot;,
+    &quot;@fortawesome/fontawesome-svg-core&quot;: &quot;^1.2.26&quot;,
+    &quot;@fortawesome/free-regular-svg-icons&quot;: &quot;^5.12.0&quot;,
+    &quot;@fortawesome/free-solid-svg-icons&quot;: &quot;^5.12.0&quot;,
+    &quot;bootstrap&quot;: &quot;^4.4.1&quot;,
+    &quot;jquery&quot;: &quot;^3.4.1&quot;,
+    &quot;popper.js&quot;: &quot;^1.16.0&quot;
+  }
+}
+</code></pre><h3 id="-webpackconfigjs1">最终的 webpack.config.js</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">path</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;path&#39;</span>)
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">HtmlWebpackPlugin</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;html-webpack-plugin&#39;</span>)
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">MiniCssExtractPlugin</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;mini-css-extract-plugin&#39;</span>)
+<span style="color:#66d9ef">const</span> { <span style="color:#a6e22e">CleanWebpackPlugin</span> } <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;clean-webpack-plugin&#39;</span>)
+
+<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">env</span>, <span style="color:#a6e22e">argv</span>) =&gt; {
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">publicPath</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">isProd</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">argv</span>.<span style="color:#a6e22e">mode</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;production&#39;</span>
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">resolve</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">dir</span>) =&gt; <span style="color:#a6e22e">path</span>.<span style="color:#a6e22e">resolve</span>(<span style="color:#a6e22e">__dirname</span>, <span style="color:#a6e22e">dir</span>)
+
+  <span style="color:#66d9ef">return</span> {
+    <span style="color:#a6e22e">entry</span><span style="color:#f92672">:</span> {
+      <span style="color:#a6e22e">main</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;./src/js/index.js&#39;</span>,
+    },
+
+    <span style="color:#a6e22e">output</span><span style="color:#f92672">:</span> {
+      <span style="color:#a6e22e">path</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">resolve</span>(<span style="color:#e6db74">&#39;dist&#39;</span>),
+      <span style="color:#a6e22e">filename</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;static/js/[name]_[hash:5].js&#39;</span>,
+      <span style="color:#a6e22e">publicPath</span>
+    },
+
+    <span style="color:#a6e22e">plugins</span><span style="color:#f92672">:</span> [
+      <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">HtmlWebpackPlugin</span>({
+        <span style="color:#a6e22e">template</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;./index.html&#39;</span>,
+        <span style="color:#a6e22e">minify</span><span style="color:#f92672">:</span> {
+          <span style="color:#a6e22e">removeComments</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+          <span style="color:#a6e22e">collapseWhitespace</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+          <span style="color:#a6e22e">removeAttributeQuotes</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>
+        }
+      }),
+      <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">MiniCssExtractPlugin</span>({
+        <span style="color:#a6e22e">filename</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;static/css/[name].css&#39;</span>,
+        <span style="color:#a6e22e">chunkFilename</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;static/css/[id].css&#39;</span>
+      }),
+      <span style="color:#a6e22e">isProd</span> <span style="color:#f92672">?</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">CleanWebpackPlugin</span>() <span style="color:#f92672">:</span> <span style="color:#66d9ef">new</span> Function
+    ],
+
+    <span style="color:#a6e22e">module</span><span style="color:#f92672">:</span> {
+      <span style="color:#a6e22e">rules</span><span style="color:#f92672">:</span> [
+        {
+          <span style="color:#a6e22e">test</span><span style="color:#f92672">:</span> <span style="color:#e6db74">/\.scss$/</span>,
+          <span style="color:#a6e22e">use</span><span style="color:#f92672">:</span> [
+            <span style="color:#a6e22e">isProd</span>
+              <span style="color:#f92672">?</span> <span style="color:#a6e22e">MiniCssExtractPlugin</span>.<span style="color:#a6e22e">loader</span>
+              <span style="color:#f92672">:</span> {
+                <span style="color:#a6e22e">loader</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;style-loader&#39;</span>,
+                <span style="color:#a6e22e">options</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">injectType</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;singletonStyleTag&#39;</span> }
+              },
+            <span style="color:#e6db74">&#39;css-loader&#39;</span>,
+            {
+              <span style="color:#a6e22e">loader</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;postcss-loader&#39;</span>,
+              <span style="color:#a6e22e">options</span><span style="color:#f92672">:</span> {
+                <span style="color:#a6e22e">ident</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;postcss&#39;</span>,
+                <span style="color:#a6e22e">plugins</span><span style="color:#f92672">:</span> [
+                  <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;autoprefixer&#39;</span>)()
+                ]
+              }
+            },
+            <span style="color:#e6db74">&#39;sass-loader&#39;</span>
+          ]
+        },
+
+        {
+          <span style="color:#a6e22e">test</span><span style="color:#f92672">:</span> <span style="color:#e6db74">/\.m?js$/</span>,
+          <span style="color:#a6e22e">exclude</span><span style="color:#f92672">:</span> <span style="color:#e6db74">/node_modules/</span>,
+          <span style="color:#a6e22e">use</span><span style="color:#f92672">:</span> [
+            {
+              <span style="color:#a6e22e">loader</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;babel-loader&#39;</span>,
+              <span style="color:#a6e22e">options</span><span style="color:#f92672">:</span> {
+                <span style="color:#a6e22e">presets</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;@babel/preset-env&#39;</span>]
+              }
+            }
+          ]
+        },
+
+        {
+          <span style="color:#a6e22e">test</span><span style="color:#f92672">:</span> <span style="color:#e6db74">/\.html$/</span>,
+          <span style="color:#a6e22e">use</span><span style="color:#f92672">:</span> [
+            {
+              <span style="color:#a6e22e">loader</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;html-loader&#39;</span>,
+              <span style="color:#a6e22e">options</span><span style="color:#f92672">:</span> {
+                <span style="color:#a6e22e">attrs</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;img:src&#39;</span>]
+              }
+            }
+          ]
+        },
+
+        {
+          <span style="color:#a6e22e">test</span><span style="color:#f92672">:</span> <span style="color:#e6db74">/\.(png|jpe?g|gif)$/i</span>,
+          <span style="color:#a6e22e">use</span><span style="color:#f92672">:</span> [
+            {
+              <span style="color:#a6e22e">loader</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;url-loader&#39;</span>,
+              <span style="color:#a6e22e">options</span><span style="color:#f92672">:</span> {
+                <span style="color:#a6e22e">limit</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">8192</span>,
+                <span style="color:#a6e22e">outputPath</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;static/images&#39;</span>,
+                <span style="color:#a6e22e">publicPath</span><span style="color:#f92672">:</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">publicPath</span><span style="color:#e6db74">}</span><span style="color:#e6db74">/static/images</span><span style="color:#e6db74">`</span>,
+                <span style="color:#a6e22e">esModule</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>
+              }
+            },
+          ]
+        },
+      ]
+    },
+  }
+}
+</code></pre></div></article>
+    </section>
+
+    <section class="ui attached segment prev-next">
+      
+        <a href="/eslint-config-for-javascript/" title="ESLint Config for JavaScript">&larr; Previous Post</a>
+      
+      
+        <a href="/use-webpack-4-bootstrap-4-fontawesome-5-2/" title="Use webpack 4 &#43; bootstrap 4 &#43; fontawesome 5 (2)">Next Post &rarr;</a>
+      
+    </section>
+
+    
+      <footer class="ui attached segment dream-tags">
+        
+          <a class="ui label" href="/tags/tool" title="tool">tool</a>
+        
+      </footer>
+    
+
+    
+
+    
+      <footer class="ui bottom attached stacked segment post-disqus-area" data-html2canvas-ignore="true">
+        <div id="disqus_thread"></div>
+        <script>
+          
+
+
+          var disqus_config = function () {
+            this.page.url = '\/use-webpack-4-bootstrap-4-fontawesome-5-1\/';  
+            this.page.identifier = '\/use-webpack-4-bootstrap-4-fontawesome-5-1\/'; 
+          };
+
+          (function() { 
+            var d = document, s = d.createElement('script');
+            s.src = 'https://' + 'ryunpu' + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </footer>
+    
+
+  </div>
+  <div class="sixteen wide mobile sixteen wide tablet four wide computer column flip-container">
+    <div class="flipper">
+  <article class="dream-header front">
+    <i class="large link hand point right outline icon dream-flip-toggle" title="翻转！"></i>
+    <div class="flipper-block">
+      <section class="ui top attached center aligned segment">
+        <div class="ui small circular image">
+          
+            <img src="/img/avatar.jpeg">
+          
+        </div>
+
+        <h3 class="ui header">Ryun的博客<div class="sub header" style="margin-top: 0.5rem;">与其感慨路难行，不如马上出发。</div>
+        </h3>
+
+        <div class="ui horizontal list">
+          <a class="item" href="/archives">
+            <i class="archive icon" title="归档"></i>
+          </a>
+          <a class="item" href="/tags">
+            <i class="tags icon" title="所有标签"></i>
+          </a>
+          <a class="item" href="/categories">
+            <i class="th list icon" title="所有分类"></i>
+          </a>
+        </div>
+      </section>
+
+      
+      <section class="ui attached center aligned segment dream-tags">
+        
+          <a class="ui label" href="/tags/atom" title="atom">atom</a>
+        
+          <a class="ui label" href="/tags/css" title="css">css</a>
+        
+          <a class="ui label" href="/tags/design" title="design">design</a>
+        
+          <a class="ui label" href="/tags/git" title="git">git</a>
+        
+          <a class="ui label" href="/tags/html" title="html">html</a>
+        
+          <a class="ui label" href="/tags/javascript" title="javascript">javascript</a>
+        
+          <a class="ui label" href="/tags/jekyll" title="jekyll">jekyll</a>
+        
+          <a class="ui label" href="/tags/laravel" title="laravel">laravel</a>
+        
+          <a class="ui label" href="/tags/life" title="life">life</a>
+        
+          <a class="ui label" href="/tags/mac" title="mac">mac</a>
+        
+          <a class="ui label" href="/tags/mobile" title="mobile">mobile</a>
+        
+          <a class="ui label" href="/tags/optimization" title="optimization">optimization</a>
+        
+          <a class="ui label" href="/tags/sublime" title="sublime">sublime</a>
+        
+          <a class="ui label" href="/tags/tool" title="tool">tool</a>
+        
+          <a class="ui label" href="/tags/vscode" title="vscode">vscode</a>
+        
+          <a class="ui label" href="/tags/vue" title="vue">vue</a>
+        
+      </section>
+      
+
+      
+      <section class="ui attached segment dream-categories">
+        <div class="ui accordion">
+          
+            <div class="title">
+              <i class="dropdown icon"></i>
+              <a href="/categories/web-development" class="item">web-development</a>
+            </div>
+            <div class="content">
+              <div class="ui list">
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/git-cheatsheet/" class="item">Git Cheatsheet</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-webpack-4-bootstrap-4-fontawesome-5-3/" class="item">Use webpack 4 &#43; bootstrap 4 &#43; fontawesome 5 (3)</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-webpack-4-bootstrap-4-fontawesome-5-2/" class="item">Use webpack 4 &#43; bootstrap 4 &#43; fontawesome 5 (2)</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-webpack-4-bootstrap-4-fontawesome-5-1/" class="item">Use webpack 4 &#43; bootstrap 4 &#43; fontawesome 5 (1)</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/eslint-config-for-javascript/" class="item">ESLint Config for JavaScript</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/npx-is-cool/" class="item">npx is cool</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/browserslist-config/" class="item">Browserslist config</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/javascript-%E6%A8%A1%E5%9D%97%E5%8C%96/" class="item">JavaScript 模块化</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/prototype-chains-in-es6/" class="item">Prototype chains in es6</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/generate-a-new-ssh-key-and-add-it-to-the-ssh-agent/" class="item">Generate a new SSH key and add it to the ssh-agent</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/make-an-alias-with-parameter/" class="item">Make an alias with parameter</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/resolve-eacces-permissions-errors/" class="item">Resolve EACCES permissions errors</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/open-new-iterm2-tab-with-same-profile/" class="item">Open new iTerm2 tab with same profile</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/exit-the-vim-editor/" class="item">Exit the Vim editor</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/iterm2-oh-my-zsh/" class="item">iTerm2 &#43; Oh My Zsh</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/simple-event-dispatcher/" class="item">Simple event dispatcher</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/broadcast-generated-by-coffeescript/" class="item">Broadcast generated by CoffeeScript</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/git-snippets/" class="item">Git snippets</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/a-simple-infinite-scroll-jquery-plugin/" class="item">A simple infinite scroll jQuery plugin</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/a-simple-date-countdown-function/" class="item">A simple date countdown function</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/a-simple-html5-file-upload-jquery-plugin/" class="item">A simple HTML5 file upload jQuery plugin</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/%E4%BD%BF%E7%94%A8-echarts-%E5%9B%BE%E8%A1%A8%E5%BA%93/" class="item">使用 ECharts 图表库</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/%E6%96%B0%E6%B5%AA%E8%82%A1%E7%A5%A8%E6%9F%A5%E8%AF%A2%E6%8E%A5%E5%8F%A3/" class="item">新浪股票查询接口</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/%E4%BD%BF%E7%94%A8%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9B%BE-api-%E8%BF%9B%E8%A1%8C%E5%9C%B0%E7%90%86%E5%AE%9A%E4%BD%8D/" class="item">使用百度地图 API 进行地理定位</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/upload-image-with-jquery-file-upload/" class="item">Upload image with jQuery-File-Upload</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-tinymce/" class="item">Use TinyMCE</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-jquery-validation-plugin/" class="item">Use jQuery validation plugin</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/preview-image-before-uploaded/" class="item">Preview image before uploaded</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/chrome-extension-snippets/" class="item">Chrome extension snippets</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/live-reloading-chrome-extension-with-websocket/" class="item">Live reloading Chrome extension with WebSocket</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/tool-functions-that-return-iterables/" class="item">Tool functions that return iterables</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/prevent-page-scrolling-when-a-modal-is-open/" class="item">Prevent page scrolling when a modal is open</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/enable-directory-listing-in-nginx/" class="item">Enable directory listing in Nginx</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/access-homestead-site-on-the-same-network/" class="item">Access Homestead site on the same network</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/upgrade-node.js/" class="item">Upgrade Node.js</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-laravel-elixir-in-laravel/" class="item">Use laravel-elixir in Laravel</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/a-quick-view-of-laravel/" class="item">A quick view of Laravel</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/a-todo-demo-using-vue-in-laravel/" class="item">A todo demo using Vue in Laravel</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/create-simple-test-data-in-laravel/" class="item">Create simple test data in Laravel</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/commonly-used-laravel-commands/" class="item">Commonly used Laravel commands</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/make-a-sticky-content/" class="item">Make a sticky content</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/make-a-sticky-footer/" class="item">Make a sticky footer</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-animate.css/" class="item">Use Animate.css</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/javascript-demonstrations/" class="item">JavaScript demonstrations</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/bootstrap-snippets-and-tips/" class="item">Bootstrap snippets and tips</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-autojump-in-zsh/" class="item">Use autojump in zsh</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/css-demonstrations/" class="item">CSS demonstrations</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/choose-a-proper-web-font/" class="item">Choose a proper web font</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/commonly-used-regex-validation/" class="item">Commonly used RegEx validation</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/some-commonly-used-ua-detection/" class="item">Some commonly used UA detection</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/using-formdata-objects/" class="item">Using formdata objects</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/%E5%9F%BA%E4%BA%8E%E4%B8%83%E7%89%9B-api-%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/" class="item">基于七牛 API 的文件上传</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/center-anything-with-css/" class="item">Center Anything with CSS</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/git-diff-with-beyond-compare/" class="item">Git Diff with Beyond Compare</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/simple-browser-detection/" class="item">Simple browser detection</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/detect-a-touch-screen/" class="item">Detect a Touch Screen</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/detect-orientation-change-on-mobile-devices/" class="item">Detect Orientation Change on Mobile Devices</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-charles-map-local-tool/" class="item">Use Charles Map Local tool</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/comparison-of-npm-and-yarn-commands/" class="item">Comparison of NPM and yarn commands</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/commands-for-packager-managers/" class="item">Commands for Packager managers</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/modifying-an-inactive-pull-request-locally/" class="item">Modifying an inactive pull request locally</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/syncing-a-fork/" class="item">Syncing a fork</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/creating-project-pages-manually/" class="item">Creating Project Pages manually</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/css-animations-with-only-one-keyframe/" class="item">CSS Animations with only one keyframe</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-sass-from-the-command-line/" class="item">Use Sass from the command line</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/prevent-touch-event-click-underneath-layer/" class="item">Prevent touch event click underneath layer</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/helpful-aliases-for-common-git-tasks/" class="item">Helpful aliases for common git tasks</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/avoid-console-errors-in-browsers-that-lack-a-console/" class="item">Avoid `console` errors in browsers that lack a console</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/a-micro-clearfix-hack/" class="item">A micro clearfix hack</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/modernizr-methods/" class="item">Modernizr Methods</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/flash-of-unstyled-content/" class="item">Flash of Unstyled Content</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/html5-cross-browser-polyfills/" class="item">HTML5 Cross Browser Polyfills</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/syntax-highlighting-in-markdown/" class="item">Syntax highlighting in markdown</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-chrome-devtools/" class="item">Use Chrome DevTools</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-git/" class="item">Use Git</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/enable-html5-placeholder-in-ie/" class="item">Enable HTML5 placeholder in IE</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/markdown-cheatsheet/" class="item">Markdown cheatsheet</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/code-conventions-and-best-practices-for-javascript/" class="item">Code conventions and best practices for javascript</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-html5-sectioning-elements-in-legacy-ie/" class="item">Use HTML5 sectioning elements in legacy IE</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-the-viewport-meta-tag/" class="item">Use the viewport meta tag</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/javascript-snippets/" class="item">JavaScript snippets</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-rgba-in-ie/" class="item">Use rgba in IE</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/detect-mobile-devices/" class="item">Detect mobile devices</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/css-tools/" class="item">CSS tools</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/bootcss-codeguide/" class="item">Bootcss codeguide</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/make-the-web-faster/" class="item">Make the Web Faster</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/display-liquid-code-in-jekyll/" class="item">Display Liquid code in Jekyll</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/highlight-code-in-jekyll/" class="item">Highlight code in Jekyll</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/add-readmore-in-jekyll/" class="item">Add Readmore in Jekyll</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/install-git/" class="item">Install Git</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/jekyll-build-trouble/" class="item">Jekyll build trouble</a>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          
+            <div class="title">
+              <i class="dropdown icon"></i>
+              <a href="/categories/tool" class="item">tool</a>
+            </div>
+            <div class="content">
+              <div class="ui list">
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/vs-code-shortcuts-for-macos/" class="item">VS Code shortcuts for macOS</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/vs-code-extensions-for-frontend-developers/" class="item">VS code extensions for frontend developers</a>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          
+            <div class="title">
+              <i class="dropdown icon"></i>
+              <a href="/categories/mac" class="item">mac</a>
+            </div>
+            <div class="content">
+              <div class="ui list">
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/show-hidden-files-on-mac/" class="item">Show hidden files on mac</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/show-the-current-path-in-the-finder/" class="item">Show the current path in the finder</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/insert-the-mac-command-symbol/" class="item">Insert the Mac command symbol</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/mac-%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/" class="item">Mac 键盘快捷键</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/%E5%9C%A8-mac-%E4%B8%8A%E5%88%9B%E5%BB%BA%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/" class="item">在 Mac 上创建键盘快捷键</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/fix-kernel_task-high-cpu-problem/" class="item">Fix kernel_task high cpu problem</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/basic-bash-keyboard-shortcuts/" class="item">Basic bash keyboard shortcuts</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/expose-a-local-web-server-to-the-internet-with-ngrok/" class="item">Expose a local web server to the internet with ngrok</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/the-command-line-crash-course/" class="item">The Command Line Crash Course</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/access-localhost-from-virtualbox/" class="item">Access localhost from VirtualBox</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/create-a-bootable-usb-in-mac-os-x/" class="item">Create a bootable USB in Mac OS X</a>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          
+            <div class="title">
+              <i class="dropdown icon"></i>
+              <a href="/categories/life" class="item">life</a>
+            </div>
+            <div class="content">
+              <div class="ui list">
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/words-of-wisdom-from-modern-family/" class="item">Words of Wisdom from Modern Family</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/rescue-time-with-rescuetime/" class="item">Rescue time with RescueTime</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/stop-working-from-a-prison-cell/" class="item">Stop Working from a Prison Cell</a>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          
+            <div class="title">
+              <i class="dropdown icon"></i>
+              <a href="/categories/editor" class="item">editor</a>
+            </div>
+            <div class="content">
+              <div class="ui list">
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/create-multi-line-snippet-in-atom/" class="item">Create multi-line snippet in atom</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/useful-atom-keyboard-shortcuts/" class="item">Useful Atom keyboard shortcuts</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/atom-javascript-snippets-package/" class="item">Atom javascript snippets package</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/my-atom-snippets/" class="item">My atom snippets</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/my-atom-packages/" class="item">My atom packages</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/open-atom-from-the-terminal/" class="item">Open atom from the terminal</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/sublime-react-snippets/" class="item">Sublime react snippets</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/sublime-text-plugins-for-web-development/" class="item">Sublime Text Plugins for Web Development</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/sublime-text-shortcuts/" class="item">Sublime Text shortcuts</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/sublime-osx-command-line-setup/" class="item">Sublime osx command line setup</a>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          
+            <div class="title">
+              <i class="dropdown icon"></i>
+              <a href="/categories/design" class="item">design</a>
+            </div>
+            <div class="content">
+              <div class="ui list">
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/looking-back-to-look-forward/" class="item">Looking back to look forward</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/my-sketch-plugins/" class="item">My Sketch plugins</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/%E6%A0%85%E6%A0%BC%E7%B3%BB%E7%BB%9F%E5%BB%B6%E7%BB%AD%E7%BE%8E%E5%AD%A6/" class="item">栅格系统延续美学</a>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          
+        </div>
+      </section>
+      
+
+      <section class="ui bottom attached center aligned segment">
+        <div class="copyright">
+  
+  <p>© 2014 - 2021 Ryun&#39;s blog</p>
+  
+  <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
+</div>
+
+      </section>
+    </div>
+  </article>
+
+  <article class="dream-back back">
+  <i class="large link hand point left outline icon dream-flip-toggle" title="翻转！"></i>
+  <div class="flipper-block">
+    
+      <div class="ui top attached segment">
+        <h3 class="ui header">About</h3>
+      </div>
+      <div class="ui attached segment markdown-body">
+        <p><span id="hello">你好</span>，❤朋友</p>
+<p>这里是 Ryun 的博客 📝</p>
+<p>📝记录了我学习 🔎的过程</p>
+<p>作为一名前端攻城狮 🦁</p>
+<p>希望能和大家一起 🔎</p>
+<p>共同进步 🏃</p>
+<p>🦁的特长：</p>
+<ul>
+<li>HTML5</li>
+<li>CSS3</li>
+<li>JavaScript</li>
+<li>Vue.js</li>
+<li>微信小程序</li>
+<li>熟练配合 Node.js、PHP 和 Laravel</li>
+<li>熟练使用各种开发和设计工具</li>
+</ul>
+<p>🦁喜欢 🆒🆒的东西</p>
+<p>对提升效率和美感的事物有兴趣 😋</p>
+<p>欢迎 👏交流</p>
+<br>
+<p>see this <a href="https://github.com/RyunPu/hugo-theme-dream-ink" target="_blank">hugo-theme-dream-ink</a></p>
+
+      </div>
+    
+
+    <div class="ui attached segment address">
+      <nav class="ui secondary menu dream-menu">
+  
+    <div class="item">
+      <a href="mailto:ryunpu@foxmail.com">
+        <i class="large mail icon" title="email"></i>
+      </a>
+    </div>
+  
+
+  
+    <div class="item">
+      <a href="https://github.com/ryunpu" target="_blank">
+        <i class="large github icon" title="github"></i>
+      </a>
+    </div>
+  
+
+  
+
+  
+
+  
+</nav>
+
+    </div>
+  </div>
+</article>
+
+<section class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+  
+</section>
+
+</div>
+
+  </div>
+</div>
+
+      <i class="icon big long arrow alternate up pointer theme-item backToTop"></i>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+  
+  <div class="pswp__bg"></div>
+
+  
+  <div class="pswp__scroll-wrap">
+
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+
+    
+    <div class="pswp__ui pswp__ui--hidden">
+
+      <div class="pswp__top-bar">
+
+        
+
+        <div class="pswp__counter"></div>
+
+        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+        <button class="pswp__button pswp__button--share" title="Share"></button>
+
+        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+        
+        
+        <div class="pswp__preloader">
+          <div class="pswp__preloader__icn">
+            <div class="pswp__preloader__cut">
+              <div class="pswp__preloader__donut"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+        <div class="pswp__share-tooltip"></div>
+      </div>
+
+      <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+      </button>
+
+      <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+      </button>
+
+      <div class="pswp__caption">
+        <div class="pswp__caption__center"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="/js/vendor.js"></script>
+<script src="/js/main.js"></script>
+
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-75787172-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+    </div>
+
+    <div class="search-mask transition item">
+  <div class="search-wrapper transition">
+    <div class="search-form">
+      <i class="icon close large"></i>
+      <div class="search-area">
+        <div id="search-box"></div>
+        <h4 id="search-status"></h4>
+        <div id="search-results">
+          <ul id="hits" class="search-results post-list"></ul>
+          <div id="pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>

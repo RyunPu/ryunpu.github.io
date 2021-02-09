@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mac on Ryun&#39;s blog</title>
+    <link>/categories/mac/</link>
+    <description>Recent content in Mac on Ryun&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Fri, 06 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/mac/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Show hidden files on mac</title>
+      <link>/show-hidden-files-on-mac/</link>
+      <pubDate>Fri, 06 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/show-hidden-files-on-mac/</guid>
+      <description>The quickest way Since the release of macOS Sierra, when in Finder, it is now possible to use the shortcut:
+⌘ + ⇧ + . Use terminal Show files:
+$ defaults write com.apple.finder AppleShowAllFiles YES; killall Finder Hide files:
+$ defaults write com.apple.finder AppleShowAllFiles NO; killall Finder </description>
+    </item>
+    
+    <item>
+      <title>Show the current path in the finder</title>
+      <link>/show-the-current-path-in-the-finder/</link>
+      <pubDate>Thu, 05 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/show-the-current-path-in-the-finder/</guid>
+      <description>Enable the finder path bar ⌥ + ⌘ + P Show the path in the finder title bar $ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder Use this command to turn it off
+$ defaults write com.apple.finder _FXShowPosixPathInTitle -bool false; killall Finder </description>
+    </item>
+    
+    <item>
+      <title>Insert the Mac command symbol</title>
+      <link>/insert-the-mac-command-symbol/</link>
+      <pubDate>Wed, 04 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/insert-the-mac-command-symbol/</guid>
+      <description>Copy and Paste ⌘
+Use Emoji and Symbols ⌃ + ⌘ + Space You&#39;ll find it under Edit -&amp;gt; Emoji and Symbols in any program that takes text input. The Command key symbol can be found by searching for it&#39;s name &amp;ldquo;place of interest&amp;rdquo;.
+Use Unicode Hex Input ⌥ + 2318 Use text replacements Use Atom snippets &#39;.text.plain, .source.gfm&#39;: &#39;command symbol&#39;: &#39;prefix&#39;: &#39;cmds&#39; &#39;body&#39;: &#39;⌘&#39; &#39;ctrl symbol&#39;: &#39;prefix&#39;: &#39;cs&#39; &#39;body&#39;: &#39;⌃&#39; &#39;alt symbol&#39;: &#39;prefix&#39;: &#39;as&#39; &#39;body&#39;: &#39;⌥&#39; &#39;shift symbol&#39;: &#39;prefix&#39;: &#39;ss&#39; &#39;body&#39;: &#39;⇧&#39; </description>
+    </item>
+    
+    <item>
+      <title>Mac 键盘快捷键</title>
+      <link>/mac-%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+      <pubDate>Tue, 03 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/mac-%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+      <description>您可以按下某些组合键来实现通常需要鼠标、触控板或其他输入设备才能完成的操作。
+要使用键盘快捷键，请按住一个或多个修饰键，然后按快捷键的最后一个键。例如，要使用 Command-C（拷贝），请按住 Command 键并按 C 键，然后同时松开这两个键。Mac 菜单和键盘通常对某些按键使用符号，其中包括以下修饰键：
+ Command（或 Cmd）⌘ Shift ⇧ Option（或 Alt）⌥ Control（或 Ctrl）⌃ Caps Lock ⇪ Fn   在 Windows PC 专用键盘上，请用 Alt 键代替 Option 键，用 Windows 标志键代替 Command 键。
+ Apple 键盘上的某些按键具有特殊符号和功能，例如显示屏亮度 、键盘亮度 、调度中心等。如果您的键盘上没有这些功能，您也许可以通过创建自己的键盘快捷键来实现其中的一些功能。要将这些键用作 F1、F2、F3 或其他标准功能键，请将它们与 Fn 键组合使用。
+ 剪切、拷贝、粘贴和其他常用快捷键  Command-X：剪切所选项并拷贝到剪贴板。 Command-C：将所选项拷贝到剪贴板。这同样适用于“访达”中的文件。 Command-V：将剪贴板的内容粘贴到当前文稿或应用中。这同样适用于“访达”中的文件。 Command-Z：撤销上一个命令。随后您可以按 Shift-Command-Z 来重做，从而反向执行撤销命令。在某些应用中，您可以撤销和重做多个命令。 Command-A：全选各项。 Command-F：查找文稿中的项目或打开“查找”窗口。 Command-G：再次查找：查找之前所找到项目出现的下一个位置。要查找出现的上一个位置，请按 Shift-Command-G。 Command-H：隐藏最前面的应用的窗口。要查看最前面的应用但隐藏所有其他应用，请按 Option-Command-H。 Command-M：将最前面的窗口最小化至“程序坞”。要最小化最前面的应用的所有窗口，请按 Option-Command-M。 Command-O：打开所选项，或打开一个对话框以选择要打开的文件。 Command-P：打印当前文稿。 Command-S：存储当前文稿。 Command-T：打开新标签页。 Command-W：关闭最前面的窗口。要关闭应用的所有窗口，请按下 Option-Command-W。 Option-Command-Esc：强制退出应用。 Command–空格键：显示或隐藏“聚焦”搜索栏。要从“访达”窗口执行“聚焦”搜索，请按 Command–Option–空格键。（如果您使用多个输入源以便用不同的语言键入内容，这些快捷键会更改输入源而非显示“聚焦”。了解如何更改冲突的键盘快捷键。。 Control-Command–空格键：显示字符检视器，您可以从中选择表情符号和其他符号。 Control-Command-F：全屏使用应用（如果应用支持）。 空格键：使用快速查看来预览所选项。 Command-Tab：在打开的应用中切换到下一个最近使用的应用。 Shift-Command-5：在 macOS Mojave 中，拍摄屏幕快照或录制屏幕。在更早的 macOS 版本中，请使用 Shift-Command-3 或 Shift-Command-4 来拍摄屏幕快照。进一步了解屏幕快照。 Shift-Command-N：在“访达”中创建一个新文件夹。 Command-逗号 (,)：打开最前面的应用的偏好设。   睡眠、退出登录和关机快捷键  在这些快捷键中，您可能需要按住其中一些快捷键稍长时间。这样可以避免您无意中启用快捷键。 电源按钮：按下可将 Mac 开机或将 Mac 从睡眠状态唤醒。按住这个按钮 1.</description>
+    </item>
+    
+    <item>
+      <title>在 Mac 上创建键盘快捷键</title>
+      <link>/%E5%9C%A8-mac-%E4%B8%8A%E5%88%9B%E5%BB%BA%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+      <pubDate>Mon, 02 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/%E5%9C%A8-mac-%E4%B8%8A%E5%88%9B%E5%BB%BA%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+      <description>您可以在任意 macOS App（包括“访达”）中为菜单命令创建自己的键盘快捷键。如果全局快捷键（大多数 App 都相同）与特定 App 快捷键冲突时，这可能会很有用。在这种情况下，您可以创建一个新的按键组合。
+   在 Mac 上，选取苹果菜单 &amp;gt;“系统偏好设置”，点按“键盘”，然后点按“快捷键”。
+  选择左侧的“App 快捷键”，点按添加按钮 ，点按“应用程序”弹出式菜单，然后选取一个特定的 App 或者“所有应用程序”。
+例如，若要为“文本编辑”命令设定快捷键，请选取“文本编辑”。如果 App 未显示在列表中，请选取“其他”，然后使用“打开”对话框找到该 App。某些 App 可能不允许您设置键盘快捷键。
+如果您想为一个出现在许多 App 中的菜单命令设置快捷键，请选取“所有应用程序”。
+  在“菜单标题”栏中，键入想要为其创建快捷键的菜单命令，键入的内容应该与该命令在 App 中所显示的内容完全相同，其中包括“&amp;gt;”字符（键入“-&amp;gt;”），省略号（键入不含空格的三个句点或者按下“Option-;”），或者其他标点符号。
+例如，若要为“文本编辑”中的默认连字命令设定快捷键，您需要键入“格式-&amp;gt;字体-&amp;gt;连字-&amp;gt;使用默认”。若要为“导出为 PDF”命令设定快捷键，您需要在该栏中键入“文件-&amp;gt; 导出为 PDF…”。
+  在“键盘快捷键”栏中点按，按下您想要用作键盘快捷键的按键组合，然后点按“添加”。
+例如，同时按下 Control、Option 和 Z 键。在按键组合中一个键只能使用一次。
+   您只能为现有菜单命令创建键盘快捷键。您不能为通用任务创建键盘快捷键，例如打开一个 App。
+如果创建的键盘快捷键已被另一个命令或者 App 所使用，新建的快捷键将无法使用；您需要更改新的快捷键或者另一个快捷键。若要更改快捷键，请选择它，点按按键组合，然后按下新的按键组合。
+若要移除所创建的快捷键，请选择该快捷键，然后点按删除按钮 。</description>
+    </item>
+    
+    <item>
+      <title>Fix kernel_task high cpu problem</title>
+      <link>/fix-kernel_task-high-cpu-problem/</link>
+      <pubDate>Fri, 24 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/fix-kernel_task-high-cpu-problem/</guid>
+      <description>Reboot into recovery mode (Command + R on boot prior to startup chime), select Utilities/Terminal, csrutil disable &amp;lt;Enter&amp;gt; (repeat process, use csrutil enable after removing the file), reboot.
+  Go to About this mac under the apple in the upper left and click on More info
+  Click on system report
+  make a note of what it says after Model Identifier (MacBookPro8,2 is mine).
+  From the Root drive (not home folder): – System Library – Extensions – IOPlatformPluginFamily.</description>
+    </item>
+    
+    <item>
+      <title>Basic bash keyboard shortcuts</title>
+      <link>/basic-bash-keyboard-shortcuts/</link>
+      <pubDate>Tue, 15 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/basic-bash-keyboard-shortcuts/</guid>
+      <description>Moving the cursor Ctrl + a Go to the beginning of the line (Home)
+Ctrl + e Go to the End of the line (End)
+Ctrl + p Previous command (Up)
+Ctrl + n Next command (Down)
+Ctrl + f Forward one character
+Ctrl + b Backward one character
+Alt + click on the current line = Jump Backwards
+Editing Tab Tab completion for file/directory names
+Ctrl + u Cut/delete the Line before the cursor position</description>
+    </item>
+    
+    <item>
+      <title>Expose a local web server to the internet with ngrok</title>
+      <link>/expose-a-local-web-server-to-the-internet-with-ngrok/</link>
+      <pubDate>Fri, 18 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/expose-a-local-web-server-to-the-internet-with-ngrok/</guid>
+      <description>$ ./ngrok 8080 $ ./ngrok -subdomain=&amp;#34;dev&amp;#34; 8080 see mor ngrok docs</description>
+    </item>
+    
+    <item>
+      <title>The Command Line Crash Course</title>
+      <link>/the-command-line-crash-course/</link>
+      <pubDate>Tue, 15 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/the-command-line-crash-course/</guid>
+      <description>print working directory:
+$ pwd my computer&#39;s network name:
+$ hostname make directory:
+$ mkdir directory_name change directory:
+$ cd $ cd ~ $ cd .. $ cd - list directory:
+$ ls $ ls -al remove directory:
+$ rm file $ rm -r file push directory:
+$ pushd pop directory:
+$ popd making empty files:
+$ touch file copy a file or directory:
+$ cp source_file target_file/target_directory $ cp -r source_file target_directory move a file or directory:</description>
+    </item>
+    
+    <item>
+      <title>Access localhost from VirtualBox</title>
+      <link>/access-localhost-from-virtualbox/</link>
+      <pubDate>Thu, 10 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/access-localhost-from-virtualbox/</guid>
+      <description>just follow the steps:
+  In VirtualBox &amp;gt; Preferences &amp;gt; Network, set up a host-only network
+  Activate the 2nd adapter and set it with Host-only Adapter and the only Name attribute we just created like &amp;lsquo;vboxnet0&amp;rsquo;
+  In C:\WINDOWS\system32\drivers\etc, you may need to use this configuration for convenience
+  196.168.56.1 localhost note: if you are using gruntjs, you may need to change the &amp;lsquo;hostname&amp;rsquo; to &amp;lsquo;0.</description>
+    </item>
+    
+    <item>
+      <title>Create a bootable USB in Mac OS X</title>
+      <link>/create-a-bootable-usb-in-mac-os-x/</link>
+      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/create-a-bootable-usb-in-mac-os-x/</guid>
+      <description>just follow the steps:
+$ hdiutil convert -format UDRW -o destination_file.img source_file.iso $ diskutil list $ diskutil partitionDisk /dev/disk2 1 &amp;#34;Free Space&amp;#34; &amp;#34;unused&amp;#34; &amp;#34;100%&amp;#34; $ dd if=destination_file.img.dmg of=/dev/disk2 bs=1m note: &amp;lsquo;disk2&amp;rsquo; is your USB, you may need to use &amp;lsquo;sudo dd&amp;rsquo;
+see more: bootable usb</description>
+    </item>
+    
+  </channel>
+</rss>

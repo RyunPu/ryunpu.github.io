@@ -1,0 +1,1725 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+JavaScript snippets
+</title>
+
+    
+
+
+  
+  <meta name="author" content="Ryun" />
+  <meta name="description" content="A simple canvas captcha // 随机数 const randomNum = (min, max) =&amp;gt; { return parseInt(Math.random() * (max - min) &#43; min) } // 随机颜色 const randomColor = (min, max) =&amp;gt; { const r = randomNum(min, max) const g = randomNum(min, max) const b = randomNum(min, max) return `rgb(${r},${g},${b})` } export default (el, state = { pool: &amp;#39;ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890&amp;#39;, // 字符串  width: 120, height: 40, }) =&amp;gt; { // 3.填充背景颜色，背景颜色要浅一点  const ctx = el." />
+
+
+
+<meta name="generator" content="Hugo 0.60.1" />
+
+<link rel="canonical" href="/javascript-snippets/" />
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/github-markdown.css" />
+<link rel="stylesheet" href="/css/semantic.min.css" />
+<link rel="stylesheet" href="/css/site.css" />
+
+
+<style>
+  a {
+    color: seagreen !important;
+  }
+</style>
+
+
+
+<style>
+  .inverted a {
+     color: darkseagreen !important;
+  }
+</style>
+
+
+  </head>
+
+  
+  <body style="background-image: url(/img/bg-white.jpg);">
+  
+    <div id="container" class="container relative item">
+      
+<nav class="ui secondary menu dream-menu top-nav transform">
+
+  <div class="item">
+    <i class="large link home icon transition" title="首页" onclick="window.location.href = '\/'"></i>
+  </div>
+  <a class="item" href="/posts">
+    <i class="larger link th icon transition" title="文章"></i>
+  </a>
+  <div class="theme-switch-item item">
+    <i id="theme-switch" class="large link icon" onclick="themeSwitch()"></i>
+  </div>
+  <div class="item">
+    <i class="large search icon search-icon"></i>
+  </div>
+</nav>
+
+      
+<div class="ui centered relaxed grid dream-grid">
+  <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single">
+
+    <section class="ui top attached segment">
+      
+      <header>
+        <h2 class="ui header">
+          JavaScript snippets
+          <div class="sub header">Apr 2, 2014 · 9 分钟阅读</div>
+        </h2>
+      </header>
+      <article style="margin-top: 2rem;"><h3 id="a-simple-canvas-captcha">A simple canvas captcha</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// 随机数
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">randomNum</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">min</span>, <span style="color:#a6e22e">max</span>) =&gt; {
+  <span style="color:#66d9ef">return</span> parseInt(Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">*</span> (<span style="color:#a6e22e">max</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">min</span>) <span style="color:#f92672">+</span> <span style="color:#a6e22e">min</span>)
+}
+<span style="color:#75715e">// 随机颜色
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">randomColor</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">min</span>, <span style="color:#a6e22e">max</span>) =&gt; {
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">r</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">randomNum</span>(<span style="color:#a6e22e">min</span>, <span style="color:#a6e22e">max</span>)
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">g</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">randomNum</span>(<span style="color:#a6e22e">min</span>, <span style="color:#a6e22e">max</span>)
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">randomNum</span>(<span style="color:#a6e22e">min</span>, <span style="color:#a6e22e">max</span>)
+  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">rgb(</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">r</span><span style="color:#e6db74">}</span><span style="color:#e6db74">,</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">g</span><span style="color:#e6db74">}</span><span style="color:#e6db74">,</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">b</span><span style="color:#e6db74">}</span><span style="color:#e6db74">)</span><span style="color:#e6db74">`</span>
+}
+
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> (<span style="color:#a6e22e">el</span>, <span style="color:#a6e22e">state</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">pool</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890&#39;</span>, <span style="color:#75715e">// 字符串
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">width</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">120</span>,
+  <span style="color:#a6e22e">height</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">40</span>,
+}) =&gt; {
+  <span style="color:#75715e">// 3.填充背景颜色，背景颜色要浅一点
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">ctx</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">el</span>.<span style="color:#a6e22e">getContext</span>(<span style="color:#e6db74">&#39;2d&#39;</span>)
+  <span style="color:#75715e">// 填充颜色
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">fillStyle</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">randomColor</span>(<span style="color:#ae81ff">180</span>, <span style="color:#ae81ff">230</span>)
+  <span style="color:#75715e">// 填充的位置
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">fillRect</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">width</span>, <span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">height</span>)
+  <span style="color:#75715e">// 定义paramText
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">imgCode</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
+  <span style="color:#75715e">// 4.随机产生字符串，并且随机旋转
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">4</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+    <span style="color:#75715e">// 随机的四个字
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">text</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">pool</span>[<span style="color:#a6e22e">randomNum</span>(<span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">pool</span>.<span style="color:#a6e22e">length</span>)]
+    <span style="color:#a6e22e">imgCode</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">text</span>
+    <span style="color:#75715e">// 随机的字体大小
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fontSize</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">randomNum</span>(<span style="color:#ae81ff">18</span>, <span style="color:#ae81ff">40</span>)
+    <span style="color:#75715e">// 字体随机的旋转角度
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">deg</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">randomNum</span>(<span style="color:#f92672">-</span><span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">30</span>)
+    <span style="color:#75715e">/*
+</span><span style="color:#75715e">    * 绘制文字并让四个文字在不同的位置显示的思路 :
+</span><span style="color:#75715e">    * 1、定义字体
+</span><span style="color:#75715e">    * 2、定义对齐方式
+</span><span style="color:#75715e">    * 3、填充不同的颜色
+</span><span style="color:#75715e">    * 4、保存当前的状态（以防止以上的状态受影响）
+</span><span style="color:#75715e">    * 5、平移translate()
+</span><span style="color:#75715e">    * 6、旋转 rotate()
+</span><span style="color:#75715e">    * 7、填充文字
+</span><span style="color:#75715e">    * 8、restore出栈
+</span><span style="color:#75715e">    * */</span>
+    <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">font</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">fontSize</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;px Simhei&#39;</span>
+    <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">textBaseline</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;top&#39;</span>
+    <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">fillStyle</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">randomColor</span>(<span style="color:#ae81ff">80</span>, <span style="color:#ae81ff">150</span>)
+    <span style="color:#75715e">/*
+</span><span style="color:#75715e">    * save() 方法把当前状态的一份拷贝压入到一个保存图像状态的栈中。
+</span><span style="color:#75715e">    * 这就允许您临时地改变图像状态，
+</span><span style="color:#75715e">    * 然后，通过调用 restore() 来恢复以前的值。
+</span><span style="color:#75715e">    * save是入栈，restore是出栈。
+</span><span style="color:#75715e">    * 用来保存Canvas的状态。save之后，可以调用Canvas的平移、放缩、旋转、错切、裁剪等操作。 restore：用来恢复Canvas之前保存的状态。防止save后对Canvas执行的操作对后续的绘制有影响。
+</span><span style="color:#75715e">    *
+</span><span style="color:#75715e">    * */</span>
+    <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">save</span>()
+    <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">translate</span>(<span style="color:#ae81ff">30</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">15</span>, <span style="color:#ae81ff">15</span>)
+    <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">rotate</span>((<span style="color:#a6e22e">deg</span> <span style="color:#f92672">*</span> Math.<span style="color:#a6e22e">PI</span>) <span style="color:#f92672">/</span> <span style="color:#ae81ff">180</span>)
+    <span style="color:#75715e">// fillText() 方法在画布上绘制填色的文本。文本的默认颜色是黑色。
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 请使用 font 属性来定义字体和字号，并使用 fillStyle 属性以另一种颜色/渐变来渲染文本。
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// context.fillText(text,x,y,maxWidth);
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">fillText</span>(<span style="color:#a6e22e">text</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">15</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">5</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">15</span>)
+    <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">restore</span>()
+  }
+  <span style="color:#75715e">// 5.随机产生5条干扰线,干扰线的颜色要浅一点
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">5</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+    <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">beginPath</span>()
+    <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">moveTo</span>(<span style="color:#a6e22e">randomNum</span>(<span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">width</span>), <span style="color:#a6e22e">randomNum</span>(<span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">height</span>))
+    <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">lineTo</span>(<span style="color:#a6e22e">randomNum</span>(<span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">width</span>), <span style="color:#a6e22e">randomNum</span>(<span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">height</span>))
+    <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">strokeStyle</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">randomColor</span>(<span style="color:#ae81ff">180</span>, <span style="color:#ae81ff">230</span>)
+    <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">closePath</span>()
+    <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">stroke</span>()
+  }
+  <span style="color:#75715e">// 6.随机产生40个干扰的小点
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">40</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+    <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">beginPath</span>()
+    <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">arc</span>(<span style="color:#a6e22e">randomNum</span>(<span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">width</span>), <span style="color:#a6e22e">randomNum</span>(<span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">height</span>), <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> Math.<span style="color:#a6e22e">PI</span>)
+    <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">closePath</span>()
+    <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">fillStyle</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">randomColor</span>(<span style="color:#ae81ff">150</span>, <span style="color:#ae81ff">200</span>)
+    <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">fill</span>()
+  }
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">imgCode</span>
+}
+</code></pre></div><h3 id="a-simple-event-emitter">A simple event emitter</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> {
+  <span style="color:#a6e22e">events</span><span style="color:#f92672">:</span> {},
+
+  <span style="color:#a6e22e">on</span>(<span style="color:#a6e22e">event</span>, <span style="color:#a6e22e">callback</span>) {
+    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">events</span>[<span style="color:#a6e22e">event</span>]) {
+      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">events</span>[<span style="color:#a6e22e">event</span>] <span style="color:#f92672">=</span> []
+    }
+
+    <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">callback</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;function&#39;</span>) {
+      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">events</span>[<span style="color:#a6e22e">event</span>].<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">callback</span>)
+    }
+  },
+
+  <span style="color:#a6e22e">once</span>(<span style="color:#a6e22e">event</span>, <span style="color:#a6e22e">callback</span>) {
+    <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">callback</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;function&#39;</span>) {
+      <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">once</span> <span style="color:#f92672">=</span> (...<span style="color:#a6e22e">args</span>) =&gt; {
+        <span style="color:#a6e22e">callback</span>(...<span style="color:#a6e22e">args</span>)
+        <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">off</span>(<span style="color:#a6e22e">event</span>, <span style="color:#a6e22e">once</span>)
+      }
+      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">on</span>(<span style="color:#a6e22e">event</span>, <span style="color:#a6e22e">once</span>)
+    }
+  },
+
+  <span style="color:#a6e22e">emit</span>(<span style="color:#a6e22e">event</span>, ...<span style="color:#a6e22e">args</span>) {
+    <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">events</span>[<span style="color:#a6e22e">event</span>]) {
+      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">events</span>[<span style="color:#a6e22e">event</span>].<span style="color:#a6e22e">forEach</span>(<span style="color:#a6e22e">callback</span> =&gt; {
+        <span style="color:#a6e22e">callback</span>(...<span style="color:#a6e22e">args</span>)
+      })
+    }
+  },
+
+  <span style="color:#a6e22e">off</span>(<span style="color:#a6e22e">event</span>, <span style="color:#a6e22e">callback</span>) {
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">callbacks</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">events</span>[<span style="color:#a6e22e">event</span>]
+
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">callbacks</span>) {
+      <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">callback</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;function&#39;</span>) {
+        <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">events</span>[<span style="color:#a6e22e">event</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">callbacks</span>.<span style="color:#a6e22e">filter</span>(<span style="color:#a6e22e">cb</span> =&gt; <span style="color:#a6e22e">cb</span>.<span style="color:#a6e22e">toString</span>() <span style="color:#f92672">!==</span> <span style="color:#a6e22e">callback</span>.<span style="color:#a6e22e">toString</span>())
+      } <span style="color:#66d9ef">else</span> {
+        <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">events</span>[<span style="color:#a6e22e">event</span>] <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>
+      }
+    }
+  },
+}
+</code></pre></div><h3 id="use-umd-to-create-a-jquery-plugin">Use UMD to create a jQuery plugin</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">factory</span>) {
+  <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">define</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;function&#39;</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">define</span>.<span style="color:#a6e22e">amd</span>) {
+    <span style="color:#75715e">// AMD. Register as an anonymous module.
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">define</span>([<span style="color:#e6db74">&#39;jquery&#39;</span>], <span style="color:#a6e22e">factory</span>);
+  } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">module</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;object&#39;</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span>) {
+    <span style="color:#75715e">// Node/CommonJS
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">root</span>, <span style="color:#a6e22e">jQuery</span>) {
+      <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">jQuery</span> <span style="color:#f92672">===</span> <span style="color:#66d9ef">undefined</span>) {
+        <span style="color:#75715e">// require(&#39;jQuery&#39;) returns a factory that requires window to
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// build a jQuery instance, we normalize how we use modules
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// that require this pattern but the window provided is a noop
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// if it&#39;s defined (how jquery works)
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">typeof</span> window <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#39;undefined&#39;</span>) {
+          <span style="color:#a6e22e">jQuery</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;jquery&#39;</span>);
+        } <span style="color:#66d9ef">else</span> {
+          <span style="color:#a6e22e">jQuery</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;jquery&#39;</span>)(<span style="color:#a6e22e">root</span>);
+        }
+      }
+      <span style="color:#a6e22e">factory</span>(<span style="color:#a6e22e">jQuery</span>);
+      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">jQuery</span>;
+    };
+  } <span style="color:#66d9ef">else</span> {
+    <span style="color:#75715e">// Browser globals
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">factory</span>(<span style="color:#a6e22e">jQuery</span>);
+  }
+}(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">$</span>) {
+  <span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">fn</span>.<span style="color:#a6e22e">jqueryPlugin</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>() {
+    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
+  };
+}));
+</code></pre></div><h3 id="lazy-load-images">Lazy load images</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">lazyLoad</span>(<span style="color:#a6e22e">offset</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">selector</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;img[data-src]&#39;</span>) {
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">load</span> <span style="color:#f92672">=</span> () =&gt; {
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">imgs</span> <span style="color:#f92672">=</span> [...document.<span style="color:#a6e22e">querySelectorAll</span>(<span style="color:#a6e22e">selector</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;:not(.loaded)&#39;</span>)]
+
+    <span style="color:#a6e22e">imgs</span>.<span style="color:#a6e22e">forEach</span>(<span style="color:#a6e22e">img</span> =&gt; {
+      <span style="color:#66d9ef">if</span> (window.<span style="color:#a6e22e">innerHeight</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">img</span>.<span style="color:#a6e22e">getBoundingClientRect</span>().<span style="color:#a6e22e">top</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">offset</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>) {
+        <span style="color:#a6e22e">img</span>.<span style="color:#a6e22e">src</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">img</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">src</span>
+        <span style="color:#a6e22e">img</span>.<span style="color:#a6e22e">onload</span> <span style="color:#f92672">=</span> () =&gt; <span style="color:#a6e22e">img</span>.<span style="color:#a6e22e">classList</span>.<span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#39;loaded&#39;</span>)
+      }
+    })
+  }
+
+  <span style="color:#a6e22e">load</span>()
+  window.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;scroll&#39;</span>, <span style="color:#a6e22e">load</span>, <span style="color:#66d9ef">false</span>)
+  window.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;resize&#39;</span>, <span style="color:#a6e22e">load</span>, <span style="color:#66d9ef">false</span>)
+}
+</code></pre></div><h3 id="lazy-load-images-with-intersectionobserver">Lazy load images with IntersectionObserver</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">lazyLoad</span>(<span style="color:#a6e22e">offset</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">selector</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;img[data-src]&#39;</span>, <span style="color:#a6e22e">root</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>) {
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">interactSettings</span> <span style="color:#f92672">=</span> {
+    <span style="color:#a6e22e">root</span><span style="color:#f92672">:</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#a6e22e">root</span>),
+    <span style="color:#a6e22e">rootMargin</span><span style="color:#f92672">:</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">0px 0px </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">offset</span><span style="color:#e6db74">}</span><span style="color:#e6db74">px 0px</span><span style="color:#e6db74">`</span>
+  }
+
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">onIntersection</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">entries</span>, <span style="color:#a6e22e">observer</span>) =&gt; {
+    <span style="color:#a6e22e">entries</span>.<span style="color:#a6e22e">forEach</span>(<span style="color:#a6e22e">entry</span> =&gt; {
+      <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">entry</span>.<span style="color:#a6e22e">isIntersecting</span>) {
+        <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">img</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">entry</span>.<span style="color:#a6e22e">target</span>
+        <span style="color:#a6e22e">observer</span>.<span style="color:#a6e22e">unobserve</span>(<span style="color:#a6e22e">img</span>)
+        <span style="color:#a6e22e">img</span>.<span style="color:#a6e22e">src</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">img</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">src</span>
+        <span style="color:#a6e22e">img</span>.<span style="color:#a6e22e">onload</span> <span style="color:#f92672">=</span> () =&gt; <span style="color:#a6e22e">img</span>.<span style="color:#a6e22e">classList</span>.<span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#39;loaded&#39;</span>)
+      }
+    })
+  }
+
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">observer</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">IntersectionObserver</span>(<span style="color:#a6e22e">onIntersection</span>, <span style="color:#a6e22e">interactSettings</span>)
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">imgs</span> <span style="color:#f92672">=</span> [...document.<span style="color:#a6e22e">querySelectorAll</span>(<span style="color:#a6e22e">selector</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;:not(.loaded)&#39;</span>)]
+  <span style="color:#a6e22e">imgs</span>.<span style="color:#a6e22e">forEach</span>(<span style="color:#a6e22e">img</span> =&gt; <span style="color:#a6e22e">observer</span>.<span style="color:#a6e22e">observe</span>(<span style="color:#a6e22e">img</span>))
+}
+</code></pre></div><h3 id="throttle">Throttle</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">throttle</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">fn</span>, <span style="color:#a6e22e">wait</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">17</span>) =&gt; {
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">lastTime</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">function</span>(...<span style="color:#a6e22e">args</span>) {
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">now</span> <span style="color:#f92672">=</span> Date.<span style="color:#a6e22e">now</span>()
+
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">now</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">lastTime</span> <span style="color:#f92672">&gt;=</span> <span style="color:#a6e22e">wait</span>) {
+      <span style="color:#a6e22e">lastTime</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">now</span>
+      <span style="color:#a6e22e">fn</span>.<span style="color:#a6e22e">apply</span>(<span style="color:#66d9ef">this</span>, <span style="color:#a6e22e">args</span>)
+    }
+  }
+}
+</code></pre></div><h3 id="debounce">Debounce</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">debounce</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">fn</span>, <span style="color:#a6e22e">wait</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">17</span>) =&gt; {
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">timer</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>
+  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">function</span>(...<span style="color:#a6e22e">args</span>) {
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">timer</span>) <span style="color:#a6e22e">clearTimeout</span>(<span style="color:#a6e22e">timer</span>)
+    <span style="color:#a6e22e">timer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">setTimeout</span>(() =&gt; {
+      <span style="color:#a6e22e">fn</span>.<span style="color:#a6e22e">apply</span>(<span style="color:#66d9ef">this</span>, <span style="color:#a6e22e">args</span>)
+    }, <span style="color:#a6e22e">wait</span>)
+  }
+}
+</code></pre></div><h3 id="throttle-and-debounce">Throttle and Debounce</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">throttleDebounce</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">fn</span>, <span style="color:#a6e22e">wait</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">17</span>) =&gt; {
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">lastTime</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">timer</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>
+
+  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">function</span>(...<span style="color:#a6e22e">args</span>) {
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">now</span> <span style="color:#f92672">=</span> Date.<span style="color:#a6e22e">now</span>()
+
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">now</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">lastTime</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">wait</span>) {
+      <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">timer</span>) <span style="color:#a6e22e">clearTimeout</span>(<span style="color:#a6e22e">timer</span>)
+      <span style="color:#a6e22e">timer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">setTimeout</span>(() =&gt; {
+        <span style="color:#a6e22e">lastTime</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">now</span>
+        <span style="color:#a6e22e">fn</span>.<span style="color:#a6e22e">apply</span>(<span style="color:#66d9ef">this</span>, <span style="color:#a6e22e">args</span>)
+      }, <span style="color:#a6e22e">wait</span>)
+    } <span style="color:#66d9ef">else</span> {
+      <span style="color:#a6e22e">lastTime</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">now</span>
+      <span style="color:#a6e22e">fn</span>.<span style="color:#a6e22e">apply</span>(<span style="color:#66d9ef">this</span>, <span style="color:#a6e22e">args</span>)
+    }
+  }
+}
+</code></pre></div><h3 id="lodash-clonedeep">Lodash cloneDeep</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">cloneDeep</span>(<span style="color:#a6e22e">obj</span>) {
+  <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">isObject</span>(<span style="color:#a6e22e">o</span>) {
+    <span style="color:#66d9ef">return</span> (<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">o</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;object&#39;</span> <span style="color:#f92672">||</span> <span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">o</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;function&#39;</span>) <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">o</span> <span style="color:#f92672">!==</span> <span style="color:#66d9ef">null</span>
+  }
+
+  <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">isObject</span>(<span style="color:#a6e22e">obj</span>)) {
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">obj</span>
+  }
+
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">isArray</span> <span style="color:#f92672">=</span> Array.<span style="color:#a6e22e">isArray</span>(<span style="color:#a6e22e">obj</span>)
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">newObj</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">isArray</span> <span style="color:#f92672">?</span> [...<span style="color:#a6e22e">obj</span>] <span style="color:#f92672">:</span> { ...<span style="color:#a6e22e">obj</span> }
+
+  <span style="color:#a6e22e">Reflect</span>.<span style="color:#a6e22e">ownKeys</span>(<span style="color:#a6e22e">newObj</span>).<span style="color:#a6e22e">forEach</span>(<span style="color:#a6e22e">key</span> =&gt; {
+    <span style="color:#a6e22e">newObj</span>[<span style="color:#a6e22e">key</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">isObject</span>(<span style="color:#a6e22e">obj</span>[<span style="color:#a6e22e">key</span>]) <span style="color:#f92672">?</span> <span style="color:#a6e22e">cloneDeep</span>(<span style="color:#a6e22e">obj</span>[<span style="color:#a6e22e">key</span>]) <span style="color:#f92672">:</span> <span style="color:#a6e22e">obj</span>[<span style="color:#a6e22e">key</span>]
+  })
+
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">newObj</span>
+}
+</code></pre></div><h3 id="format-a-date">Format a Date</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">Date.<span style="color:#a6e22e">prototype</span>.<span style="color:#a6e22e">format</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">format</span>) {
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">o</span> <span style="color:#f92672">=</span> {
+    <span style="color:#e6db74">&#39;M+&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">getMonth</span>() <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>, <span style="color:#75715e">// month
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;d+&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">getDate</span>(), <span style="color:#75715e">// day
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;h+&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">getHours</span>(), <span style="color:#75715e">// hour
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;m+&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">getMinutes</span>(), <span style="color:#75715e">// minute
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;s+&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">getSeconds</span>(), <span style="color:#75715e">// second
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;q+&#39;</span><span style="color:#f92672">:</span> Math.<span style="color:#a6e22e">floor</span>((<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">getMonth</span>() <span style="color:#f92672">+</span> <span style="color:#ae81ff">3</span>) <span style="color:#f92672">/</span> <span style="color:#ae81ff">3</span>), <span style="color:#75715e">// quarter
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;S&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">getMilliseconds</span>() <span style="color:#75715e">// millisecond
+</span><span style="color:#75715e"></span>  }
+
+  <span style="color:#66d9ef">if</span> (<span style="color:#e6db74">/(y+)/</span>.<span style="color:#a6e22e">test</span>(<span style="color:#a6e22e">format</span>)) {
+    <span style="color:#a6e22e">format</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">format</span>.<span style="color:#a6e22e">replace</span>(RegExp.<span style="color:#a6e22e">$1</span>, (<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">getFullYear</span>() <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;&#39;</span>).<span style="color:#a6e22e">substr</span>(<span style="color:#ae81ff">4</span> <span style="color:#f92672">-</span> RegExp.<span style="color:#a6e22e">$1</span>.<span style="color:#a6e22e">length</span>));
+  }
+
+  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">k</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">o</span>) {
+    <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">new</span> RegExp(<span style="color:#e6db74">&#39;(&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">k</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;)&#39;</span>).<span style="color:#a6e22e">test</span>(<span style="color:#a6e22e">format</span>)) {
+      <span style="color:#a6e22e">format</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">format</span>.<span style="color:#a6e22e">replace</span>(RegExp.<span style="color:#a6e22e">$1</span>, RegExp.<span style="color:#a6e22e">$1</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">?</span>
+        <span style="color:#a6e22e">o</span>[<span style="color:#a6e22e">k</span>] <span style="color:#f92672">:</span>
+        (<span style="color:#e6db74">&#39;00&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">o</span>[<span style="color:#a6e22e">k</span>]).<span style="color:#a6e22e">substr</span>((<span style="color:#e6db74">&#39;&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">o</span>[<span style="color:#a6e22e">k</span>]).<span style="color:#a6e22e">length</span>));
+    }
+  }
+
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">format</span>;
+};
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">new</span> Date().<span style="color:#a6e22e">format</span>(<span style="color:#e6db74">&#39;yyyy-MM-dd hh:mm:ss&#39;</span>); <span style="color:#75715e">// 2014-04-02 08:00:00
+</span></code></pre></div><h3 id="set-fetch-body-from-an-object">Set fetch body from an object</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setFetchBody</span>(<span style="color:#a6e22e">obj</span>) {
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
+  <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">obj</span>) <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">str</span>
+
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">isFirstKey</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>
+
+  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">key</span> <span style="color:#66d9ef">of</span> Object.<span style="color:#a6e22e">keys</span>(<span style="color:#a6e22e">obj</span>)) {
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">isFirstKey</span>) {
+      <span style="color:#a6e22e">isFirstKey</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>
+      <span style="color:#a6e22e">str</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">key</span><span style="color:#e6db74">}</span><span style="color:#e6db74">=</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">obj</span>[<span style="color:#a6e22e">key</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>
+    } <span style="color:#66d9ef">else</span> {
+      <span style="color:#a6e22e">str</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">&amp;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">key</span><span style="color:#e6db74">}</span><span style="color:#e6db74">=</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">obj</span>[<span style="color:#a6e22e">key</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>
+    }
+  }
+
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">str</span>
+}
+</code></pre></div><h3 id="get-items-filter-by-including-any-one-of-other-items">Get items filter by including any one of other items</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getIncludedItems</span>(<span style="color:#a6e22e">arr1</span>, <span style="color:#a6e22e">arr2</span>, <span style="color:#a6e22e">prop</span>) {
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">arr1</span>.<span style="color:#a6e22e">filter</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">el</span>) {
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">included</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+
+    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">arr2</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+      <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">element</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">prop</span> <span style="color:#f92672">?</span> <span style="color:#a6e22e">el</span>[<span style="color:#a6e22e">prop</span>] <span style="color:#f92672">:</span> <span style="color:#a6e22e">el</span>;
+
+      <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">element</span>.<span style="color:#a6e22e">includes</span>(<span style="color:#a6e22e">arr2</span>[<span style="color:#a6e22e">i</span>])) {
+        <span style="color:#a6e22e">included</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+        <span style="color:#66d9ef">break</span>;
+      }
+    }
+
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">included</span>;
+  });
+}
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">getIncludedItems</span>([<span style="color:#e6db74">&#39;as&#39;</span>, <span style="color:#e6db74">&#39;bs&#39;</span>, <span style="color:#e6db74">&#39;cs&#39;</span>], [<span style="color:#e6db74">&#39;a&#39;</span>, <span style="color:#e6db74">&#39;b&#39;</span>]);
+<span style="color:#75715e">// [&#39;as&#39;, &#39;bs&#39;]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">getIncludedItems</span>([{ <span style="color:#a6e22e">domain</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;as.com&#39;</span> }, { <span style="color:#a6e22e">domain</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;bs.com&#39;</span> }, { <span style="color:#a6e22e">domain</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;cs.com&#39;</span> }], [<span style="color:#e6db74">&#39;as&#39;</span>, <span style="color:#e6db74">&#39;bs&#39;</span>], <span style="color:#e6db74">&#39;domain&#39;</span>);
+<span style="color:#75715e">// [{ domain: &#39;as.com&#39; }, { domain: &#39;bs.com&#39; }]
+</span></code></pre></div><h3 id="remove-a-certain-item-and-return-the-rest">Remove a certain item and return the rest</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getRestItems</span>(<span style="color:#a6e22e">arr</span>, <span style="color:#a6e22e">value</span>, <span style="color:#a6e22e">prop</span>) {
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">rest</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arr</span>.<span style="color:#a6e22e">slice</span>();
+
+  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">rest</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">prop</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">rest</span>[<span style="color:#a6e22e">i</span>][<span style="color:#a6e22e">prop</span>] <span style="color:#f92672">===</span> <span style="color:#a6e22e">value</span> <span style="color:#f92672">||</span> <span style="color:#f92672">!</span><span style="color:#a6e22e">prop</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">rest</span>[<span style="color:#a6e22e">i</span>] <span style="color:#f92672">===</span> <span style="color:#a6e22e">value</span>) {
+      <span style="color:#a6e22e">rest</span>.<span style="color:#a6e22e">splice</span>(<span style="color:#a6e22e">i</span>, <span style="color:#ae81ff">1</span>);
+      <span style="color:#66d9ef">break</span>;
+    }
+  }
+
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">rest</span>;
+}
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">getRestItems</span>([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, { <span style="color:#a6e22e">x</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span> }], <span style="color:#ae81ff">2</span>); <span style="color:#75715e">// [1, { x: 3}]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">getRestItems</span>([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, { <span style="color:#a6e22e">x</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span> }], <span style="color:#ae81ff">3</span>, <span style="color:#e6db74">&#39;x&#39;</span>); <span style="color:#75715e">// [1, 2]
+</span></code></pre></div><h3 id="stop-doublescrolling-propagation">Stop double-scrolling propagation</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;.scrollable&#39;</span>).<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;DOMMouseScroll mousewheel&#39;</span>, <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">ev</span>) {
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">$this</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#66d9ef">this</span>),
+    <span style="color:#a6e22e">scrollTop</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">scrollTop</span>,
+    <span style="color:#a6e22e">scrollHeight</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">scrollHeight</span>,
+    <span style="color:#a6e22e">height</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$this</span>.<span style="color:#a6e22e">height</span>(),
+    <span style="color:#a6e22e">delta</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">ev</span>.<span style="color:#a6e22e">type</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;DOMMouseScroll&#39;</span> <span style="color:#f92672">?</span>
+      <span style="color:#a6e22e">ev</span>.<span style="color:#a6e22e">originalEvent</span>.<span style="color:#a6e22e">detail</span> <span style="color:#f92672">*</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">40</span> <span style="color:#f92672">:</span>
+      <span style="color:#a6e22e">ev</span>.<span style="color:#a6e22e">originalEvent</span>.<span style="color:#a6e22e">wheelDelta</span>),
+    <span style="color:#a6e22e">up</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">delta</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>;
+
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">prevent</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>() {
+    <span style="color:#a6e22e">ev</span>.<span style="color:#a6e22e">stopPropagation</span>();
+    <span style="color:#a6e22e">ev</span>.<span style="color:#a6e22e">preventDefault</span>();
+    <span style="color:#a6e22e">ev</span>.<span style="color:#a6e22e">returnValue</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
+  };
+
+  <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">up</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">delta</span> <span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">scrollHeight</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">height</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">scrollTop</span>) {
+    <span style="color:#a6e22e">$this</span>.<span style="color:#a6e22e">scrollTop</span>(<span style="color:#a6e22e">scrollHeight</span>);
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">prevent</span>();
+  } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">up</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">delta</span> <span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">scrollTop</span>) {
+    <span style="color:#a6e22e">$this</span>.<span style="color:#a6e22e">scrollTop</span>(<span style="color:#ae81ff">0</span>);
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">prevent</span>();
+  }
+});
+</code></pre></div><h3 id="update-url-query-string">Update URL query string</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">updateQueryString</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">value</span>) {
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">href</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">href</span>;
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">search</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">search</span>;
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">hash</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">hash</span>;
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">query</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">getQueryString</span>(<span style="color:#a6e22e">name</span>);
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">hasQuery</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">query</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#39;object&#39;</span>;
+
+  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">hasQuery</span>) {
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">href</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#a6e22e">name</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;=&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">query</span>, <span style="color:#a6e22e">name</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;=&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">value</span>);
+  } <span style="color:#66d9ef">else</span> {
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">search</span>) {
+      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">href</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#a6e22e">search</span>, <span style="color:#a6e22e">search</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;&amp;&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;=&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">value</span>);
+    } <span style="color:#66d9ef">else</span> {
+      <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">hash</span>) {
+        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">href</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#a6e22e">hash</span>, <span style="color:#e6db74">&#39;?&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;=&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">value</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">hash</span>);
+      } <span style="color:#66d9ef">else</span> {
+        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">href</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;?&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;=&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">value</span>;
+      }
+    }
+  }
+}
+</code></pre></div><h3 id="get-url-query-string">Get URL query string</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getQueryString</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">url</span>) {
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">href</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">?</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">:</span> window.<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">href</span>;
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">reg</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> RegExp(<span style="color:#e6db74">&#39;[?&amp;]&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;=([^&amp;#]*)&#39;</span>, <span style="color:#e6db74">&#39;i&#39;</span>);
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">string</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">reg</span>.<span style="color:#a6e22e">exec</span>(<span style="color:#a6e22e">href</span>);
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">string</span> <span style="color:#f92672">?</span> <span style="color:#a6e22e">string</span>[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">:</span> <span style="color:#66d9ef">null</span>;
+}
+</code></pre></div><p>or:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getQueryString</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">url</span>) {
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">search</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">?</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">:</span> window.<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">search</span>;
+  <span style="color:#66d9ef">return</span> decodeURIComponent((<span style="color:#66d9ef">new</span> RegExp(<span style="color:#e6db74">&#39;[?|&amp;]&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;=&#39;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;([^&amp;;]+?)(&amp;|#|;|$)&#39;</span>).<span style="color:#a6e22e">exec</span>(<span style="color:#a6e22e">search</span>)<span style="color:#f92672">||</span>[,<span style="color:#e6db74">&#34;&#34;</span>])[<span style="color:#ae81ff">1</span>].<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">/\+/g</span>, <span style="color:#e6db74">&#39;%20&#39;</span>))<span style="color:#f92672">||</span><span style="color:#66d9ef">null</span>;
+}
+</code></pre></div><p>get the anchor:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getAnchor</span>(<span style="color:#a6e22e">url</span>) {
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">?</span> <span style="color:#a6e22e">url</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#39;#&#39;</span>)[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">:</span> window.<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">hash</span>.<span style="color:#a6e22e">substring</span>(<span style="color:#ae81ff">1</span>);
+}
+</code></pre></div><h3 id="remove-html-tags">Remove HTML tags</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">strip</span>(<span style="color:#a6e22e">html</span>) {
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">tmp</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#39;DIV&#39;</span>);
+  <span style="color:#a6e22e">tmp</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">html</span>;
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">tmp</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">tmp</span>.<span style="color:#a6e22e">innerText</span> <span style="color:#f92672">||</span> <span style="color:#e6db74">&#39;&#39;</span>;
+}
+</code></pre></div><p>with RegEx:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">strip</span>(<span style="color:#a6e22e">html</span>) {
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">html</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">/(&lt;([^&gt;]+)&gt;)/ig</span>, <span style="color:#e6db74">&#39;&#39;</span>);
+}
+</code></pre></div><p>with jQuery:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">strip</span>(<span style="color:#a6e22e">html</span>) {
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">$</span>(<span style="color:#a6e22e">html</span>).<span style="color:#a6e22e">text</span>();
+}
+</code></pre></div><h3 id="check-for-animation-support">Check for animation support</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">browserSupportsCSSProperty</span>(<span style="color:#a6e22e">propertyName</span>) {
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">elm</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#39;div&#39;</span>);
+  <span style="color:#a6e22e">propertyName</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">propertyName</span>.<span style="color:#a6e22e">toLowerCase</span>();
+
+  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">elm</span>.<span style="color:#a6e22e">style</span>[<span style="color:#a6e22e">propertyName</span>] <span style="color:#f92672">!=</span> <span style="color:#66d9ef">undefined</span>)
+    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
+
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">propertyNameCapital</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">propertyName</span>.<span style="color:#a6e22e">charAt</span>(<span style="color:#ae81ff">0</span>).<span style="color:#a6e22e">toUpperCase</span>() <span style="color:#f92672">+</span> <span style="color:#a6e22e">propertyName</span>.<span style="color:#a6e22e">substr</span>(<span style="color:#ae81ff">1</span>),
+    <span style="color:#a6e22e">domPrefixes</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Webkit Moz ms O&#39;</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#39; &#39;</span>);
+
+  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">domPrefixes</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">elm</span>.<span style="color:#a6e22e">style</span>[<span style="color:#a6e22e">domPrefixes</span>[<span style="color:#a6e22e">i</span>] <span style="color:#f92672">+</span> <span style="color:#a6e22e">propertyNameCapital</span>] <span style="color:#f92672">!=</span> <span style="color:#66d9ef">undefined</span>)
+      <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
+  }
+
+  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
+}
+
+<span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">browserSupportsCSSProperty</span>(<span style="color:#e6db74">&#39;animation&#39;</span>)) {
+  <span style="color:#75715e">// fallback…
+</span><span style="color:#75715e"></span>}
+</code></pre></div><h3 id="get-the-http-headers">Get the HTTP headers</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">req</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">XMLHttpRequest</span>();
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">headers</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">getAllResponseHeaders</span>().<span style="color:#a6e22e">toLowerCase</span>();
+<span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">open</span>(<span style="color:#e6db74">&#39;GET&#39;</span>, document.<span style="color:#a6e22e">location</span>, <span style="color:#66d9ef">false</span>);
+<span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">send</span>(<span style="color:#66d9ef">null</span>);
+<span style="color:#a6e22e">alert</span>(<span style="color:#a6e22e">headers</span>);
+</code></pre></div><p>with jQuery：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">ajax</span>({
+  <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">href</span>
+})
+  .<span style="color:#a6e22e">done</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">xhr</span>) {
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">getAllResponseHeaders</span>(), <span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">getResponseHeader</span>(<span style="color:#e6db74">&#39;Server&#39;</span>));
+  });
+</code></pre></div><h3 id="preload-sound-files">Preload sound files</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">preloadFiles</span>(<span style="color:#a6e22e">files</span>, <span style="color:#a6e22e">onComplete</span>, <span style="color:#a6e22e">onProgress</span>) {
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">filesLoaded</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>,
+    <span style="color:#a6e22e">arr</span> <span style="color:#f92672">=</span> [];
+
+  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">len</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">files</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">len</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+    <span style="color:#a6e22e">arr</span>[<span style="color:#a6e22e">i</span>] <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Audio</span>();
+    <span style="color:#a6e22e">arr</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;canplaythrough&#39;</span>, <span style="color:#66d9ef">function</span>() {
+      <span style="color:#a6e22e">filesLoaded</span><span style="color:#f92672">++</span>;
+      <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">filesLoaded</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">len</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">onComplete</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;function&#39;</span>) <span style="color:#a6e22e">onComplete</span>();
+      <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">onProgress</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;function&#39;</span>) <span style="color:#a6e22e">onProgress</span>(<span style="color:#a6e22e">filesLoaded</span>, <span style="color:#a6e22e">len</span>);
+    }, <span style="color:#66d9ef">false</span>);
+    <span style="color:#a6e22e">arr</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">src</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">files</span>[<span style="color:#a6e22e">i</span>];
+    <span style="color:#a6e22e">arr</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">load</span>();
+  };
+}
+</code></pre></div><h3 id="a-imitation-of-the-localstorage-object">A imitation of the localStorage object</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>window.<span style="color:#a6e22e">localStorage</span>) {
+  window.<span style="color:#a6e22e">localStorage</span> <span style="color:#f92672">=</span> {
+    <span style="color:#a6e22e">getItem</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">sKey</span>) {
+      <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">sKey</span> <span style="color:#f92672">||</span> <span style="color:#f92672">!</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">hasOwnProperty</span>(<span style="color:#a6e22e">sKey</span>)) {
+        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">null</span>;
+      }
+      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">unescape</span>(document.<span style="color:#a6e22e">cookie</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#66d9ef">new</span> RegExp(<span style="color:#e6db74">&#34;(?:^|.*;\\s*)&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">escape</span>(<span style="color:#a6e22e">sKey</span>).<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">/[\-\.\+\*]/g</span>, <span style="color:#e6db74">&#34;\\$&amp;&#34;</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;\\s*\\=\\s*((?:[^;](?!;))*[^;]?).*&#34;</span>), <span style="color:#e6db74">&#34;$1&#34;</span>));
+    },
+    <span style="color:#a6e22e">key</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">nKeyId</span>) {
+      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">unescape</span>(document.<span style="color:#a6e22e">cookie</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">/\s*\=(?:.(?!;))*$/</span>, <span style="color:#e6db74">&#34;&#34;</span>).<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">/\s*\=(?:[^;](?!;))*[^;]?;\s*/</span>)[<span style="color:#a6e22e">nKeyId</span>]);
+    },
+    <span style="color:#a6e22e">setItem</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">sKey</span>, <span style="color:#a6e22e">sValue</span>) {
+      <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">sKey</span>) {
+        <span style="color:#66d9ef">return</span>;
+      }
+      document.<span style="color:#a6e22e">cookie</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">escape</span>(<span style="color:#a6e22e">sKey</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;=&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">escape</span>(<span style="color:#a6e22e">sValue</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;; expires=Tue, 19 Jan 2038 03:14:07 GMT; path=/&#34;</span>;
+      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">cookie</span>.<span style="color:#a6e22e">match</span>(<span style="color:#e6db74">/\=/g</span>).<span style="color:#a6e22e">length</span>;
+    },
+    <span style="color:#a6e22e">length</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>,
+    <span style="color:#a6e22e">removeItem</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">sKey</span>) {
+      <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">sKey</span> <span style="color:#f92672">||</span> <span style="color:#f92672">!</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">hasOwnProperty</span>(<span style="color:#a6e22e">sKey</span>)) {
+        <span style="color:#66d9ef">return</span>;
+      }
+      document.<span style="color:#a6e22e">cookie</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">escape</span>(<span style="color:#a6e22e">sKey</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/&#34;</span>;
+      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">length</span><span style="color:#f92672">--</span>;
+    },
+    <span style="color:#a6e22e">hasOwnProperty</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">sKey</span>) {
+      <span style="color:#66d9ef">return</span> (<span style="color:#66d9ef">new</span> RegExp(<span style="color:#e6db74">&#34;(?:^|;\\s*)&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">escape</span>(<span style="color:#a6e22e">sKey</span>).<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">/[\-\.\+\*]/g</span>, <span style="color:#e6db74">&#34;\\$&amp;&#34;</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;\\s*\\=&#34;</span>)).<span style="color:#a6e22e">test</span>(document.<span style="color:#a6e22e">cookie</span>);
+    }
+  };
+  window.<span style="color:#a6e22e">localStorage</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">=</span> (document.<span style="color:#a6e22e">cookie</span>.<span style="color:#a6e22e">match</span>(<span style="color:#e6db74">/\=/g</span>) <span style="color:#f92672">||</span> window.<span style="color:#a6e22e">localStorage</span>).<span style="color:#a6e22e">length</span>;
+}
+</code></pre></div><h3 id="set-and-get-cookie">Set and get cookie</h3>
+<p>set cookie:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setCookie</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">value</span>, <span style="color:#a6e22e">days</span>, <span style="color:#a6e22e">path</span>, <span style="color:#a6e22e">domain</span>) {
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">newDate</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date();
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">days</span> <span style="color:#f92672">=</span> isNaN(<span style="color:#a6e22e">days</span>) <span style="color:#f92672">?</span> <span style="color:#ae81ff">365</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">days</span>;
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">expires</span>;
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">cookie</span>;
+
+  <span style="color:#a6e22e">newDate</span>.<span style="color:#a6e22e">setTime</span>(<span style="color:#a6e22e">newDate</span>.<span style="color:#a6e22e">getTime</span>() <span style="color:#f92672">+</span> (<span style="color:#a6e22e">days</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">24</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">60</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">60</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1000</span>));
+  <span style="color:#a6e22e">expires</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;expires=&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">newDate</span>.<span style="color:#a6e22e">toUTCString</span>();
+  <span style="color:#a6e22e">cookie</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;=&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">value</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;;&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">expires</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;;&#39;</span>;
+  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">path</span>) <span style="color:#a6e22e">cookie</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#39;path=&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">path</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;;&#39;</span>;
+  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">domain</span>) <span style="color:#a6e22e">cookie</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#39;domain=&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">domain</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;;&#39;</span>;
+  document.<span style="color:#a6e22e">cookie</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">cookie</span>;
+};
+</code></pre></div><p>get cookie:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getCookie</span>(<span style="color:#a6e22e">name</span>) {
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;=&#39;</span>;
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">cookies</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">cookie</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#39;;&#39;</span>);
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">cookie</span>;
+
+  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">cookies</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+    <span style="color:#a6e22e">cookie</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">cookies</span>[<span style="color:#a6e22e">i</span>];
+    <span style="color:#66d9ef">while</span> (<span style="color:#a6e22e">cookie</span>.<span style="color:#a6e22e">charAt</span>(<span style="color:#ae81ff">0</span>) <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39; &#39;</span>) <span style="color:#a6e22e">cookie</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">cookie</span>.<span style="color:#a6e22e">substring</span>(<span style="color:#ae81ff">1</span>);
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">cookie</span>.<span style="color:#a6e22e">indexOf</span>(<span style="color:#a6e22e">name</span>) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">cookie</span>.<span style="color:#a6e22e">substring</span>(<span style="color:#a6e22e">name</span>.<span style="color:#a6e22e">length</span>, <span style="color:#a6e22e">cookie</span>.<span style="color:#a6e22e">length</span>);
+  }
+
+  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;&#39;</span>;
+}
+</code></pre></div><h3 id="get-a-shuffled-copy-of-an-array">Get a shuffled copy of an array</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">shuffle</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">arr</span>) {
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">len</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arr</span>.<span style="color:#a6e22e">length</span>,
+    <span style="color:#a6e22e">shuffled</span> <span style="color:#f92672">=</span> Array(<span style="color:#a6e22e">len</span>);
+
+  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">index</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">rand</span>; <span style="color:#a6e22e">index</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">len</span>; <span style="color:#a6e22e">index</span><span style="color:#f92672">++</span>) {
+    <span style="color:#a6e22e">rand</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">*</span> (<span style="color:#a6e22e">index</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>));
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">rand</span> <span style="color:#f92672">!==</span> <span style="color:#a6e22e">index</span>) <span style="color:#a6e22e">shuffled</span>[<span style="color:#a6e22e">index</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">shuffled</span>[<span style="color:#a6e22e">rand</span>];
+    <span style="color:#a6e22e">shuffled</span>[<span style="color:#a6e22e">rand</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">arr</span>[<span style="color:#a6e22e">index</span>];
+  }
+
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">shuffled</span>;
+};
+</code></pre></div><h3 id="create-dynamic-variables">Create dynamic variables</h3>
+<p>with eval():</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">eval(<span style="color:#e6db74">&#39;var variable&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;= arr[i]&#39;</span>);
+</code></pre></div><p>with window[]:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">window[<span style="color:#e6db74">&#39;variable&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">i</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">arr</span>[<span style="color:#a6e22e">i</span>];
+</code></pre></div><h3 id="trigger-click-on-an-anchor">Trigger click on an anchor</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">document.<span style="color:#a6e22e">getElementsByTagName</span>(<span style="color:#e6db74">&#39;a&#39;</span>)[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">click</span>();
+</code></pre></div><p>with <a href="http://jquery.com/">jQuery</a>, you can use:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;a&#39;</span>)[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">click</span>();
+</code></pre></div></article>
+    </section>
+
+    <section class="ui attached segment prev-next">
+      
+        <a href="/use-rgba-in-ie/" title="Use rgba in IE">&larr; Previous Post</a>
+      
+      
+        <a href="/use-the-viewport-meta-tag/" title="Use the viewport meta tag">Next Post &rarr;</a>
+      
+    </section>
+
+    
+      <footer class="ui attached segment dream-tags">
+        
+          <a class="ui label" href="/tags/javascript" title="javascript">javascript</a>
+        
+      </footer>
+    
+
+    
+
+    
+      <footer class="ui bottom attached stacked segment post-disqus-area" data-html2canvas-ignore="true">
+        <div id="disqus_thread"></div>
+        <script>
+          
+
+
+          var disqus_config = function () {
+            this.page.url = '\/javascript-snippets\/';  
+            this.page.identifier = '\/javascript-snippets\/'; 
+          };
+
+          (function() { 
+            var d = document, s = d.createElement('script');
+            s.src = 'https://' + 'ryunpu' + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </footer>
+    
+
+  </div>
+  <div class="sixteen wide mobile sixteen wide tablet four wide computer column flip-container">
+    <div class="flipper">
+  <article class="dream-header front">
+    <i class="large link hand point right outline icon dream-flip-toggle" title="翻转！"></i>
+    <div class="flipper-block">
+      <section class="ui top attached center aligned segment">
+        <div class="ui small circular image">
+          
+            <img src="/img/avatar.jpeg">
+          
+        </div>
+
+        <h3 class="ui header">Ryun的博客<div class="sub header" style="margin-top: 0.5rem;">与其感慨路难行，不如马上出发。</div>
+        </h3>
+
+        <div class="ui horizontal list">
+          <a class="item" href="/archives">
+            <i class="archive icon" title="归档"></i>
+          </a>
+          <a class="item" href="/tags">
+            <i class="tags icon" title="所有标签"></i>
+          </a>
+          <a class="item" href="/categories">
+            <i class="th list icon" title="所有分类"></i>
+          </a>
+        </div>
+      </section>
+
+      
+      <section class="ui attached center aligned segment dream-tags">
+        
+          <a class="ui label" href="/tags/atom" title="atom">atom</a>
+        
+          <a class="ui label" href="/tags/css" title="css">css</a>
+        
+          <a class="ui label" href="/tags/design" title="design">design</a>
+        
+          <a class="ui label" href="/tags/git" title="git">git</a>
+        
+          <a class="ui label" href="/tags/html" title="html">html</a>
+        
+          <a class="ui label" href="/tags/javascript" title="javascript">javascript</a>
+        
+          <a class="ui label" href="/tags/jekyll" title="jekyll">jekyll</a>
+        
+          <a class="ui label" href="/tags/laravel" title="laravel">laravel</a>
+        
+          <a class="ui label" href="/tags/life" title="life">life</a>
+        
+          <a class="ui label" href="/tags/mac" title="mac">mac</a>
+        
+          <a class="ui label" href="/tags/mobile" title="mobile">mobile</a>
+        
+          <a class="ui label" href="/tags/optimization" title="optimization">optimization</a>
+        
+          <a class="ui label" href="/tags/sublime" title="sublime">sublime</a>
+        
+          <a class="ui label" href="/tags/tool" title="tool">tool</a>
+        
+          <a class="ui label" href="/tags/vscode" title="vscode">vscode</a>
+        
+          <a class="ui label" href="/tags/vue" title="vue">vue</a>
+        
+      </section>
+      
+
+      
+      <section class="ui attached segment dream-categories">
+        <div class="ui accordion">
+          
+            <div class="title">
+              <i class="dropdown icon"></i>
+              <a href="/categories/web-development" class="item">web-development</a>
+            </div>
+            <div class="content">
+              <div class="ui list">
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/git-cheatsheet/" class="item">Git Cheatsheet</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-webpack-4-bootstrap-4-fontawesome-5-3/" class="item">Use webpack 4 &#43; bootstrap 4 &#43; fontawesome 5 (3)</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-webpack-4-bootstrap-4-fontawesome-5-2/" class="item">Use webpack 4 &#43; bootstrap 4 &#43; fontawesome 5 (2)</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-webpack-4-bootstrap-4-fontawesome-5-1/" class="item">Use webpack 4 &#43; bootstrap 4 &#43; fontawesome 5 (1)</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/eslint-config-for-javascript/" class="item">ESLint Config for JavaScript</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/npx-is-cool/" class="item">npx is cool</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/browserslist-config/" class="item">Browserslist config</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/javascript-%E6%A8%A1%E5%9D%97%E5%8C%96/" class="item">JavaScript 模块化</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/prototype-chains-in-es6/" class="item">Prototype chains in es6</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/generate-a-new-ssh-key-and-add-it-to-the-ssh-agent/" class="item">Generate a new SSH key and add it to the ssh-agent</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/make-an-alias-with-parameter/" class="item">Make an alias with parameter</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/resolve-eacces-permissions-errors/" class="item">Resolve EACCES permissions errors</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/open-new-iterm2-tab-with-same-profile/" class="item">Open new iTerm2 tab with same profile</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/exit-the-vim-editor/" class="item">Exit the Vim editor</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/iterm2-oh-my-zsh/" class="item">iTerm2 &#43; Oh My Zsh</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/simple-event-dispatcher/" class="item">Simple event dispatcher</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/broadcast-generated-by-coffeescript/" class="item">Broadcast generated by CoffeeScript</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/git-snippets/" class="item">Git snippets</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/a-simple-infinite-scroll-jquery-plugin/" class="item">A simple infinite scroll jQuery plugin</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/a-simple-date-countdown-function/" class="item">A simple date countdown function</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/a-simple-html5-file-upload-jquery-plugin/" class="item">A simple HTML5 file upload jQuery plugin</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/%E4%BD%BF%E7%94%A8-echarts-%E5%9B%BE%E8%A1%A8%E5%BA%93/" class="item">使用 ECharts 图表库</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/%E6%96%B0%E6%B5%AA%E8%82%A1%E7%A5%A8%E6%9F%A5%E8%AF%A2%E6%8E%A5%E5%8F%A3/" class="item">新浪股票查询接口</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/%E4%BD%BF%E7%94%A8%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9B%BE-api-%E8%BF%9B%E8%A1%8C%E5%9C%B0%E7%90%86%E5%AE%9A%E4%BD%8D/" class="item">使用百度地图 API 进行地理定位</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/upload-image-with-jquery-file-upload/" class="item">Upload image with jQuery-File-Upload</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-tinymce/" class="item">Use TinyMCE</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-jquery-validation-plugin/" class="item">Use jQuery validation plugin</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/preview-image-before-uploaded/" class="item">Preview image before uploaded</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/chrome-extension-snippets/" class="item">Chrome extension snippets</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/live-reloading-chrome-extension-with-websocket/" class="item">Live reloading Chrome extension with WebSocket</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/tool-functions-that-return-iterables/" class="item">Tool functions that return iterables</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/prevent-page-scrolling-when-a-modal-is-open/" class="item">Prevent page scrolling when a modal is open</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/enable-directory-listing-in-nginx/" class="item">Enable directory listing in Nginx</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/access-homestead-site-on-the-same-network/" class="item">Access Homestead site on the same network</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/upgrade-node.js/" class="item">Upgrade Node.js</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-laravel-elixir-in-laravel/" class="item">Use laravel-elixir in Laravel</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/a-quick-view-of-laravel/" class="item">A quick view of Laravel</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/a-todo-demo-using-vue-in-laravel/" class="item">A todo demo using Vue in Laravel</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/create-simple-test-data-in-laravel/" class="item">Create simple test data in Laravel</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/commonly-used-laravel-commands/" class="item">Commonly used Laravel commands</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/make-a-sticky-content/" class="item">Make a sticky content</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/make-a-sticky-footer/" class="item">Make a sticky footer</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-animate.css/" class="item">Use Animate.css</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/javascript-demonstrations/" class="item">JavaScript demonstrations</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/bootstrap-snippets-and-tips/" class="item">Bootstrap snippets and tips</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-autojump-in-zsh/" class="item">Use autojump in zsh</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/css-demonstrations/" class="item">CSS demonstrations</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/choose-a-proper-web-font/" class="item">Choose a proper web font</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/commonly-used-regex-validation/" class="item">Commonly used RegEx validation</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/some-commonly-used-ua-detection/" class="item">Some commonly used UA detection</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/using-formdata-objects/" class="item">Using formdata objects</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/%E5%9F%BA%E4%BA%8E%E4%B8%83%E7%89%9B-api-%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/" class="item">基于七牛 API 的文件上传</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/center-anything-with-css/" class="item">Center Anything with CSS</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/git-diff-with-beyond-compare/" class="item">Git Diff with Beyond Compare</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/simple-browser-detection/" class="item">Simple browser detection</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/detect-a-touch-screen/" class="item">Detect a Touch Screen</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/detect-orientation-change-on-mobile-devices/" class="item">Detect Orientation Change on Mobile Devices</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-charles-map-local-tool/" class="item">Use Charles Map Local tool</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/comparison-of-npm-and-yarn-commands/" class="item">Comparison of NPM and yarn commands</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/commands-for-packager-managers/" class="item">Commands for Packager managers</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/modifying-an-inactive-pull-request-locally/" class="item">Modifying an inactive pull request locally</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/syncing-a-fork/" class="item">Syncing a fork</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/creating-project-pages-manually/" class="item">Creating Project Pages manually</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/css-animations-with-only-one-keyframe/" class="item">CSS Animations with only one keyframe</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-sass-from-the-command-line/" class="item">Use Sass from the command line</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/prevent-touch-event-click-underneath-layer/" class="item">Prevent touch event click underneath layer</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/helpful-aliases-for-common-git-tasks/" class="item">Helpful aliases for common git tasks</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/avoid-console-errors-in-browsers-that-lack-a-console/" class="item">Avoid `console` errors in browsers that lack a console</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/a-micro-clearfix-hack/" class="item">A micro clearfix hack</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/modernizr-methods/" class="item">Modernizr Methods</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/flash-of-unstyled-content/" class="item">Flash of Unstyled Content</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/html5-cross-browser-polyfills/" class="item">HTML5 Cross Browser Polyfills</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/syntax-highlighting-in-markdown/" class="item">Syntax highlighting in markdown</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-chrome-devtools/" class="item">Use Chrome DevTools</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-git/" class="item">Use Git</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/enable-html5-placeholder-in-ie/" class="item">Enable HTML5 placeholder in IE</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/markdown-cheatsheet/" class="item">Markdown cheatsheet</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/code-conventions-and-best-practices-for-javascript/" class="item">Code conventions and best practices for javascript</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-html5-sectioning-elements-in-legacy-ie/" class="item">Use HTML5 sectioning elements in legacy IE</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-the-viewport-meta-tag/" class="item">Use the viewport meta tag</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/javascript-snippets/" class="item">JavaScript snippets</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/use-rgba-in-ie/" class="item">Use rgba in IE</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/detect-mobile-devices/" class="item">Detect mobile devices</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/css-tools/" class="item">CSS tools</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/bootcss-codeguide/" class="item">Bootcss codeguide</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/make-the-web-faster/" class="item">Make the Web Faster</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/display-liquid-code-in-jekyll/" class="item">Display Liquid code in Jekyll</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/highlight-code-in-jekyll/" class="item">Highlight code in Jekyll</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/add-readmore-in-jekyll/" class="item">Add Readmore in Jekyll</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/install-git/" class="item">Install Git</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/jekyll-build-trouble/" class="item">Jekyll build trouble</a>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          
+            <div class="title">
+              <i class="dropdown icon"></i>
+              <a href="/categories/tool" class="item">tool</a>
+            </div>
+            <div class="content">
+              <div class="ui list">
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/vs-code-shortcuts-for-macos/" class="item">VS Code shortcuts for macOS</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/vs-code-extensions-for-frontend-developers/" class="item">VS code extensions for frontend developers</a>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          
+            <div class="title">
+              <i class="dropdown icon"></i>
+              <a href="/categories/mac" class="item">mac</a>
+            </div>
+            <div class="content">
+              <div class="ui list">
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/show-hidden-files-on-mac/" class="item">Show hidden files on mac</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/show-the-current-path-in-the-finder/" class="item">Show the current path in the finder</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/insert-the-mac-command-symbol/" class="item">Insert the Mac command symbol</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/mac-%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/" class="item">Mac 键盘快捷键</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/%E5%9C%A8-mac-%E4%B8%8A%E5%88%9B%E5%BB%BA%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/" class="item">在 Mac 上创建键盘快捷键</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/fix-kernel_task-high-cpu-problem/" class="item">Fix kernel_task high cpu problem</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/basic-bash-keyboard-shortcuts/" class="item">Basic bash keyboard shortcuts</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/expose-a-local-web-server-to-the-internet-with-ngrok/" class="item">Expose a local web server to the internet with ngrok</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/the-command-line-crash-course/" class="item">The Command Line Crash Course</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/access-localhost-from-virtualbox/" class="item">Access localhost from VirtualBox</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/create-a-bootable-usb-in-mac-os-x/" class="item">Create a bootable USB in Mac OS X</a>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          
+            <div class="title">
+              <i class="dropdown icon"></i>
+              <a href="/categories/life" class="item">life</a>
+            </div>
+            <div class="content">
+              <div class="ui list">
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/words-of-wisdom-from-modern-family/" class="item">Words of Wisdom from Modern Family</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/rescue-time-with-rescuetime/" class="item">Rescue time with RescueTime</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/stop-working-from-a-prison-cell/" class="item">Stop Working from a Prison Cell</a>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          
+            <div class="title">
+              <i class="dropdown icon"></i>
+              <a href="/categories/editor" class="item">editor</a>
+            </div>
+            <div class="content">
+              <div class="ui list">
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/create-multi-line-snippet-in-atom/" class="item">Create multi-line snippet in atom</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/useful-atom-keyboard-shortcuts/" class="item">Useful Atom keyboard shortcuts</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/atom-javascript-snippets-package/" class="item">Atom javascript snippets package</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/my-atom-snippets/" class="item">My atom snippets</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/my-atom-packages/" class="item">My atom packages</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/open-atom-from-the-terminal/" class="item">Open atom from the terminal</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/sublime-react-snippets/" class="item">Sublime react snippets</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/sublime-text-plugins-for-web-development/" class="item">Sublime Text Plugins for Web Development</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/sublime-text-shortcuts/" class="item">Sublime Text shortcuts</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/sublime-osx-command-line-setup/" class="item">Sublime osx command line setup</a>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          
+            <div class="title">
+              <i class="dropdown icon"></i>
+              <a href="/categories/design" class="item">design</a>
+            </div>
+            <div class="content">
+              <div class="ui list">
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/looking-back-to-look-forward/" class="item">Looking back to look forward</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/my-sketch-plugins/" class="item">My Sketch plugins</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="content">
+                    <a href="/%E6%A0%85%E6%A0%BC%E7%B3%BB%E7%BB%9F%E5%BB%B6%E7%BB%AD%E7%BE%8E%E5%AD%A6/" class="item">栅格系统延续美学</a>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          
+        </div>
+      </section>
+      
+
+      <section class="ui bottom attached center aligned segment">
+        <div class="copyright">
+  
+  <p>© 2014 - 2021 Ryun&#39;s blog</p>
+  
+  <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
+</div>
+
+      </section>
+    </div>
+  </article>
+
+  <article class="dream-back back">
+  <i class="large link hand point left outline icon dream-flip-toggle" title="翻转！"></i>
+  <div class="flipper-block">
+    
+      <div class="ui top attached segment">
+        <h3 class="ui header">About</h3>
+      </div>
+      <div class="ui attached segment markdown-body">
+        <p><span id="hello">你好</span>，❤朋友</p>
+<p>这里是 Ryun 的博客 📝</p>
+<p>📝记录了我学习 🔎的过程</p>
+<p>作为一名前端攻城狮 🦁</p>
+<p>希望能和大家一起 🔎</p>
+<p>共同进步 🏃</p>
+<p>🦁的特长：</p>
+<ul>
+<li>HTML5</li>
+<li>CSS3</li>
+<li>JavaScript</li>
+<li>Vue.js</li>
+<li>微信小程序</li>
+<li>熟练配合 Node.js、PHP 和 Laravel</li>
+<li>熟练使用各种开发和设计工具</li>
+</ul>
+<p>🦁喜欢 🆒🆒的东西</p>
+<p>对提升效率和美感的事物有兴趣 😋</p>
+<p>欢迎 👏交流</p>
+<br>
+<p>see this <a href="https://github.com/RyunPu/hugo-theme-dream-ink" target="_blank">hugo-theme-dream-ink</a></p>
+
+      </div>
+    
+
+    <div class="ui attached segment address">
+      <nav class="ui secondary menu dream-menu">
+  
+    <div class="item">
+      <a href="mailto:ryunpu@foxmail.com">
+        <i class="large mail icon" title="email"></i>
+      </a>
+    </div>
+  
+
+  
+    <div class="item">
+      <a href="https://github.com/ryunpu" target="_blank">
+        <i class="large github icon" title="github"></i>
+      </a>
+    </div>
+  
+
+  
+
+  
+
+  
+</nav>
+
+    </div>
+  </div>
+</article>
+
+<section class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+  
+</section>
+
+</div>
+
+  </div>
+</div>
+
+      <i class="icon big long arrow alternate up pointer theme-item backToTop"></i>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+  
+  <div class="pswp__bg"></div>
+
+  
+  <div class="pswp__scroll-wrap">
+
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+
+    
+    <div class="pswp__ui pswp__ui--hidden">
+
+      <div class="pswp__top-bar">
+
+        
+
+        <div class="pswp__counter"></div>
+
+        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+        <button class="pswp__button pswp__button--share" title="Share"></button>
+
+        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+        
+        
+        <div class="pswp__preloader">
+          <div class="pswp__preloader__icn">
+            <div class="pswp__preloader__cut">
+              <div class="pswp__preloader__donut"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+        <div class="pswp__share-tooltip"></div>
+      </div>
+
+      <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+      </button>
+
+      <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+      </button>
+
+      <div class="pswp__caption">
+        <div class="pswp__caption__center"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="/js/vendor.js"></script>
+<script src="/js/main.js"></script>
+
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-75787172-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+    </div>
+
+    <div class="search-mask transition item">
+  <div class="search-wrapper transition">
+    <div class="search-form">
+      <i class="icon close large"></i>
+      <div class="search-area">
+        <div id="search-box"></div>
+        <h4 id="search-status"></h4>
+        <div id="search-results">
+          <ul id="hits" class="search-results post-list"></ul>
+          <div id="pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>

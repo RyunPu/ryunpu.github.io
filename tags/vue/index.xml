@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vue on Ryun&#39;s blog</title>
+    <link>/tags/vue/</link>
+    <description>Recent content in vue on Ryun&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 21 Mar 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/vue/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A todo demo using Vue in Laravel</title>
+      <link>/a-todo-demo-using-vue-in-laravel/</link>
+      <pubDate>Mon, 21 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/a-todo-demo-using-vue-in-laravel/</guid>
+      <description>html &amp;lt;div id=&amp;#34;app&amp;#34;&amp;gt; &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a v-link=&amp;#34;&amp;#39;tasks&amp;#39;&amp;#34;&amp;gt;tasks&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a v-link=&amp;#34;&amp;#39;about&amp;#39;&amp;#34;&amp;gt;about&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;router-view&amp;gt;&amp;lt;/router-view&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script src=&amp;#34;js/main.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; main.js import tasks from &amp;#39;./components/tasks.vue&amp;#39;; const Vue = require(&amp;#39;vue&amp;#39;); const VueRouter = require(&amp;#39;vue-router&amp;#39;); Vue.use(VueRouter); Vue.use(require(&amp;#39;vue-resource&amp;#39;)); Vue.http.headers.common[&amp;#39;X-CSRF-TOKEN&amp;#39;] = document.getElementById(&amp;#39;csrf_token&amp;#39;).getAttribute(&amp;#39;content&amp;#39;); const router = new VueRouter(); router.map({ &amp;#39;/tasks&amp;#39;: { component: tasks }, &amp;#39;/about&amp;#39;: { component: { template: `&amp;lt;div&amp;gt; &amp;lt;h3&amp;gt;About Page&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;This is the about page&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; ` } } }); router.start({}, &amp;#39;#app&amp;#39;); tasks.vue &amp;lt;template&amp;gt; &amp;lt;h3&amp;gt;My Tasks &amp;lt;span v-show=&amp;#34;list.length&amp;#34;&amp;gt;({{ list.length }})&amp;lt;/span&amp;gt;&amp;lt;/h3&amp;gt; &amp;lt;div class=&amp;#34;form-group&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;&amp;#34;&amp;gt;Add Task&amp;lt;/label&amp;gt; &amp;lt;input v-model=&amp;#34;task&amp;#34; @keyup.</description>
+    </item>
+    
+  </channel>
+</rss>
