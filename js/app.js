@@ -42,7 +42,9 @@ function preload() {
   ]
 
   queue.loadManifest(resources)
-  queue.on('progress', (e) => { $bar.show().animate({ width: (e.loaded / e.total * 100) + '%' }, 100) })
+  queue.on('progress', (e) => {
+    $bar.show().animate({ width: (e.loaded / e.total) * 100 + '%' }, 100)
+  })
   queue.on('complete', (e) => {
     $bar.fadeOut()
     $nmask.hide()
@@ -53,41 +55,43 @@ function preload() {
 function initSearch() {
   search = instantsearch({
     // TODO: 配置你自己的 appId，apiKey 和 indexName，查询地址 https://www.algolia.com/dashboard，相关文章 https://dp2px.com/2019/09/07/hugo-algolia/
-    appId: 'HZ02OH7T6I',
-    apiKey: '9abdcad75712be7ca136135c15e532a4',
-    indexName: 'dev_Blog',
+    appId: 'Z0690YNRW8',
+    apiKey: '406f17048982e0c3f5941783f0e3dd4f',
+    indexName: 'algolia',
     searchFunction(helper) {
       const $searchResults = $('#search-results')
 
       if (helper.state.query === '') {
         $searchResults.hide()
-        return;
+        return
       }
 
       helper.search()
       $searchResults.show()
-    }
+    },
   })
 
   const $status = $('#search-status')
   const $results = $('#search-results')
 
-  search.addWidgets([{
-    render: ({ searchMetadata = {} }) => {
-      const { isSearchStalled } = searchMetadata
-      const tpl = '<div><div class="loading"></div></div>'
+  search.addWidgets([
+    {
+      render: ({ searchMetadata = {} }) => {
+        const { isSearchStalled } = searchMetadata
+        const tpl = '<div><div class="loading"></div></div>'
 
-      if (isSearchStalled) {
-        $results.hide()
-        $status.html(tpl)
-      } else {
-        $status.html('')
-        $results.show()
-      }
-    }
-  }])
+        if (isSearchStalled) {
+          $results.hide()
+          $status.html(tpl)
+        } else {
+          $status.html('')
+          $results.show()
+        }
+      },
+    },
+  ])
 
-  Date.prototype.format = function(format) {
+  Date.prototype.format = function (format) {
     var o = {
       'M+': this.getMonth() + 1, // month
       'd+': this.getDate(), // day
@@ -95,32 +99,43 @@ function initSearch() {
       'm+': this.getMinutes(), // minute
       's+': this.getSeconds(), // second
       'q+': Math.floor((this.getMonth() + 3) / 3), // quarter
-      'S': this.getMilliseconds() // millisecond
+      S: this.getMilliseconds(), // millisecond
     }
 
     if (/(y+)/.test(format)) {
-      format = format.replace(RegExp.$1, (this.getFullYear() + '').substr(4 - RegExp.$1.length));
+      format = format.replace(
+        RegExp.$1,
+        (this.getFullYear() + '').substr(4 - RegExp.$1.length)
+      )
     }
 
     for (var k in o) {
       if (new RegExp('(' + k + ')').test(format)) {
-        format = format.replace(RegExp.$1, RegExp.$1.length == 1 ?
-          o[k] :
-          ('00' + o[k]).substr(('' + o[k]).length));
+        format = format.replace(
+          RegExp.$1,
+          RegExp.$1.length == 1
+            ? o[k]
+            : ('00' + o[k]).substr(('' + o[k]).length)
+        )
       }
     }
 
-    return format;
-  };
+    return format
+  }
 
-  const hitTemplate = function(hit) {
+  const hitTemplate = function (hit) {
     if (hit === null) return
 
     const title = hit._highlightResult.title.value
     const url = hit.url
     let date = hit.date ? new Date(hit.date * 1000).format('yyyy-MM-dd') : ''
 
-    if (url.includes('/categories/') || url.includes('/tags/') || url.includes('/about/')) return null
+    if (
+      url.includes('/categories/') ||
+      url.includes('/tags/') ||
+      url.includes('/about/')
+    )
+      return null
 
     return `
       <li>
@@ -138,7 +153,7 @@ function initSearch() {
     instantsearch.widgets.searchBox({
       container: '#search-box',
       placeholder: 'Search...',
-      autofocus: true
+      autofocus: true,
     })
   )
 
@@ -146,8 +161,8 @@ function initSearch() {
     instantsearch.widgets.hits({
       container: '#hits',
       templates: {
-        item: hitTemplate
-      }
+        item: hitTemplate,
+      },
     })
   )
 
@@ -155,7 +170,7 @@ function initSearch() {
     instantsearch.widgets.pagination({
       container: '#pagination',
       maxPage: 10,
-      scrollTo: false
+      scrollTo: false,
     })
   )
 
@@ -173,15 +188,17 @@ function ink() {
 
   //set transitionBackground dimentions
   setLayerDimensions()
-  $(window).on('resize', function() {
+  $(window).on('resize', function () {
     if (!resize) {
-      resize = true;
-      (!window.requestAnimationFrame) ? setTimeout(setLayerDimensions, 300) : window.requestAnimationFrame(setLayerDimensions)
+      resize = true
+      !window.requestAnimationFrame
+        ? setTimeout(setLayerDimensions, 300)
+        : window.requestAnimationFrame(setLayerDimensions)
     }
   })
 
   transitionLayer.addClass('visible opening')
-  setTimeout(function() {
+  setTimeout(function () {
     modalWindow.addClass('visible')
   }, 200)
 
@@ -200,8 +217,8 @@ function ink() {
     }
 
     transitionBackground.css({
-      'width': layerWidth * frames + 'px',
-      'height': layerHeight + 'px',
+      width: layerWidth * frames + 'px',
+      height: layerHeight + 'px',
     })
 
     resize = false
@@ -210,7 +227,7 @@ function ink() {
   return function () {
     transitionLayer.addClass('closing')
     modalWindow.removeClass('visible')
-    transitionBackground.one('animationend', function() {
+    transitionBackground.one('animationend', function () {
       transitionLayer.removeClass('closing opening visible')
       transitionBackground.off('animationend')
     })
@@ -218,7 +235,10 @@ function ink() {
 }
 
 function closeOverlay() {
-  $('.search-mask').removeClass('overlay').find('.ais-search-box--input').val('')
+  $('.search-mask')
+    .removeClass('overlay')
+    .find('.ais-search-box--input')
+    .val('')
   if (search) search.helper.setQuery('').search()
   $('body').removeClass('modal-open')
 }
@@ -228,51 +248,59 @@ function init() {
   const $searchIcon = $('.search-icon')
   const $searchBox = $('.ais-search-box--input')
 
-  $searchMask.click(function(e) {
+  $searchMask.click(function (e) {
     if ($(e.target).closest('.search-area').length === 0) {
       closeOverlay()
     }
   })
 
-  $searchBox.keydown(function(e) {
+  $searchBox.keydown(function (e) {
     if (e.which === 27) closeOverlay()
   })
 
-  $(document).keydown(function(e) {
+  $(document).keydown(function (e) {
     if (e.altKey && e.which === 70) {
       $('.search-icon').trigger('click')
     }
   })
 
-  $searchIcon.click(function(e) {
+  $searchIcon.click(function (e) {
     $searchMask.addClass('overlay')
     $('body').addClass('modal-open')
-    setTimeout(() => { $searchBox.focus() }, 400)
+    setTimeout(() => {
+      $searchBox.focus()
+    }, 400)
   })
 
-  $('.dream-single a').each(function() {
+  $('.dream-single a').each(function () {
     if (this.hostname !== window.location.hostname) {
       this.target = '_blank'
     }
   })
 
   $('.infinite').hover(
-    function() { $(this).stop().removeClass('animated') },
-    function() { $(this).stop().addClass('animated') }
+    function () {
+      $(this).stop().removeClass('animated')
+    },
+    function () {
+      $(this).stop().addClass('animated')
+    }
   )
 
   $('.arrow-down').click(() => {
-    $('html, body').stop().animate({ scrollTop: $(window).height() })
+    $('html, body')
+      .stop()
+      .animate({ scrollTop: $(window).height() })
   })
 
   $('.top-nav').sticky({
     context: '#container',
-    offset: 14
+    offset: 14,
   })
 
   const $backToTop = $('.backToTop')
 
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(this).scrollTop() > $(this).height()) {
       $backToTop.fadeIn()
     } else {
@@ -280,7 +308,7 @@ function init() {
     }
   })
 
-  $backToTop.click(function() {
+  $backToTop.click(function () {
     $('html, body').stop().animate({ scrollTop: 0 })
   })
 
@@ -289,7 +317,7 @@ function init() {
     ScrollReveal().reveal($('.sre'), {
       distance: '10px',
       delay: 300,
-      cleanup: true
+      cleanup: true,
     })
   }
 }
@@ -303,35 +331,42 @@ function initPhotoswipe() {
   const $imgs = $('img[data-size]')
   let items = []
 
-  $list.each(function(index) {
+  $list.each(function (index) {
     items[index] = []
 
-    $(this).find('img[data-size]').each(function(itemIndex) {
-      const href = $(this).attr('src')
-      const size = $(this).data('size').split('x')
-      const [width, height] = size
+    $(this)
+      .find('img[data-size]')
+      .each(function (itemIndex) {
+        const href = $(this).attr('src')
+        const size = $(this).data('size').split('x')
+        const [width, height] = size
 
-      $(this).attr({ 'data-index': itemIndex, 'data-list-index': index })
+        $(this).attr({ 'data-index': itemIndex, 'data-list-index': index })
 
-      items[index].push({
-        src: href,
-        w: width,
-        h: height
+        items[index].push({
+          src: href,
+          w: width,
+          h: height,
+        })
       })
-    })
   })
 
-  $imgs.on('click', function(event) {
+  $imgs.on('click', function (event) {
     const index = $(this).data('index')
     const listIndex = $(this).data('list-index')
     const options = {
       index: index,
       bgOpacity: 0.7,
-      showHideOpacity: true
+      showHideOpacity: true,
     }
 
     if (!items[listIndex]) return
-    const pswp = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items[listIndex], options);
+    const pswp = new PhotoSwipe(
+      $pswp,
+      PhotoSwipeUI_Default,
+      items[listIndex],
+      options
+    )
     pswp.init()
   })
 }
@@ -340,7 +375,7 @@ function initGrid() {
   if ($('.dream-column').length === 0) return
 
   const $grid = $('.dream-grid').masonry({
-    itemSelector: '.dream-column'
+    itemSelector: '.dream-column',
   })
 
   $grid.imagesLoaded().progress(() => {
@@ -358,7 +393,7 @@ function initInfiniteScroll(msnry) {
     let currentPage = 1
     const arr = location.href.split('/page/')
     const infiniteScroll = new InfiniteScroll('.dream-grid', {
-      path: function() {
+      path: function () {
         if (!hasInited && arr[1]) {
           currentPage = Number.parseInt(arr[1])
           hasInited = true
@@ -368,12 +403,12 @@ function initInfiniteScroll(msnry) {
       },
       append: '.dream-post',
       status: '.scroller-status',
-      outlayer: msnry
+      outlayer: msnry,
     })
 
     if (typeof initCover === 'function') {
-      infiniteScroll.on('append', function(response, path, items) {
-        const arr = path.split("/page/")
+      infiniteScroll.on('append', function (response, path, items) {
+        const arr = path.split('/page/')
         initCover(Number.parseInt(arr[1]))
       })
     }
