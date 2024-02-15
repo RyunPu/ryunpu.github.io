@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tool on Ryun&#39;s blog</title>
-    <link>/tags/tool/</link>
+    <link>https://ryunpu.github.io/tags/tool/</link>
     <description>Recent content in tool on Ryun&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <lastBuildDate>Thu, 21 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/tool/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ryunpu.github.io/tags/tool/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Use webpack 4 &#43; bootstrap 4 &#43; fontawesome 5 (3)</title>
-      <link>/use-webpack-4-bootstrap-4-fontawesome-5-3/</link>
+      <link>https://ryunpu.github.io/use-webpack-4-bootstrap-4-fontawesome-5-3/</link>
       <pubDate>Thu, 21 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/use-webpack-4-bootstrap-4-fontawesome-5-3/</guid>
+      <guid>https://ryunpu.github.io/use-webpack-4-bootstrap-4-fontawesome-5-3/</guid>
       <description>接上一篇文章，我将在这一篇文章中进一步优化 webpack 和其他的配置。
 基础优化 使用 hard-source-webpack-plugin 提升构建速度 ❯ yarn add -D hard-source-webpack-plugin 在 webpack.config.js 中引入并使用 HardSourceWebpackPlugin
 ... const HardSourceWebpackPlugin = require(&amp;#39;hard-source-webpack-plugin&amp;#39;) module.exports = (env, argv) =&amp;gt; { ... return merge(config(), { ... plugins: [ ... new HardSourceWebpackPlugin(), ], }) } 第一次运行的 Time:
@@ -26,10 +26,10 @@ $ webpack --mode production [hardsource:79b1fb26] Using 2 MB of disk space.</des
     
     <item>
       <title>Use webpack 4 &#43; bootstrap 4 &#43; fontawesome 5 (2)</title>
-      <link>/use-webpack-4-bootstrap-4-fontawesome-5-2/</link>
+      <link>https://ryunpu.github.io/use-webpack-4-bootstrap-4-fontawesome-5-2/</link>
       <pubDate>Wed, 20 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/use-webpack-4-bootstrap-4-fontawesome-5-2/</guid>
+      <guid>https://ryunpu.github.io/use-webpack-4-bootstrap-4-fontawesome-5-2/</guid>
       <description>接上一篇文章，我将在这一篇文章中分离 webpack 开发环境和生产环境，并使用 webpack-merge 来进行合并。
 添加 webpack-merge ❯ yarn add -D webpack-merge 新建 webpack.dev.config.js ❯ touch webpack.dev.config.js 在 webpack.dev.config.js 添加:
 module.exports = () =&amp;gt; ({ module: { rules: [ { test: /\.scss$/, use: [ { loader: &amp;#39;style-loader&amp;#39;, options: { injectType: &amp;#39;singletonStyleTag&amp;#39; } } ] }, ] } }) 新建 webpack.prod.config.js ❯ touch webpack.prod.config.js 在 webpack.prod.config.js 添加:
@@ -38,10 +38,10 @@ const MiniCssExtractPlugin = require(&amp;#39;mini-css-extract-plugin&amp;#39;) 
     
     <item>
       <title>Use webpack 4 &#43; bootstrap 4 &#43; fontawesome 5 (1)</title>
-      <link>/use-webpack-4-bootstrap-4-fontawesome-5-1/</link>
+      <link>https://ryunpu.github.io/use-webpack-4-bootstrap-4-fontawesome-5-1/</link>
       <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/use-webpack-4-bootstrap-4-fontawesome-5-1/</guid>
+      <guid>https://ryunpu.github.io/use-webpack-4-bootstrap-4-fontawesome-5-1/</guid>
       <description>从零开始使用 webpack 4 创建一个 bootstrap 4 + fontawesome 5 的项目，有兴趣的同学可以跟着做下。
 准备工作 创建目录 ❯ mkdir webpack-demo &amp;amp;&amp;amp; cd webpack-demo 添加 package.json ❯ yarn init -y  要安装 yran，可以访问 https://yarnpkg.com/lang/en/docs/install
  package.json:
@@ -52,38 +52,38 @@ const MiniCssExtractPlugin = require(&amp;#39;mini-css-extract-plugin&amp;#39;) 
     
     <item>
       <title>ESLint Config for JavaScript</title>
-      <link>/eslint-config-for-javascript/</link>
+      <link>https://ryunpu.github.io/eslint-config-for-javascript/</link>
       <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/eslint-config-for-javascript/</guid>
+      <guid>https://ryunpu.github.io/eslint-config-for-javascript/</guid>
       <description>eslint-config-airbnb-base Install  List the correct versions of each package:  ❯ npm info &amp;quot;eslint-config-airbnb-base@latest&amp;quot; peerDependencies { eslint: &#39;^5.16.0 || ^6.1.0&#39;, &#39;eslint-plugin-import&#39;: &#39;^2.18.2&#39; } Install the package:  ❯ yarn add eslint eslint-plugin-import eslint-config-airbnb-base -D Usage ❯ npx eslint --init // .eslintrc.js module.exports = { &amp;quot;env&amp;quot;: { &amp;quot;browser&amp;quot;: true, &amp;quot;es6&amp;quot;: true }, &amp;quot;extends&amp;quot;: &amp;quot;airbnb-base&amp;quot;, &amp;quot;globals&amp;quot;: { &amp;quot;Atomics&amp;quot;: &amp;quot;readonly&amp;quot;, &amp;quot;SharedArrayBuffer&amp;quot;: &amp;quot;readonly&amp;quot; }, &amp;quot;parserOptions&amp;quot;: { &amp;quot;ecmaVersion&amp;quot;: 2018, &amp;quot;sourceType&amp;quot;: &amp;quot;module&amp;quot; }, &amp;quot;rules&amp;quot;: { &amp;quot;semi&amp;quot;: [&amp;quot;error&amp;quot;, &amp;quot;never&amp;quot;] } }; eslint-config-standard Install  List the correct versions of each package:  ❯ npm info &amp;quot;eslint-config-standard&amp;quot; peerDependencies { eslint: &#39;&amp;gt;=6.</description>
     </item>
     
     <item>
       <title>npx is cool</title>
-      <link>/npx-is-cool/</link>
+      <link>https://ryunpu.github.io/npx-is-cool/</link>
       <pubDate>Tue, 17 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/npx-is-cool/</guid>
+      <guid>https://ryunpu.github.io/npx-is-cool/</guid>
       <description>About  npx is a tool intended to help round out the experience of using packages from the npm registry — the same way npm makes it super easy to install and manage dependencies hosted on the registry, npx makes it easy to use CLI tools and other executables hosted on the registry. It greatly simplifies a number of things that, until now, required a bit of ceremony to do with plain npm.</description>
     </item>
     
     <item>
       <title>Browserslist config</title>
-      <link>/browserslist-config/</link>
+      <link>https://ryunpu.github.io/browserslist-config/</link>
       <pubDate>Mon, 16 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/browserslist-config/</guid>
+      <guid>https://ryunpu.github.io/browserslist-config/</guid>
       <description>Queries Add browserslist key in package.json
 { &amp;quot;browserslist&amp;quot;: [ &amp;quot;last 1 version&amp;quot;, &amp;quot;&amp;gt; 1%&amp;quot;, &amp;quot;maintained node versions&amp;quot;, &amp;quot;not dead&amp;quot; ] } Query Composition    Query combiner type Illustration Example     or`/`, combiner (union)  &amp;gt; .5% or last 2 versions &amp;gt; .5%, last 2 versions   and combiner (intersection)  &amp;gt; .5% and last 2 versions   not combiner (relative complement)  &amp;gt; .</description>
     </item>
     
     <item>
       <title>Make an alias with parameter</title>
-      <link>/make-an-alias-with-parameter/</link>
+      <link>https://ryunpu.github.io/make-an-alias-with-parameter/</link>
       <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/make-an-alias-with-parameter/</guid>
+      <guid>https://ryunpu.github.io/make-an-alias-with-parameter/</guid>
       <description>Add the function in .zshrc file
 function gitall() { git add . if [ &amp;quot;$1&amp;quot; != &amp;quot;&amp;quot; ]; then git commit -m &amp;quot;$1&amp;quot; else git commit -m &amp;quot;add posts&amp;quot; fi git push } Then
 $ gitall &amp;#34;add posts&amp;#34; </description>
@@ -91,10 +91,10 @@ $ gitall &amp;#34;add posts&amp;#34; </description>
     
     <item>
       <title>Resolve EACCES permissions errors</title>
-      <link>/resolve-eacces-permissions-errors/</link>
+      <link>https://ryunpu.github.io/resolve-eacces-permissions-errors/</link>
       <pubDate>Tue, 10 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/resolve-eacces-permissions-errors/</guid>
+      <guid>https://ryunpu.github.io/resolve-eacces-permissions-errors/</guid>
       <description>If you see an EACCES error when you try to install a package globally, you can either:
  Reinstall npm with a node version manager (recommended),  or
  Manually change npm’s default directory  Reinstall npm with a node version manager This is the best way to avoid permissions issues. To reinstall npm with a node version manager, follow the steps in “Downloading and installing Node.js and npm”. You do not need to remove your current version of npm or Node.</description>
@@ -102,10 +102,10 @@ $ gitall &amp;#34;add posts&amp;#34; </description>
     
     <item>
       <title>Open new iTerm2 tab with same profile</title>
-      <link>/open-new-iterm2-tab-with-same-profile/</link>
+      <link>https://ryunpu.github.io/open-new-iterm2-tab-with-same-profile/</link>
       <pubDate>Mon, 09 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/open-new-iterm2-tab-with-same-profile/</guid>
+      <guid>https://ryunpu.github.io/open-new-iterm2-tab-with-same-profile/</guid>
       <description>Use ⌥ + ⇧ + ⌘ + T to open the new tab with same profile
 You may need to set the Working Directory first:
  Click iTerm2 → Preferences → Profiles In “Working Directory” section select “Reuse previous session’s directory”  </description>
@@ -113,10 +113,10 @@ You may need to set the Working Directory first:
     
     <item>
       <title>Exit the Vim editor</title>
-      <link>/exit-the-vim-editor/</link>
+      <link>https://ryunpu.github.io/exit-the-vim-editor/</link>
       <pubDate>Sun, 08 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/exit-the-vim-editor/</guid>
+      <guid>https://ryunpu.github.io/exit-the-vim-editor/</guid>
       <description>Hit the i key to enter &amp;ldquo;Insert mode&amp;rdquo;. Hit the Esc key to enter &amp;ldquo;Normal mode&amp;rdquo;. Then you can type : to enter &amp;ldquo;Command-line mode&amp;rdquo;. To execute a command, press the Enter key.
   :q to quit (short for :quit)
   :q! / ZQ to quit without saving (short for :quit!)
@@ -126,10 +126,10 @@ You may need to set the Working Directory first:
     
     <item>
       <title>iTerm2 &#43; Oh My Zsh</title>
-      <link>/iterm2-oh-my-zsh/</link>
+      <link>https://ryunpu.github.io/iterm2-oh-my-zsh/</link>
       <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/iterm2-oh-my-zsh/</guid>
+      <guid>https://ryunpu.github.io/iterm2-oh-my-zsh/</guid>
       <description>Install iTerm2 $ brew cask install iterm2 Or install iTerm2 from https://www.iterm2.com/
 Install Oh My Zsh Via cul:
 $ sh -c &amp;#34;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34; Via wget:
@@ -142,37 +142,37 @@ Enable word jumps and word deletion, aka natural text selection By default, word
     
     <item>
       <title>Chrome extension snippets</title>
-      <link>/chrome-extension-snippets/</link>
+      <link>https://ryunpu.github.io/chrome-extension-snippets/</link>
       <pubDate>Fri, 01 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/chrome-extension-snippets/</guid>
+      <guid>https://ryunpu.github.io/chrome-extension-snippets/</guid>
       <description>Send message to background chrome.runtime.sendMessage({ from: &amp;#39;content&amp;#39;, subject: &amp;#39;deleteCcookie&amp;#39; }); Send message to content chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) { chrome.tabs.sendMessage(tabs[0].id, { from: &amp;#39;popup&amp;#39;, subject: &amp;#39;getSiteInfo&amp;#39; }, function(info) { console.log(info); }); }); AddListener chrome.runtime.onMessage.addListener(function(msg, sender, response) { if (msg.from === &amp;#39;popup&amp;#39; &amp;amp;&amp;amp; msg.subject === &amp;#39;getSiteInfo&amp;#39;) { response({ site: &amp;#39;weibo&amp;#39;, user: &amp;#39;moamaoa&amp;#39; }); } }); getActiveTab function getActiveTab(callback) { chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) { callback(tabs[0]); }); } tabs onCreated chrome.</description>
     </item>
     
     <item>
       <title>Live reloading Chrome extension with WebSocket</title>
-      <link>/live-reloading-chrome-extension-with-websocket/</link>
+      <link>https://ryunpu.github.io/live-reloading-chrome-extension-with-websocket/</link>
       <pubDate>Wed, 30 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/live-reloading-chrome-extension-with-websocket/</guid>
+      <guid>https://ryunpu.github.io/live-reloading-chrome-extension-with-websocket/</guid>
       <description>Install ws $ npm install ws --save-dev gulpfile.js gulp.watch([&amp;#39;build/**/*.{js,css,jpeg,png}&amp;#39;], [&amp;#39;reload&amp;#39;]); // send `reload` massage var WebSocketServer = require(&amp;#39;ws&amp;#39;).Server; var wss = new WebSocketServer({ port: 9191 }); gulp.task(&amp;#39;reload&amp;#39;, function() { var client, i, len, ref, results; ref = wss.clients; results = []; for (i = 0, len = ref.length; i &amp;lt; len; i++) { client = ref[i]; results.push(client.send(&amp;#39;reload&amp;#39;)); } return results; }); background.js var reloadSocket = new WebSocket(&amp;#39;ws://localhost:9191&amp;#39;); reloadSocket.onopen = function() { console.</description>
     </item>
     
     <item>
       <title>Enable directory listing in Nginx</title>
-      <link>/enable-directory-listing-in-nginx/</link>
+      <link>https://ryunpu.github.io/enable-directory-listing-in-nginx/</link>
       <pubDate>Sun, 27 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/enable-directory-listing-in-nginx/</guid>
+      <guid>https://ryunpu.github.io/enable-directory-listing-in-nginx/</guid>
       <description>Open the homestead.app file $ sudo vi /etc/nginx/sites-enabled/homestead.app Add autoindex on in the location block location / { autoindex on; autoindex_exact_size off; autoindex_localtime on; try_files $uri $uri/ /index.php?$query_string; } Restart Nginx $ sudo service nginx reload </description>
     </item>
     
     <item>
       <title>Access Homestead site on the same network</title>
-      <link>/access-homestead-site-on-the-same-network/</link>
+      <link>https://ryunpu.github.io/access-homestead-site-on-the-same-network/</link>
       <pubDate>Sat, 26 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/access-homestead-site-on-the-same-network/</guid>
+      <guid>https://ryunpu.github.io/access-homestead-site-on-the-same-network/</guid>
       <description>Add the following line to your hosts 192.168.1.2 192.168.10.10 192.168.1.2 should be your network cards IP address
 Change the project&#39;s nginx site config sudo vi /etc/nginx/sites-enabled/homestead.app change
 listen 80 to
@@ -181,20 +181,20 @@ listen 80 default_server Once done all you need to do is sudo service nginx relo
     
     <item>
       <title>Upgrade Node.js</title>
-      <link>/upgrade-node.js/</link>
+      <link>https://ryunpu.github.io/upgrade-node.js/</link>
       <pubDate>Fri, 25 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/upgrade-node.js/</guid>
+      <guid>https://ryunpu.github.io/upgrade-node.js/</guid>
       <description>Use NPM $ sudo npm cache clean -f $ sudo npm install n -g $ sudo n stable or
 $ sudo n 8.0.0 Use Homebrew $ brew upgrade node Use NVM $ nvm install 8.0.0 $ nvm use 8.0.0 </description>
     </item>
     
     <item>
       <title>My Sketch plugins</title>
-      <link>/my-sketch-plugins/</link>
+      <link>https://ryunpu.github.io/my-sketch-plugins/</link>
       <pubDate>Thu, 24 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/my-sketch-plugins/</guid>
+      <guid>https://ryunpu.github.io/my-sketch-plugins/</guid>
       <description>Content-generator-sketch-plugin Sketch app plugin for generating dummy data such as avatars, names, photos, geo data etc
 cemre-sketch-plugins Sketch plugins by Cemre Gungor
 sketch-measure A measure tool for measurements &amp;amp; design specs
@@ -207,10 +207,10 @@ Sketch-Color-Contrast-Analyser A Sketch plugin that calculates the color contras
     
     <item>
       <title>Use autojump in zsh</title>
-      <link>/use-autojump-in-zsh/</link>
+      <link>https://ryunpu.github.io/use-autojump-in-zsh/</link>
       <pubDate>Thu, 03 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/use-autojump-in-zsh/</guid>
+      <guid>https://ryunpu.github.io/use-autojump-in-zsh/</guid>
       <description>Install use homebrew: $ brew install autojump load the plugin in ~/.zshrc file: plugins=(git autojump)
 add the following line to your ~/.zshrc file: [[ -s brew --prefix/etc/autojump.sh ]] &amp;amp;&amp;amp; . brew --prefix/etc/autojump.sh
 source the file to update your current session: $ source ~/.zshrc Usage Jump To A Directory That Contains foo: $ j foo Jump To A Child Directory: $ jc bar Open File Manager To Directories (instead of jumping): $ jo music Opening a file manager to a child directory is also supported: $ jco images see more: autojump</description>
@@ -218,10 +218,10 @@ source the file to update your current session: $ source ~/.zshrc Usage Jump To 
     
     <item>
       <title>Git Diff with Beyond Compare</title>
-      <link>/git-diff-with-beyond-compare/</link>
+      <link>https://ryunpu.github.io/git-diff-with-beyond-compare/</link>
       <pubDate>Fri, 27 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/git-diff-with-beyond-compare/</guid>
+      <guid>https://ryunpu.github.io/git-diff-with-beyond-compare/</guid>
       <description>Launch Beyond Compare, go to the Beyond Compare menu and run Install Command Line Tools.
 Diff $ git config --global diff.tool bc3 To launch a diff using Beyond Compare, use the command：
 $ git difftool file.ext Merge (Pro only) $ git config --global merge.tool bc3 $ git config --global mergetool.bc3 trustExitCode true To launch a 3-way merge using Beyond Compare, use the command：
@@ -230,10 +230,10 @@ $ git mergetool file.ext see more: Using Beyond Compare with Version Control Sys
     
     <item>
       <title>Use Charles Map Local tool</title>
-      <link>/use-charles-map-local-tool/</link>
+      <link>https://ryunpu.github.io/use-charles-map-local-tool/</link>
       <pubDate>Sun, 22 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/use-charles-map-local-tool/</guid>
+      <guid>https://ryunpu.github.io/use-charles-map-local-tool/</guid>
       <description>Configure the Proxy settings in Chrome:
 Configure the Proxy settings in your iPhone:
 Then in Charles use Cmd + Shift + L to add map
@@ -242,28 +242,28 @@ see more: MAP LOCAL TOOL，USING CHARLES FROM AN IPHONE</description>
     
     <item>
       <title>Comparison of NPM and yarn commands</title>
-      <link>/comparison-of-npm-and-yarn-commands/</link>
+      <link>https://ryunpu.github.io/comparison-of-npm-and-yarn-commands/</link>
       <pubDate>Fri, 20 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/comparison-of-npm-and-yarn-commands/</guid>
+      <guid>https://ryunpu.github.io/comparison-of-npm-and-yarn-commands/</guid>
       <description>   npm (v5) Yarn     npm install yarn/yarn install   (N/A) yarn add --flat   (N/A) yarn add --har   npm install --no-package-lock yarn add --no-lockfile   (N/A) yarn add --pure-lockfile   npm install [package] --save yarn add [package]   npm install [package] --save-dev yarn add [package] --dev   (N/A) yarn add [package] --peer   npm install [package] --save-optional yarn add [package] --optional   npm install [package] --save-exact yarn add [package] --exact   (N/A) yarn add [package] --tilde   npm install [package] --global yarn global add [package]   npm update --global  yarn global upgrade    npm rebuild yarn add --force   npm uninstall [package] yarn remove [package]   npm cache clean yarn cache clean [package]   rm -rf node_modules &amp;amp;&amp;amp; npm install  yarn upgrade    npm version major  yarn version --major    npm version minor  yarn version --minor    npm version patch  yarn version --patch     </description>
     </item>
     
     <item>
       <title>Commands for Packager managers</title>
-      <link>/commands-for-packager-managers/</link>
+      <link>https://ryunpu.github.io/commands-for-packager-managers/</link>
       <pubDate>Thu, 19 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/commands-for-packager-managers/</guid>
+      <guid>https://ryunpu.github.io/commands-for-packager-managers/</guid>
       <description>npm composer pip rubygem     Language node -v php --version python --version ruby -v   Version npm --version composer --version pip --version gem -v   Location of the program file which npm which composer which pip which gem   List of all packages installed globally npm ls -g --depth=0 composer show --installed (locally) pip freeze gem list   Info about a package npm show [package-name] composer show [package-name]  gem list [package-name]   Install a package npm install [package-name] -g composer require [package-name] and run composer install pip install[package-name] gem install [package-name]   Uninstall a package npm uninstall [package-name] -g edit composer.</description>
     </item>
     
     <item>
       <title>Syntax highlighting in markdown</title>
-      <link>/syntax-highlighting-in-markdown/</link>
+      <link>https://ryunpu.github.io/syntax-highlighting-in-markdown/</link>
       <pubDate>Mon, 21 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/syntax-highlighting-in-markdown/</guid>
+      <guid>https://ryunpu.github.io/syntax-highlighting-in-markdown/</guid>
       <description>Here&#39;s a full list of supported languages:
   Cucumber (&#39;*.feature&amp;rsquo;)
   abap (&#39;*.abap&amp;rsquo;)
@@ -283,10 +283,10 @@ see more: MAP LOCAL TOOL，USING CHARLES FROM AN IPHONE</description>
     
     <item>
       <title>Use Chrome DevTools</title>
-      <link>/use-chrome-devtools/</link>
+      <link>https://ryunpu.github.io/use-chrome-devtools/</link>
       <pubDate>Sun, 20 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/use-chrome-devtools/</guid>
+      <guid>https://ryunpu.github.io/use-chrome-devtools/</guid>
       <description>Use Ctrl/Cmd+Shift+C to open the DevTools in Inspect Element mode
   Use $() command for selecting elements
   Search across all script, stylesheet and snippet files using Ctrl/Cmd+O
@@ -296,10 +296,10 @@ see more: MAP LOCAL TOOL，USING CHARLES FROM AN IPHONE</description>
     
     <item>
       <title>Markdown cheatsheet</title>
-      <link>/markdown-cheatsheet/</link>
+      <link>https://ryunpu.github.io/markdown-cheatsheet/</link>
       <pubDate>Sat, 12 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/markdown-cheatsheet/</guid>
+      <guid>https://ryunpu.github.io/markdown-cheatsheet/</guid>
       <description>Headers # H1 ## H2 ### H3 #### H4 ##### H5 ###### H6 Alternatively, for H1 and H2, an underline-ish style: Alt-H1 ====== Alt-H2 ------ Emphasis Emphasis, aka italics, with *asterisks* or _underscores_. Strong emphasis, aka bold, with **asterisks** or __underscores__. Combined emphasis with **asterisks and _underscores_**. Strikethrough uses two tildes. ~~Scratch this.~~ Lists 1. First ordered list item 2. Another item ⋅⋅* Unordered sub-list. 1. Actual numbers don&#39;t matter, just that it&#39;s a number ⋅⋅1.</description>
     </item>
     

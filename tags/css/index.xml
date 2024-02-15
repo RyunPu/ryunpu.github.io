@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>css on Ryun&#39;s blog</title>
-    <link>/tags/css/</link>
+    <link>https://ryunpu.github.io/tags/css/</link>
     <description>Recent content in css on Ryun&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <lastBuildDate>Mon, 28 Mar 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/css/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ryunpu.github.io/tags/css/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Prevent page scrolling when a modal is open</title>
-      <link>/prevent-page-scrolling-when-a-modal-is-open/</link>
+      <link>https://ryunpu.github.io/prevent-page-scrolling-when-a-modal-is-open/</link>
       <pubDate>Mon, 28 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/prevent-page-scrolling-when-a-modal-is-open/</guid>
+      <guid>https://ryunpu.github.io/prevent-page-scrolling-when-a-modal-is-open/</guid>
       <description>Use CSS body.modal-open { height: 100vh; overflow-y: hidden; padding-right: 15px; /* Avoid width reflow */ } Use JavaScript // When the modal is shown, we want a fixed body document.body.style.position = &amp;#39;fixed&amp;#39;; document.body.style.top = `-${window.scrollY}px`; // When the modal is hidden, we want to remain at the top of the scroll position const scrollY = document.body.style.top; document.body.style.position = &amp;#39;&amp;#39;; document.body.style.top = &amp;#39;&amp;#39;; window.scrollTo(0, parseInt(scrollY || &amp;#39;0&amp;#39;) * -1) see more: Prevent page scrolling when a modal is open</description>
     </item>
     
     <item>
       <title>Make a sticky content</title>
-      <link>/make-a-sticky-content/</link>
+      <link>https://ryunpu.github.io/make-a-sticky-content/</link>
       <pubDate>Sat, 12 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/make-a-sticky-content/</guid>
+      <guid>https://ryunpu.github.io/make-a-sticky-content/</guid>
       <description>Use CSS .content { position: sticky; top: 0;} With Bootstrap 3 Via data attributes： &amp;lt;div data-spy=&amp;#34;affix&amp;#34; data-offset-top=&amp;#34;60&amp;#34; data-offset-bottom=&amp;#34;200&amp;#34;&amp;gt; ... &amp;lt;/div&amp;gt; Via JavaScript： $(&amp;#39;#myAffix&amp;#39;).affix({ offset: { top: 0, bottom: function () { return (this.bottom = $(&amp;#39;.footer&amp;#39;).outerHeight(true)) } } }) With Semantic UI $(&amp;#39;.ui.sticky&amp;#39;).sticky({ context: &amp;#39;#context&amp;#39; }); see also: sticky</description>
     </item>
     
     <item>
       <title>Make a sticky footer</title>
-      <link>/make-a-sticky-footer/</link>
+      <link>https://ryunpu.github.io/make-a-sticky-footer/</link>
       <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/make-a-sticky-footer/</guid>
+      <guid>https://ryunpu.github.io/make-a-sticky-footer/</guid>
       <description>Our html &amp;lt;body&amp;gt; &amp;lt;main&amp;gt;&amp;lt;/main&amp;gt; &amp;lt;footer&amp;gt;&amp;lt;/footer&amp;gt; &amp;lt;/dody&amp;gt; Use CSS html { position: relative; min-height: 100%;} body { margin-bottom: 50px;} footer { position: absolute; left: 0; right: 0; bottom: 0; height: 50px;} with calc():
 main { min-height: calc(100vh - 50px);} footer { height: 50px;} with flexbox:
 html { height: 100%;} body { min-height: 100%; display: flex; flex-direction: column;} main { flex: 1;} with grid:
@@ -43,19 +43,19 @@ html { height: 100%;} body { min-height: 100%; display: grid; grid-template-rows
     
     <item>
       <title>Use Animate.css</title>
-      <link>/use-animate.css/</link>
+      <link>https://ryunpu.github.io/use-animate.css/</link>
       <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/use-animate.css/</guid>
+      <guid>https://ryunpu.github.io/use-animate.css/</guid>
       <description>.animated { animation-duration: 1s; animation-fill-mode: both;} .animated.infinite { animation-iteration-count: infinite;} .fadeInUp { animation-name: fadeInUp;} @keyframes fadeInUp { from { opacity: 0; transform: translate3d(0, 100%, 0); } to { opacity: 1; transform: none; } } Animate.css  bounce flash pulse rubberBand shake swing tada wobble jello heartBeat  bounceIn bounceInDown bounceInLeft bounceInRight bounceInUp  bounceOut bounceOutDown bounceOutLeft bounceOutRight bounceOutUp  fadeIn fadeInDown fadeInDownBig fadeInLeft fadeInLeftBig fadeInRight fadeInRightBig fadeInUp fadeInUpBig  fadeOut fadeOutDown fadeOutDownBig fadeOutLeft fadeOutLeftBig fadeOutRight fadeOutRightBig fadeOutUp fadeOutUpBig  flip flipInX flipInY flipOutX flipOutY  lightSpeedIn lightSpeedOut  rotateIn rotateInDownLeft rotateInDownRight rotateInUpLeft rotateInUpRight  rotateOut rotateOutDownLeft rotateOutDownRight rotateOutUpLeft rotateOutUpRight  slideInUp slideInDown slideInLeft slideInRight  slideOutUp slideOutDown slideOutLeft slideOutRight  zoomIn zoomInDown zoomInLeft zoomInRight zoomInUp  zoomOut zoomOutDown zoomOutLeft zoomOutRight zoomOutUp  hinge jackInTheBox rollIn rollOut   Animate it   </description>
     </item>
     
     <item>
       <title>Bootstrap snippets and tips</title>
-      <link>/bootstrap-snippets-and-tips/</link>
+      <link>https://ryunpu.github.io/bootstrap-snippets-and-tips/</link>
       <pubDate>Sun, 06 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/bootstrap-snippets-and-tips/</guid>
+      <guid>https://ryunpu.github.io/bootstrap-snippets-and-tips/</guid>
       <description>Update popover text: $(&amp;#39;[data-toggle=&amp;#34;popover&amp;#34;]&amp;#39;).popover({ html: true, trigger: &amp;#39;focus&amp;#39;, content: &amp;#39;&amp;#39;, placement: &amp;#39;bottom&amp;#39; }); $(&amp;#39;[data-toggle=&amp;#34;popover&amp;#34;]&amp;#39;).data(&amp;#39;bs.popover&amp;#39;).options.content = &amp;#39;new content&amp;#39;; $(&amp;#39;[data-toggle=&amp;#34;popover&amp;#34;]&amp;#39;).popover(&amp;#39;show&amp;#39;); to dismiss the popover on iOS, you may use body { cursor: pointer; }
  Specific markup required for dismiss-on-next-click For proper cross-browser and cross-platform behavior, you must use the &amp;lt;a&amp;gt; tag, not the &amp;lt;button&amp;gt; tag, and you also must include the role=&amp;quot;button&amp;rdquo; and tabindex attributes.
  Center modal dialog with CSS: .</description>
@@ -63,46 +63,46 @@ html { height: 100%;} body { min-height: 100%; display: grid; grid-template-rows
     
     <item>
       <title>CSS demonstrations</title>
-      <link>/css-demonstrations/</link>
+      <link>https://ryunpu.github.io/css-demonstrations/</link>
       <pubDate>Wed, 02 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/css-demonstrations/</guid>
+      <guid>https://ryunpu.github.io/css-demonstrations/</guid>
       <description>1 2 3 4 5 6   &amp;lt;div class=&amp;#34;css-demo-carousel-container&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;css-demo-carousel&amp;#34;&amp;gt; &amp;lt;div&amp;gt;1&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;2&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;3&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;4&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;5&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;6&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; .css-demo-carousel-container { perspective: 1000px; transform: translateX(100px);} .css-demo-carousel { position: relative; transform-style: preserve-3d; width: 100px; height: 60px; animation: play 10s infinite linear;} .css-demo-carousel div { position: absolute; width: 100%; height: 100%; text-align: center; line-height: 60px; color: white;} .css-demo-carousel div:nth-child(1) { background: rgba(255,0,0,.5); transform: rotateY(0deg) translateZ(110px);} .css-demo-carousel div:nth-child(2) { background: rgba(128,128,0,.5); transform: rotateY(60deg) translateZ(110px);} .</description>
     </item>
     
     <item>
       <title>Choose a proper web font</title>
-      <link>/choose-a-proper-web-font/</link>
+      <link>https://ryunpu.github.io/choose-a-proper-web-font/</link>
       <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/choose-a-proper-web-font/</guid>
+      <guid>https://ryunpu.github.io/choose-a-proper-web-font/</guid>
       <description>知乎 body { font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif; font-size: 15px; color: #1a1a1a; background: #f6f6f6; -webkit-tap-highlight-color: rgba(26,26,26,0); } 简书 body { font-family: -apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif; font-size: 17px; line-height: 1.42857; color: #333; background-color: #fff; } Pinterest body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ヒラギノ角ゴ Pro W3,Hiragino Kaku Gothic Pro,メイリオ,Meiryo,ＭＳ Ｐゴシック,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; color: #211922; font-size: 12px; } Dribbble body { font-family: &amp;#34;Haas Grot Text R Web&amp;#34;, &amp;#34;Helvetica Neue&amp;#34;, Helvetica, Arial, sans-serif; color: #444; font-size: 62.</description>
     </item>
     
     <item>
       <title>Center Anything with CSS</title>
-      <link>/center-anything-with-css/</link>
+      <link>https://ryunpu.github.io/center-anything-with-css/</link>
       <pubDate>Mon, 06 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>/center-anything-with-css/</guid>
+      <guid>https://ryunpu.github.io/center-anything-with-css/</guid>
       <description>.centered { position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto;} .centered { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);} .center-container { display: table;} .center-container &amp;gt; div { display: table-cell; text-align: center; vertical-align: middle;} .center-container &amp;gt; div .centered { margin: auto;} .center-container { display: flex; -webkit-justify-content: center; justify-content: center; -webkit-align-items: center; align-items: center;} </description>
     </item>
     
     <item>
       <title>Detect Orientation Change on Mobile Devices</title>
-      <link>/detect-orientation-change-on-mobile-devices/</link>
+      <link>https://ryunpu.github.io/detect-orientation-change-on-mobile-devices/</link>
       <pubDate>Tue, 24 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/detect-orientation-change-on-mobile-devices/</guid>
+      <guid>https://ryunpu.github.io/detect-orientation-change-on-mobile-devices/</guid>
       <description> Media Queries:  @media screen and (orientation: landscape) { /* landscape */ } @media screen and (orientation: portrait) { /* portrait */ }  resize Event:  window.addEventListener(&amp;#39;resize&amp;#39;, function() { if (window.innerWidth &amp;gt; window.innerHeight) { // landscape  } else { // portrait  } }, false);  orientationchange Event:  window.addEventListener(&amp;#39;orientationchange&amp;#39;, function() { switch (window.orientation) { case -90: case 90: // landscape  break; default: // portrait  break; } }, false); </description>
     </item>
     
     <item>
       <title>CSS Animations with only one keyframe</title>
-      <link>/css-animations-with-only-one-keyframe/</link>
+      <link>https://ryunpu.github.io/css-animations-with-only-one-keyframe/</link>
       <pubDate>Sun, 15 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/css-animations-with-only-one-keyframe/</guid>
+      <guid>https://ryunpu.github.io/css-animations-with-only-one-keyframe/</guid>
       <description>a simple animation:
 @keyframes fade { 0% { opacity: 1;} 50% { opacity: 0;} 100% { opacity: 1;} } more simple:
 @keyframes fade { 50% { opacity: 0;} } see more: transition-timing-function</description>
@@ -110,29 +110,29 @@ html { height: 100%;} body { min-height: 100%; display: grid; grid-template-rows
     
     <item>
       <title>Use Sass from the command line</title>
-      <link>/use-sass-from-the-command-line/</link>
+      <link>https://ryunpu.github.io/use-sass-from-the-command-line/</link>
       <pubDate>Sat, 14 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/use-sass-from-the-command-line/</guid>
+      <guid>https://ryunpu.github.io/use-sass-from-the-command-line/</guid>
       <description>Output Style:
 sass --watch main.scss:main.css --style expanded sass --watch build:src --style compact sass --watch build:../css --style compressed see more: Dart Sass Command-Line Interface</description>
     </item>
     
     <item>
       <title>A micro clearfix hack</title>
-      <link>/a-micro-clearfix-hack/</link>
+      <link>https://ryunpu.github.io/a-micro-clearfix-hack/</link>
       <pubDate>Sat, 26 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/a-micro-clearfix-hack/</guid>
+      <guid>https://ryunpu.github.io/a-micro-clearfix-hack/</guid>
       <description>/** * For modern browsers * 1. The space content is one way to avoid an Opera bug when the * contenteditable attribute is included anywhere else in the document. * Otherwise it causes space to appear at the top and bottom of elements * that are clearfixed. * 2. The use of `table` rather than `block` is only necessary if using * `:before` to contain the top-margins of child elements.</description>
     </item>
     
     <item>
       <title>Flash of Unstyled Content</title>
-      <link>/flash-of-unstyled-content/</link>
+      <link>https://ryunpu.github.io/flash-of-unstyled-content/</link>
       <pubDate>Wed, 23 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/flash-of-unstyled-content/</guid>
+      <guid>https://ryunpu.github.io/flash-of-unstyled-content/</guid>
       <description>What is a FOUC? Some pages that use the CSS @import rule experience a curious display quirk in the Windows version of MS Internet Explorer: a momentary flash of unstyled page content.
 How do I fix it? Just one LINK element or SCRIPT element inside a document&#39;s HEAD element will prevent a flash of unstyled content.
 If you don&#39;t support IE8 and don&#39;t need to worry about FOUC.</description>
@@ -140,20 +140,20 @@ If you don&#39;t support IE8 and don&#39;t need to worry about FOUC.</descriptio
     
     <item>
       <title>Use rgba in IE</title>
-      <link>/use-rgba-in-ie/</link>
+      <link>https://ryunpu.github.io/use-rgba-in-ie/</link>
       <pubDate>Tue, 01 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/use-rgba-in-ie/</guid>
+      <guid>https://ryunpu.github.io/use-rgba-in-ie/</guid>
       <description>.class { background: rgba(0,0,0,.5); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=&amp;#34;#7F000000&amp;#34;,endColorstr=&amp;#34;#7F000000&amp;#34;);} :root .class { filter: none;} /* IE9 */ with Sass, you can use:
 .class { background: rgba(0,0,0,.5); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=&amp;#34;#{ie-hex-str($color)}&amp;#34;,endColorstr=&amp;#34;#{ie-hex-str($color)}&amp;#34;);} converter: kilianvalkhof</description>
     </item>
     
     <item>
       <title>CSS tools</title>
-      <link>/css-tools/</link>
+      <link>https://ryunpu.github.io/css-tools/</link>
       <pubDate>Sun, 30 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/css-tools/</guid>
+      <guid>https://ryunpu.github.io/css-tools/</guid>
       <description>  动态样式语言 Less，Sass，Stylus
   CSS3 生成工具 css3generator
   CSS 图片拼合工具 csssprites
@@ -164,10 +164,10 @@ If you don&#39;t support IE8 and don&#39;t need to worry about FOUC.</descriptio
     
     <item>
       <title>Bootcss codeguide</title>
-      <link>/bootcss-codeguide/</link>
+      <link>https://ryunpu.github.io/bootcss-codeguide/</link>
       <pubDate>Fri, 28 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/bootcss-codeguide/</guid>
+      <guid>https://ryunpu.github.io/bootcss-codeguide/</guid>
       <description>HTML:
  标签不要大写，即便是 doctype 标签。 用两个空格来代替制表符（tab） &amp;ndash; 这是唯一能保证在所有环境下获得一致展现的方法。 嵌套元素应当缩进一次（即两个空格）。 对于属性的定义，永远全部使用双引号，绝不要使用单引号。 不要在自闭合（self-closing）元素的尾部添加斜线 — HTML5 规范 中明确说明斜线是可忽略的。 不要省略可选的结束标签（closing tag）（例如，&amp;lt;/li&amp;gt; 或 &amp;lt;/body&amp;gt;）。  CSS:
  用两个空格来代替制表符（tab） &amp;ndash; 这是唯一能保证在所有环境下获得一致展现的方法。 为选择器分组时，将单独的选择器单独放在一行。 为了代码的易读性，在每个声明块的左花括号前添加一个空格。 声明块的右花括号应当单独成行。 每条声明语句的 : 后应该插入一个空格。 为了获得更准确的错误报告，每条声明都应该独占一行。 所有声明语句都应当以分号结尾。最后一条声明语句后面的分号是可选的，但是，如果省略这个分号，你的代码可能更易出错。 对于以逗号分隔的属性值，每个逗号后面都应该插入一个空格（例如，box-shadow）。 不要在 rgb()、rgba()、hsl()、hsla() 或 rect() 值的内部的逗号后面插入空格。这样利于从多个属性值（既加逗号也加空格）中区分多个颜色值（只加逗号，不加空格）。 对于属性值或颜色参数，省略小于 1 的小数前面的 0 （例如，.5 代替 0.5；-.5px 代替 -0.5px）。 十六进制值应该全部小写，例如，#fff。在扫描文档时，小写字符易于分辨，因为他们的形式更易于区分。 尽量使用简写形式的十六进制值，例如，用 #fff 代替 #ffffff。 为选择器中的属性添加双引号，例如，input[type=&amp;quot;text&amp;quot;]。只有在某些情况下是可选的，但是，为了代码的一致性，建议都加上双引号。 避免为 0 值指定单位，例如，用 margin: 0; 代替 margin: 0px;。  see more: bootcss codeguide</description>

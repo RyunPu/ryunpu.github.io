@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>design on Ryun&#39;s blog</title>
-    <link>/tags/design/</link>
+    <link>https://ryunpu.github.io/tags/design/</link>
     <description>Recent content in design on Ryun&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <lastBuildDate>Sat, 18 Feb 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/design/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ryunpu.github.io/tags/design/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Looking back to look forward</title>
-      <link>/looking-back-to-look-forward/</link>
+      <link>https://ryunpu.github.io/looking-back-to-look-forward/</link>
       <pubDate>Sat, 18 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>/looking-back-to-look-forward/</guid>
+      <guid>https://ryunpu.github.io/looking-back-to-look-forward/</guid>
       <description>My first website How about these logos Want a coffee Isn&#39;t this cool Want wallpaper wanna see an old movie  </description>
     </item>
     
     <item>
       <title>My Sketch plugins</title>
-      <link>/my-sketch-plugins/</link>
+      <link>https://ryunpu.github.io/my-sketch-plugins/</link>
       <pubDate>Thu, 24 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/my-sketch-plugins/</guid>
+      <guid>https://ryunpu.github.io/my-sketch-plugins/</guid>
       <description>Content-generator-sketch-plugin Sketch app plugin for generating dummy data such as avatars, names, photos, geo data etc
 cemre-sketch-plugins Sketch plugins by Cemre Gungor
 sketch-measure A measure tool for measurements &amp;amp; design specs
@@ -38,10 +38,10 @@ Sketch-Color-Contrast-Analyser A Sketch plugin that calculates the color contras
     
     <item>
       <title>栅格系统延续美学</title>
-      <link>/%E6%A0%85%E6%A0%BC%E7%B3%BB%E7%BB%9F%E5%BB%B6%E7%BB%AD%E7%BE%8E%E5%AD%A6/</link>
+      <link>https://ryunpu.github.io/%E6%A0%85%E6%A0%BC%E7%B3%BB%E7%BB%9F%E5%BB%B6%E7%BB%AD%E7%BE%8E%E5%AD%A6/</link>
       <pubDate>Sat, 29 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/%E6%A0%85%E6%A0%BC%E7%B3%BB%E7%BB%9F%E5%BB%B6%E7%BB%AD%E7%BE%8E%E5%AD%A6/</guid>
+      <guid>https://ryunpu.github.io/%E6%A0%85%E6%A0%BC%E7%B3%BB%E7%BB%9F%E5%BB%B6%E7%BB%AD%E7%BE%8E%E5%AD%A6/</guid>
       <description>栅格系统应用于设计领域已经至少50年了。栅格化让眼睛浏览信息更加愉悦。从报纸、杂志，到手机界面，栅格系统全面渗透到各种信息传达的界面当中。
 see more: ucdchina</description>
     </item>

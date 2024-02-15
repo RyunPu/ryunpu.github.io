@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>html on Ryun&#39;s blog</title>
-    <link>/tags/html/</link>
+    <link>https://ryunpu.github.io/tags/html/</link>
     <description>Recent content in html on Ryun&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <lastBuildDate>Sat, 21 Mar 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/html/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ryunpu.github.io/tags/html/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Configuring Web Applications</title>
-      <link>/configuring-web-applications/</link>
+      <link>https://ryunpu.github.io/configuring-web-applications/</link>
       <pubDate>Sat, 21 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/configuring-web-applications/</guid>
+      <guid>https://ryunpu.github.io/configuring-web-applications/</guid>
       <description>Specifying a Webpage Icon for Web Clip:
 &amp;lt;link rel=&amp;#34;apple-touch-icon&amp;#34; href=&amp;#34;touch-icon-iphone.png&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;apple-touch-icon&amp;#34; sizes=&amp;#34;152x152&amp;#34; href=&amp;#34;touch-icon-ipad-retina.png&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;icon&amp;#34; sizes=&amp;#34;152x152&amp;#34; href=&amp;#34;touch-icon-android.png&amp;#34;&amp;gt; Specifying a Startup Image:
 &amp;lt;link rel=&amp;#34;apple-touch-startup-image&amp;#34; href=&amp;#34;/startup.png&amp;#34;&amp;gt; Hiding Safari User Interface Components:
@@ -29,10 +29,10 @@
     
     <item>
       <title>HTML5 Cross Browser Polyfills</title>
-      <link>/html5-cross-browser-polyfills/</link>
+      <link>https://ryunpu.github.io/html5-cross-browser-polyfills/</link>
       <pubDate>Tue, 22 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/html5-cross-browser-polyfills/</guid>
+      <guid>https://ryunpu.github.io/html5-cross-browser-polyfills/</guid>
       <description>Looking to conditionally load these scripts (client-side), based on feature detects?
 See Modernizr.
 Looking for a guide to write your own polyfills?
@@ -44,38 +44,38 @@ see more: HTML5 Cross Browser Polyfills</description>
     
     <item>
       <title>Enable HTML5 placeholder in IE</title>
-      <link>/enable-html5-placeholder-in-ie/</link>
+      <link>https://ryunpu.github.io/enable-html5-placeholder-in-ie/</link>
       <pubDate>Sun, 13 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/enable-html5-placeholder-in-ie/</guid>
+      <guid>https://ryunpu.github.io/enable-html5-placeholder-in-ie/</guid>
       <description>simply using the function below:
 (function($){ var doc = document, inputs = doc.getElementsByTagName(&amp;#39;input&amp;#39;), supportPlaceholder = &amp;#39;placeholder&amp;#39; in doc.createElement(&amp;#39;input&amp;#39;); $.fn.placeholder = function(){ return this.each(function(){ var input = $(this), text = input.attr(&amp;#39;placeholder&amp;#39;), password = input.attr(&amp;#39;type&amp;#39;) === &amp;#39;password&amp;#39;; if( text &amp;amp;&amp;amp; !supportPlaceholder ){ if (password) return; input.val(text); input.focus(function(){ if( input.val() === text ){ input.val(&amp;#39;&amp;#39;); } }); input.blur(function(){ if( $.trim( input.val() ) === &amp;#39;&amp;#39;){ input.val(text); } }); } }); }; $(function () { $(&amp;#39;[placeholder]&amp;#39;).placeholder(); }); })(jQuery); see also: jquery-placeholder</description>
     </item>
     
     <item>
       <title>Use HTML5 sectioning elements in legacy IE</title>
-      <link>/use-html5-sectioning-elements-in-legacy-ie/</link>
+      <link>https://ryunpu.github.io/use-html5-sectioning-elements-in-legacy-ie/</link>
       <pubDate>Tue, 08 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/use-html5-sectioning-elements-in-legacy-ie/</guid>
+      <guid>https://ryunpu.github.io/use-html5-sectioning-elements-in-legacy-ie/</guid>
       <description>(function() { if (!-[1,]) { var tags = [&amp;#39;article&amp;#39;, &amp;#39;aside&amp;#39;, &amp;#39;details&amp;#39;, &amp;#39;figcaption&amp;#39;, &amp;#39;figure&amp;#39;, &amp;#39;footer&amp;#39;, &amp;#39;header&amp;#39;, &amp;#39;hgroup&amp;#39;, &amp;#39;menu&amp;#39;, &amp;#39;nav&amp;#39;, &amp;#39;section&amp;#39;, &amp;#39;summary&amp;#39;, &amp;#39;time&amp;#39;, &amp;#39;mark&amp;#39;, &amp;#39;audio&amp;#39;, &amp;#39;video&amp;#39;]; for (var i = 0, len = tags.length; i &amp;lt; len; i++) { document.createElement(tags[i]); } } })(); see also: html5shiv</description>
     </item>
     
     <item>
       <title>Use the viewport meta tag</title>
-      <link>/use-the-viewport-meta-tag/</link>
+      <link>https://ryunpu.github.io/use-the-viewport-meta-tag/</link>
       <pubDate>Sun, 06 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/use-the-viewport-meta-tag/</guid>
+      <guid>https://ryunpu.github.io/use-the-viewport-meta-tag/</guid>
       <description>完全自适应的布局可以设置 viewport 为：  &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width,initial-scale=1&amp;#34;&amp;gt;  指定具体宽度时如考虑较小分辨的设备，可按设计宽度的一半设置 viewport 如：  &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=320&amp;#34;&amp;gt;  指定具体宽度时不考虑较小分辨的设备，直接按设计宽度设置 viewport 如：  &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=640,user-scalable=0,target-densitydpi=device-dpi&amp;#34;&amp;gt;  兼容性:  if (/Android (\d+\.\d+)/.test(navigator.userAgent)) { var version = parseFloat(RegExp.$1); if (version &amp;gt; 2.3) { var phoneScale = parseInt(window.screen.width) / 480; document.write(&amp;#39;&amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=480, minimum-scale = &amp;#39; + phoneScale + &amp;#39;, maximum-scale = &amp;#39; + phoneScale + &amp;#39;, target-densitydpi=device-dpi&amp;#34;&amp;gt;&amp;#39;); } else { document.write(&amp;#39;&amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=480, target-densitydpi=device-dpi&amp;#34;&amp;gt;&amp;#39;); } } else { document.</description>
     </item>
     
     <item>
       <title>Bootcss codeguide</title>
-      <link>/bootcss-codeguide/</link>
+      <link>https://ryunpu.github.io/bootcss-codeguide/</link>
       <pubDate>Fri, 28 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/bootcss-codeguide/</guid>
+      <guid>https://ryunpu.github.io/bootcss-codeguide/</guid>
       <description>HTML:
  标签不要大写，即便是 doctype 标签。 用两个空格来代替制表符（tab） &amp;ndash; 这是唯一能保证在所有环境下获得一致展现的方法。 嵌套元素应当缩进一次（即两个空格）。 对于属性的定义，永远全部使用双引号，绝不要使用单引号。 不要在自闭合（self-closing）元素的尾部添加斜线 — HTML5 规范 中明确说明斜线是可忽略的。 不要省略可选的结束标签（closing tag）（例如，&amp;lt;/li&amp;gt; 或 &amp;lt;/body&amp;gt;）。  CSS:
  用两个空格来代替制表符（tab） &amp;ndash; 这是唯一能保证在所有环境下获得一致展现的方法。 为选择器分组时，将单独的选择器单独放在一行。 为了代码的易读性，在每个声明块的左花括号前添加一个空格。 声明块的右花括号应当单独成行。 每条声明语句的 : 后应该插入一个空格。 为了获得更准确的错误报告，每条声明都应该独占一行。 所有声明语句都应当以分号结尾。最后一条声明语句后面的分号是可选的，但是，如果省略这个分号，你的代码可能更易出错。 对于以逗号分隔的属性值，每个逗号后面都应该插入一个空格（例如，box-shadow）。 不要在 rgb()、rgba()、hsl()、hsla() 或 rect() 值的内部的逗号后面插入空格。这样利于从多个属性值（既加逗号也加空格）中区分多个颜色值（只加逗号，不加空格）。 对于属性值或颜色参数，省略小于 1 的小数前面的 0 （例如，.5 代替 0.5；-.5px 代替 -0.5px）。 十六进制值应该全部小写，例如，#fff。在扫描文档时，小写字符易于分辨，因为他们的形式更易于区分。 尽量使用简写形式的十六进制值，例如，用 #fff 代替 #ffffff。 为选择器中的属性添加双引号，例如，input[type=&amp;quot;text&amp;quot;]。只有在某些情况下是可选的，但是，为了代码的一致性，建议都加上双引号。 避免为 0 值指定单位，例如，用 margin: 0; 代替 margin: 0px;。  see more: bootcss codeguide</description>

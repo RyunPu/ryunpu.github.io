@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>editor on Ryun&#39;s blog</title>
-    <link>/categories/editor/</link>
+    <link>https://ryunpu.github.io/categories/editor/</link>
     <description>Recent content in editor on Ryun&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <lastBuildDate>Wed, 11 Jul 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/editor/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ryunpu.github.io/categories/editor/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Create multi-line snippet in atom</title>
-      <link>/create-multi-line-snippet-in-atom/</link>
+      <link>https://ryunpu.github.io/create-multi-line-snippet-in-atom/</link>
       <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/create-multi-line-snippet-in-atom/</guid>
+      <guid>https://ryunpu.github.io/create-multi-line-snippet-in-atom/</guid>
       <description>Use \n &#39;.source.gfm&#39;: &#39;language bash&#39;: &#39;prefix&#39;: &#39;bash&#39; &#39;body&#39;: &#39;```bash\n$ $1\n```&#39; Use multiline strings &#39;.source.gfm&#39;: &#39;language bash&#39;: &#39;prefix&#39;: &#39;bash&#39; &#39;body&#39;: &#39;&#39;&#39; ```bash $ $1 ``` &#39;&#39;&#39; </description>
     </item>
     
     <item>
       <title>Useful Atom keyboard shortcuts</title>
-      <link>/useful-atom-keyboard-shortcuts/</link>
+      <link>https://ryunpu.github.io/useful-atom-keyboard-shortcuts/</link>
       <pubDate>Sun, 19 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>/useful-atom-keyboard-shortcuts/</guid>
+      <guid>https://ryunpu.github.io/useful-atom-keyboard-shortcuts/</guid>
       <description>   General Description     cmd-, Preferences/Settings   cmd-. Key Binding Resolver   shift-cmd-p Toggle Command Palette   ctrl-shift-o Open Link   shift-cmd-o Add Project Folder   ctrl-shift-m Markdown Preview   ctrl-alt-cmd-l Reload Atom   alt-cmd-i Toggle Developer Tools   ctrl-shift-c Copy full path        Find Description   cmd-f Find in file   cmd-shift-f Find in project   cmd-g Find next   cmd-shift-g Find prev   cmd-f,alt-enter Find and select all   ctrl-cmd-g Select all        Navigation Description   cmd-p Toggle file finder   ctrl-g Goto line   cmd-r Goto symbol   cmd-F2 Set bookmark   cmd-F2 Set bookmark   ctrl-F2 View all bookmarks   ctrl-m Go To Matching Bracket   cmd-left/right Move cursor to beginning/end of line   cmd-up/down Move cursor to beginning/end of document        Line Manipulation Description   cmd-[/] Indent/outdent current line   cmd-enter Insert new line after current line   ctrl-shift-k Delete current line   ctrl-cmd-up/down Move current line up/down   shift-cmd-d Duplicate current line   cmd-j Join current and next lines   cmd-backspace Delete to the beginning of line   cmd-fn-backspace Delete to the end of line        Selection Description   cmd-d Select current word/token   cmd-l Select current line   shift-cmd-left/right Select to first/last character of line   shift-cmd-up/down Select to top/bottom of document   ctrl-shift-up/down Column Selection   ctrl-shift-p/n Select up/down   shift-cmd-l Split into lines   ctrl-cmd-m Select inside brackets        Various Packages Description   ctrl-cmd-p Open Project ( Project Manager )   cmd-k,cmd-l/u change-case:lower/upper ( change-case )   cmd-k,cmd-c change-case:camel ( change-case )   cmd-k,cmd-s change-case:snake ( change-case )   cmd-k,cmd-i change-case:upperFirst ( change-case )   ctrl-)/d Balance inward/outward ( emmet )   shift-cmd-m Merge lines ( emmet )   ctrl-shift-t Finds all the TODOs, FIXMEs, CHANGEDs ( todo-show )   alt-cmd-o Open and create files and directories ( advanced-open-file )   ctrl-alt-o Align multi-line and multiple selections ( atom-alignment )   alt-click Find definition ( atom-ternjs )   ctrl-alt-z Back from definition ( atom-ternjs )   ctrl-alt-c Rename variable ( atom-ternjs )   cmd-&amp;rsquo; Expands selections to single or double quotes ( expand-selection-to-quotes )   cmd-&amp;rdquo; Toggle between single and double quotes ( toggle-quotes )   alt-s Select rectangle region ( select-rectangle )    </description>
     </item>
     
     <item>
       <title>Atom javascript snippets package</title>
-      <link>/atom-javascript-snippets-package/</link>
+      <link>https://ryunpu.github.io/atom-javascript-snippets-package/</link>
       <pubDate>Fri, 18 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/atom-javascript-snippets-package/</guid>
+      <guid>https://ryunpu.github.io/atom-javascript-snippets-package/</guid>
       <description>javascript-snippets JavaScript &amp;amp; NodeJS Snippets for Atom
 snippets    Trigger Name Body     ac appendChild ${1:document}.appendChild(${2:elem});   ae addEventListener ${1:document}.addEventListener(&amp;lsquo;${2:event}&#39;, function(e) {\n\t${0:// body...}\n});   afn anonymous function function(${1:arguments}) {\n\t${0:// body...}\n}   al alert alert(&amp;lsquo;${1:msg}&#39;);   apply function apply ${1:methodName}.apply(${2:context}, [${3:arguments}])   asd assert.deepEqual assert.deepEqual(${1:actual}, ${2:expected});   ase assert.equal assert.equal(${1:actual}, ${2:expected});   asn assert.notEqual assert.notEqual(${1:actual}, ${2:expected});   ca classList.</description>
     </item>
     
     <item>
       <title>My atom snippets</title>
-      <link>/my-atom-snippets/</link>
+      <link>https://ryunpu.github.io/my-atom-snippets/</link>
       <pubDate>Thu, 17 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/my-atom-snippets/</guid>
+      <guid>https://ryunpu.github.io/my-atom-snippets/</guid>
       <description>&#39;.text.html&#39;: &#39;animate3.5.1.css&#39;: &#39;prefix&#39;: &#39;pl-animate3&#39; &#39;body&#39;: &#39;&amp;lt;link href=&amp;quot;https://cdn.jsdelivr.net/animatecss/3.5.1/animate.min.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;&#39; &#39;font-awesome4.6.1.css&#39;: &#39;prefix&#39;: &#39;pl-fa4&#39; &#39;body&#39;: &#39;&amp;lt;link href=&amp;quot;https://cdn.jsdelivr.net/fontawesome/4.6.1/css/font-awesome.min.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;&#39; &#39;font-awesome-animation0.0.8.css&#39;: &#39;prefix&#39;: &#39;pl-faa0&#39; &#39;body&#39;: &#39;&amp;lt;link href=&amp;quot;https://cdn.bootcss.com/font-awesome-animation/0.0.8/font-awesome-animation.min.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;&#39; &#39;semantic-ui2.1.8.css&#39;: &#39;prefix&#39;: &#39;pl-sui2css&#39; &#39;body&#39;: &#39;&amp;lt;link href=&amp;quot;https://cdn.jsdelivr.net/semantic-ui/2.1.8/semantic.min.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;&#39; &#39;semantic-ui2.1.8.js&#39;: &#39;prefix&#39;: &#39;pl-sui2js&#39; &#39;body&#39;: &#39;&amp;lt;script src=&amp;quot;https://cdn.jsdelivr.net/semantic-ui/2.1.8/semantic.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&#39; &#39;bootstrap3.3.6.css&#39;: &#39;prefix&#39;: &#39;pl-bs3css&#39; &#39;body&#39;: &#39;&amp;lt;link href=&amp;quot;https://cdn.jsdelivr.net/bootstrap/3.3.6/css/bootstrap.min.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;&#39; &#39;bootstrap3.3.6.js&#39;: &#39;prefix&#39;: &#39;pl-bs3js&#39; &#39;body&#39;: &#39;&amp;lt;script src=&amp;quot;https://cdn.jsdelivr.net/bootstrap/3.3.6/js/bootstrap.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&#39; &#39;vue1.0.21.js&#39;: &#39;prefix&#39;: &#39;pl-vue1&#39; &#39;body&#39;: &#39;&amp;lt;script src=&amp;quot;https://cdn.jsdelivr.net/vue/1.0.21/vue.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&#39; &#39;jquery1.12.3.js&#39;: &#39;prefix&#39;: &#39;pl-jquery1&#39; &#39;body&#39;: &#39;&amp;lt;script src=&amp;quot;https://cdn.jsdelivr.net/jquery/1.12.3/jquery.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&#39; &#39;jquery2.2.3.js&#39;: &#39;prefix&#39;: &#39;pl-jquery2&#39; &#39;body&#39;: &#39;&amp;lt;script src=&amp;quot;https://cdn.jsdelivr.net/jquery/2.2.3/jquery.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&#39; </description>
     </item>
     
     <item>
       <title>My atom packages</title>
-      <link>/my-atom-packages/</link>
+      <link>https://ryunpu.github.io/my-atom-packages/</link>
       <pubDate>Wed, 16 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/my-atom-packages/</guid>
+      <guid>https://ryunpu.github.io/my-atom-packages/</guid>
       <description>save-session An Atom package to restore your session
 emmet the essential tool for web developers
 to expand abbreviations with Tab key, add the following section in your keymap.cson:
@@ -67,10 +67,10 @@ git-time-machine Visually interact with git commit history for a file alt-t</des
     
     <item>
       <title>Open atom from the terminal</title>
-      <link>/open-atom-from-the-terminal/</link>
+      <link>https://ryunpu.github.io/open-atom-from-the-terminal/</link>
       <pubDate>Mon, 14 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/open-atom-from-the-terminal/</guid>
+      <guid>https://ryunpu.github.io/open-atom-from-the-terminal/</guid>
       <description>With the Atom editor open, in the menu bar, click Atom &amp;raquo; Install Shell Commands:
 When Atom installs it automatically creates a symlink in your /usr/local/bin. However in case it hasn&#39;t, you can create it yourself on your Mac:
 $ ln -s /Applications/Atom.app/Contents/Resources/app/atom.sh /usr/local/bin/atom </description>
@@ -78,10 +78,10 @@ $ ln -s /Applications/Atom.app/Contents/Resources/app/atom.sh /usr/local/bin/ato
     
     <item>
       <title>Sublime react snippets</title>
-      <link>/sublime-react-snippets/</link>
+      <link>https://ryunpu.github.io/sublime-react-snippets/</link>
       <pubDate>Thu, 12 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/sublime-react-snippets/</guid>
+      <guid>https://ryunpu.github.io/sublime-react-snippets/</guid>
       <description>Documentation of available snippets (JSX):
   cdm→ componentDidMount: fn() { &amp;hellip; }
   cdup→ componentDidUpdate: fn(pp, ps) { &amp;hellip; }
@@ -96,10 +96,10 @@ $ ln -s /Applications/Atom.app/Contents/Resources/app/atom.sh /usr/local/bin/ato
     
     <item>
       <title>Sublime Text Plugins for Web Development</title>
-      <link>/sublime-text-plugins-for-web-development/</link>
+      <link>https://ryunpu.github.io/sublime-text-plugins-for-web-development/</link>
       <pubDate>Wed, 11 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/sublime-text-plugins-for-web-development/</guid>
+      <guid>https://ryunpu.github.io/sublime-text-plugins-for-web-development/</guid>
       <description>BracketHighlighter
   LiveReload: Once installed, you will still need to enable the plugin in the command palette:
  open the Sublime Text command palette width Cmd + Shift + P Type &amp;lsquo;LiveReload: Enable/disable plugins&amp;rsquo; and hit Enter Scroll down to &amp;lsquo;Enable - SimpleReload&amp;rsquo; and hit Enter    SideBarEnhancements
@@ -113,10 +113,10 @@ $ ln -s /Applications/Atom.app/Contents/Resources/app/atom.sh /usr/local/bin/ato
     
     <item>
       <title>Sublime Text shortcuts</title>
-      <link>/sublime-text-shortcuts/</link>
+      <link>https://ryunpu.github.io/sublime-text-shortcuts/</link>
       <pubDate>Wed, 30 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/sublime-text-shortcuts/</guid>
+      <guid>https://ryunpu.github.io/sublime-text-shortcuts/</guid>
       <description>Select some text and press Cmd + D to add more instances. If you want to skip the current instance, press Cmd + K, Cmd + D. If you go too far, press Cmd + U to deselect the current instance.
   Cmd + L expands the selections to the end of the line. Cmd + Shift + L splits the selections into lines.
   To select some block, use Shift + click, or press Alt + Shift + Up/Down or Cmd + Shift + Up/Down.</description>
@@ -124,10 +124,10 @@ $ ln -s /Applications/Atom.app/Contents/Resources/app/atom.sh /usr/local/bin/ato
     
     <item>
       <title>Sublime osx command line setup</title>
-      <link>/sublime-osx-command-line-setup/</link>
+      <link>https://ryunpu.github.io/sublime-osx-command-line-setup/</link>
       <pubDate>Tue, 25 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/sublime-osx-command-line-setup/</guid>
+      <guid>https://ryunpu.github.io/sublime-osx-command-line-setup/</guid>
       <description>with Sublime Text2, you can run:
 $ ln -s &amp;#34;/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl&amp;#34; ~/bin/subl with Sublime Text3, you can run:
 $ ln -s &amp;#34;/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl&amp;#34; ~/bin/subl see more: sublimetext docs</description>

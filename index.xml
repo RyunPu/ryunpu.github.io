@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ryun&#39;s blog</title>
-    <link>/</link>
+    <link>https://ryunpu.github.io/</link>
     <description>Recent content on Ryun&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <lastBuildDate>Fri, 27 Dec 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ryunpu.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>【求职】【成都】8 年前端开发经验</title>
-      <link>/resume/</link>
+      <link>https://ryunpu.github.io/resume/</link>
       <pubDate>Fri, 27 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>/resume/</guid>
+      <guid>https://ryunpu.github.io/resume/</guid>
       <description>你好，❤ 朋友
 这里是 Ryun 的个人简历 📝
 作为一名前端攻城狮 🦁
@@ -32,10 +32,10 @@
     
     <item>
       <title>Git Cheatsheet</title>
-      <link>/git-cheatsheet/</link>
+      <link>https://ryunpu.github.io/git-cheatsheet/</link>
       <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/git-cheatsheet/</guid>
+      <guid>https://ryunpu.github.io/git-cheatsheet/</guid>
       <description>初始化:
 ❯ git init gra 添加远程仓库:
 ❯ git remote add origin git@github.com:RyunPu/learn-git.git  根据需要添加远程仓库，git@github.com:RyunPu/learn-git.git 应该是你自己的仓库地址
@@ -51,19 +51,19 @@
     
     <item>
       <title>VS Code shortcuts for macOS</title>
-      <link>/vs-code-shortcuts-for-macos/</link>
+      <link>https://ryunpu.github.io/vs-code-shortcuts-for-macos/</link>
       <pubDate>Sat, 23 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/vs-code-shortcuts-for-macos/</guid>
+      <guid>https://ryunpu.github.io/vs-code-shortcuts-for-macos/</guid>
       <description>General          ⇧⌘P, F1 Show Command Palette   ⌘P Quick Open, Go to File…   ⇧⌘N New window/instance   ⌘W Close window/instance   ⌘, User Settings   ⌘K ⌘S Keyboard Shortcuts    Basic editing          ⌘X Cut line (empty selection)   ⌘C Copy line (empty selection)   ⌥↓ / ⌥↑ Move line down/up   ⇧⌥↓ / ⇧⌥↑ Copy line down/up   ⇧⌘K Delete line   ⌘Enter / ⇧⌘Enter Insert line below/above   ⇧⌘\ Jump to matching bracket   ⌘] / ⌘[ Indent/outdent line   Home / End Go to beginning/end of line   ⌘↑ / ⌘↓ Go to beginning/end of file   ⌃PgUp / ⌃PgDn Scroll line up/down   ⌘PgUp /⌘PgDn Scroll page up/down   ⌥⌘[ / ⌥⌘] Fold/unfold region   ⌘K ⌘[ / ⌘K ⌘] Fold/unfold all subregions   ⌘K ⌘0 / ⌘K ⌘J Fold/unfold all regions   ⌘K ⌘C Add line comment   ⌘K ⌘U Remove line comment   ⌘/ Toggle line comment   ⇧⌥A Toggle block comment   ⌥Z Toggle word wrap    Multi-cursor and selection          ⌥ + click Insert cursor   ⌥⌘↑ Insert cursor above   ⌥⌘↓ Insert cursor below   ⌘U Undo last cursor operation   ⇧⌥I Insert cursor at end of each line selected   ⌘L Select current line   ⇧⌘L Select all occurrences of current selection   ⌘F2 Select all occurrences of current word   ⌃⇧⌘→ / ← Expand / shrink selection   ⇧⌥ + drag mouse Column (box) selection   ⇧⌥⌘↑ / ↓ Column (box) selection up/down   ⇧⌥⌘← / → Column (box) selection left/right   ⇧⌥⌘PgUp Column (box) selection page up   ⇧⌥⌘PgDn Column (box) selection page down    Search and replace          ⌘F Find   ⌥⌘F Replace   ⌘G / ⇧⌘G Find next/previous   ⌥Enter Select all occurrences of Find match   ⌘D Add selection to next Find match   ⌘K ⌘D Move last selection to next Find match    Rich languages editing          ⌃Space Trigger suggestion   ⇧⌘Space Trigger parameter hints   ⇧⌥F Format document   ⌘K ⌘F Format selection   F12 Go to Definition   ⌥F12 Peek Definition   ⌘K F12 Open Definition to the side   ⌘.</description>
     </item>
     
     <item>
       <title>VS code extensions for frontend developers</title>
-      <link>/vs-code-extensions-for-frontend-developers/</link>
+      <link>https://ryunpu.github.io/vs-code-extensions-for-frontend-developers/</link>
       <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/vs-code-extensions-for-frontend-developers/</guid>
+      <guid>https://ryunpu.github.io/vs-code-extensions-for-frontend-developers/</guid>
       <description>Add jsdoc comments Adds simple jsdoc comments for the parameters of a selected function signature
 Bookmarks Mark lines and jump to them
 change-case Quickly change the case (camelCase, CONSTANT_CASE, snake_case, etc) of the current selection or current word
@@ -73,10 +73,10 @@ EditorConfig for VS Code EditorConfig Support for Visual Studio Code</descriptio
     
     <item>
       <title>Use webpack 4 &#43; bootstrap 4 &#43; fontawesome 5 (3)</title>
-      <link>/use-webpack-4-bootstrap-4-fontawesome-5-3/</link>
+      <link>https://ryunpu.github.io/use-webpack-4-bootstrap-4-fontawesome-5-3/</link>
       <pubDate>Thu, 21 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/use-webpack-4-bootstrap-4-fontawesome-5-3/</guid>
+      <guid>https://ryunpu.github.io/use-webpack-4-bootstrap-4-fontawesome-5-3/</guid>
       <description>接上一篇文章，我将在这一篇文章中进一步优化 webpack 和其他的配置。
 基础优化 使用 hard-source-webpack-plugin 提升构建速度 ❯ yarn add -D hard-source-webpack-plugin 在 webpack.config.js 中引入并使用 HardSourceWebpackPlugin
 ... const HardSourceWebpackPlugin = require(&amp;#39;hard-source-webpack-plugin&amp;#39;) module.exports = (env, argv) =&amp;gt; { ... return merge(config(), { ... plugins: [ ... new HardSourceWebpackPlugin(), ], }) } 第一次运行的 Time:
@@ -86,10 +86,10 @@ $ webpack --mode production [hardsource:79b1fb26] Using 2 MB of disk space.</des
     
     <item>
       <title>Use webpack 4 &#43; bootstrap 4 &#43; fontawesome 5 (2)</title>
-      <link>/use-webpack-4-bootstrap-4-fontawesome-5-2/</link>
+      <link>https://ryunpu.github.io/use-webpack-4-bootstrap-4-fontawesome-5-2/</link>
       <pubDate>Wed, 20 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/use-webpack-4-bootstrap-4-fontawesome-5-2/</guid>
+      <guid>https://ryunpu.github.io/use-webpack-4-bootstrap-4-fontawesome-5-2/</guid>
       <description>接上一篇文章，我将在这一篇文章中分离 webpack 开发环境和生产环境，并使用 webpack-merge 来进行合并。
 添加 webpack-merge ❯ yarn add -D webpack-merge 新建 webpack.dev.config.js ❯ touch webpack.dev.config.js 在 webpack.dev.config.js 添加:
 module.exports = () =&amp;gt; ({ module: { rules: [ { test: /\.scss$/, use: [ { loader: &amp;#39;style-loader&amp;#39;, options: { injectType: &amp;#39;singletonStyleTag&amp;#39; } } ] }, ] } }) 新建 webpack.prod.config.js ❯ touch webpack.prod.config.js 在 webpack.prod.config.js 添加:
@@ -98,10 +98,10 @@ const MiniCssExtractPlugin = require(&amp;#39;mini-css-extract-plugin&amp;#39;) 
     
     <item>
       <title>Use webpack 4 &#43; bootstrap 4 &#43; fontawesome 5 (1)</title>
-      <link>/use-webpack-4-bootstrap-4-fontawesome-5-1/</link>
+      <link>https://ryunpu.github.io/use-webpack-4-bootstrap-4-fontawesome-5-1/</link>
       <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/use-webpack-4-bootstrap-4-fontawesome-5-1/</guid>
+      <guid>https://ryunpu.github.io/use-webpack-4-bootstrap-4-fontawesome-5-1/</guid>
       <description>从零开始使用 webpack 4 创建一个 bootstrap 4 + fontawesome 5 的项目，有兴趣的同学可以跟着做下。
 准备工作 创建目录 ❯ mkdir webpack-demo &amp;amp;&amp;amp; cd webpack-demo 添加 package.json ❯ yarn init -y  要安装 yran，可以访问 https://yarnpkg.com/lang/en/docs/install
  package.json:
@@ -112,57 +112,57 @@ const MiniCssExtractPlugin = require(&amp;#39;mini-css-extract-plugin&amp;#39;) 
     
     <item>
       <title>ESLint Config for JavaScript</title>
-      <link>/eslint-config-for-javascript/</link>
+      <link>https://ryunpu.github.io/eslint-config-for-javascript/</link>
       <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/eslint-config-for-javascript/</guid>
+      <guid>https://ryunpu.github.io/eslint-config-for-javascript/</guid>
       <description>eslint-config-airbnb-base Install  List the correct versions of each package:  ❯ npm info &amp;quot;eslint-config-airbnb-base@latest&amp;quot; peerDependencies { eslint: &#39;^5.16.0 || ^6.1.0&#39;, &#39;eslint-plugin-import&#39;: &#39;^2.18.2&#39; } Install the package:  ❯ yarn add eslint eslint-plugin-import eslint-config-airbnb-base -D Usage ❯ npx eslint --init // .eslintrc.js module.exports = { &amp;quot;env&amp;quot;: { &amp;quot;browser&amp;quot;: true, &amp;quot;es6&amp;quot;: true }, &amp;quot;extends&amp;quot;: &amp;quot;airbnb-base&amp;quot;, &amp;quot;globals&amp;quot;: { &amp;quot;Atomics&amp;quot;: &amp;quot;readonly&amp;quot;, &amp;quot;SharedArrayBuffer&amp;quot;: &amp;quot;readonly&amp;quot; }, &amp;quot;parserOptions&amp;quot;: { &amp;quot;ecmaVersion&amp;quot;: 2018, &amp;quot;sourceType&amp;quot;: &amp;quot;module&amp;quot; }, &amp;quot;rules&amp;quot;: { &amp;quot;semi&amp;quot;: [&amp;quot;error&amp;quot;, &amp;quot;never&amp;quot;] } }; eslint-config-standard Install  List the correct versions of each package:  ❯ npm info &amp;quot;eslint-config-standard&amp;quot; peerDependencies { eslint: &#39;&amp;gt;=6.</description>
     </item>
     
     <item>
       <title>npx is cool</title>
-      <link>/npx-is-cool/</link>
+      <link>https://ryunpu.github.io/npx-is-cool/</link>
       <pubDate>Tue, 17 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/npx-is-cool/</guid>
+      <guid>https://ryunpu.github.io/npx-is-cool/</guid>
       <description>About  npx is a tool intended to help round out the experience of using packages from the npm registry — the same way npm makes it super easy to install and manage dependencies hosted on the registry, npx makes it easy to use CLI tools and other executables hosted on the registry. It greatly simplifies a number of things that, until now, required a bit of ceremony to do with plain npm.</description>
     </item>
     
     <item>
       <title>Browserslist config</title>
-      <link>/browserslist-config/</link>
+      <link>https://ryunpu.github.io/browserslist-config/</link>
       <pubDate>Mon, 16 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/browserslist-config/</guid>
+      <guid>https://ryunpu.github.io/browserslist-config/</guid>
       <description>Queries Add browserslist key in package.json
 { &amp;quot;browserslist&amp;quot;: [ &amp;quot;last 1 version&amp;quot;, &amp;quot;&amp;gt; 1%&amp;quot;, &amp;quot;maintained node versions&amp;quot;, &amp;quot;not dead&amp;quot; ] } Query Composition    Query combiner type Illustration Example     or`/`, combiner (union)  &amp;gt; .5% or last 2 versions &amp;gt; .5%, last 2 versions   and combiner (intersection)  &amp;gt; .5% and last 2 versions   not combiner (relative complement)  &amp;gt; .</description>
     </item>
     
     <item>
       <title>JavaScript 模块化</title>
-      <link>/javascript-%E6%A8%A1%E5%9D%97%E5%8C%96/</link>
+      <link>https://ryunpu.github.io/javascript-%E6%A8%A1%E5%9D%97%E5%8C%96/</link>
       <pubDate>Sun, 15 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/javascript-%E6%A8%A1%E5%9D%97%E5%8C%96/</guid>
+      <guid>https://ryunpu.github.io/javascript-%E6%A8%A1%E5%9D%97%E5%8C%96/</guid>
       <description>为什么需要模块化  JavaScript 最初是一门用于构建小型网站的语言。但是今天，网站正在向 Web 应用发展，所需代码和功能正在变得越来越大。开发人员需要一种方法来分离功能，同时指定相应依赖。就像 C++ 和 Java 依赖外部库（例如数学库）来计算基本的数学方程式，而无需重写它们。因此，库使得语言不用重复书写代码和委托功能，这就像模块对于 JavaScript 的作用。模块有助于开发人员实现功能分离并组织代码库。使用模块的最大原因之一是 JavaScript 的全局命名空间很容易受到污染。函数是 JavaScript 中唯一创建新作用域方法。因此，未在函数中声明的任何内容都是全局命名空间的一部分。同时，我们在 JavaScript 顶层声明的每个函数都是全局可用的，因此不能再次创建同一名称的函数。通常，这会导致命名空间受到污染，我们很难找到和重用相关代码。但是有时我们并不希望某个函数随处可用。为了使一个 JavaScript 文件中的函数仅对另一个单独的 JavaScript 文件可用，我们可以使用模块。尽管还有许多其他原因，使用模块化功能的主要原因有：
  简化依赖关系管理 代码组织：让功能从我们的应用中分离，提供封装 提供代码可重用性 去耦（减轻重构的痛苦） 代码可扩展性   ES5 中的模块化 立即执行函数 (function () {}()) 输入全局变量 (function ($) {})(jQuery) 对象写法 var module = { message: &amp;#39;你好!&amp;#39;, sayHello: function() { console.log(this.message); } }; 构造器写法 var Module = function() { var message = &amp;#39;你好!&amp;#39;; function sayHello() { console.log(message); } return { sayHello: sayHello }; }; 模块化规范 目前流行的 JavaScript 模块化规范有 CommonJS、AMD、CMD 以及 ES6 的模块系统。</description>
     </item>
     
     <item>
       <title>Prototype chains in es6</title>
-      <link>/prototype-chains-in-es6/</link>
+      <link>https://ryunpu.github.io/prototype-chains-in-es6/</link>
       <pubDate>Sat, 14 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/prototype-chains-in-es6/</guid>
+      <guid>https://ryunpu.github.io/prototype-chains-in-es6/</guid>
       <description>class Person { constructor(name) { this.name = name } } class Employee extends Person { constructor(name, title) { super(name) this.title = title } } const ryun = new Employee(&amp;#39;Ryun&amp;#39;, &amp;#39;Front-End Engineer&amp;#39;) </description>
     </item>
     
     <item>
       <title>Generate a new SSH key and add it to the ssh-agent</title>
-      <link>/generate-a-new-ssh-key-and-add-it-to-the-ssh-agent/</link>
+      <link>https://ryunpu.github.io/generate-a-new-ssh-key-and-add-it-to-the-ssh-agent/</link>
       <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/generate-a-new-ssh-key-and-add-it-to-the-ssh-agent/</guid>
+      <guid>https://ryunpu.github.io/generate-a-new-ssh-key-and-add-it-to-the-ssh-agent/</guid>
       <description>Generate a new SSH key   Open Terminal.
   Paste the text below, substituting in your GitHub email address.
   $ ssh-keygen -t rsa -b 4096 -C &amp;#34;your_email@example.com&amp;#34; This creates a new ssh key, using the provided email as a label.
@@ -171,10 +171,10 @@ const MiniCssExtractPlugin = require(&amp;#39;mini-css-extract-plugin&amp;#39;) 
     
     <item>
       <title>Make an alias with parameter</title>
-      <link>/make-an-alias-with-parameter/</link>
+      <link>https://ryunpu.github.io/make-an-alias-with-parameter/</link>
       <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/make-an-alias-with-parameter/</guid>
+      <guid>https://ryunpu.github.io/make-an-alias-with-parameter/</guid>
       <description>Add the function in .zshrc file
 function gitall() { git add . if [ &amp;quot;$1&amp;quot; != &amp;quot;&amp;quot; ]; then git commit -m &amp;quot;$1&amp;quot; else git commit -m &amp;quot;add posts&amp;quot; fi git push } Then
 $ gitall &amp;#34;add posts&amp;#34; </description>
@@ -182,19 +182,19 @@ $ gitall &amp;#34;add posts&amp;#34; </description>
     
     <item>
       <title>Create multi-line snippet in atom</title>
-      <link>/create-multi-line-snippet-in-atom/</link>
+      <link>https://ryunpu.github.io/create-multi-line-snippet-in-atom/</link>
       <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/create-multi-line-snippet-in-atom/</guid>
+      <guid>https://ryunpu.github.io/create-multi-line-snippet-in-atom/</guid>
       <description>Use \n &#39;.source.gfm&#39;: &#39;language bash&#39;: &#39;prefix&#39;: &#39;bash&#39; &#39;body&#39;: &#39;```bash\n$ $1\n```&#39; Use multiline strings &#39;.source.gfm&#39;: &#39;language bash&#39;: &#39;prefix&#39;: &#39;bash&#39; &#39;body&#39;: &#39;&#39;&#39; ```bash $ $1 ``` &#39;&#39;&#39; </description>
     </item>
     
     <item>
       <title>Resolve EACCES permissions errors</title>
-      <link>/resolve-eacces-permissions-errors/</link>
+      <link>https://ryunpu.github.io/resolve-eacces-permissions-errors/</link>
       <pubDate>Tue, 10 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/resolve-eacces-permissions-errors/</guid>
+      <guid>https://ryunpu.github.io/resolve-eacces-permissions-errors/</guid>
       <description>If you see an EACCES error when you try to install a package globally, you can either:
  Reinstall npm with a node version manager (recommended),  or
  Manually change npm’s default directory  Reinstall npm with a node version manager This is the best way to avoid permissions issues. To reinstall npm with a node version manager, follow the steps in “Downloading and installing Node.js and npm”. You do not need to remove your current version of npm or Node.</description>
@@ -202,10 +202,10 @@ $ gitall &amp;#34;add posts&amp;#34; </description>
     
     <item>
       <title>Open new iTerm2 tab with same profile</title>
-      <link>/open-new-iterm2-tab-with-same-profile/</link>
+      <link>https://ryunpu.github.io/open-new-iterm2-tab-with-same-profile/</link>
       <pubDate>Mon, 09 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/open-new-iterm2-tab-with-same-profile/</guid>
+      <guid>https://ryunpu.github.io/open-new-iterm2-tab-with-same-profile/</guid>
       <description>Use ⌥ + ⇧ + ⌘ + T to open the new tab with same profile
 You may need to set the Working Directory first:
  Click iTerm2 → Preferences → Profiles In “Working Directory” section select “Reuse previous session’s directory”  </description>
@@ -213,10 +213,10 @@ You may need to set the Working Directory first:
     
     <item>
       <title>Exit the Vim editor</title>
-      <link>/exit-the-vim-editor/</link>
+      <link>https://ryunpu.github.io/exit-the-vim-editor/</link>
       <pubDate>Sun, 08 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/exit-the-vim-editor/</guid>
+      <guid>https://ryunpu.github.io/exit-the-vim-editor/</guid>
       <description>Hit the i key to enter &amp;ldquo;Insert mode&amp;rdquo;. Hit the Esc key to enter &amp;ldquo;Normal mode&amp;rdquo;. Then you can type : to enter &amp;ldquo;Command-line mode&amp;rdquo;. To execute a command, press the Enter key.
   :q to quit (short for :quit)
   :q! / ZQ to quit without saving (short for :quit!)
@@ -226,10 +226,10 @@ You may need to set the Working Directory first:
     
     <item>
       <title>iTerm2 &#43; Oh My Zsh</title>
-      <link>/iterm2-oh-my-zsh/</link>
+      <link>https://ryunpu.github.io/iterm2-oh-my-zsh/</link>
       <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/iterm2-oh-my-zsh/</guid>
+      <guid>https://ryunpu.github.io/iterm2-oh-my-zsh/</guid>
       <description>Install iTerm2 $ brew cask install iterm2 Or install iTerm2 from https://www.iterm2.com/
 Install Oh My Zsh Via cul:
 $ sh -c &amp;#34;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34; Via wget:
@@ -242,10 +242,10 @@ Enable word jumps and word deletion, aka natural text selection By default, word
     
     <item>
       <title>Show hidden files on mac</title>
-      <link>/show-hidden-files-on-mac/</link>
+      <link>https://ryunpu.github.io/show-hidden-files-on-mac/</link>
       <pubDate>Fri, 06 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/show-hidden-files-on-mac/</guid>
+      <guid>https://ryunpu.github.io/show-hidden-files-on-mac/</guid>
       <description>The quickest way Since the release of macOS Sierra, when in Finder, it is now possible to use the shortcut:
 ⌘ + ⇧ + . Use terminal Show files:
 $ defaults write com.apple.finder AppleShowAllFiles YES; killall Finder Hide files:
@@ -254,20 +254,20 @@ $ defaults write com.apple.finder AppleShowAllFiles NO; killall Finder </descrip
     
     <item>
       <title>Show the current path in the finder</title>
-      <link>/show-the-current-path-in-the-finder/</link>
+      <link>https://ryunpu.github.io/show-the-current-path-in-the-finder/</link>
       <pubDate>Thu, 05 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/show-the-current-path-in-the-finder/</guid>
+      <guid>https://ryunpu.github.io/show-the-current-path-in-the-finder/</guid>
       <description>Enable the finder path bar ⌥ + ⌘ + P Show the path in the finder title bar $ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder Use this command to turn it off
 $ defaults write com.apple.finder _FXShowPosixPathInTitle -bool false; killall Finder </description>
     </item>
     
     <item>
       <title>Insert the Mac command symbol</title>
-      <link>/insert-the-mac-command-symbol/</link>
+      <link>https://ryunpu.github.io/insert-the-mac-command-symbol/</link>
       <pubDate>Wed, 04 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insert-the-mac-command-symbol/</guid>
+      <guid>https://ryunpu.github.io/insert-the-mac-command-symbol/</guid>
       <description>Copy and Paste ⌘
 Use Emoji and Symbols ⌃ + ⌘ + Space You&#39;ll find it under Edit -&amp;gt; Emoji and Symbols in any program that takes text input. The Command key symbol can be found by searching for it&#39;s name &amp;ldquo;place of interest&amp;rdquo;.
 Use Unicode Hex Input ⌥ + 2318 Use text replacements Use Atom snippets &#39;.text.plain, .source.gfm&#39;: &#39;command symbol&#39;: &#39;prefix&#39;: &#39;cmds&#39; &#39;body&#39;: &#39;⌘&#39; &#39;ctrl symbol&#39;: &#39;prefix&#39;: &#39;cs&#39; &#39;body&#39;: &#39;⌃&#39; &#39;alt symbol&#39;: &#39;prefix&#39;: &#39;as&#39; &#39;body&#39;: &#39;⌥&#39; &#39;shift symbol&#39;: &#39;prefix&#39;: &#39;ss&#39; &#39;body&#39;: &#39;⇧&#39; </description>
@@ -275,10 +275,10 @@ Use Unicode Hex Input ⌥ + 2318 Use text replacements Use Atom snippets &#39;.t
     
     <item>
       <title>Mac 键盘快捷键</title>
-      <link>/mac-%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+      <link>https://ryunpu.github.io/mac-%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
       <pubDate>Tue, 03 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/mac-%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+      <guid>https://ryunpu.github.io/mac-%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
       <description>您可以按下某些组合键来实现通常需要鼠标、触控板或其他输入设备才能完成的操作。
 要使用键盘快捷键，请按住一个或多个修饰键，然后按快捷键的最后一个键。例如，要使用 Command-C（拷贝），请按住 Command 键并按 C 键，然后同时松开这两个键。Mac 菜单和键盘通常对某些按键使用符号，其中包括以下修饰键：
  Command（或 Cmd）⌘ Shift ⇧ Option（或 Alt）⌥ Control（或 Ctrl）⌃ Caps Lock ⇪ Fn   在 Windows PC 专用键盘上，请用 Alt 键代替 Option 键，用 Windows 标志键代替 Command 键。
@@ -288,10 +288,10 @@ Use Unicode Hex Input ⌥ + 2318 Use text replacements Use Atom snippets &#39;.t
     
     <item>
       <title>在 Mac 上创建键盘快捷键</title>
-      <link>/%E5%9C%A8-mac-%E4%B8%8A%E5%88%9B%E5%BB%BA%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+      <link>https://ryunpu.github.io/%E5%9C%A8-mac-%E4%B8%8A%E5%88%9B%E5%BB%BA%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
       <pubDate>Mon, 02 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/%E5%9C%A8-mac-%E4%B8%8A%E5%88%9B%E5%BB%BA%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+      <guid>https://ryunpu.github.io/%E5%9C%A8-mac-%E4%B8%8A%E5%88%9B%E5%BB%BA%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
       <description>您可以在任意 macOS App（包括“访达”）中为菜单命令创建自己的键盘快捷键。如果全局快捷键（大多数 App 都相同）与特定 App 快捷键冲突时，这可能会很有用。在这种情况下，您可以创建一个新的按键组合。
    在 Mac 上，选取苹果菜单 &amp;gt;“系统偏好设置”，点按“键盘”，然后点按“快捷键”。
   选择左侧的“App 快捷键”，点按添加按钮 ，点按“应用程序”弹出式菜单，然后选取一个特定的 App 或者“所有应用程序”。
@@ -308,10 +308,10 @@ Use Unicode Hex Input ⌥ + 2318 Use text replacements Use Atom snippets &#39;.t
     
     <item>
       <title>About</title>
-      <link>/about/</link>
+      <link>https://ryunpu.github.io/about/</link>
       <pubDate>Sat, 29 Jul 2017 19:57:50 +0800</pubDate>
       
-      <guid>/about/</guid>
+      <guid>https://ryunpu.github.io/about/</guid>
       <description>你好，:heart:朋友
 这里是 Ryun 的博客 :memo:
 :memo:记录了我学习 :mag_right:的过程
@@ -327,28 +327,28 @@ see this hugo-theme-dream-ink</description>
     
     <item>
       <title>Simple event dispatcher</title>
-      <link>/simple-event-dispatcher/</link>
+      <link>https://ryunpu.github.io/simple-event-dispatcher/</link>
       <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/simple-event-dispatcher/</guid>
+      <guid>https://ryunpu.github.io/simple-event-dispatcher/</guid>
       <description>export default { events: {}, addListener(event, callback) { if (typeof callback !== &amp;#39;function&amp;#39;) { console.error(`The listener callback must be a function, the given type is ${typeof callback}`); return false; } if (typeof event !== &amp;#39;string&amp;#39;) { console.error(`The event name must be a string, the given type is ${typeof event}`); return false; } if (this.events[event] === undefined) { this.events[event] = { listeners: [] } } this.events[event].listeners.push(callback); }, removeListener(event, callback) { if (this.</description>
     </item>
     
     <item>
       <title>Broadcast generated by CoffeeScript</title>
-      <link>/broadcast-generated-by-coffeescript/</link>
+      <link>https://ryunpu.github.io/broadcast-generated-by-coffeescript/</link>
       <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/broadcast-generated-by-coffeescript/</guid>
+      <guid>https://ryunpu.github.io/broadcast-generated-by-coffeescript/</guid>
       <description>var WIN, broadcast; WIN = window; broadcast = { on: function(name, fn) { var eventData = broadcast.data; if (eventData.hasOwnProperty(name)) { eventData[name].push(fn); } else { eventData[name] = [fn]; } return this; }, fire: function(name, data, thisArg) { var fn, fnList, i, len; thisArg = thisArg || WIN; fnList = broadcast.data[name]; if (!fnList.length) { throw new Error(&amp;#34;Cannot find broadcast event &amp;#34; + name); } for (i = 0, len = fnList.length; i &amp;lt; len; i++) { fn = fnList[i]; fn.</description>
     </item>
     
     <item>
       <title>Git snippets</title>
-      <link>/git-snippets/</link>
+      <link>https://ryunpu.github.io/git-snippets/</link>
       <pubDate>Fri, 03 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/git-snippets/</guid>
+      <guid>https://ryunpu.github.io/git-snippets/</guid>
       <description>Working with forks Clone your fork to your local machine
 $ git clone git@github.com:USERNAME/FORKED-PROJECT.git Add &amp;lsquo;upstream&amp;rsquo; repo to list of remotes
 $ git remote add upstream https://github.com/UPSTREAM-USER/ORIGINAL-PROJECT.git Fetch from upstream remote
@@ -360,64 +360,64 @@ $ git push &amp;lt;REMOTENAME&amp;gt; &amp;lt;BRANCHNAME&amp;gt; $ git push &amp
     
     <item>
       <title>A simple infinite scroll jQuery plugin</title>
-      <link>/a-simple-infinite-scroll-jquery-plugin/</link>
+      <link>https://ryunpu.github.io/a-simple-infinite-scroll-jquery-plugin/</link>
       <pubDate>Thu, 02 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/a-simple-infinite-scroll-jquery-plugin/</guid>
+      <guid>https://ryunpu.github.io/a-simple-infinite-scroll-jquery-plugin/</guid>
       <description>;(function(factory) { if (typeof define === &amp;#39;function&amp;#39; &amp;amp;&amp;amp; define.amd) { define([&amp;#39;jquery&amp;#39;], factory); } else { factory(jQuery); } }(function($) { function infiniteScroll(el, options) { this.$el = $(el); this.defaults = { offset: 100, callback: function() {} }; this.cfgs = $.extend(this.defaults, options); this.bind(); } infiniteScroll.prototype = { scroll: function() { var $el = this.$el; var offset = $el[0].scrollHeight - $(window).height() - $el.scrollTop(); if (offset &amp;lt;= this.cfgs.offset) this.cfgs.callback(); }, bind: function(isUnbind) { var $el = this.</description>
     </item>
     
     <item>
       <title>A simple date countdown function</title>
-      <link>/a-simple-date-countdown-function/</link>
+      <link>https://ryunpu.github.io/a-simple-date-countdown-function/</link>
       <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/a-simple-date-countdown-function/</guid>
+      <guid>https://ryunpu.github.io/a-simple-date-countdown-function/</guid>
       <description>function countdownDate(options) { var defaults = { selector: &amp;#39;.countdown-date&amp;#39;, startTime: new Date(), endTime: new Date() - (-864000000), onCount: undefined, callback: function() {} }; var cfgs = $.extend(defaults, options); var startTime = cfgs.startTime; var endTime = cfgs.endTime; var timer = setInterval(start, 1000); function start() { var timeDiff = endTime - startTime; var date = addZero(parseInt(timeDiff / 1000 / 60 / 60 / 24, 10)); var hours = addZero(parseInt(timeDiff / 1000 / 60 / 60 % 24, 10)); var minutes = addZero(parseInt(timeDiff / 1000 / 60 % 60, 10)); var seconds = addZero(parseInt(timeDiff / 1000 % 60, 10)); if (typeof cfgs.</description>
     </item>
     
     <item>
       <title>A simple HTML5 file upload jQuery plugin</title>
-      <link>/a-simple-html5-file-upload-jquery-plugin/</link>
+      <link>https://ryunpu.github.io/a-simple-html5-file-upload-jquery-plugin/</link>
       <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>/a-simple-html5-file-upload-jquery-plugin/</guid>
+      <guid>https://ryunpu.github.io/a-simple-html5-file-upload-jquery-plugin/</guid>
       <description>;(function($) { $.fn.html5upload = function(options) { var cfgs = $.extend({ url: &amp;#39;&amp;#39;, tmpl: &amp;#39;&amp;#39;, uploadBtn: &amp;#39;&amp;#39;, previewContainer: &amp;#39;&amp;#39;, multiple: false, onProgress: null, onSuccess: null, onError: null }, options); var $el = $(this); var $uploadBtn = $(cfgs.uploadBtn); var $progressBar = $(cfgs.progressBar); var $previewContainer = $(cfgs.previewContainer); var datas = []; var xhrs = []; var uploadIndex = 0; var tmpl = cfgs.tmpl || &amp;#39;&amp;lt;li class=&amp;#34;weui-uploader__file&amp;#34; data-upload-index=&amp;#34;#index#&amp;#34; style=&amp;#34;background-image:url(#url#)&amp;#34;&amp;gt;&amp;lt;span class=&amp;#34;ui-progress&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;#34;ui-cancel&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;&amp;#39;; $el.on(&amp;#39;change&amp;#39;, function(e) { var url = window.</description>
     </item>
     
     <item>
       <title>使用 ECharts 图表库</title>
-      <link>/%E4%BD%BF%E7%94%A8-echarts-%E5%9B%BE%E8%A1%A8%E5%BA%93/</link>
+      <link>https://ryunpu.github.io/%E4%BD%BF%E7%94%A8-echarts-%E5%9B%BE%E8%A1%A8%E5%BA%93/</link>
       <pubDate>Mon, 27 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>/%E4%BD%BF%E7%94%A8-echarts-%E5%9B%BE%E8%A1%A8%E5%BA%93/</guid>
+      <guid>https://ryunpu.github.io/%E4%BD%BF%E7%94%A8-echarts-%E5%9B%BE%E8%A1%A8%E5%BA%93/</guid>
       <description>;(function initChart() { var myChart = echarts.init($(&amp;#39;#chart&amp;#39;).get(0)); var cfgs; var options = { grid: { x: 50, y: 10, x2: 20, y2: 60, borderWidth: 0 }, tooltip: { trigger: &amp;#39;axis&amp;#39;, textStyle: { fontSize: 12 }, formatter: function(params) { var res = params[0].name; for (var i = 0, l = params.length; i &amp;lt; l; i++) { res += &amp;#39;&amp;lt;br/&amp;gt;&amp;#39; + params[i].seriesName + &amp;#39;：&amp;#39; + params[i].value + &amp;#39;%&amp;#39;; } return res; } }, legend: { y: &amp;#39;bottom&amp;#39;, data: [&amp;#39;沪深300&amp;#39;, &amp;#39;TA的收益&amp;#39;, &amp;#39;止损线&amp;#39;, &amp;#39;目标收益&amp;#39;] }, xAxis: [{ type: &amp;#39;category&amp;#39;, axisLine: { show: false }, splitLine: { show: false }, axisTick: { show: false }, boundaryGap: false }], yAxis: [{ type: &amp;#39;value&amp;#39;, axisLine: { show: false, }, axisLabel: { formatter: function(v) { return v + &amp;#39;%&amp;#39;; } } }], series: [{ name: &amp;#39;沪深300&amp;#39;, type: &amp;#39;line&amp;#39;, symbol: &amp;#39;circle&amp;#39;, smooth: false, itemStyle: { normal: { lineStyle: { width: 1 } } } }, { name: &amp;#39;TA的收益&amp;#39;, type: &amp;#39;line&amp;#39;, yAxisIndex: 0, symbol: &amp;#39;rectangle&amp;#39;, smooth: false, itemStyle: { normal: { lineStyle: { width: 1 } } } }, { name: &amp;#39;止损线&amp;#39;, type: &amp;#39;line&amp;#39;, symbol: &amp;#39;triangle&amp;#39;, smooth: false, itemStyle: { normal: { lineStyle: { width: 1, type: &amp;#39;dashed&amp;#39; } } } }, { name: &amp;#39;目标收益&amp;#39;, type: &amp;#39;line&amp;#39;, symbol: &amp;#39;diamond&amp;#39;, smooth: false, itemStyle: { normal: { lineStyle: { width: 1, type: &amp;#39;dashed&amp;#39; } } } } ] }; var fakeData = { dates: [&amp;#39;02-19&amp;#39;, &amp;#39;02-20&amp;#39;, &amp;#39;02-21&amp;#39;, &amp;#39;02-22&amp;#39;, &amp;#39;02-23&amp;#39;, &amp;#39;02-25&amp;#39;, &amp;#39;02-28&amp;#39;], // 时间  hs300: [10, 11, 9, 12, 15, 13, 12], // 沪深300  his: [0, 2, 6, 8, 10, 14, 12], // TA的收益  loss: [-8, -8, -8, -8, -8, -8, -8], // 止损线  target: [8, 8, 8, 8, 8, 8, 8] // 目标收益  }; var data = fakeData; cfgs = $.</description>
     </item>
     
     <item>
       <title>新浪股票查询接口</title>
-      <link>/%E6%96%B0%E6%B5%AA%E8%82%A1%E7%A5%A8%E6%9F%A5%E8%AF%A2%E6%8E%A5%E5%8F%A3/</link>
+      <link>https://ryunpu.github.io/%E6%96%B0%E6%B5%AA%E8%82%A1%E7%A5%A8%E6%9F%A5%E8%AF%A2%E6%8E%A5%E5%8F%A3/</link>
       <pubDate>Sun, 26 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>/%E6%96%B0%E6%B5%AA%E8%82%A1%E7%A5%A8%E6%9F%A5%E8%AF%A2%E6%8E%A5%E5%8F%A3/</guid>
+      <guid>https://ryunpu.github.io/%E6%96%B0%E6%B5%AA%E8%82%A1%E7%A5%A8%E6%9F%A5%E8%AF%A2%E6%8E%A5%E5%8F%A3/</guid>
       <description>关键词查询 function getSuggestion(str) { var url = &amp;#39;https://suggest3.sinajs.cn/suggest/&amp;#39;; $.ajax({ url: url, data: { name: &amp;#39;suggestion&amp;#39;, type: 111, key: str }, cache: true, async: false, dataType: &amp;#39;script&amp;#39;, success: function() { var list = suggestion.split(&amp;#39;;&amp;#39;); return $.map(list, function(str) { var data = str.split(&amp;#39;,&amp;#39;); if (!data[4]) return &amp;#39;&amp;lt;tr&amp;gt;&amp;lt;td colspan=&amp;#34;3&amp;#34;&amp;gt;暂无数据&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;#39;; // 三项分别是 名称、代码和简拼  return &amp;#39;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;#39; + data[4] + &amp;#39;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;#39; + data[2] + &amp;#39;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;#39; + data[5] + &amp;#39;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;#39;; }); } }); } 股票基本信息查询 function getCode(code) { var code = code || &amp;#39;sz000001&amp;#39;; var url = &amp;#39;http://hq.</description>
     </item>
     
     <item>
       <title>使用百度地图 API 进行地理定位</title>
-      <link>/%E4%BD%BF%E7%94%A8%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9B%BE-api-%E8%BF%9B%E8%A1%8C%E5%9C%B0%E7%90%86%E5%AE%9A%E4%BD%8D/</link>
+      <link>https://ryunpu.github.io/%E4%BD%BF%E7%94%A8%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9B%BE-api-%E8%BF%9B%E8%A1%8C%E5%9C%B0%E7%90%86%E5%AE%9A%E4%BD%8D/</link>
       <pubDate>Sat, 25 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>/%E4%BD%BF%E7%94%A8%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9B%BE-api-%E8%BF%9B%E8%A1%8C%E5%9C%B0%E7%90%86%E5%AE%9A%E4%BD%8D/</guid>
+      <guid>https://ryunpu.github.io/%E4%BD%BF%E7%94%A8%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9B%BE-api-%E8%BF%9B%E8%A1%8C%E5%9C%B0%E7%90%86%E5%AE%9A%E4%BD%8D/</guid>
       <description>使用百度地图 API 完成地理定位 $.fn.baiduFindMe = function(options) { var cfgs = $.extend({ ak: &amp;#39;&amp;#39;, onSuccess: null, onError: function() {} }, options); var $el = $(this); var geocodingUrl = &amp;#39;http://api.map.baidu.com/geocoder/v2/?callback=?&amp;amp;output=json&amp;amp;pois=1&amp;amp;ak=&amp;#39; + cfgs.ak; var geolocation = new BMap.Geolocation(); geolocation.getCurrentPosition(function(r) { if (r.accuracy === null) { cfgs.onError(&amp;#39;用户拒绝地理位置授权&amp;#39;); return; } if (this.getStatus() == BMAP_STATUS_SUCCESS) { $.getJSON(geocodingUrl, { location: r.point.lat + &amp;#39;,&amp;#39; + r.point.lng }, function(data) { if (data.status === 0) { if (typeof cfgs.onSuccess === &amp;#39;function&amp;#39;) { cfgs.</description>
     </item>
     
     <item>
       <title>Fix kernel_task high cpu problem</title>
-      <link>/fix-kernel_task-high-cpu-problem/</link>
+      <link>https://ryunpu.github.io/fix-kernel_task-high-cpu-problem/</link>
       <pubDate>Fri, 24 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>/fix-kernel_task-high-cpu-problem/</guid>
+      <guid>https://ryunpu.github.io/fix-kernel_task-high-cpu-problem/</guid>
       <description>Reboot into recovery mode (Command + R on boot prior to startup chime), select Utilities/Terminal, csrutil disable &amp;lt;Enter&amp;gt; (repeat process, use csrutil enable after removing the file), reboot.
   Go to About this mac under the apple in the upper left and click on More info
   Click on system report
@@ -427,109 +427,109 @@ $ git push &amp;lt;REMOTENAME&amp;gt; &amp;lt;BRANCHNAME&amp;gt; $ git push &amp
     
     <item>
       <title>Upload image with jQuery-File-Upload</title>
-      <link>/upload-image-with-jquery-file-upload/</link>
+      <link>https://ryunpu.github.io/upload-image-with-jquery-file-upload/</link>
       <pubDate>Thu, 23 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>/upload-image-with-jquery-file-upload/</guid>
+      <guid>https://ryunpu.github.io/upload-image-with-jquery-file-upload/</guid>
       <description>export default { init(selector, options = {}) { let datas = []; let uploading = false; let myindex = 0; const self = this; const container = $(selector); const fileInput = container.find(&amp;#39;input[type=file]&amp;#39;); const uploadBtn = container.find(&amp;#39;.btn-upload&amp;#39;); const uploadTpl = container.find(&amp;#39;.template-upload&amp;#39;); self.cfgs = $.extend({ url: &amp;#39;&amp;#39;, autoUpload: false, accept: /^image\/(gif|jpe?g|png)$/i, maxFileSize: 0, add(e, data) { if (data.files &amp;amp;&amp;amp; data.files[0]) { const tpl = &amp;#39;&amp;#39;; const file = data.files[0]; console.log(&amp;#39;add&amp;#39;, file); myindex++; data.</description>
     </item>
     
     <item>
       <title>Use TinyMCE</title>
-      <link>/use-tinymce/</link>
+      <link>https://ryunpu.github.io/use-tinymce/</link>
       <pubDate>Wed, 22 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>/use-tinymce/</guid>
+      <guid>https://ryunpu.github.io/use-tinymce/</guid>
       <description>export default { init(options = {}) { this.cfgs = $.extend({ selector: &amp;#39;textarea&amp;#39;, menubar: false, language: &amp;#39;zh_CN&amp;#39;, plugins: &amp;#39;autosave&amp;#39;, toolbar: &amp;#39;alignleft aligncenter alignright myimage mysave&amp;#39;, height: 360, autosave_ask_before_unload: false, autosave_retention: &amp;#39;1440m&amp;#39;, content_css: &amp;#39;/assets/plugins/tinymce/content.css&amp;#39;, statusbar: false, setup: (editor) =&amp;gt; { this.setup(editor); } }, options); tinymce.init(this.cfgs); }, setup(editor) { if (this.cfgs.toolbar.indexOf(&amp;#39;myimage&amp;#39;) !== -1) { this.initModal(); editor.addButton(&amp;#39;myimage&amp;#39;, { title: &amp;#39;插入图片&amp;#39;, icon: &amp;#39;image&amp;#39;, classes: &amp;#39;widget btn upload-image&amp;#39;, onclick() { $(&amp;#39;#editor-image-modal&amp;#39;).modal({ backdrop: &amp;#39;static&amp;#39; }); } }); } if (this.</description>
     </item>
     
     <item>
       <title>Use jQuery validation plugin</title>
-      <link>/use-jquery-validation-plugin/</link>
+      <link>https://ryunpu.github.io/use-jquery-validation-plugin/</link>
       <pubDate>Tue, 21 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>/use-jquery-validation-plugin/</guid>
+      <guid>https://ryunpu.github.io/use-jquery-validation-plugin/</guid>
       <description>Set default error message $.extend($.validator.messages, { required: &amp;#34;这是必填字段&amp;#34;, remote: &amp;#34;请修正此字段&amp;#34;, email: &amp;#34;请输入有效的电子邮件地址&amp;#34;, url: &amp;#34;请输入有效的网址&amp;#34;, date: &amp;#34;请输入有效的日期&amp;#34;, dateISO: &amp;#34;请输入有效的日期 (YYYY-MM-DD)&amp;#34;, number: &amp;#34;请输入有效的数字&amp;#34;, digits: &amp;#34;只能输入数字&amp;#34;, creditcard: &amp;#34;请输入有效的信用卡号码&amp;#34;, equalTo: &amp;#34;你的输入不相同&amp;#34;, extension: &amp;#34;请输入有效的后缀&amp;#34;, maxlength: $.validator.format(&amp;#34;最多可以输入 {0} 个字符&amp;#34;), minlength: $.validator.format(&amp;#34;最少要输入 {0} 个字符&amp;#34;), rangelength: $.validator.format(&amp;#34;请输入长度在 {0} 到 {1} 之间的字符串&amp;#34;), range: $.validator.format(&amp;#34;请输入范围在 {0} 到 {1} 之间的数值&amp;#34;), max: $.validator.format(&amp;#34;请输入不大于 {0} 的数值&amp;#34;), min: $.validator.format(&amp;#34;请输入不小于 {0} 的数值&amp;#34;) }); Set custom error message $(&amp;#39;form&amp;#39;).validate({ rules: { email: { required: true, email: true } }, messages: { email: { required: &amp;#39;邮箱不能为空&amp;#39;, email: &amp;#39;邮箱格式不正确&amp;#39; } } }); Submit with AJAX $(&amp;#39;form&amp;#39;).</description>
     </item>
     
     <item>
       <title>Preview image before uploaded</title>
-      <link>/preview-image-before-uploaded/</link>
+      <link>https://ryunpu.github.io/preview-image-before-uploaded/</link>
       <pubDate>Mon, 20 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>/preview-image-before-uploaded/</guid>
+      <guid>https://ryunpu.github.io/preview-image-before-uploaded/</guid>
       <description>Via URL.createObjectURL function previewImgFile(file, callback) { if (typeof callback === &amp;#39;function&amp;#39;) { callback(URL.createObjectURL(file)); } } Via FileReader function previewImgFile(file, callback) { var reader = new FileReader(); reader.onload = function(e) { if (typeof callback === &amp;#39;function&amp;#39;) { callback(e.target.result); } }; reader.readAsDataURL(file); } Useage document.querySelector(&amp;#39;[type=&amp;#34;file&amp;#34;]&amp;#39;).addEventListener(&amp;#39;change&amp;#39;, function(e) { var preview = document.querySelector(&amp;#39;#preview&amp;#39;); var files = e.target.files; for (var i = 0; i &amp;lt; files.length; i++) { previewImgFile(files[i], function(res) { var tpl = &amp;#39;&amp;lt;img src=&amp;#39; + res + &amp;#39; /&amp;gt;&amp;#39;; preview.</description>
     </item>
     
     <item>
       <title>Useful Atom keyboard shortcuts</title>
-      <link>/useful-atom-keyboard-shortcuts/</link>
+      <link>https://ryunpu.github.io/useful-atom-keyboard-shortcuts/</link>
       <pubDate>Sun, 19 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>/useful-atom-keyboard-shortcuts/</guid>
+      <guid>https://ryunpu.github.io/useful-atom-keyboard-shortcuts/</guid>
       <description>   General Description     cmd-, Preferences/Settings   cmd-. Key Binding Resolver   shift-cmd-p Toggle Command Palette   ctrl-shift-o Open Link   shift-cmd-o Add Project Folder   ctrl-shift-m Markdown Preview   ctrl-alt-cmd-l Reload Atom   alt-cmd-i Toggle Developer Tools   ctrl-shift-c Copy full path        Find Description   cmd-f Find in file   cmd-shift-f Find in project   cmd-g Find next   cmd-shift-g Find prev   cmd-f,alt-enter Find and select all   ctrl-cmd-g Select all        Navigation Description   cmd-p Toggle file finder   ctrl-g Goto line   cmd-r Goto symbol   cmd-F2 Set bookmark   cmd-F2 Set bookmark   ctrl-F2 View all bookmarks   ctrl-m Go To Matching Bracket   cmd-left/right Move cursor to beginning/end of line   cmd-up/down Move cursor to beginning/end of document        Line Manipulation Description   cmd-[/] Indent/outdent current line   cmd-enter Insert new line after current line   ctrl-shift-k Delete current line   ctrl-cmd-up/down Move current line up/down   shift-cmd-d Duplicate current line   cmd-j Join current and next lines   cmd-backspace Delete to the beginning of line   cmd-fn-backspace Delete to the end of line        Selection Description   cmd-d Select current word/token   cmd-l Select current line   shift-cmd-left/right Select to first/last character of line   shift-cmd-up/down Select to top/bottom of document   ctrl-shift-up/down Column Selection   ctrl-shift-p/n Select up/down   shift-cmd-l Split into lines   ctrl-cmd-m Select inside brackets        Various Packages Description   ctrl-cmd-p Open Project ( Project Manager )   cmd-k,cmd-l/u change-case:lower/upper ( change-case )   cmd-k,cmd-c change-case:camel ( change-case )   cmd-k,cmd-s change-case:snake ( change-case )   cmd-k,cmd-i change-case:upperFirst ( change-case )   ctrl-)/d Balance inward/outward ( emmet )   shift-cmd-m Merge lines ( emmet )   ctrl-shift-t Finds all the TODOs, FIXMEs, CHANGEDs ( todo-show )   alt-cmd-o Open and create files and directories ( advanced-open-file )   ctrl-alt-o Align multi-line and multiple selections ( atom-alignment )   alt-click Find definition ( atom-ternjs )   ctrl-alt-z Back from definition ( atom-ternjs )   ctrl-alt-c Rename variable ( atom-ternjs )   cmd-&amp;rsquo; Expands selections to single or double quotes ( expand-selection-to-quotes )   cmd-&amp;rdquo; Toggle between single and double quotes ( toggle-quotes )   alt-s Select rectangle region ( select-rectangle )    </description>
     </item>
     
     <item>
       <title>Looking back to look forward</title>
-      <link>/looking-back-to-look-forward/</link>
+      <link>https://ryunpu.github.io/looking-back-to-look-forward/</link>
       <pubDate>Sat, 18 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>/looking-back-to-look-forward/</guid>
+      <guid>https://ryunpu.github.io/looking-back-to-look-forward/</guid>
       <description>My first website How about these logos Want a coffee Isn&#39;t this cool Want wallpaper wanna see an old movie  </description>
     </item>
     
     <item>
       <title>Chrome extension snippets</title>
-      <link>/chrome-extension-snippets/</link>
+      <link>https://ryunpu.github.io/chrome-extension-snippets/</link>
       <pubDate>Fri, 01 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/chrome-extension-snippets/</guid>
+      <guid>https://ryunpu.github.io/chrome-extension-snippets/</guid>
       <description>Send message to background chrome.runtime.sendMessage({ from: &amp;#39;content&amp;#39;, subject: &amp;#39;deleteCcookie&amp;#39; }); Send message to content chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) { chrome.tabs.sendMessage(tabs[0].id, { from: &amp;#39;popup&amp;#39;, subject: &amp;#39;getSiteInfo&amp;#39; }, function(info) { console.log(info); }); }); AddListener chrome.runtime.onMessage.addListener(function(msg, sender, response) { if (msg.from === &amp;#39;popup&amp;#39; &amp;amp;&amp;amp; msg.subject === &amp;#39;getSiteInfo&amp;#39;) { response({ site: &amp;#39;weibo&amp;#39;, user: &amp;#39;moamaoa&amp;#39; }); } }); getActiveTab function getActiveTab(callback) { chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) { callback(tabs[0]); }); } tabs onCreated chrome.</description>
     </item>
     
     <item>
       <title>Live reloading Chrome extension with WebSocket</title>
-      <link>/live-reloading-chrome-extension-with-websocket/</link>
+      <link>https://ryunpu.github.io/live-reloading-chrome-extension-with-websocket/</link>
       <pubDate>Wed, 30 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/live-reloading-chrome-extension-with-websocket/</guid>
+      <guid>https://ryunpu.github.io/live-reloading-chrome-extension-with-websocket/</guid>
       <description>Install ws $ npm install ws --save-dev gulpfile.js gulp.watch([&amp;#39;build/**/*.{js,css,jpeg,png}&amp;#39;], [&amp;#39;reload&amp;#39;]); // send `reload` massage var WebSocketServer = require(&amp;#39;ws&amp;#39;).Server; var wss = new WebSocketServer({ port: 9191 }); gulp.task(&amp;#39;reload&amp;#39;, function() { var client, i, len, ref, results; ref = wss.clients; results = []; for (i = 0, len = ref.length; i &amp;lt; len; i++) { client = ref[i]; results.push(client.send(&amp;#39;reload&amp;#39;)); } return results; }); background.js var reloadSocket = new WebSocket(&amp;#39;ws://localhost:9191&amp;#39;); reloadSocket.onopen = function() { console.</description>
     </item>
     
     <item>
       <title>Tool functions that return iterables</title>
-      <link>/tool-functions-that-return-iterables/</link>
+      <link>https://ryunpu.github.io/tool-functions-that-return-iterables/</link>
       <pubDate>Tue, 29 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tool-functions-that-return-iterables/</guid>
+      <guid>https://ryunpu.github.io/tool-functions-that-return-iterables/</guid>
       <description>function objectEntries(obj) { let iter = Reflect.ownKeys(obj)[Symbol.iterator](); return { [Symbol.iterator]() { return this; }, next() { let { done, value: key } = iter.next(); if (done) { return { done: true }; } return { value: [key, obj[key]] }; } }; } const obj = { first: &amp;#39;Jane&amp;#39;, last: &amp;#39;Doe&amp;#39; }; for (const [key, value] of objectEntries(obj)) { console.log(`${key}: ${value}`); } // Output: // first: Jane // last: Doe use generators：</description>
     </item>
     
     <item>
       <title>Prevent page scrolling when a modal is open</title>
-      <link>/prevent-page-scrolling-when-a-modal-is-open/</link>
+      <link>https://ryunpu.github.io/prevent-page-scrolling-when-a-modal-is-open/</link>
       <pubDate>Mon, 28 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/prevent-page-scrolling-when-a-modal-is-open/</guid>
+      <guid>https://ryunpu.github.io/prevent-page-scrolling-when-a-modal-is-open/</guid>
       <description>Use CSS body.modal-open { height: 100vh; overflow-y: hidden; padding-right: 15px; /* Avoid width reflow */ } Use JavaScript // When the modal is shown, we want a fixed body document.body.style.position = &amp;#39;fixed&amp;#39;; document.body.style.top = `-${window.scrollY}px`; // When the modal is hidden, we want to remain at the top of the scroll position const scrollY = document.body.style.top; document.body.style.position = &amp;#39;&amp;#39;; document.body.style.top = &amp;#39;&amp;#39;; window.scrollTo(0, parseInt(scrollY || &amp;#39;0&amp;#39;) * -1) see more: Prevent page scrolling when a modal is open</description>
     </item>
     
     <item>
       <title>Enable directory listing in Nginx</title>
-      <link>/enable-directory-listing-in-nginx/</link>
+      <link>https://ryunpu.github.io/enable-directory-listing-in-nginx/</link>
       <pubDate>Sun, 27 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/enable-directory-listing-in-nginx/</guid>
+      <guid>https://ryunpu.github.io/enable-directory-listing-in-nginx/</guid>
       <description>Open the homestead.app file $ sudo vi /etc/nginx/sites-enabled/homestead.app Add autoindex on in the location block location / { autoindex on; autoindex_exact_size off; autoindex_localtime on; try_files $uri $uri/ /index.php?$query_string; } Restart Nginx $ sudo service nginx reload </description>
     </item>
     
     <item>
       <title>Access Homestead site on the same network</title>
-      <link>/access-homestead-site-on-the-same-network/</link>
+      <link>https://ryunpu.github.io/access-homestead-site-on-the-same-network/</link>
       <pubDate>Sat, 26 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/access-homestead-site-on-the-same-network/</guid>
+      <guid>https://ryunpu.github.io/access-homestead-site-on-the-same-network/</guid>
       <description>Add the following line to your hosts 192.168.1.2 192.168.10.10 192.168.1.2 should be your network cards IP address
 Change the project&#39;s nginx site config sudo vi /etc/nginx/sites-enabled/homestead.app change
 listen 80 to
@@ -538,20 +538,20 @@ listen 80 default_server Once done all you need to do is sudo service nginx relo
     
     <item>
       <title>Upgrade Node.js</title>
-      <link>/upgrade-node.js/</link>
+      <link>https://ryunpu.github.io/upgrade-node.js/</link>
       <pubDate>Fri, 25 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/upgrade-node.js/</guid>
+      <guid>https://ryunpu.github.io/upgrade-node.js/</guid>
       <description>Use NPM $ sudo npm cache clean -f $ sudo npm install n -g $ sudo n stable or
 $ sudo n 8.0.0 Use Homebrew $ brew upgrade node Use NVM $ nvm install 8.0.0 $ nvm use 8.0.0 </description>
     </item>
     
     <item>
       <title>My Sketch plugins</title>
-      <link>/my-sketch-plugins/</link>
+      <link>https://ryunpu.github.io/my-sketch-plugins/</link>
       <pubDate>Thu, 24 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/my-sketch-plugins/</guid>
+      <guid>https://ryunpu.github.io/my-sketch-plugins/</guid>
       <description>Content-generator-sketch-plugin Sketch app plugin for generating dummy data such as avatars, names, photos, geo data etc
 cemre-sketch-plugins Sketch plugins by Cemre Gungor
 sketch-measure A measure tool for measurements &amp;amp; design specs
@@ -564,37 +564,37 @@ Sketch-Color-Contrast-Analyser A Sketch plugin that calculates the color contras
     
     <item>
       <title>Use laravel-elixir in Laravel</title>
-      <link>/use-laravel-elixir-in-laravel/</link>
+      <link>https://ryunpu.github.io/use-laravel-elixir-in-laravel/</link>
       <pubDate>Wed, 23 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/use-laravel-elixir-in-laravel/</guid>
+      <guid>https://ryunpu.github.io/use-laravel-elixir-in-laravel/</guid>
       <description>var elixir = require(&amp;#39;laravel-elixir&amp;#39;); require(&amp;#39;laravel-elixir-livereload&amp;#39;); require(&amp;#39;laravel-elixir-vueify&amp;#39;); require(&amp;#39;laravel-elixir-compress&amp;#39;); var production = elixir.config.production; var vue = &amp;#39;../../node_modules/vue/dist/vue.js&amp;#39;; if (production) vue = &amp;#39;../../node_modules/vue/dist/vue.min.js&amp;#39;; elixir(function(mix) { mix .sass([ &amp;#39;base.scss&amp;#39;, &amp;#39;main.scss&amp;#39;, ], &amp;#39;public/css/main.css&amp;#39;) .browserify(&amp;#39;main.js&amp;#39;, &amp;#39;public/js/app.js&amp;#39;) .browserify(&amp;#39;pages/index.js&amp;#39;, &amp;#39;public/js/pages&amp;#39;) .scripts([ vue, &amp;#39;../../node_modules/vue-resource/dist/vue-resource.min.js&amp;#39;, &amp;#39;../../node_modules/vue-router/dist/vue-router.min.js&amp;#39;, &amp;#39;app.js&amp;#39;, ], &amp;#39;public/js/main.js&amp;#39;, &amp;#39;public/js&amp;#39;) .version([ &amp;#39;css/main.css&amp;#39;, &amp;#39;js/main.js&amp;#39;, ]) .livereload(); if (production) { mix.compress(); } }); </description>
     </item>
     
     <item>
       <title>A quick view of Laravel</title>
-      <link>/a-quick-view-of-laravel/</link>
+      <link>https://ryunpu.github.io/a-quick-view-of-laravel/</link>
       <pubDate>Tue, 22 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/a-quick-view-of-laravel/</guid>
+      <guid>https://ryunpu.github.io/a-quick-view-of-laravel/</guid>
       <description>Route Route::get(&amp;#39;components&amp;#39;, function() { return view(&amp;#39;home/components&amp;#39;); }); Displaying Data Route::get(&amp;#39;/&amp;#39;, function () { return view(&amp;#39;welcome&amp;#39;, [ &amp;#39;user&amp;#39; =&amp;gt; &amp;#39;Peter&amp;#39;, &amp;#39;info&amp;#39; =&amp;gt; json_encode(array( &amp;#39;firstname&amp;#39; =&amp;gt; &amp;#34;Peter&amp;#34;, &amp;#39;lastname&amp;#39; =&amp;gt; &amp;#39;Griffin&amp;#39;, &amp;#39;age&amp;#39; =&amp;gt; &amp;#39;30&amp;#39; )) ]); }); extends, yield and section @extends(&amp;#39;home.layouts.app&amp;#39;) @yield(&amp;#39;scripts&amp;#39;) @section(&amp;#39;scripts&amp;#39;) @parent &amp;lt;script&amp;gt;&amp;lt;/script&amp;gt; @endsection forelse @forelse ($users as $user) &amp;lt;li&amp;gt;{{ $user-&amp;gt;name }}&amp;lt;/li&amp;gt; @empty &amp;lt;p&amp;gt;没有用户&amp;lt;/p&amp;gt; @endforelse X-CSRF-TOKEN $.ajaxSetup({ headers: { &amp;#39;X-CSRF-TOKEN&amp;#39;: $(&amp;#39;meta[name=&amp;#34;csrf_token&amp;#34;]&amp;#39;).attr(&amp;#39;content&amp;#39;) } }); Vue.http.headers.common[&amp;#39;X-CSRF-TOKEN&amp;#39;] = document.querySelector(&amp;#39;meta[name=&amp;#34;csrf_token&amp;#34;]&amp;#39;).getAttribute(&amp;#39;content&amp;#39;); tinker $ php artisan tinker &amp;gt; factory(App\Todo::class, 20)-&amp;gt;create() </description>
     </item>
     
     <item>
       <title>A todo demo using Vue in Laravel</title>
-      <link>/a-todo-demo-using-vue-in-laravel/</link>
+      <link>https://ryunpu.github.io/a-todo-demo-using-vue-in-laravel/</link>
       <pubDate>Mon, 21 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/a-todo-demo-using-vue-in-laravel/</guid>
+      <guid>https://ryunpu.github.io/a-todo-demo-using-vue-in-laravel/</guid>
       <description>html &amp;lt;div id=&amp;#34;app&amp;#34;&amp;gt; &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a v-link=&amp;#34;&amp;#39;tasks&amp;#39;&amp;#34;&amp;gt;tasks&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a v-link=&amp;#34;&amp;#39;about&amp;#39;&amp;#34;&amp;gt;about&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;router-view&amp;gt;&amp;lt;/router-view&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script src=&amp;#34;js/main.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; main.js import tasks from &amp;#39;./components/tasks.vue&amp;#39;; const Vue = require(&amp;#39;vue&amp;#39;); const VueRouter = require(&amp;#39;vue-router&amp;#39;); Vue.use(VueRouter); Vue.use(require(&amp;#39;vue-resource&amp;#39;)); Vue.http.headers.common[&amp;#39;X-CSRF-TOKEN&amp;#39;] = document.getElementById(&amp;#39;csrf_token&amp;#39;).getAttribute(&amp;#39;content&amp;#39;); const router = new VueRouter(); router.map({ &amp;#39;/tasks&amp;#39;: { component: tasks }, &amp;#39;/about&amp;#39;: { component: { template: `&amp;lt;div&amp;gt; &amp;lt;h3&amp;gt;About Page&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;This is the about page&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; ` } } }); router.start({}, &amp;#39;#app&amp;#39;); tasks.vue &amp;lt;template&amp;gt; &amp;lt;h3&amp;gt;My Tasks &amp;lt;span v-show=&amp;#34;list.length&amp;#34;&amp;gt;({{ list.length }})&amp;lt;/span&amp;gt;&amp;lt;/h3&amp;gt; &amp;lt;div class=&amp;#34;form-group&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;&amp;#34;&amp;gt;Add Task&amp;lt;/label&amp;gt; &amp;lt;input v-model=&amp;#34;task&amp;#34; @keyup.</description>
     </item>
     
     <item>
       <title>Create simple test data in Laravel</title>
-      <link>/create-simple-test-data-in-laravel/</link>
+      <link>https://ryunpu.github.io/create-simple-test-data-in-laravel/</link>
       <pubDate>Sun, 20 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/create-simple-test-data-in-laravel/</guid>
+      <guid>https://ryunpu.github.io/create-simple-test-data-in-laravel/</guid>
       <description>创建一个新的模型类 Todo $ php artisan make:model Todo -m
 在 xxx_create_todos_table.php 里创建表结构 $table-&amp;gt;increments(&amp;#39;id&amp;#39;); $table-&amp;gt;text(&amp;#39;item&amp;#39;); $table-&amp;gt;boolean(&amp;#39;completed&amp;#39;)-&amp;gt;default(0); $table-&amp;gt;timestamps(); 数据库迁移 $ php artisan migrate
 在 ModelFactory.php 里定义 Todo $factory-&amp;gt;define(App\Todo::class, function (Faker\Generator $faker) { return [ &amp;#39;item&amp;#39; =&amp;gt; $faker-&amp;gt;paragraph ]; }); 插入数据 $ php artisan tinker
@@ -604,10 +604,10 @@ $ factory(App\Todo::class, 20)-&amp;gt;create()
     
     <item>
       <title>Commonly used Laravel commands</title>
-      <link>/commonly-used-laravel-commands/</link>
+      <link>https://ryunpu.github.io/commonly-used-laravel-commands/</link>
       <pubDate>Sat, 19 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/commonly-used-laravel-commands/</guid>
+      <guid>https://ryunpu.github.io/commonly-used-laravel-commands/</guid>
       <description>$ composer install 如果我们需要使用第三方 package，如集成用户权限组，则要运行此命令更新 package 包
 $ php artisan migrate 如果我们新增了数据表或数据字段，则需要运行此命令
 $ php artisan db:seed 如果我们新增了数据表，但是没有生成对应的测试数据，可以运行此命令
@@ -620,29 +620,29 @@ My alias alias ci=&#39;composer install&#39; alias pam=&#39;php artisan migrate&
     
     <item>
       <title>Atom javascript snippets package</title>
-      <link>/atom-javascript-snippets-package/</link>
+      <link>https://ryunpu.github.io/atom-javascript-snippets-package/</link>
       <pubDate>Fri, 18 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/atom-javascript-snippets-package/</guid>
+      <guid>https://ryunpu.github.io/atom-javascript-snippets-package/</guid>
       <description>javascript-snippets JavaScript &amp;amp; NodeJS Snippets for Atom
 snippets    Trigger Name Body     ac appendChild ${1:document}.appendChild(${2:elem});   ae addEventListener ${1:document}.addEventListener(&amp;lsquo;${2:event}&#39;, function(e) {\n\t${0:// body...}\n});   afn anonymous function function(${1:arguments}) {\n\t${0:// body...}\n}   al alert alert(&amp;lsquo;${1:msg}&#39;);   apply function apply ${1:methodName}.apply(${2:context}, [${3:arguments}])   asd assert.deepEqual assert.deepEqual(${1:actual}, ${2:expected});   ase assert.equal assert.equal(${1:actual}, ${2:expected});   asn assert.notEqual assert.notEqual(${1:actual}, ${2:expected});   ca classList.</description>
     </item>
     
     <item>
       <title>My atom snippets</title>
-      <link>/my-atom-snippets/</link>
+      <link>https://ryunpu.github.io/my-atom-snippets/</link>
       <pubDate>Thu, 17 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/my-atom-snippets/</guid>
+      <guid>https://ryunpu.github.io/my-atom-snippets/</guid>
       <description>&#39;.text.html&#39;: &#39;animate3.5.1.css&#39;: &#39;prefix&#39;: &#39;pl-animate3&#39; &#39;body&#39;: &#39;&amp;lt;link href=&amp;quot;https://cdn.jsdelivr.net/animatecss/3.5.1/animate.min.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;&#39; &#39;font-awesome4.6.1.css&#39;: &#39;prefix&#39;: &#39;pl-fa4&#39; &#39;body&#39;: &#39;&amp;lt;link href=&amp;quot;https://cdn.jsdelivr.net/fontawesome/4.6.1/css/font-awesome.min.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;&#39; &#39;font-awesome-animation0.0.8.css&#39;: &#39;prefix&#39;: &#39;pl-faa0&#39; &#39;body&#39;: &#39;&amp;lt;link href=&amp;quot;https://cdn.bootcss.com/font-awesome-animation/0.0.8/font-awesome-animation.min.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;&#39; &#39;semantic-ui2.1.8.css&#39;: &#39;prefix&#39;: &#39;pl-sui2css&#39; &#39;body&#39;: &#39;&amp;lt;link href=&amp;quot;https://cdn.jsdelivr.net/semantic-ui/2.1.8/semantic.min.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;&#39; &#39;semantic-ui2.1.8.js&#39;: &#39;prefix&#39;: &#39;pl-sui2js&#39; &#39;body&#39;: &#39;&amp;lt;script src=&amp;quot;https://cdn.jsdelivr.net/semantic-ui/2.1.8/semantic.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&#39; &#39;bootstrap3.3.6.css&#39;: &#39;prefix&#39;: &#39;pl-bs3css&#39; &#39;body&#39;: &#39;&amp;lt;link href=&amp;quot;https://cdn.jsdelivr.net/bootstrap/3.3.6/css/bootstrap.min.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;&#39; &#39;bootstrap3.3.6.js&#39;: &#39;prefix&#39;: &#39;pl-bs3js&#39; &#39;body&#39;: &#39;&amp;lt;script src=&amp;quot;https://cdn.jsdelivr.net/bootstrap/3.3.6/js/bootstrap.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&#39; &#39;vue1.0.21.js&#39;: &#39;prefix&#39;: &#39;pl-vue1&#39; &#39;body&#39;: &#39;&amp;lt;script src=&amp;quot;https://cdn.jsdelivr.net/vue/1.0.21/vue.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&#39; &#39;jquery1.12.3.js&#39;: &#39;prefix&#39;: &#39;pl-jquery1&#39; &#39;body&#39;: &#39;&amp;lt;script src=&amp;quot;https://cdn.jsdelivr.net/jquery/1.12.3/jquery.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&#39; &#39;jquery2.2.3.js&#39;: &#39;prefix&#39;: &#39;pl-jquery2&#39; &#39;body&#39;: &#39;&amp;lt;script src=&amp;quot;https://cdn.jsdelivr.net/jquery/2.2.3/jquery.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&#39; </description>
     </item>
     
     <item>
       <title>My atom packages</title>
-      <link>/my-atom-packages/</link>
+      <link>https://ryunpu.github.io/my-atom-packages/</link>
       <pubDate>Wed, 16 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/my-atom-packages/</guid>
+      <guid>https://ryunpu.github.io/my-atom-packages/</guid>
       <description>save-session An Atom package to restore your session
 emmet the essential tool for web developers
 to expand abbreviations with Tab key, add the following section in your keymap.cson:
@@ -656,10 +656,10 @@ git-time-machine Visually interact with git commit history for a file alt-t</des
     
     <item>
       <title>Basic bash keyboard shortcuts</title>
-      <link>/basic-bash-keyboard-shortcuts/</link>
+      <link>https://ryunpu.github.io/basic-bash-keyboard-shortcuts/</link>
       <pubDate>Tue, 15 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/basic-bash-keyboard-shortcuts/</guid>
+      <guid>https://ryunpu.github.io/basic-bash-keyboard-shortcuts/</guid>
       <description>Moving the cursor Ctrl + a Go to the beginning of the line (Home)
 Ctrl + e Go to the End of the line (End)
 Ctrl + p Previous command (Up)
@@ -673,10 +673,10 @@ Ctrl + u Cut/delete the Line before the cursor position</description>
     
     <item>
       <title>Open atom from the terminal</title>
-      <link>/open-atom-from-the-terminal/</link>
+      <link>https://ryunpu.github.io/open-atom-from-the-terminal/</link>
       <pubDate>Mon, 14 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/open-atom-from-the-terminal/</guid>
+      <guid>https://ryunpu.github.io/open-atom-from-the-terminal/</guid>
       <description>With the Atom editor open, in the menu bar, click Atom &amp;raquo; Install Shell Commands:
 When Atom installs it automatically creates a symlink in your /usr/local/bin. However in case it hasn&#39;t, you can create it yourself on your Mac:
 $ ln -s /Applications/Atom.app/Contents/Resources/app/atom.sh /usr/local/bin/atom </description>
@@ -684,19 +684,19 @@ $ ln -s /Applications/Atom.app/Contents/Resources/app/atom.sh /usr/local/bin/ato
     
     <item>
       <title>Make a sticky content</title>
-      <link>/make-a-sticky-content/</link>
+      <link>https://ryunpu.github.io/make-a-sticky-content/</link>
       <pubDate>Sat, 12 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/make-a-sticky-content/</guid>
+      <guid>https://ryunpu.github.io/make-a-sticky-content/</guid>
       <description>Use CSS .content { position: sticky; top: 0;} With Bootstrap 3 Via data attributes： &amp;lt;div data-spy=&amp;#34;affix&amp;#34; data-offset-top=&amp;#34;60&amp;#34; data-offset-bottom=&amp;#34;200&amp;#34;&amp;gt; ... &amp;lt;/div&amp;gt; Via JavaScript： $(&amp;#39;#myAffix&amp;#39;).affix({ offset: { top: 0, bottom: function () { return (this.bottom = $(&amp;#39;.footer&amp;#39;).outerHeight(true)) } } }) With Semantic UI $(&amp;#39;.ui.sticky&amp;#39;).sticky({ context: &amp;#39;#context&amp;#39; }); see also: sticky</description>
     </item>
     
     <item>
       <title>Make a sticky footer</title>
-      <link>/make-a-sticky-footer/</link>
+      <link>https://ryunpu.github.io/make-a-sticky-footer/</link>
       <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/make-a-sticky-footer/</guid>
+      <guid>https://ryunpu.github.io/make-a-sticky-footer/</guid>
       <description>Our html &amp;lt;body&amp;gt; &amp;lt;main&amp;gt;&amp;lt;/main&amp;gt; &amp;lt;footer&amp;gt;&amp;lt;/footer&amp;gt; &amp;lt;/dody&amp;gt; Use CSS html { position: relative; min-height: 100%;} body { margin-bottom: 50px;} footer { position: absolute; left: 0; right: 0; bottom: 0; height: 50px;} with calc():
 main { min-height: calc(100vh - 50px);} footer { height: 50px;} with flexbox:
 html { height: 100%;} body { min-height: 100%; display: flex; flex-direction: column;} main { flex: 1;} with grid:
@@ -705,28 +705,28 @@ html { height: 100%;} body { min-height: 100%; display: grid; grid-template-rows
     
     <item>
       <title>Use Animate.css</title>
-      <link>/use-animate.css/</link>
+      <link>https://ryunpu.github.io/use-animate.css/</link>
       <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/use-animate.css/</guid>
+      <guid>https://ryunpu.github.io/use-animate.css/</guid>
       <description>.animated { animation-duration: 1s; animation-fill-mode: both;} .animated.infinite { animation-iteration-count: infinite;} .fadeInUp { animation-name: fadeInUp;} @keyframes fadeInUp { from { opacity: 0; transform: translate3d(0, 100%, 0); } to { opacity: 1; transform: none; } } Animate.css  bounce flash pulse rubberBand shake swing tada wobble jello heartBeat  bounceIn bounceInDown bounceInLeft bounceInRight bounceInUp  bounceOut bounceOutDown bounceOutLeft bounceOutRight bounceOutUp  fadeIn fadeInDown fadeInDownBig fadeInLeft fadeInLeftBig fadeInRight fadeInRightBig fadeInUp fadeInUpBig  fadeOut fadeOutDown fadeOutDownBig fadeOutLeft fadeOutLeftBig fadeOutRight fadeOutRightBig fadeOutUp fadeOutUpBig  flip flipInX flipInY flipOutX flipOutY  lightSpeedIn lightSpeedOut  rotateIn rotateInDownLeft rotateInDownRight rotateInUpLeft rotateInUpRight  rotateOut rotateOutDownLeft rotateOutDownRight rotateOutUpLeft rotateOutUpRight  slideInUp slideInDown slideInLeft slideInRight  slideOutUp slideOutDown slideOutLeft slideOutRight  zoomIn zoomInDown zoomInLeft zoomInRight zoomInUp  zoomOut zoomOutDown zoomOutLeft zoomOutRight zoomOutUp  hinge jackInTheBox rollIn rollOut   Animate it   </description>
     </item>
     
     <item>
       <title>JavaScript demonstrations</title>
-      <link>/javascript-demonstrations/</link>
+      <link>https://ryunpu.github.io/javascript-demonstrations/</link>
       <pubDate>Mon, 07 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/javascript-demonstrations/</guid>
+      <guid>https://ryunpu.github.io/javascript-demonstrations/</guid>
       <description>A simple parse template function function parseTpl(tpl, obj) { var tpl; for (var property in obj) { if (obj.hasOwnProperty(property)) { tpl = tpl.replace(new RegExp(&amp;#39;\\$&amp;#39; + property, &amp;#39;ig&amp;#39;), obj[property]); } } return tpl; } $(&amp;#39;.js-demo-1&amp;#39;).html(parseTpl(&amp;#39;Hello, &amp;lt;strong&amp;gt;$name&amp;lt;/strong&amp;gt;, Today is &amp;lt;strong&amp;gt;$date&amp;lt;/strong&amp;gt;&amp;#39;, { name: &amp;#39;There&amp;#39;, date: new Date().toLocaleString() }));  Back to top function backToTop(selector, threshold, speed) { var $el = $(selector); $(window).on(&amp;#39;scroll&amp;#39;, function() { if ($(this).scrollTop() &amp;gt; (threshold ? threshold : $(this).height() / 2)) { $el.</description>
     </item>
     
     <item>
       <title>Bootstrap snippets and tips</title>
-      <link>/bootstrap-snippets-and-tips/</link>
+      <link>https://ryunpu.github.io/bootstrap-snippets-and-tips/</link>
       <pubDate>Sun, 06 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/bootstrap-snippets-and-tips/</guid>
+      <guid>https://ryunpu.github.io/bootstrap-snippets-and-tips/</guid>
       <description>Update popover text: $(&amp;#39;[data-toggle=&amp;#34;popover&amp;#34;]&amp;#39;).popover({ html: true, trigger: &amp;#39;focus&amp;#39;, content: &amp;#39;&amp;#39;, placement: &amp;#39;bottom&amp;#39; }); $(&amp;#39;[data-toggle=&amp;#34;popover&amp;#34;]&amp;#39;).data(&amp;#39;bs.popover&amp;#39;).options.content = &amp;#39;new content&amp;#39;; $(&amp;#39;[data-toggle=&amp;#34;popover&amp;#34;]&amp;#39;).popover(&amp;#39;show&amp;#39;); to dismiss the popover on iOS, you may use body { cursor: pointer; }
  Specific markup required for dismiss-on-next-click For proper cross-browser and cross-platform behavior, you must use the &amp;lt;a&amp;gt; tag, not the &amp;lt;button&amp;gt; tag, and you also must include the role=&amp;quot;button&amp;rdquo; and tabindex attributes.
  Center modal dialog with CSS: .</description>
@@ -734,10 +734,10 @@ html { height: 100%;} body { min-height: 100%; display: grid; grid-template-rows
     
     <item>
       <title>Use autojump in zsh</title>
-      <link>/use-autojump-in-zsh/</link>
+      <link>https://ryunpu.github.io/use-autojump-in-zsh/</link>
       <pubDate>Thu, 03 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/use-autojump-in-zsh/</guid>
+      <guid>https://ryunpu.github.io/use-autojump-in-zsh/</guid>
       <description>Install use homebrew: $ brew install autojump load the plugin in ~/.zshrc file: plugins=(git autojump)
 add the following line to your ~/.zshrc file: [[ -s brew --prefix/etc/autojump.sh ]] &amp;amp;&amp;amp; . brew --prefix/etc/autojump.sh
 source the file to update your current session: $ source ~/.zshrc Usage Jump To A Directory That Contains foo: $ j foo Jump To A Child Directory: $ jc bar Open File Manager To Directories (instead of jumping): $ jo music Opening a file manager to a child directory is also supported: $ jco images see more: autojump</description>
@@ -745,28 +745,28 @@ source the file to update your current session: $ source ~/.zshrc Usage Jump To 
     
     <item>
       <title>CSS demonstrations</title>
-      <link>/css-demonstrations/</link>
+      <link>https://ryunpu.github.io/css-demonstrations/</link>
       <pubDate>Wed, 02 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/css-demonstrations/</guid>
+      <guid>https://ryunpu.github.io/css-demonstrations/</guid>
       <description>1 2 3 4 5 6   &amp;lt;div class=&amp;#34;css-demo-carousel-container&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;css-demo-carousel&amp;#34;&amp;gt; &amp;lt;div&amp;gt;1&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;2&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;3&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;4&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;5&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;6&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; .css-demo-carousel-container { perspective: 1000px; transform: translateX(100px);} .css-demo-carousel { position: relative; transform-style: preserve-3d; width: 100px; height: 60px; animation: play 10s infinite linear;} .css-demo-carousel div { position: absolute; width: 100%; height: 100%; text-align: center; line-height: 60px; color: white;} .css-demo-carousel div:nth-child(1) { background: rgba(255,0,0,.5); transform: rotateY(0deg) translateZ(110px);} .css-demo-carousel div:nth-child(2) { background: rgba(128,128,0,.5); transform: rotateY(60deg) translateZ(110px);} .</description>
     </item>
     
     <item>
       <title>Choose a proper web font</title>
-      <link>/choose-a-proper-web-font/</link>
+      <link>https://ryunpu.github.io/choose-a-proper-web-font/</link>
       <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/choose-a-proper-web-font/</guid>
+      <guid>https://ryunpu.github.io/choose-a-proper-web-font/</guid>
       <description>知乎 body { font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif; font-size: 15px; color: #1a1a1a; background: #f6f6f6; -webkit-tap-highlight-color: rgba(26,26,26,0); } 简书 body { font-family: -apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif; font-size: 17px; line-height: 1.42857; color: #333; background-color: #fff; } Pinterest body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ヒラギノ角ゴ Pro W3,Hiragino Kaku Gothic Pro,メイリオ,Meiryo,ＭＳ Ｐゴシック,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; color: #211922; font-size: 12px; } Dribbble body { font-family: &amp;#34;Haas Grot Text R Web&amp;#34;, &amp;#34;Helvetica Neue&amp;#34;, Helvetica, Arial, sans-serif; color: #444; font-size: 62.</description>
     </item>
     
     <item>
       <title>Commonly used RegEx validation</title>
-      <link>/commonly-used-regex-validation/</link>
+      <link>https://ryunpu.github.io/commonly-used-regex-validation/</link>
       <pubDate>Fri, 10 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>/commonly-used-regex-validation/</guid>
+      <guid>https://ryunpu.github.io/commonly-used-regex-validation/</guid>
       <description>Email地址：^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$
 手机号码：^1[34578]\d{9}$
 身份证号码：^[1-9]{1}[0-9]{14}$|^[1-9]{1}[0-9]{16}([0-9]|[xX])$
@@ -784,46 +784,46 @@ see also: Top 15 Commonly Used Regex</description>
     
     <item>
       <title>Some commonly used UA detection</title>
-      <link>/some-commonly-used-ua-detection/</link>
+      <link>https://ryunpu.github.io/some-commonly-used-ua-detection/</link>
       <pubDate>Thu, 09 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>/some-commonly-used-ua-detection/</guid>
+      <guid>https://ryunpu.github.io/some-commonly-used-ua-detection/</guid>
       <description>var ua = navigator.userAgent.toLowerCase(); var arr = /(chrome|firefox)[ \/]([\w.]+)/.exec(ua) || // Chrome &amp;amp; Firefox  /(iphone|ipad|ipod)(?:.*version)?[ \/]([\w.]+)/.exec(ua) || // Mobile IOS  /(android)(?:.*version)?[ \/]([\w.]+)/.exec(ua) || // Mobile Webkit  /(webkit|opera)(?:.*version)?[ \/]([\w.]+)/.exec(ua) || // Safari &amp;amp; Opera  /(msie) ([\w.]+)/.exec(ua) || /(trident).+rv:(\w.)+/.exec(ua) || []; var browser = arr[1]; var version = parseFloat(arr[2]); switch (browser) { case &amp;#39;msie&amp;#39;: case &amp;#39;trident&amp;#39;: browser = &amp;#39;ie&amp;#39;; version = document.documentMode || version; break; } /(msie\s|trident.*rv:)([\w.]+)/.test(ua) // IE /micromessenger/.</description>
     </item>
     
     <item>
       <title>Using formdata objects</title>
-      <link>/using-formdata-objects/</link>
+      <link>https://ryunpu.github.io/using-formdata-objects/</link>
       <pubDate>Wed, 08 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>/using-formdata-objects/</guid>
+      <guid>https://ryunpu.github.io/using-formdata-objects/</guid>
       <description>var formData = new FormData(); formData.append(&amp;#39;name&amp;#39;, $(&amp;#39;#name&amp;#39;).val()); formData.append(&amp;#39;file&amp;#39;, $(&amp;#39;#file&amp;#39;)[0].files[0]); $.ajax({ url: $(&amp;#39;#form&amp;#39;).attr(&amp;#39;action&amp;#39;), type: &amp;#39;POST&amp;#39;, cache: false, data: formData, processData: false, contentType: false }) .done(function(data) { console.log(data); }) .fail(function() { console.log(&amp;#39;请求失败&amp;#39;); }); see more: Using FormData Objects</description>
     </item>
     
     <item>
       <title>基于七牛 API 的文件上传</title>
-      <link>/%E5%9F%BA%E4%BA%8E%E4%B8%83%E7%89%9B-api-%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/</link>
+      <link>https://ryunpu.github.io/%E5%9F%BA%E4%BA%8E%E4%B8%83%E7%89%9B-api-%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/</link>
       <pubDate>Tue, 07 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>/%E5%9F%BA%E4%BA%8E%E4%B8%83%E7%89%9B-api-%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/</guid>
+      <guid>https://ryunpu.github.io/%E5%9F%BA%E4%BA%8E%E4%B8%83%E7%89%9B-api-%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/</guid>
       <description>$.ajax({ url: uptoken }) .done(function(data) { var uploader = Qiniu.uploader({ runtimes: &amp;#39;html5,flash,html4&amp;#39;, //上传模式,依次退化  browse_button: &amp;#39;pickfiles&amp;#39;, //上传选择的点选按钮，**必需**  uptoken: data.token, //uptoken  domain: &amp;#39;http://7xo7gu.com1.z0.glb.clouddn.com/&amp;#39;, //bucket 域名，下载资源时用到，**必需**  get_new_uptoken: false, //设置上传文件的时候是否每次都重新获取新的token  max_file_size: &amp;#39;10mb&amp;#39;, //最大文件体积限制  flash_swf_url: &amp;#39;plupload/Moxie.swf&amp;#39;, //引入flash,相对路径  max_retries: 3, //上传失败最大重试次数  chunk_size: &amp;#39;4mb&amp;#39;, //分块上传时，每片的体积  filters: { mime_types: [{ title: &amp;#34;语音文件&amp;#34;, extensions: &amp;#34;mp3&amp;#34; }] }, auto_start: true, //选择文件后自动上传，若关闭需要自己绑定事件触发上传,  init: { QueueChanged: function(up) { //自定义路径  for (var i = 0; i &amp;lt; up.</description>
     </item>
     
     <item>
       <title>Center Anything with CSS</title>
-      <link>/center-anything-with-css/</link>
+      <link>https://ryunpu.github.io/center-anything-with-css/</link>
       <pubDate>Mon, 06 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>/center-anything-with-css/</guid>
+      <guid>https://ryunpu.github.io/center-anything-with-css/</guid>
       <description>.centered { position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto;} .centered { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);} .center-container { display: table;} .center-container &amp;gt; div { display: table-cell; text-align: center; vertical-align: middle;} .center-container &amp;gt; div .centered { margin: auto;} .center-container { display: flex; -webkit-justify-content: center; justify-content: center; -webkit-align-items: center; align-items: center;} </description>
     </item>
     
     <item>
       <title>Git Diff with Beyond Compare</title>
-      <link>/git-diff-with-beyond-compare/</link>
+      <link>https://ryunpu.github.io/git-diff-with-beyond-compare/</link>
       <pubDate>Fri, 27 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/git-diff-with-beyond-compare/</guid>
+      <guid>https://ryunpu.github.io/git-diff-with-beyond-compare/</guid>
       <description>Launch Beyond Compare, go to the Beyond Compare menu and run Install Command Line Tools.
 Diff $ git config --global diff.tool bc3 To launch a diff using Beyond Compare, use the command：
 $ git difftool file.ext Merge (Pro only) $ git config --global merge.tool bc3 $ git config --global mergetool.bc3 trustExitCode true To launch a 3-way merge using Beyond Compare, use the command：
@@ -832,37 +832,37 @@ $ git mergetool file.ext see more: Using Beyond Compare with Version Control Sys
     
     <item>
       <title>Simple browser detection</title>
-      <link>/simple-browser-detection/</link>
+      <link>https://ryunpu.github.io/simple-browser-detection/</link>
       <pubDate>Thu, 26 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/simple-browser-detection/</guid>
+      <guid>https://ryunpu.github.io/simple-browser-detection/</guid>
       <description>function sayswho() { var ua = navigator.userAgent, tem, M = ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || []; if (/trident/i.test(M[1])) { tem = /\brv[ :]+(\d+)/g.exec(ua) || []; return &amp;#39;IE &amp;#39; + (tem[1] || &amp;#39;&amp;#39;); } if (M[1] === &amp;#39;Chrome&amp;#39;) { tem = ua.match(/\b(OPR|Edge)\/(\d+)/); if (tem !== null) { return tem.slice(1).join(&amp;#39; &amp;#39;).replace(&amp;#39;OPR&amp;#39;, &amp;#39;Opera&amp;#39;); } } M = M[2] ? [M[1], M[2]] : [navigator.appName, navigator.appVersion, &amp;#39;-?&amp;#39;]; if ((tem = ua.match(/version\/(\d+)/i)) !== null) { M.splice(1, 1, tem[1]); } return M.</description>
     </item>
     
     <item>
       <title>Detect a Touch Screen</title>
-      <link>/detect-a-touch-screen/</link>
+      <link>https://ryunpu.github.io/detect-a-touch-screen/</link>
       <pubDate>Wed, 25 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/detect-a-touch-screen/</guid>
+      <guid>https://ryunpu.github.io/detect-a-touch-screen/</guid>
       <description> reliable way  var hasTouch; window.addEventListener(&amp;#39;touchstart&amp;#39;, function setHasTouch () { hasTouch = true; // Remove event listener once fired, otherwise it&amp;#39;ll kill scrolling  // performance  window.removeEventListener(&amp;#39;touchstart&amp;#39;, setHasTouch); }, false);  another way  var hasTouch = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);  not so reliable  var hasTouch = &amp;#39;ontouchstart&amp;#39; in window; </description>
     </item>
     
     <item>
       <title>Detect Orientation Change on Mobile Devices</title>
-      <link>/detect-orientation-change-on-mobile-devices/</link>
+      <link>https://ryunpu.github.io/detect-orientation-change-on-mobile-devices/</link>
       <pubDate>Tue, 24 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/detect-orientation-change-on-mobile-devices/</guid>
+      <guid>https://ryunpu.github.io/detect-orientation-change-on-mobile-devices/</guid>
       <description> Media Queries:  @media screen and (orientation: landscape) { /* landscape */ } @media screen and (orientation: portrait) { /* portrait */ }  resize Event:  window.addEventListener(&amp;#39;resize&amp;#39;, function() { if (window.innerWidth &amp;gt; window.innerHeight) { // landscape  } else { // portrait  } }, false);  orientationchange Event:  window.addEventListener(&amp;#39;orientationchange&amp;#39;, function() { switch (window.orientation) { case -90: case 90: // landscape  break; default: // portrait  break; } }, false); </description>
     </item>
     
     <item>
       <title>Words of Wisdom from Modern Family</title>
-      <link>/words-of-wisdom-from-modern-family/</link>
+      <link>https://ryunpu.github.io/words-of-wisdom-from-modern-family/</link>
       <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/words-of-wisdom-from-modern-family/</guid>
+      <guid>https://ryunpu.github.io/words-of-wisdom-from-modern-family/</guid>
       <description>“Always look people in the eye. Even if they’re blind. Just say ‘I’m looking you in the eye’”
   “If you get pulled over for speeding. Tell them your spouse has diarrhoea.”
   “The most amazing things that can happen to a human being will happen to you, if you just lower your expectations.”
@@ -871,10 +871,10 @@ $ git mergetool file.ext see more: Using Beyond Compare with Version Control Sys
     
     <item>
       <title>Use Charles Map Local tool</title>
-      <link>/use-charles-map-local-tool/</link>
+      <link>https://ryunpu.github.io/use-charles-map-local-tool/</link>
       <pubDate>Sun, 22 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/use-charles-map-local-tool/</guid>
+      <guid>https://ryunpu.github.io/use-charles-map-local-tool/</guid>
       <description>Configure the Proxy settings in Chrome:
 Configure the Proxy settings in your iPhone:
 Then in Charles use Cmd + Shift + L to add map
@@ -883,10 +883,10 @@ see more: MAP LOCAL TOOL，USING CHARLES FROM AN IPHONE</description>
     
     <item>
       <title>Configuring Web Applications</title>
-      <link>/configuring-web-applications/</link>
+      <link>https://ryunpu.github.io/configuring-web-applications/</link>
       <pubDate>Sat, 21 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/configuring-web-applications/</guid>
+      <guid>https://ryunpu.github.io/configuring-web-applications/</guid>
       <description>Specifying a Webpage Icon for Web Clip:
 &amp;lt;link rel=&amp;#34;apple-touch-icon&amp;#34; href=&amp;#34;touch-icon-iphone.png&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;apple-touch-icon&amp;#34; sizes=&amp;#34;152x152&amp;#34; href=&amp;#34;touch-icon-ipad-retina.png&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;icon&amp;#34; sizes=&amp;#34;152x152&amp;#34; href=&amp;#34;touch-icon-android.png&amp;#34;&amp;gt; Specifying a Startup Image:
 &amp;lt;link rel=&amp;#34;apple-touch-startup-image&amp;#34; href=&amp;#34;/startup.png&amp;#34;&amp;gt; Hiding Safari User Interface Components:
@@ -899,47 +899,47 @@ see more: MAP LOCAL TOOL，USING CHARLES FROM AN IPHONE</description>
     
     <item>
       <title>Comparison of NPM and yarn commands</title>
-      <link>/comparison-of-npm-and-yarn-commands/</link>
+      <link>https://ryunpu.github.io/comparison-of-npm-and-yarn-commands/</link>
       <pubDate>Fri, 20 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/comparison-of-npm-and-yarn-commands/</guid>
+      <guid>https://ryunpu.github.io/comparison-of-npm-and-yarn-commands/</guid>
       <description>   npm (v5) Yarn     npm install yarn/yarn install   (N/A) yarn add --flat   (N/A) yarn add --har   npm install --no-package-lock yarn add --no-lockfile   (N/A) yarn add --pure-lockfile   npm install [package] --save yarn add [package]   npm install [package] --save-dev yarn add [package] --dev   (N/A) yarn add [package] --peer   npm install [package] --save-optional yarn add [package] --optional   npm install [package] --save-exact yarn add [package] --exact   (N/A) yarn add [package] --tilde   npm install [package] --global yarn global add [package]   npm update --global  yarn global upgrade    npm rebuild yarn add --force   npm uninstall [package] yarn remove [package]   npm cache clean yarn cache clean [package]   rm -rf node_modules &amp;amp;&amp;amp; npm install  yarn upgrade    npm version major  yarn version --major    npm version minor  yarn version --minor    npm version patch  yarn version --patch     </description>
     </item>
     
     <item>
       <title>Commands for Packager managers</title>
-      <link>/commands-for-packager-managers/</link>
+      <link>https://ryunpu.github.io/commands-for-packager-managers/</link>
       <pubDate>Thu, 19 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/commands-for-packager-managers/</guid>
+      <guid>https://ryunpu.github.io/commands-for-packager-managers/</guid>
       <description>npm composer pip rubygem     Language node -v php --version python --version ruby -v   Version npm --version composer --version pip --version gem -v   Location of the program file which npm which composer which pip which gem   List of all packages installed globally npm ls -g --depth=0 composer show --installed (locally) pip freeze gem list   Info about a package npm show [package-name] composer show [package-name]  gem list [package-name]   Install a package npm install [package-name] -g composer require [package-name] and run composer install pip install[package-name] gem install [package-name]   Uninstall a package npm uninstall [package-name] -g edit composer.</description>
     </item>
     
     <item>
       <title>Modifying an inactive pull request locally</title>
-      <link>/modifying-an-inactive-pull-request-locally/</link>
+      <link>https://ryunpu.github.io/modifying-an-inactive-pull-request-locally/</link>
       <pubDate>Wed, 18 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/modifying-an-inactive-pull-request-locally/</guid>
+      <guid>https://ryunpu.github.io/modifying-an-inactive-pull-request-locally/</guid>
       <description>$ git fetch origin pull/ID/head:BRANCHNAME $ git checkout BRANCHNAME When you&#39;re ready, you can push the new branch up:
 $ git push origin BRANCHNAME see more: Checking out pull requests locally</description>
     </item>
     
     <item>
       <title>Syncing a fork</title>
-      <link>/syncing-a-fork/</link>
+      <link>https://ryunpu.github.io/syncing-a-fork/</link>
       <pubDate>Tue, 17 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/syncing-a-fork/</guid>
+      <guid>https://ryunpu.github.io/syncing-a-fork/</guid>
       <description>$ git remote add upstream https://github.com/username/projectname.git $ git pull upstream master(git fetch upstream, git merge upstream/master) $ git push origin master see more: Syncing a fork</description>
     </item>
     
     <item>
       <title>Creating Project Pages manually</title>
-      <link>/creating-project-pages-manually/</link>
+      <link>https://ryunpu.github.io/creating-project-pages-manually/</link>
       <pubDate>Mon, 16 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/creating-project-pages-manually/</guid>
+      <guid>https://ryunpu.github.io/creating-project-pages-manually/</guid>
       <description>$ cd repository $ git checkout --orphan gh-pages add and commit some pages and then:
 $ git push origin gh-pages your Project Pages site will be available at https://username.github.io/projectname
 see also: Getting Started with GitHub Pages</description>
@@ -947,10 +947,10 @@ see also: Getting Started with GitHub Pages</description>
     
     <item>
       <title>CSS Animations with only one keyframe</title>
-      <link>/css-animations-with-only-one-keyframe/</link>
+      <link>https://ryunpu.github.io/css-animations-with-only-one-keyframe/</link>
       <pubDate>Sun, 15 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/css-animations-with-only-one-keyframe/</guid>
+      <guid>https://ryunpu.github.io/css-animations-with-only-one-keyframe/</guid>
       <description>a simple animation:
 @keyframes fade { 0% { opacity: 1;} 50% { opacity: 0;} 100% { opacity: 1;} } more simple:
 @keyframes fade { 50% { opacity: 0;} } see more: transition-timing-function</description>
@@ -958,29 +958,29 @@ see also: Getting Started with GitHub Pages</description>
     
     <item>
       <title>Use Sass from the command line</title>
-      <link>/use-sass-from-the-command-line/</link>
+      <link>https://ryunpu.github.io/use-sass-from-the-command-line/</link>
       <pubDate>Sat, 14 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/use-sass-from-the-command-line/</guid>
+      <guid>https://ryunpu.github.io/use-sass-from-the-command-line/</guid>
       <description>Output Style:
 sass --watch main.scss:main.css --style expanded sass --watch build:src --style compact sass --watch build:../css --style compressed see more: Dart Sass Command-Line Interface</description>
     </item>
     
     <item>
       <title>Prevent touch event click underneath layer</title>
-      <link>/prevent-touch-event-click-underneath-layer/</link>
+      <link>https://ryunpu.github.io/prevent-touch-event-click-underneath-layer/</link>
       <pubDate>Fri, 13 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/prevent-touch-event-click-underneath-layer/</guid>
+      <guid>https://ryunpu.github.io/prevent-touch-event-click-underneath-layer/</guid>
       <description> 延迟事件处理(&amp;gt;300ms)：  $(&amp;#39;#mask&amp;#39;).on(&amp;#39;tap&amp;#39;, function() { setTimeout(function() { $(&amp;#39;#mask&amp;#39;).hide(); }, 400); });  使用 touchstart 或 touchend：  $(&amp;#39;#mask&amp;#39;).on(&amp;#39;touchend&amp;#39;, function(e) { setTimeout(function() { $(&amp;#39;#mask&amp;#39;).hide(); }, 300); e.preventDefault(); });  使用 fastclick  $(function() { FastClick.attach(document.body); }); </description>
     </item>
     
     <item>
       <title>Sublime react snippets</title>
-      <link>/sublime-react-snippets/</link>
+      <link>https://ryunpu.github.io/sublime-react-snippets/</link>
       <pubDate>Thu, 12 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/sublime-react-snippets/</guid>
+      <guid>https://ryunpu.github.io/sublime-react-snippets/</guid>
       <description>Documentation of available snippets (JSX):
   cdm→ componentDidMount: fn() { &amp;hellip; }
   cdup→ componentDidUpdate: fn(pp, ps) { &amp;hellip; }
@@ -995,10 +995,10 @@ sass --watch main.scss:main.css --style expanded sass --watch build:src --style 
     
     <item>
       <title>Sublime Text Plugins for Web Development</title>
-      <link>/sublime-text-plugins-for-web-development/</link>
+      <link>https://ryunpu.github.io/sublime-text-plugins-for-web-development/</link>
       <pubDate>Wed, 11 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/sublime-text-plugins-for-web-development/</guid>
+      <guid>https://ryunpu.github.io/sublime-text-plugins-for-web-development/</guid>
       <description>BracketHighlighter
   LiveReload: Once installed, you will still need to enable the plugin in the command palette:
  open the Sublime Text command palette width Cmd + Shift + P Type &amp;lsquo;LiveReload: Enable/disable plugins&amp;rsquo; and hit Enter Scroll down to &amp;lsquo;Enable - SimpleReload&amp;rsquo; and hit Enter    SideBarEnhancements
@@ -1012,10 +1012,10 @@ sass --watch main.scss:main.css --style expanded sass --watch build:src --style 
     
     <item>
       <title>Sublime Text shortcuts</title>
-      <link>/sublime-text-shortcuts/</link>
+      <link>https://ryunpu.github.io/sublime-text-shortcuts/</link>
       <pubDate>Wed, 30 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/sublime-text-shortcuts/</guid>
+      <guid>https://ryunpu.github.io/sublime-text-shortcuts/</guid>
       <description>Select some text and press Cmd + D to add more instances. If you want to skip the current instance, press Cmd + K, Cmd + D. If you go too far, press Cmd + U to deselect the current instance.
   Cmd + L expands the selections to the end of the line. Cmd + Shift + L splits the selections into lines.
   To select some block, use Shift + click, or press Alt + Shift + Up/Down or Cmd + Shift + Up/Down.</description>
@@ -1023,37 +1023,37 @@ sass --watch main.scss:main.css --style expanded sass --watch build:src --style 
     
     <item>
       <title>Helpful aliases for common git tasks</title>
-      <link>/helpful-aliases-for-common-git-tasks/</link>
+      <link>https://ryunpu.github.io/helpful-aliases-for-common-git-tasks/</link>
       <pubDate>Mon, 28 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/helpful-aliases-for-common-git-tasks/</guid>
+      <guid>https://ryunpu.github.io/helpful-aliases-for-common-git-tasks/</guid>
       <description>Alias Command     g git   ga git add   gaa git add &amp;ndash;all   gapa git add &amp;ndash;patch   gau git add &amp;ndash;update   gav git add &amp;ndash;verbose   gap git apply   gb git branch   gba git branch -a   gbd git branch -d   gbda git branch &amp;ndash;no-color &amp;ndash;merged | command grep -vE &amp;ldquo;^(+   gbD git branch -D   gbl git blame -b -w   gbnm git branch &amp;ndash;no-merged   gbr git branch &amp;ndash;remote   gbs git bisect   gbsb git bisect bad   gbsg git bisect good   gbsr git bisect reset   gbss git bisect start   gc git commit -v   gc!</description>
     </item>
     
     <item>
       <title>Avoid `console` errors in browsers that lack a console</title>
-      <link>/avoid-console-errors-in-browsers-that-lack-a-console/</link>
+      <link>https://ryunpu.github.io/avoid-console-errors-in-browsers-that-lack-a-console/</link>
       <pubDate>Sun, 27 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/avoid-console-errors-in-browsers-that-lack-a-console/</guid>
+      <guid>https://ryunpu.github.io/avoid-console-errors-in-browsers-that-lack-a-console/</guid>
       <description>;(function() { var method; var noop = function () {}; var methods = [ &amp;#39;assert&amp;#39;, &amp;#39;clear&amp;#39;, &amp;#39;count&amp;#39;, &amp;#39;debug&amp;#39;, &amp;#39;dir&amp;#39;, &amp;#39;dirxml&amp;#39;, &amp;#39;error&amp;#39;, &amp;#39;exception&amp;#39;, &amp;#39;group&amp;#39;, &amp;#39;groupCollapsed&amp;#39;, &amp;#39;groupEnd&amp;#39;, &amp;#39;info&amp;#39;, &amp;#39;log&amp;#39;, &amp;#39;markTimeline&amp;#39;, &amp;#39;profile&amp;#39;, &amp;#39;profileEnd&amp;#39;, &amp;#39;table&amp;#39;, &amp;#39;time&amp;#39;, &amp;#39;timeEnd&amp;#39;, &amp;#39;timeline&amp;#39;, &amp;#39;timelineEnd&amp;#39;, &amp;#39;timeStamp&amp;#39;, &amp;#39;trace&amp;#39;, &amp;#39;warn&amp;#39; ]; var length = methods.length; var console = (window.console = window.console || {}); while (length--) { method = methods[length]; // Only stub undefined methods.  if (!console[method]) { console[method] = noop; } } })(); </description>
     </item>
     
     <item>
       <title>A micro clearfix hack</title>
-      <link>/a-micro-clearfix-hack/</link>
+      <link>https://ryunpu.github.io/a-micro-clearfix-hack/</link>
       <pubDate>Sat, 26 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/a-micro-clearfix-hack/</guid>
+      <guid>https://ryunpu.github.io/a-micro-clearfix-hack/</guid>
       <description>/** * For modern browsers * 1. The space content is one way to avoid an Opera bug when the * contenteditable attribute is included anywhere else in the document. * Otherwise it causes space to appear at the top and bottom of elements * that are clearfixed. * 2. The use of `table` rather than `block` is only necessary if using * `:before` to contain the top-margins of child elements.</description>
     </item>
     
     <item>
       <title>Modernizr Methods</title>
-      <link>/modernizr-methods/</link>
+      <link>https://ryunpu.github.io/modernizr-methods/</link>
       <pubDate>Fri, 25 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/modernizr-methods/</guid>
+      <guid>https://ryunpu.github.io/modernizr-methods/</guid>
       <description>detecting css feature prefixes:
 Modernizr.prefixed(&amp;#39;boxSizing&amp;#39;) // &amp;#39;boxSizing&amp;#39; detecting dom feature prefixes:
 Modernizr.prefixed(&amp;#39;requestAnimationFrame&amp;#39;, window) // fn mq() media query testing:
@@ -1065,10 +1065,10 @@ Modernizr.hasEvent(&amp;#39;gesturestart&amp;#39;) // true see more: modernizr d
     
     <item>
       <title>Flash of Unstyled Content</title>
-      <link>/flash-of-unstyled-content/</link>
+      <link>https://ryunpu.github.io/flash-of-unstyled-content/</link>
       <pubDate>Wed, 23 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/flash-of-unstyled-content/</guid>
+      <guid>https://ryunpu.github.io/flash-of-unstyled-content/</guid>
       <description>What is a FOUC? Some pages that use the CSS @import rule experience a curious display quirk in the Windows version of MS Internet Explorer: a momentary flash of unstyled page content.
 How do I fix it? Just one LINK element or SCRIPT element inside a document&#39;s HEAD element will prevent a flash of unstyled content.
 If you don&#39;t support IE8 and don&#39;t need to worry about FOUC.</description>
@@ -1076,10 +1076,10 @@ If you don&#39;t support IE8 and don&#39;t need to worry about FOUC.</descriptio
     
     <item>
       <title>HTML5 Cross Browser Polyfills</title>
-      <link>/html5-cross-browser-polyfills/</link>
+      <link>https://ryunpu.github.io/html5-cross-browser-polyfills/</link>
       <pubDate>Tue, 22 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/html5-cross-browser-polyfills/</guid>
+      <guid>https://ryunpu.github.io/html5-cross-browser-polyfills/</guid>
       <description>Looking to conditionally load these scripts (client-side), based on feature detects?
 See Modernizr.
 Looking for a guide to write your own polyfills?
@@ -1091,10 +1091,10 @@ see more: HTML5 Cross Browser Polyfills</description>
     
     <item>
       <title>Syntax highlighting in markdown</title>
-      <link>/syntax-highlighting-in-markdown/</link>
+      <link>https://ryunpu.github.io/syntax-highlighting-in-markdown/</link>
       <pubDate>Mon, 21 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/syntax-highlighting-in-markdown/</guid>
+      <guid>https://ryunpu.github.io/syntax-highlighting-in-markdown/</guid>
       <description>Here&#39;s a full list of supported languages:
   Cucumber (&#39;*.feature&amp;rsquo;)
   abap (&#39;*.abap&amp;rsquo;)
@@ -1114,10 +1114,10 @@ see more: HTML5 Cross Browser Polyfills</description>
     
     <item>
       <title>Use Chrome DevTools</title>
-      <link>/use-chrome-devtools/</link>
+      <link>https://ryunpu.github.io/use-chrome-devtools/</link>
       <pubDate>Sun, 20 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/use-chrome-devtools/</guid>
+      <guid>https://ryunpu.github.io/use-chrome-devtools/</guid>
       <description>Use Ctrl/Cmd+Shift+C to open the DevTools in Inspect Element mode
   Use $() command for selecting elements
   Search across all script, stylesheet and snippet files using Ctrl/Cmd+O
@@ -1127,10 +1127,10 @@ see more: HTML5 Cross Browser Polyfills</description>
     
     <item>
       <title>Use Git</title>
-      <link>/use-git/</link>
+      <link>https://ryunpu.github.io/use-git/</link>
       <pubDate>Sat, 19 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/use-git/</guid>
+      <guid>https://ryunpu.github.io/use-git/</guid>
       <description>Getting Help:
 $ git help &amp;lt;verb&amp;gt; Your Configure:
 $ git config --list $ git config --global user.name &amp;#34;[name]&amp;#34; $ git config --global user.email &amp;#34;[email address]&amp;#34; $ git config --global user.name &amp;#34;[another name]&amp;#34; Getting a Git Repository:
@@ -1140,19 +1140,19 @@ $ git init [project-name] $ git clone [url] [project-name] Ignoring Files:
     
     <item>
       <title>Expose a local web server to the internet with ngrok</title>
-      <link>/expose-a-local-web-server-to-the-internet-with-ngrok/</link>
+      <link>https://ryunpu.github.io/expose-a-local-web-server-to-the-internet-with-ngrok/</link>
       <pubDate>Fri, 18 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/expose-a-local-web-server-to-the-internet-with-ngrok/</guid>
+      <guid>https://ryunpu.github.io/expose-a-local-web-server-to-the-internet-with-ngrok/</guid>
       <description>$ ./ngrok 8080 $ ./ngrok -subdomain=&amp;#34;dev&amp;#34; 8080 see mor ngrok docs</description>
     </item>
     
     <item>
       <title>The Command Line Crash Course</title>
-      <link>/the-command-line-crash-course/</link>
+      <link>https://ryunpu.github.io/the-command-line-crash-course/</link>
       <pubDate>Tue, 15 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/the-command-line-crash-course/</guid>
+      <guid>https://ryunpu.github.io/the-command-line-crash-course/</guid>
       <description>print working directory:
 $ pwd my computer&#39;s network name:
 $ hostname make directory:
@@ -1168,29 +1168,29 @@ $ cp source_file target_file/target_directory $ cp -r source_file target_directo
     
     <item>
       <title>Enable HTML5 placeholder in IE</title>
-      <link>/enable-html5-placeholder-in-ie/</link>
+      <link>https://ryunpu.github.io/enable-html5-placeholder-in-ie/</link>
       <pubDate>Sun, 13 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/enable-html5-placeholder-in-ie/</guid>
+      <guid>https://ryunpu.github.io/enable-html5-placeholder-in-ie/</guid>
       <description>simply using the function below:
 (function($){ var doc = document, inputs = doc.getElementsByTagName(&amp;#39;input&amp;#39;), supportPlaceholder = &amp;#39;placeholder&amp;#39; in doc.createElement(&amp;#39;input&amp;#39;); $.fn.placeholder = function(){ return this.each(function(){ var input = $(this), text = input.attr(&amp;#39;placeholder&amp;#39;), password = input.attr(&amp;#39;type&amp;#39;) === &amp;#39;password&amp;#39;; if( text &amp;amp;&amp;amp; !supportPlaceholder ){ if (password) return; input.val(text); input.focus(function(){ if( input.val() === text ){ input.val(&amp;#39;&amp;#39;); } }); input.blur(function(){ if( $.trim( input.val() ) === &amp;#39;&amp;#39;){ input.val(text); } }); } }); }; $(function () { $(&amp;#39;[placeholder]&amp;#39;).placeholder(); }); })(jQuery); see also: jquery-placeholder</description>
     </item>
     
     <item>
       <title>Markdown cheatsheet</title>
-      <link>/markdown-cheatsheet/</link>
+      <link>https://ryunpu.github.io/markdown-cheatsheet/</link>
       <pubDate>Sat, 12 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/markdown-cheatsheet/</guid>
+      <guid>https://ryunpu.github.io/markdown-cheatsheet/</guid>
       <description>Headers # H1 ## H2 ### H3 #### H4 ##### H5 ###### H6 Alternatively, for H1 and H2, an underline-ish style: Alt-H1 ====== Alt-H2 ------ Emphasis Emphasis, aka italics, with *asterisks* or _underscores_. Strong emphasis, aka bold, with **asterisks** or __underscores__. Combined emphasis with **asterisks and _underscores_**. Strikethrough uses two tildes. ~~Scratch this.~~ Lists 1. First ordered list item 2. Another item ⋅⋅* Unordered sub-list. 1. Actual numbers don&#39;t matter, just that it&#39;s a number ⋅⋅1.</description>
     </item>
     
     <item>
       <title>Code conventions and best practices for javascript</title>
-      <link>/code-conventions-and-best-practices-for-javascript/</link>
+      <link>https://ryunpu.github.io/code-conventions-and-best-practices-for-javascript/</link>
       <pubDate>Fri, 11 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/code-conventions-and-best-practices-for-javascript/</guid>
+      <guid>https://ryunpu.github.io/code-conventions-and-best-practices-for-javascript/</guid>
       <description>JavaScript programs should be stored in and delivered as .js files
   script tags should be placed as late in the body as possible, There is no need to use the language or type attributes
   The unit of indentation is four spaces
@@ -1201,10 +1201,10 @@ $ cp source_file target_file/target_directory $ cp -r source_file target_directo
     
     <item>
       <title>Access localhost from VirtualBox</title>
-      <link>/access-localhost-from-virtualbox/</link>
+      <link>https://ryunpu.github.io/access-localhost-from-virtualbox/</link>
       <pubDate>Thu, 10 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/access-localhost-from-virtualbox/</guid>
+      <guid>https://ryunpu.github.io/access-localhost-from-virtualbox/</guid>
       <description>just follow the steps:
   In VirtualBox &amp;gt; Preferences &amp;gt; Network, set up a host-only network
   Activate the 2nd adapter and set it with Host-only Adapter and the only Name attribute we just created like &amp;lsquo;vboxnet0&amp;rsquo;
@@ -1214,10 +1214,10 @@ $ cp source_file target_file/target_directory $ cp -r source_file target_directo
     
     <item>
       <title>Create a bootable USB in Mac OS X</title>
-      <link>/create-a-bootable-usb-in-mac-os-x/</link>
+      <link>https://ryunpu.github.io/create-a-bootable-usb-in-mac-os-x/</link>
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/create-a-bootable-usb-in-mac-os-x/</guid>
+      <guid>https://ryunpu.github.io/create-a-bootable-usb-in-mac-os-x/</guid>
       <description>just follow the steps:
 $ hdiutil convert -format UDRW -o destination_file.img source_file.iso $ diskutil list $ diskutil partitionDisk /dev/disk2 1 &amp;#34;Free Space&amp;#34; &amp;#34;unused&amp;#34; &amp;#34;100%&amp;#34; $ dd if=destination_file.img.dmg of=/dev/disk2 bs=1m note: &amp;lsquo;disk2&amp;rsquo; is your USB, you may need to use &amp;lsquo;sudo dd&amp;rsquo;
 see more: bootable usb</description>
@@ -1225,57 +1225,57 @@ see more: bootable usb</description>
     
     <item>
       <title>Use HTML5 sectioning elements in legacy IE</title>
-      <link>/use-html5-sectioning-elements-in-legacy-ie/</link>
+      <link>https://ryunpu.github.io/use-html5-sectioning-elements-in-legacy-ie/</link>
       <pubDate>Tue, 08 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/use-html5-sectioning-elements-in-legacy-ie/</guid>
+      <guid>https://ryunpu.github.io/use-html5-sectioning-elements-in-legacy-ie/</guid>
       <description>(function() { if (!-[1,]) { var tags = [&amp;#39;article&amp;#39;, &amp;#39;aside&amp;#39;, &amp;#39;details&amp;#39;, &amp;#39;figcaption&amp;#39;, &amp;#39;figure&amp;#39;, &amp;#39;footer&amp;#39;, &amp;#39;header&amp;#39;, &amp;#39;hgroup&amp;#39;, &amp;#39;menu&amp;#39;, &amp;#39;nav&amp;#39;, &amp;#39;section&amp;#39;, &amp;#39;summary&amp;#39;, &amp;#39;time&amp;#39;, &amp;#39;mark&amp;#39;, &amp;#39;audio&amp;#39;, &amp;#39;video&amp;#39;]; for (var i = 0, len = tags.length; i &amp;lt; len; i++) { document.createElement(tags[i]); } } })(); see also: html5shiv</description>
     </item>
     
     <item>
       <title>Use the viewport meta tag</title>
-      <link>/use-the-viewport-meta-tag/</link>
+      <link>https://ryunpu.github.io/use-the-viewport-meta-tag/</link>
       <pubDate>Sun, 06 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/use-the-viewport-meta-tag/</guid>
+      <guid>https://ryunpu.github.io/use-the-viewport-meta-tag/</guid>
       <description>完全自适应的布局可以设置 viewport 为：  &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width,initial-scale=1&amp;#34;&amp;gt;  指定具体宽度时如考虑较小分辨的设备，可按设计宽度的一半设置 viewport 如：  &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=320&amp;#34;&amp;gt;  指定具体宽度时不考虑较小分辨的设备，直接按设计宽度设置 viewport 如：  &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=640,user-scalable=0,target-densitydpi=device-dpi&amp;#34;&amp;gt;  兼容性:  if (/Android (\d+\.\d+)/.test(navigator.userAgent)) { var version = parseFloat(RegExp.$1); if (version &amp;gt; 2.3) { var phoneScale = parseInt(window.screen.width) / 480; document.write(&amp;#39;&amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=480, minimum-scale = &amp;#39; + phoneScale + &amp;#39;, maximum-scale = &amp;#39; + phoneScale + &amp;#39;, target-densitydpi=device-dpi&amp;#34;&amp;gt;&amp;#39;); } else { document.write(&amp;#39;&amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=480, target-densitydpi=device-dpi&amp;#34;&amp;gt;&amp;#39;); } } else { document.</description>
     </item>
     
     <item>
       <title>JavaScript snippets</title>
-      <link>/javascript-snippets/</link>
+      <link>https://ryunpu.github.io/javascript-snippets/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/javascript-snippets/</guid>
+      <guid>https://ryunpu.github.io/javascript-snippets/</guid>
       <description>A simple canvas captcha // 随机数 const randomNum = (min, max) =&amp;gt; { return parseInt(Math.random() * (max - min) + min) } // 随机颜色 const randomColor = (min, max) =&amp;gt; { const r = randomNum(min, max) const g = randomNum(min, max) const b = randomNum(min, max) return `rgb(${r},${g},${b})` } export default (el, state = { pool: &amp;#39;ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890&amp;#39;, // 字符串  width: 120, height: 40, }) =&amp;gt; { // 3.填充背景颜色，背景颜色要浅一点  const ctx = el.</description>
     </item>
     
     <item>
       <title>Use rgba in IE</title>
-      <link>/use-rgba-in-ie/</link>
+      <link>https://ryunpu.github.io/use-rgba-in-ie/</link>
       <pubDate>Tue, 01 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/use-rgba-in-ie/</guid>
+      <guid>https://ryunpu.github.io/use-rgba-in-ie/</guid>
       <description>.class { background: rgba(0,0,0,.5); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=&amp;#34;#7F000000&amp;#34;,endColorstr=&amp;#34;#7F000000&amp;#34;);} :root .class { filter: none;} /* IE9 */ with Sass, you can use:
 .class { background: rgba(0,0,0,.5); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=&amp;#34;#{ie-hex-str($color)}&amp;#34;,endColorstr=&amp;#34;#{ie-hex-str($color)}&amp;#34;);} converter: kilianvalkhof</description>
     </item>
     
     <item>
       <title>Detect mobile devices</title>
-      <link>/detect-mobile-devices/</link>
+      <link>https://ryunpu.github.io/detect-mobile-devices/</link>
       <pubDate>Mon, 31 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/detect-mobile-devices/</guid>
+      <guid>https://ryunpu.github.io/detect-mobile-devices/</guid>
       <description>function isMobileDevice() { return (typeof window.orientation !== &amp;#39;undefined&amp;#39;) || (navigator.userAgent.indexOf(&amp;#39;IEMobile&amp;#39;) !== -1); } or
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { alert(&amp;#39;Mobile Detected&amp;#39;); } see also: mobile-detect</description>
     </item>
     
     <item>
       <title>CSS tools</title>
-      <link>/css-tools/</link>
+      <link>https://ryunpu.github.io/css-tools/</link>
       <pubDate>Sun, 30 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/css-tools/</guid>
+      <guid>https://ryunpu.github.io/css-tools/</guid>
       <description>  动态样式语言 Less，Sass，Stylus
   CSS3 生成工具 css3generator
   CSS 图片拼合工具 csssprites
@@ -1286,20 +1286,20 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigat
     
     <item>
       <title>栅格系统延续美学</title>
-      <link>/%E6%A0%85%E6%A0%BC%E7%B3%BB%E7%BB%9F%E5%BB%B6%E7%BB%AD%E7%BE%8E%E5%AD%A6/</link>
+      <link>https://ryunpu.github.io/%E6%A0%85%E6%A0%BC%E7%B3%BB%E7%BB%9F%E5%BB%B6%E7%BB%AD%E7%BE%8E%E5%AD%A6/</link>
       <pubDate>Sat, 29 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/%E6%A0%85%E6%A0%BC%E7%B3%BB%E7%BB%9F%E5%BB%B6%E7%BB%AD%E7%BE%8E%E5%AD%A6/</guid>
+      <guid>https://ryunpu.github.io/%E6%A0%85%E6%A0%BC%E7%B3%BB%E7%BB%9F%E5%BB%B6%E7%BB%AD%E7%BE%8E%E5%AD%A6/</guid>
       <description>栅格系统应用于设计领域已经至少50年了。栅格化让眼睛浏览信息更加愉悦。从报纸、杂志，到手机界面，栅格系统全面渗透到各种信息传达的界面当中。
 see more: ucdchina</description>
     </item>
     
     <item>
       <title>Bootcss codeguide</title>
-      <link>/bootcss-codeguide/</link>
+      <link>https://ryunpu.github.io/bootcss-codeguide/</link>
       <pubDate>Fri, 28 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/bootcss-codeguide/</guid>
+      <guid>https://ryunpu.github.io/bootcss-codeguide/</guid>
       <description>HTML:
  标签不要大写，即便是 doctype 标签。 用两个空格来代替制表符（tab） &amp;ndash; 这是唯一能保证在所有环境下获得一致展现的方法。 嵌套元素应当缩进一次（即两个空格）。 对于属性的定义，永远全部使用双引号，绝不要使用单引号。 不要在自闭合（self-closing）元素的尾部添加斜线 — HTML5 规范 中明确说明斜线是可忽略的。 不要省略可选的结束标签（closing tag）（例如，&amp;lt;/li&amp;gt; 或 &amp;lt;/body&amp;gt;）。  CSS:
  用两个空格来代替制表符（tab） &amp;ndash; 这是唯一能保证在所有环境下获得一致展现的方法。 为选择器分组时，将单独的选择器单独放在一行。 为了代码的易读性，在每个声明块的左花括号前添加一个空格。 声明块的右花括号应当单独成行。 每条声明语句的 : 后应该插入一个空格。 为了获得更准确的错误报告，每条声明都应该独占一行。 所有声明语句都应当以分号结尾。最后一条声明语句后面的分号是可选的，但是，如果省略这个分号，你的代码可能更易出错。 对于以逗号分隔的属性值，每个逗号后面都应该插入一个空格（例如，box-shadow）。 不要在 rgb()、rgba()、hsl()、hsla() 或 rect() 值的内部的逗号后面插入空格。这样利于从多个属性值（既加逗号也加空格）中区分多个颜色值（只加逗号，不加空格）。 对于属性值或颜色参数，省略小于 1 的小数前面的 0 （例如，.5 代替 0.5；-.5px 代替 -0.5px）。 十六进制值应该全部小写，例如，#fff。在扫描文档时，小写字符易于分辨，因为他们的形式更易于区分。 尽量使用简写形式的十六进制值，例如，用 #fff 代替 #ffffff。 为选择器中的属性添加双引号，例如，input[type=&amp;quot;text&amp;quot;]。只有在某些情况下是可选的，但是，为了代码的一致性，建议都加上双引号。 避免为 0 值指定单位，例如，用 margin: 0; 代替 margin: 0px;。  see more: bootcss codeguide</description>
@@ -1307,28 +1307,28 @@ see more: ucdchina</description>
     
     <item>
       <title>Make the Web Faster</title>
-      <link>/make-the-web-faster/</link>
+      <link>https://ryunpu.github.io/make-the-web-faster/</link>
       <pubDate>Thu, 27 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/make-the-web-faster/</guid>
+      <guid>https://ryunpu.github.io/make-the-web-faster/</guid>
       <description>避免使用着陆页重定向 启用压缩功能 缩短服务器响应用时 使用浏览器缓存 缩减资源大小 优化图片 优化 CSS 发送过程 优先加载可见内容 移除会阻止内容呈现的 JavaScript  see more: google docs</description>
     </item>
     
     <item>
       <title>Rescue time with RescueTime</title>
-      <link>/rescue-time-with-rescuetime/</link>
+      <link>https://ryunpu.github.io/rescue-time-with-rescuetime/</link>
       <pubDate>Wed, 26 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/rescue-time-with-rescuetime/</guid>
+      <guid>https://ryunpu.github.io/rescue-time-with-rescuetime/</guid>
       <description>RescueTime helps you understand where your time goes each day. Optimize your energy. And take back control of your day.</description>
     </item>
     
     <item>
       <title>Sublime osx command line setup</title>
-      <link>/sublime-osx-command-line-setup/</link>
+      <link>https://ryunpu.github.io/sublime-osx-command-line-setup/</link>
       <pubDate>Tue, 25 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/sublime-osx-command-line-setup/</guid>
+      <guid>https://ryunpu.github.io/sublime-osx-command-line-setup/</guid>
       <description>with Sublime Text2, you can run:
 $ ln -s &amp;#34;/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl&amp;#34; ~/bin/subl with Sublime Text3, you can run:
 $ ln -s &amp;#34;/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl&amp;#34; ~/bin/subl see more: sublimetext docs</description>
@@ -1336,29 +1336,29 @@ $ ln -s &amp;#34;/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl&
     
     <item>
       <title>Stop Working from a Prison Cell</title>
-      <link>/stop-working-from-a-prison-cell/</link>
+      <link>https://ryunpu.github.io/stop-working-from-a-prison-cell/</link>
       <pubDate>Mon, 24 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/stop-working-from-a-prison-cell/</guid>
+      <guid>https://ryunpu.github.io/stop-working-from-a-prison-cell/</guid>
       <description>Stop Working from a Prison Cell</description>
     </item>
     
     <item>
       <title>Display Liquid code in Jekyll</title>
-      <link>/display-liquid-code-in-jekyll/</link>
+      <link>https://ryunpu.github.io/display-liquid-code-in-jekyll/</link>
       <pubDate>Sun, 23 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/display-liquid-code-in-jekyll/</guid>
+      <guid>https://ryunpu.github.io/display-liquid-code-in-jekyll/</guid>
       <description>simply using raw tag:
 {% raw %} Liquid code {% endraw %} </description>
     </item>
     
     <item>
       <title>Highlight code in Jekyll</title>
-      <link>/highlight-code-in-jekyll/</link>
+      <link>https://ryunpu.github.io/highlight-code-in-jekyll/</link>
       <pubDate>Sat, 22 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/highlight-code-in-jekyll/</guid>
+      <guid>https://ryunpu.github.io/highlight-code-in-jekyll/</guid>
       <description>推荐的：
 {% highlight ruby linenos %} def foo puts &#39;foo&#39; end {% endhighlight %} 简洁的：
  ```ruby def foo puts &#39;foo&#39; end ``` 最终效果：
@@ -1367,20 +1367,20 @@ def foo puts &amp;#39;foo&amp;#39; end </description>
     
     <item>
       <title>Add Readmore in Jekyll</title>
-      <link>/add-readmore-in-jekyll/</link>
+      <link>https://ryunpu.github.io/add-readmore-in-jekyll/</link>
       <pubDate>Fri, 21 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/add-readmore-in-jekyll/</guid>
+      <guid>https://ryunpu.github.io/add-readmore-in-jekyll/</guid>
       <description>当然，你可以使用 Jekyll 自带的 post.excerpt 并在 _config.yml 中配置 excerpt_separator，但这样做时并不能灵活的添加 ’Readmore‘，因此可以使用下面的方法：
 {% if post.content contains &amp;#39;&amp;lt;!--more --&amp;gt;&amp;#39; %} {{ post.content | split:&amp;#39;&amp;lt;!--more --&amp;gt;&amp;#39; | first }} &amp;lt;p class=&amp;#34;more&amp;#34;&amp;gt;&amp;lt;a href=&amp;#34;{{ post.url }}&amp;#34;&amp;gt;Read More &amp;amp;raquo;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt; {% else %} {{ post.content }} {% endif %} 然后在文章换行处添加 &amp;lt;!-- more --&amp;gt;</description>
     </item>
     
     <item>
       <title>Install Git</title>
-      <link>/install-git/</link>
+      <link>https://ryunpu.github.io/install-git/</link>
       <pubDate>Thu, 20 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/install-git/</guid>
+      <guid>https://ryunpu.github.io/install-git/</guid>
       <description>当你想升级系统自带的 Git 的时候，可以使用下面的命令查看其所在的目录：
 $ which git 当你看到类似 ’/user/bin‘ 的地址时，你可能需要更改用户目录下的隐藏文件 .bash_profile，添加：
 export PATH=/usr/local/bin:$PATH  然后，你就可以安装和更新 Git了，我使用的是 Homebrew：
@@ -1390,10 +1390,10 @@ $ brew link git --overwrite </description>
     
     <item>
       <title>Jekyll build trouble</title>
-      <link>/jekyll-build-trouble/</link>
+      <link>https://ryunpu.github.io/jekyll-build-trouble/</link>
       <pubDate>Wed, 19 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/jekyll-build-trouble/</guid>
+      <guid>https://ryunpu.github.io/jekyll-build-trouble/</guid>
       <description>初次安装 Jekyll，出现 ’Failed to build gem native extension‘ 的报错，花了不少时间寻找问题的答案，关键在于升级你的Ruby版本，建议使用 RVM 或者 Rbenv，我使用的是 RVM：
 $ \curl -sSL https://get.rvm.io | bash -s stable 完成这步剩下的直接 OK，如果还有问题可以参考 Jekyll troubleshooting</description>
     </item>

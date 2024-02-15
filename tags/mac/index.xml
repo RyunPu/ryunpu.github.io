@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mac on Ryun&#39;s blog</title>
-    <link>/tags/mac/</link>
+    <link>https://ryunpu.github.io/tags/mac/</link>
     <description>Recent content in mac on Ryun&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <lastBuildDate>Fri, 06 Jul 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ryunpu.github.io/tags/mac/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Show hidden files on mac</title>
-      <link>/show-hidden-files-on-mac/</link>
+      <link>https://ryunpu.github.io/show-hidden-files-on-mac/</link>
       <pubDate>Fri, 06 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/show-hidden-files-on-mac/</guid>
+      <guid>https://ryunpu.github.io/show-hidden-files-on-mac/</guid>
       <description>The quickest way Since the release of macOS Sierra, when in Finder, it is now possible to use the shortcut:
 ⌘ + ⇧ + . Use terminal Show files:
 $ defaults write com.apple.finder AppleShowAllFiles YES; killall Finder Hide files:
@@ -25,20 +25,20 @@ $ defaults write com.apple.finder AppleShowAllFiles NO; killall Finder </descrip
     
     <item>
       <title>Show the current path in the finder</title>
-      <link>/show-the-current-path-in-the-finder/</link>
+      <link>https://ryunpu.github.io/show-the-current-path-in-the-finder/</link>
       <pubDate>Thu, 05 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/show-the-current-path-in-the-finder/</guid>
+      <guid>https://ryunpu.github.io/show-the-current-path-in-the-finder/</guid>
       <description>Enable the finder path bar ⌥ + ⌘ + P Show the path in the finder title bar $ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder Use this command to turn it off
 $ defaults write com.apple.finder _FXShowPosixPathInTitle -bool false; killall Finder </description>
     </item>
     
     <item>
       <title>Insert the Mac command symbol</title>
-      <link>/insert-the-mac-command-symbol/</link>
+      <link>https://ryunpu.github.io/insert-the-mac-command-symbol/</link>
       <pubDate>Wed, 04 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insert-the-mac-command-symbol/</guid>
+      <guid>https://ryunpu.github.io/insert-the-mac-command-symbol/</guid>
       <description>Copy and Paste ⌘
 Use Emoji and Symbols ⌃ + ⌘ + Space You&#39;ll find it under Edit -&amp;gt; Emoji and Symbols in any program that takes text input. The Command key symbol can be found by searching for it&#39;s name &amp;ldquo;place of interest&amp;rdquo;.
 Use Unicode Hex Input ⌥ + 2318 Use text replacements Use Atom snippets &#39;.text.plain, .source.gfm&#39;: &#39;command symbol&#39;: &#39;prefix&#39;: &#39;cmds&#39; &#39;body&#39;: &#39;⌘&#39; &#39;ctrl symbol&#39;: &#39;prefix&#39;: &#39;cs&#39; &#39;body&#39;: &#39;⌃&#39; &#39;alt symbol&#39;: &#39;prefix&#39;: &#39;as&#39; &#39;body&#39;: &#39;⌥&#39; &#39;shift symbol&#39;: &#39;prefix&#39;: &#39;ss&#39; &#39;body&#39;: &#39;⇧&#39; </description>
@@ -46,10 +46,10 @@ Use Unicode Hex Input ⌥ + 2318 Use text replacements Use Atom snippets &#39;.t
     
     <item>
       <title>Mac 键盘快捷键</title>
-      <link>/mac-%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+      <link>https://ryunpu.github.io/mac-%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
       <pubDate>Tue, 03 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/mac-%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+      <guid>https://ryunpu.github.io/mac-%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
       <description>您可以按下某些组合键来实现通常需要鼠标、触控板或其他输入设备才能完成的操作。
 要使用键盘快捷键，请按住一个或多个修饰键，然后按快捷键的最后一个键。例如，要使用 Command-C（拷贝），请按住 Command 键并按 C 键，然后同时松开这两个键。Mac 菜单和键盘通常对某些按键使用符号，其中包括以下修饰键：
  Command（或 Cmd）⌘ Shift ⇧ Option（或 Alt）⌥ Control（或 Ctrl）⌃ Caps Lock ⇪ Fn   在 Windows PC 专用键盘上，请用 Alt 键代替 Option 键，用 Windows 标志键代替 Command 键。
@@ -59,10 +59,10 @@ Use Unicode Hex Input ⌥ + 2318 Use text replacements Use Atom snippets &#39;.t
     
     <item>
       <title>在 Mac 上创建键盘快捷键</title>
-      <link>/%E5%9C%A8-mac-%E4%B8%8A%E5%88%9B%E5%BB%BA%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+      <link>https://ryunpu.github.io/%E5%9C%A8-mac-%E4%B8%8A%E5%88%9B%E5%BB%BA%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
       <pubDate>Mon, 02 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/%E5%9C%A8-mac-%E4%B8%8A%E5%88%9B%E5%BB%BA%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+      <guid>https://ryunpu.github.io/%E5%9C%A8-mac-%E4%B8%8A%E5%88%9B%E5%BB%BA%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
       <description>您可以在任意 macOS App（包括“访达”）中为菜单命令创建自己的键盘快捷键。如果全局快捷键（大多数 App 都相同）与特定 App 快捷键冲突时，这可能会很有用。在这种情况下，您可以创建一个新的按键组合。
    在 Mac 上，选取苹果菜单 &amp;gt;“系统偏好设置”，点按“键盘”，然后点按“快捷键”。
   选择左侧的“App 快捷键”，点按添加按钮 ，点按“应用程序”弹出式菜单，然后选取一个特定的 App 或者“所有应用程序”。
@@ -79,10 +79,10 @@ Use Unicode Hex Input ⌥ + 2318 Use text replacements Use Atom snippets &#39;.t
     
     <item>
       <title>Fix kernel_task high cpu problem</title>
-      <link>/fix-kernel_task-high-cpu-problem/</link>
+      <link>https://ryunpu.github.io/fix-kernel_task-high-cpu-problem/</link>
       <pubDate>Fri, 24 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>/fix-kernel_task-high-cpu-problem/</guid>
+      <guid>https://ryunpu.github.io/fix-kernel_task-high-cpu-problem/</guid>
       <description>Reboot into recovery mode (Command + R on boot prior to startup chime), select Utilities/Terminal, csrutil disable &amp;lt;Enter&amp;gt; (repeat process, use csrutil enable after removing the file), reboot.
   Go to About this mac under the apple in the upper left and click on More info
   Click on system report
@@ -92,10 +92,10 @@ Use Unicode Hex Input ⌥ + 2318 Use text replacements Use Atom snippets &#39;.t
     
     <item>
       <title>Basic bash keyboard shortcuts</title>
-      <link>/basic-bash-keyboard-shortcuts/</link>
+      <link>https://ryunpu.github.io/basic-bash-keyboard-shortcuts/</link>
       <pubDate>Tue, 15 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/basic-bash-keyboard-shortcuts/</guid>
+      <guid>https://ryunpu.github.io/basic-bash-keyboard-shortcuts/</guid>
       <description>Moving the cursor Ctrl + a Go to the beginning of the line (Home)
 Ctrl + e Go to the End of the line (End)
 Ctrl + p Previous command (Up)
@@ -109,10 +109,10 @@ Ctrl + u Cut/delete the Line before the cursor position</description>
     
     <item>
       <title>The Command Line Crash Course</title>
-      <link>/the-command-line-crash-course/</link>
+      <link>https://ryunpu.github.io/the-command-line-crash-course/</link>
       <pubDate>Tue, 15 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/the-command-line-crash-course/</guid>
+      <guid>https://ryunpu.github.io/the-command-line-crash-course/</guid>
       <description>print working directory:
 $ pwd my computer&#39;s network name:
 $ hostname make directory:
@@ -128,10 +128,10 @@ $ cp source_file target_file/target_directory $ cp -r source_file target_directo
     
     <item>
       <title>Access localhost from VirtualBox</title>
-      <link>/access-localhost-from-virtualbox/</link>
+      <link>https://ryunpu.github.io/access-localhost-from-virtualbox/</link>
       <pubDate>Thu, 10 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/access-localhost-from-virtualbox/</guid>
+      <guid>https://ryunpu.github.io/access-localhost-from-virtualbox/</guid>
       <description>just follow the steps:
   In VirtualBox &amp;gt; Preferences &amp;gt; Network, set up a host-only network
   Activate the 2nd adapter and set it with Host-only Adapter and the only Name attribute we just created like &amp;lsquo;vboxnet0&amp;rsquo;
@@ -141,10 +141,10 @@ $ cp source_file target_file/target_directory $ cp -r source_file target_directo
     
     <item>
       <title>Create a bootable USB in Mac OS X</title>
-      <link>/create-a-bootable-usb-in-mac-os-x/</link>
+      <link>https://ryunpu.github.io/create-a-bootable-usb-in-mac-os-x/</link>
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/create-a-bootable-usb-in-mac-os-x/</guid>
+      <guid>https://ryunpu.github.io/create-a-bootable-usb-in-mac-os-x/</guid>
       <description>just follow the steps:
 $ hdiutil convert -format UDRW -o destination_file.img source_file.iso $ diskutil list $ diskutil partitionDisk /dev/disk2 1 &amp;#34;Free Space&amp;#34; &amp;#34;unused&amp;#34; &amp;#34;100%&amp;#34; $ dd if=destination_file.img.dmg of=/dev/disk2 bs=1m note: &amp;lsquo;disk2&amp;rsquo; is your USB, you may need to use &amp;lsquo;sudo dd&amp;rsquo;
 see more: bootable usb</description>

@@ -2,156 +2,156 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Ryun&#39;s blog</title>
-    <link>/tags/</link>
+    <link>https://ryunpu.github.io/tags/</link>
     <description>Recent content in Tags on Ryun&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <lastBuildDate>Mon, 25 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ryunpu.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>git</title>
-      <link>/tags/git/</link>
+      <link>https://ryunpu.github.io/tags/git/</link>
       <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/git/</guid>
+      <guid>https://ryunpu.github.io/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vscode</title>
-      <link>/tags/vscode/</link>
+      <link>https://ryunpu.github.io/tags/vscode/</link>
       <pubDate>Sat, 23 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/vscode/</guid>
+      <guid>https://ryunpu.github.io/tags/vscode/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tool</title>
-      <link>/tags/tool/</link>
+      <link>https://ryunpu.github.io/tags/tool/</link>
       <pubDate>Thu, 21 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/tool/</guid>
+      <guid>https://ryunpu.github.io/tags/tool/</guid>
       <description></description>
     </item>
     
     <item>
       <title>javascript</title>
-      <link>/tags/javascript/</link>
+      <link>https://ryunpu.github.io/tags/javascript/</link>
       <pubDate>Sun, 15 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/javascript/</guid>
+      <guid>https://ryunpu.github.io/tags/javascript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>atom</title>
-      <link>/tags/atom/</link>
+      <link>https://ryunpu.github.io/tags/atom/</link>
       <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/atom/</guid>
+      <guid>https://ryunpu.github.io/tags/atom/</guid>
       <description></description>
     </item>
     
     <item>
       <title>mac</title>
-      <link>/tags/mac/</link>
+      <link>https://ryunpu.github.io/tags/mac/</link>
       <pubDate>Fri, 06 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/mac/</guid>
+      <guid>https://ryunpu.github.io/tags/mac/</guid>
       <description></description>
     </item>
     
     <item>
       <title>design</title>
-      <link>/tags/design/</link>
+      <link>https://ryunpu.github.io/tags/design/</link>
       <pubDate>Sat, 18 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/design/</guid>
+      <guid>https://ryunpu.github.io/tags/design/</guid>
       <description></description>
     </item>
     
     <item>
       <title>css</title>
-      <link>/tags/css/</link>
+      <link>https://ryunpu.github.io/tags/css/</link>
       <pubDate>Mon, 28 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/css/</guid>
+      <guid>https://ryunpu.github.io/tags/css/</guid>
       <description></description>
     </item>
     
     <item>
       <title>laravel</title>
-      <link>/tags/laravel/</link>
+      <link>https://ryunpu.github.io/tags/laravel/</link>
       <pubDate>Wed, 23 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/laravel/</guid>
+      <guid>https://ryunpu.github.io/tags/laravel/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vue</title>
-      <link>/tags/vue/</link>
+      <link>https://ryunpu.github.io/tags/vue/</link>
       <pubDate>Mon, 21 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/vue/</guid>
+      <guid>https://ryunpu.github.io/tags/vue/</guid>
       <description></description>
     </item>
     
     <item>
       <title>mobile</title>
-      <link>/tags/mobile/</link>
+      <link>https://ryunpu.github.io/tags/mobile/</link>
       <pubDate>Wed, 25 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/mobile/</guid>
+      <guid>https://ryunpu.github.io/tags/mobile/</guid>
       <description></description>
     </item>
     
     <item>
       <title>life</title>
-      <link>/tags/life/</link>
+      <link>https://ryunpu.github.io/tags/life/</link>
       <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/life/</guid>
+      <guid>https://ryunpu.github.io/tags/life/</guid>
       <description></description>
     </item>
     
     <item>
       <title>html</title>
-      <link>/tags/html/</link>
+      <link>https://ryunpu.github.io/tags/html/</link>
       <pubDate>Sat, 21 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/html/</guid>
+      <guid>https://ryunpu.github.io/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>sublime</title>
-      <link>/tags/sublime/</link>
+      <link>https://ryunpu.github.io/tags/sublime/</link>
       <pubDate>Thu, 12 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/sublime/</guid>
+      <guid>https://ryunpu.github.io/tags/sublime/</guid>
       <description></description>
     </item>
     
     <item>
       <title>optimization</title>
-      <link>/tags/optimization/</link>
+      <link>https://ryunpu.github.io/tags/optimization/</link>
       <pubDate>Fri, 11 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/tags/optimization/</guid>
+      <guid>https://ryunpu.github.io/tags/optimization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>jekyll</title>
-      <link>/tags/jekyll/</link>
+      <link>https://ryunpu.github.io/tags/jekyll/</link>
       <pubDate>Sun, 23 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/tags/jekyll/</guid>
+      <guid>https://ryunpu.github.io/tags/jekyll/</guid>
       <description></description>
     </item>
     
